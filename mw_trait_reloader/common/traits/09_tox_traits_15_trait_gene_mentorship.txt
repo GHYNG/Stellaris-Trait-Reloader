@@ -1,0 +1,48 @@
+trait_gene_mentorship = {
+	host_has_dlc = "Toxoids Species Pack"
+	cost = 1
+    category = overtuned
+	opposites = { "trait_syncretic_proles"}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_OVERTUNED
+	}
+	tags = { organic positive leader special }
+	allowed_origins = { origin_overtuned }
+	randomized = no
+	species_potential_add = {
+		can_add_overtuned_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_overtuned_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	custom_tooltip_with_modifiers = gene_mentorship_tooltip
+	triggered_leader_modifier = {
+		potential = {
+			exists = owner
+			owner = { NOT = { has_edict = damn_the_consequences } }
+		}
+		modifier = {
+			species_leader_exp_gain = 0.30
+		}
+	}
+	triggered_leader_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_edict = damn_the_consequences }
+		}
+		modifier = {
+			species_leader_exp_gain = 0.60
+		}
+	}
+	modifier = {
+		leader_lifespan_add = -10
+	}
+	slave_cost = {
+		energy = 1000
+	}
+}
+

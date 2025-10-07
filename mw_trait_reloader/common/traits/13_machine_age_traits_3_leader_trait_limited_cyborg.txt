@@ -1,0 +1,30 @@
+leader_trait_limited_cyborg = {
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_leader_trait_limited_cyborg"
+		RARITY = common
+		COUNCIL = triggered
+		TIER = none
+	}
+	# Any Class - Ruler
+	triggered_councilor_modifier = {
+		potential = {
+			is_ruler = yes
+		}
+		spiritualist_attraction = 0.25
+		empire_size_districts_mult = -0.05
+	}
+	self_modifier = {
+		leaders_upkeep_mult = -0.10
+		species_leader_exp_gain = 0.1
+	}
+	leader_class = { commander scientist official }
+	opposites = {
+		leader_trait_psionic
+		leader_trait_chosen
+	}
+	initial = no
+	randomized = no
+	notify_on_gained = no
+}
+

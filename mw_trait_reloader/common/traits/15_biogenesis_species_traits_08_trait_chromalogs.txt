@@ -1,0 +1,60 @@
+trait_chromalogs = {
+	host_has_dlc = "BioGenesis"
+	cost = 4
+	species_possible_add = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_nerve_stapled" "trait_natural_physicists" "trait_camouflage" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { AQUATIC ART REP }
+	localized_tags = {
+		SPECIES_TRAIT_ARTHROPOID
+		SPECIES_TRAIT_REPTILIAN
+		SPECIES_TRAIT_AQUATIC
+	}
+	species_class_override = {
+		hidden_trigger = {
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	portrait_override = { avi18 tox12 }
+	tags = { organic positive army research pop_output unity aquatic arthropoid reptilian species }
+	modifier = {
+		physicist_jobs_bonus_workforce_mult = 0.20
+		bureaucrat_jobs_bonus_workforce_mult = 0.20
+		army_health = 0.4
+		pop_government_ethic_attraction = 0.15
+	}
+
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = { has_research_designation = yes }
+		}
+		modifier = {
+			add = 1.5
+			from = { has_unity_designation = yes }
+		}
+		modifier = {
+			add = 3
+			from = { has_building = building_order_keep }
+		}
+	}
+
+	slave_cost = {
+		energy = 1500
+	}
+}
+

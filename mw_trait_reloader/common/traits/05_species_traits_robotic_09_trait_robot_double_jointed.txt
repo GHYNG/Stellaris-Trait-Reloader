@@ -1,0 +1,16 @@
+trait_robot_double_jointed = {
+	cost = 1
+	category = robotic
+	opposites = { "trait_robot_bulky" }
+
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine positive housing }
+
+	modifier = {
+		pop_housing_usage_mult = -0.1
+	}
+	slave_cost = {
+		energy = 750
+	}
+}
+

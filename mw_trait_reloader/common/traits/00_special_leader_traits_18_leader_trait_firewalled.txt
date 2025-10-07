@@ -1,0 +1,26 @@
+leader_trait_firewalled = {
+	randomized = no
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_leader_trait_firewalled"
+		RARITY = common
+		COUNCIL = no
+		TIER = none
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = unity
+		AMOUNT = 2
+	}
+	inline_script = {
+		script = paragon/leader_resource_upkeep
+		RESOURCE = energy
+		AMOUNT = 2
+	}
+	self_modifier = {
+		species_leader_exp_gain = -0.10
+		negative_traits_leader = -1
+	}
+	leader_class = { commander scientist official }
+}
+

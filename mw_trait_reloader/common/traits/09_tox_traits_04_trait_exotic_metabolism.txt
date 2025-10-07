@@ -1,0 +1,42 @@
+trait_exotic_metabolism = {
+	host_has_dlc = "Toxoids Species Pack"
+	cost = 1
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_remove_pop_growth_genetic_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive upkeep pop_growth leader habitability genetic_ascension drawbacks }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	custom_tooltip_with_modifiers = exotic_metabolism_tooltip
+	triggered_planet_growth_habitability_modifier = {
+		logistic_growth_mult = 0.25
+		pop_environment_tolerance = 0.25
+	}
+
+	modifier = {
+		leader_lifespan_add = 50
+	}
+
+	resources = {
+		category = planet_pops
+		upkeep = {
+			trigger = {
+				is_organic_species = yes
+			}
+			exotic_gases = @exotic_metabolism
+		}
+	}
+
+	slave_cost = {
+		energy = 750
+	}
+}
+

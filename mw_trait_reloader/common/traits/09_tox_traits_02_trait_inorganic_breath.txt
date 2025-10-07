@@ -1,0 +1,36 @@
+trait_inorganic_breath = {
+	host_has_dlc = "Toxoids Species Pack"
+	cost = 3
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive upkeep production drawbacks }
+	randomized = no
+	custom_tooltip_with_modifiers = inorganic_breath_tooltip
+
+	modifier = {
+		planet_pops_upkeep_mult = 0.5
+	}
+
+	resources = {
+		category = planet_pops
+		produces = {
+			trigger = {
+				is_slave_or_better = yes
+			}
+			exotic_gases = @inorganic_breath
+		}
+	}
+
+	slave_cost = {
+		energy = 1000
+	}
+}
+

@@ -1,0 +1,49 @@
+trait_genetic_memory = {
+	host_has_dlc = "BioGenesis"
+	cost = 3
+	species_possible_add = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	portrait_override = { fun16 fun4 lith_human pla17 aqu5 }
+	opposites = { "trait_nonadaptive" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { HUM MAM NECROID }
+	localized_tags = {
+		SPECIES_TRAIT_HUMANOID
+		SPECIES_TRAIT_MAMMALIAN
+		SPECIES_TRAIT_NECROID
+	}
+	species_class_override = {
+		hidden_trigger = {
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	tags = { organic positive habitability humanoid mammalian necroid species }
+	custom_tooltip = trait_genetic_memory_effect
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				is_colony = yes
+			}
+		}
+		pop_environment_tolerance = 0.005
+		mult = value:genetic_memory_mult
+	}
+	slave_cost = {
+		energy = 1000
+	}
+}
+

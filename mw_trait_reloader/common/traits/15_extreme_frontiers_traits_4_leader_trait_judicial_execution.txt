@@ -1,0 +1,19 @@
+leader_trait_judicial_execution = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_judicial_execution"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+
+	leader_class = { commander }
+
+	custom_tooltip = leader_trait_judicial_execution_effect
+
+	initial = no
+	randomized = no
+}
+

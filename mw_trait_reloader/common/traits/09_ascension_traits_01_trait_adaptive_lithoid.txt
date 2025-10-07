@@ -1,0 +1,30 @@
+trait_adaptive_lithoid = {
+	cost = 2
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_remove_pop_growth_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	icon = "gfx/interface/icons/traits/trait_adaptive.dds"
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	opposites = { "trait_nonadaptive" "trait_extremely_adaptive" "trait_robust" "trait_adaptive" "trait_shelled" }
+	allowed_archetypes = { LITHOID }
+	tags = { organic positive habitability lithoid species genetic_ascension special }
+	modifier = {
+		pop_environment_tolerance = 0.10
+	}
+	slave_cost = {
+		energy = 1000
+	}
+}
+

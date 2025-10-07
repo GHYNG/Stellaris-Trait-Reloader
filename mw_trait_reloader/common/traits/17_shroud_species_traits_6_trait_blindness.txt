@@ -1,0 +1,25 @@
+trait_blindness = {
+	host_has_dlc = "Shadows of the Shroud"
+
+	initial = no
+	randomized = no
+
+	species_possible_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_remove = {
+		always = no
+	}
+
+	triggered_species_modifier = {
+		pop_happiness = 0.1
+	}
+	modifier = {
+		pop_bonus_workforce_mult = -0.5
+		bureaucrat_jobs_bonus_workforce_mult = 0.25
+	}
+}
+

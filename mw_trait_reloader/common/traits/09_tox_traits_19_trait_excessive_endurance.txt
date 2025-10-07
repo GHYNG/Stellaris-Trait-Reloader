@@ -1,0 +1,68 @@
+trait_excessive_endurance = {
+	host_has_dlc = "Toxoids Species Pack"
+	cost = 3
+    category = overtuned
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_OVERTUNED
+	}
+	tags = { organic positive pop_output habitability leader special }
+	allowed_origins = { origin_overtuned }
+	randomized = no
+	species_potential_add = {
+		can_add_overtuned_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_overtuned_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	custom_tooltip_with_modifiers = excessive_endurance_tooltip
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = { NOT = { has_edict = damn_the_consequences } }
+		}
+		modifier = {
+			pop_bonus_workforce_mult = 0.05
+		}
+	}
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			exists = fromfrom #we use fromfrom so it displays for uncolonised planets
+			fromfrom = { NOT = { has_edict = damn_the_consequences } }
+		}
+		modifier = {
+			pop_environment_tolerance = 0.30
+		}
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_edict = damn_the_consequences }
+		}
+		modifier = {
+			pop_bonus_workforce_mult = 0.1
+		}
+	}
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			exists = fromfrom
+			fromfrom = { has_edict = damn_the_consequences }
+		}
+		modifier = {
+			pop_environment_tolerance = 0.60
+		}
+	}
+	modifier = {
+		leader_lifespan_add = -30
+	}
+	assembly_score = {
+		base = 0.5 #always good
+	}
+	slave_cost = {
+		energy = 2000
+	}
+}
+

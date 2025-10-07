@@ -1,0 +1,17 @@
+trait_robot_uncanny = {
+	cost = -1
+	category = robotic
+	opposites = { "trait_robot_emotion_emulators" }
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine negative pop_output amenities }
+	modifier = {
+		influential_jobs_bonus_workforce_mult = -0.20
+	}
+	ai_weight = {
+		factor = 0
+	}
+	slave_cost = {
+		energy = -150
+	}
+}
+

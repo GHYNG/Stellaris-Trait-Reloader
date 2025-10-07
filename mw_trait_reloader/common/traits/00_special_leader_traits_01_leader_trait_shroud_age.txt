@@ -1,0 +1,17 @@
+leader_trait_shroud_age = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_resilient"
+		RARITY = common
+		COUNCIL = no
+		TIER = none
+	}
+	self_modifier = {
+		leader_lifespan_add = 40
+	}
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+

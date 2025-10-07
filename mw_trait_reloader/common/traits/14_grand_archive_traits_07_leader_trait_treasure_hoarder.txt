@@ -1,0 +1,60 @@
+leader_trait_treasure_hoarder = {
+	starting_ruler_trait = yes
+	allowed_origins = { origin_treasure_hunters }
+	cost = 1
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_leader_trait_treasure_hoarder"
+		RARITY = common
+		COUNCIL = yes
+		TIER = 1
+	}
+
+	councilor_modifier = {
+		deposit_increase_on_survey_chance_mult = 0.1
+	}
+
+	leader_class = { official commander scientist }
+
+	initial = no
+	randomized = no
+}
+
+leader_trait_treasure_hoarder_2 = {
+	replace_traits = { "leader_trait_treasure_hoarder" }
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_leader_trait_treasure_hoarder"
+		RARITY = common
+		COUNCIL = yes
+		TIER = 2
+	}
+
+	councilor_modifier = {
+		deposit_increase_on_survey_chance_mult = 0.2
+	}
+
+	leader_class = { official commander scientist }
+
+	initial = no
+}
+
+leader_trait_treasure_hoarder_3 = {
+	replace_traits = { "leader_trait_treasure_hoarder_2" }
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_leader_trait_treasure_hoarder"
+		RARITY = common
+		COUNCIL = yes
+		TIER = 3
+	}
+
+	councilor_modifier = {
+		deposit_increase_on_survey_chance_mult = 0.3
+	}
+
+	leader_class = { official commander scientist }
+
+	initial = no
+}
+

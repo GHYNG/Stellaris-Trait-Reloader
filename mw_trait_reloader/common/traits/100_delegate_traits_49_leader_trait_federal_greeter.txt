@@ -1,0 +1,69 @@
+leader_trait_federal_greeter = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_federal_greeter"
+		RARITY = free_or_veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		OR = {
+			AND = {
+				exists = owner
+				owner = {
+					exists = federation
+				}
+				has_paragon_dlc = no
+			}
+			has_trait = subclass_official_delegate
+		}
+	}
+	federation_modifier = {
+		federation_join_malus_mult = -0.05
+	}
+	leader_class = { official }
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/federation_weight_mult
+	}
+}
+
+leader_trait_federal_greeter_2 = {
+	leader_trait_type = veteran
+	replace_traits = { "leader_trait_federal_greeter" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_federal_greeter"
+		RARITY = free_or_veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	federation_modifier = {
+		federation_join_malus_mult = -0.10
+	}
+	leader_class = { official }
+}
+
+leader_trait_federal_greeter_3 = {
+	leader_trait_type = veteran
+	replace_traits = { "leader_trait_federal_greeter_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_federal_greeter"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	federation_modifier = {
+		federation_join_malus_mult = -0.15
+	}
+	leader_class = { official }
+}
+

@@ -1,0 +1,86 @@
+leader_trait_polluter = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_polluter"
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		trait_is_crisis_faction_check = no
+		trait_is_wilderness_check = no
+		exists = owner
+		owner = { is_machine_empire = no }
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_individual_machine_check = no
+		}
+		logistic_growth_mult = -0.05
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_individual_machine_check = no
+		}
+		logistic_growth_mult = -0.025
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_individual_machine_check = yes
+		}
+		planet_pop_assembly_mult = -0.05
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_individual_machine_check = yes
+		}
+		planet_pop_assembly_mult = -0.025
+	}
+	leader_class = { commander official scientist }
+	selectable_weight = {
+		weight = @class_negative_trait_weight
+		inline_script = paragon/governor_weight_mult
+		modifier = {
+			has_ethic = ethic_materialist
+			factor = @ethic_weight_mult
+		}
+	}
+}
+
+leader_trait_polluter_2 = {
+	leader_trait_type = negative
+	replace_traits = { "leader_trait_polluter" }
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_polluter"
+		COUNCIL = no
+		TIER = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_individual_machine_check = no
+		}
+		logistic_growth_mult = -0.15
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_individual_machine_check = no
+		}
+		logistic_growth_mult = -0.075
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_individual_machine_check = yes
+		}
+		planet_pop_assembly_mult = -0.15
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_individual_machine_check = yes
+		}
+		planet_pop_assembly_mult = -0.075
+	}
+	leader_class = { commander official scientist }
+	selectable_weight = @tier2_negative_trait_weight
+}
+

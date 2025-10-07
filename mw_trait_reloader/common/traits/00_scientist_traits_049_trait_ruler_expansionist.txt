@@ -1,0 +1,66 @@
+trait_ruler_expansionist = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expansionist"
+		RARITY = free_or_veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	councilor_modifier = {
+		starbase_outpost_cost_mult = -0.05
+		country_starbase_influence_cost_mult = -0.05
+	}
+	leader_potential_add = {
+		OR = {
+			has_paragon_dlc = no
+			has_trait = subclass_scientist_councilor
+		}
+	}
+	leader_class = { scientist }
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+trait_ruler_expansionist_2 = {
+	leader_trait_type = veteran
+	replace_traits = { "trait_ruler_expansionist" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expansionist"
+		RARITY = free_or_veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		starbase_outpost_cost_mult = -0.075
+		country_starbase_influence_cost_mult = -0.075
+	}
+	leader_class = { scientist }
+}
+
+trait_ruler_expansionist_3 = {
+	leader_trait_type = veteran
+	replace_traits = { "trait_ruler_expansionist_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expansionist"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 3
+	}
+	councilor_modifier = {
+		starbase_outpost_cost_mult = -0.10
+		country_starbase_influence_cost_mult = -0.10
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+}
+

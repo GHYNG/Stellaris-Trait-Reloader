@@ -1,0 +1,35 @@
+trait_cyborg_stainless_steel_smile = {
+	host_has_dlc = "The Machine Age"
+	cost = 1
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+		SPECIES_TRAIT_UNIVERSAL_AUGMENTATIONS
+	}
+	tags = { organic positive pop_output amenities cybernetic }
+	initial = no
+	opposites = { "trait_cyborg_welded_countenance" }
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
+	randomized = no
+	category = cyborg
+	modifier = {
+		influential_jobs_bonus_workforce_mult = 0.20
+	}
+	resources = {
+		category = planet_pops
+		upkeep = {
+			energy = @cyborg_energy_upkeep
+		}
+	}
+	slave_cost = {
+		energy = 750
+	}
+}
+

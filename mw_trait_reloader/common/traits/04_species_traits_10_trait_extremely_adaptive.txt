@@ -1,0 +1,23 @@
+trait_extremely_adaptive = {
+	cost = 4
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_nonadaptive" "trait_adaptive" "trait_robust" "trait_adaptive_lithoid" "trait_shelled" }
+	allowed_archetypes = { BIOLOGICAL }
+	tags = { organic positive habitability }
+	modifier = {
+		pop_environment_tolerance = 0.20
+	}
+	slave_cost = {
+		energy = 1000
+	}
+}
+

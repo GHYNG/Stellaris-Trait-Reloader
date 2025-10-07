@@ -1,0 +1,46 @@
+trait_crafted_smiles = {
+	host_has_dlc = "Toxoids Species Pack"
+	cost = 1
+    category = overtuned
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_OVERTUNED
+		SPECIES_TRAIT_FLEETING_EXCELLENCE
+	}
+	tags = { organic positive pop_output amenities leader special }
+	allowed_origins = { origin_overtuned }
+	randomized = no
+	species_potential_add = {
+		can_add_overtuned_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_overtuned_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	modifier = { leader_lifespan_add = -10 }
+	custom_tooltip_with_modifiers = crafted_smiles_tooltip
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = { NOT = { has_edict = damn_the_consequences } }
+		}
+		modifier = {
+			influential_jobs_bonus_workforce_mult = 0.15
+		}
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_edict = damn_the_consequences }
+		}
+		modifier = {
+			influential_jobs_bonus_workforce_mult = 0.30
+		}
+	}
+	slave_cost = {
+		energy = 1000
+	}
+}
+

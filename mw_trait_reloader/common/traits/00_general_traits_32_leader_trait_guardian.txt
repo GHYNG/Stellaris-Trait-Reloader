@@ -1,0 +1,44 @@
+leader_trait_guardian = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_guardian"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	councilor_modifier = {
+		shipclass_military_station_damage_mult = 0.10
+		shipclass_military_station_hull_mult = 0.10
+	}
+	leader_potential_add = {
+		trait_is_crisis_faction_check = no
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_councilor
+	}
+	leader_class = { commander }
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_guardian_2 = {
+	leader_trait_type = veteran
+	replace_traits = { leader_trait_guardian }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_guardian"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		shipclass_military_station_damage_mult = 0.20
+		shipclass_military_station_hull_mult = 0.20
+	}
+	leader_class = { commander }
+}
+

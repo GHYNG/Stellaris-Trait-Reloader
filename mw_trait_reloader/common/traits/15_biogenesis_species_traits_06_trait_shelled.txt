@@ -1,0 +1,48 @@
+trait_shelled = {
+	host_has_dlc = "BioGenesis"
+	cost = 3
+	species_possible_add = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_nonadaptive" "trait_adaptive" "trait_extremely_adaptive" "trait_robust" "trait_adaptive_lithoid" "trait_communal" "trait_spatial_mastery" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { MOL NECROID }
+	localized_tags = {
+		SPECIES_TRAIT_MOLLUSCOID
+		SPECIES_TRAIT_NECROID
+	}
+	species_class_override = {
+		hidden_trigger = {
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	portrait_override = { rep14 pro2 }
+	tags = { organic positive habitability housing necroid molluscoid species }
+	modifier = {
+		pop_housing_usage_mult = -0.75
+		pop_environment_tolerance = 0.10
+	}
+	assembly_score = {
+		base = 1
+		modifier = {
+			from = { free_housing <= 1000 }
+			add = 1.5
+		}
+	}
+	slave_cost = {
+		energy = 1500
+	}
+}
+

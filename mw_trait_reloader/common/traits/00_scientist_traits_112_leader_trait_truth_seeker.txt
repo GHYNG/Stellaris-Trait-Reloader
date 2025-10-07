@@ -1,0 +1,57 @@
+leader_trait_truth_seeker = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_truth_seeker"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	on_gained_effect = {
+		owner = {
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		}
+	}
+	planet_modifier = {
+		psionic_pop_bonus_workforce_mult = 0.25
+		pop_job_amenities_mult = 0.20
+		pop_ethic_spiritualist_attraction_mult = 0.50
+	}
+	sector_modifier = {
+		psionic_pop_bonus_workforce_mult = 0.125
+		pop_job_amenities_mult = 0.10
+		pop_ethic_spiritualist_attraction_mult = 0.25
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_scientist_governor
+	}
+	leader_class = { scientist }
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/governor_weight_mult
+		modifier = {
+			exists = owner
+			owner = {
+				OR = {
+					has_cybernetic_ascension = yes
+					has_genetic_ascension = yes
+					has_synthetic_ascension = yes
+					is_natural_design_empire = yes
+					is_individual_machine = yes
+				}
+			}
+			factor = 0
+		}
+		modifier = {
+			exists = owner
+			owner = {
+				has_psionic_ascension = yes
+			}
+			factor = 2
+		}
+	}
+	background_icon = "GFX_leader_background_destiny_1"
+}
+

@@ -1,0 +1,29 @@
+leader_trait_pirate_queen = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_pirate_queen
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	on_gained_effect = {
+		owner = {
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		}
+	}
+	fleet_modifier = {
+		ship_steal_defeated_ship_chance = 0.1
+		ship_weapon_damage = 0.15
+	}
+	leader_class = { commander }
+	leader_potential_add = {
+		has_trait = subclass_commander_admiral
+	}
+	background_icon = GFX_leader_background_destiny_1
+
+	initial = no
+	randomized = no
+}
+

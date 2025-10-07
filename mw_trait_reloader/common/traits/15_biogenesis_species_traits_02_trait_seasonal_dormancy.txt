@@ -1,0 +1,60 @@
+trait_seasonal_dormancy = {
+	host_has_dlc = "BioGenesis"
+	cost = 2
+	species_possible_add = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	portrait_override = { fun16 fun4 }
+	opposites = { "trait_wasteful" "trait_conservational" "trait_low_maintenance" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { MAM REP }
+	localized_tags = {
+		SPECIES_TRAIT_MAMMALIAN
+		SPECIES_TRAIT_REPTILIAN
+	}
+	species_class_override = {
+		hidden_trigger = {
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	tags = { organic positive upkeep mammalian reptilian species }
+	custom_tooltip = trait_seasonal_dormancy_effect
+	modifier = {
+		planet_pops_upkeep_mult = -0.15
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			OR = {
+				is_unemployed = yes
+				is_pop_category = civilian
+				is_pop_category = maintenance_drone
+			}
+		}
+		planet_pops_upkeep_mult = -0.60
+	}
+
+	slave_cost = {
+		energy = 500
+	}
+
+	assembly_score = {
+		base = 1
+		modifier = {
+			from = { free_jobs = 0 }
+			add = 1.5
+		}
+	}
+}
+

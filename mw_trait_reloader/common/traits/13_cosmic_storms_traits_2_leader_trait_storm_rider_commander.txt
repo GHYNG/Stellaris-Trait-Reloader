@@ -1,0 +1,72 @@
+leader_trait_storm_rider_commander = {
+	cost = 0
+	ethic_destiny_trait = no
+	inline_script = {
+		script = trait/icon_triggered_glow
+		CLASS = commander
+		ICON = "GFX_leader_trait_storm_rider"
+		RARITY = common
+		COUNCIL = triggered
+		TIER = none
+		TRIGGER = "is_leader_in_storm = yes"
+	}
+
+	leader_class = { commander }
+	initial = no
+	randomized = no
+
+	custom_tooltip_with_modifiers = "mod_trait_storm_rider"
+
+	leader_potential_add = {
+		has_cosmic_storms_dlc = yes
+		exists = owner
+		owner = { has_origin = origin_storm_chasers }
+	}
+
+	#more XP, less lifespan in the field
+	triggered_self_modifier = {
+		potential = {
+			is_councilor = no
+			is_ruler = no
+		}
+		species_leader_exp_gain = 0.15
+		leader_lifespan_add = -10
+	}
+
+	#higher fleet evasion
+	triggered_fleet_modifier = {
+		potential = {
+			is_councilor = no
+			is_ruler = no
+			is_leader_in_storm = no
+		}
+		ship_evasion_mult = 0.15
+	}
+	triggered_fleet_modifier = { #even higher evasion during storms
+		potential = {
+			is_councilor = no
+			is_ruler = no
+			is_leader_in_storm = yes
+		}
+		ship_evasion_mult = 0.30
+	}
+
+	#limits storm devastation as governor
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no
+		}
+		planet_storm_devastation_mult = -0.3
+	}
+	triggered_sector_modifier = {
+		potential = {
+			is_ruler = no
+		}
+		planet_storm_devastation_mult = -0.15
+	}
+
+	councilor_modifier = { #when on the council, waxes shiphulls so they go faster
+		ship_speed_mult = 0.1
+	}
+}
+

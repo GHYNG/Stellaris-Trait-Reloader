@@ -1,0 +1,110 @@
+trait_ruler_apex_predator = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_apex_predator"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+
+	custom_tooltip_with_modifiers = "trait_ruler_apex_predator_tt"
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = defeated_humanoid_evopred
+		}
+		country_trade_produces_mult = 0.05
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = defeated_mammalian_evopred
+		}
+		founder_species_growth_mult = 0.05
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = defeated_reptilian_evopred
+		}
+		ship_shield_hardening_add = 0.05
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = defeated_avian_evopred
+		}
+		ship_evasion_add = 5
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = defeated_arthropoid_evopred
+		}
+		ship_armor_hardening_add = 0.05
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = defeated_molluscoid_evopred
+		}
+		ship_sensor_range_add = 1
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = defeated_fungoid_evopred
+		}
+		country_food_produces_mult = 0.05
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = defeated_plantoid_evopred
+		}
+		country_energy_produces_mult = 0.05
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = defeated_lithoid_evopred
+		}
+		country_minerals_produces_mult = 0.05
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = defeated_necroid_evopred
+		}
+		planet_crime_add = -10
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = defeated_aquatic_evopred
+		}
+		ship_hull_add = 100
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = defeated_toxoid_evopred
+		}
+		country_exotic_gases_produces_mult = 0.1
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			has_leader_flag = defeated_machine_evopred
+		}
+		country_alloys_produces_mult = 0.05
+	}
+
+	leader_class = { scientist official commander }
+
+	initial = no
+	randomized = no
+}
+

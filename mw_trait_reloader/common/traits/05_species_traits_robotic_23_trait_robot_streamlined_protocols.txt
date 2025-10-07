@@ -1,0 +1,14 @@
+trait_robot_streamlined_protocols = {
+	cost = 2
+	category = robotic
+	opposites = { "trait_robot_high_bandwidth" }
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine positive empire_size }
+	modifier = {
+		species_empire_size_mult = -0.10
+	}
+	slave_cost = {
+		energy = 750
+	}
+}
+

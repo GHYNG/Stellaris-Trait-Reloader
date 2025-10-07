@@ -1,0 +1,20 @@
+leader_trait_shroud_prophet = {
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_intellectual"
+		RARITY = common
+		COUNCIL = no
+		TIER = none
+	}
+	modifier = {
+		planet_crime_no_happiness_mult = 0.1
+		planet_jobs_unity_produces_mult = 0.1
+		planet_jobs_physics_research_produces_mult = 0.1
+		planet_jobs_society_research_produces_mult = 0.1
+	}
+	leader_class = { official }
+	initial = no
+	randomized = no
+}
+

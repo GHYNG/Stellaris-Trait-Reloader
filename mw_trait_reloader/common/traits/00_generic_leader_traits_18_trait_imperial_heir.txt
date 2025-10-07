@@ -1,0 +1,131 @@
+trait_imperial_heir = {
+	force_councilor_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_imperial_heir"
+		RARITY = common
+		COUNCIL = triggered
+		TIER = none
+	}
+	custom_tooltip_with_modifiers = "trait_imperial_heir_effects"
+	triggered_self_modifier = {
+		potential = {
+			has_paragon_dlc = yes
+		}
+		leader_trait_selection_options_add = 1
+	}
+	triggered_self_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_relic = r_the_rulerchip
+			}
+			is_ruler = yes
+		}
+		leader_trait_selection_options_add = 1
+	}
+
+	triggered_background_planet_modifier = {
+		potential = {
+			is_ruler = yes
+			exists = owner
+			exists = FROM
+			FROM.owner = { is_same_value = root.owner }
+			owner = {
+				has_valid_civic = civic_imperial_cult
+			}
+		}
+		job_bureaucrat_add = 100
+		mult = value:imperial_cult_effective_ruler_level
+	}
+
+	triggered_self_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_purity_authority = yes
+				is_imperial_authority = yes
+			}
+		}
+		leader_lifespan_mult = @purity_traits_imperial_bloodline
+		species_leader_exp_gain = @purity_traits_imperial_bloodline
+		mult = species.species_traits_purity_count
+	}
+
+	triggered_self_modifier = {
+		potential = {
+			OR = {
+				is_ruler = yes
+				is_heir = yes
+			}
+			exists = owner
+			owner = {
+				is_purity_authority = yes
+				is_imperial_authority = yes
+			}
+		}
+		leader_skill_add = @purity_traits_imperial_level
+		mult = species.species_traits_purity_count
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			is_heir = yes
+			leader_class = commander
+			exists = owner
+			owner = {
+				is_imperial_authority = yes
+				is_transcendent_authority = yes
+			}
+		}
+		ship_hull_mult = @transcendent_imperial_heir_mult
+		ship_speed_mult = @transcendent_imperial_heir_mult
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			is_heir = yes
+			leader_class = scientist
+			exists = owner
+			owner = {
+				is_imperial_authority = yes
+				is_transcendent_authority = yes
+			}
+		}
+		ship_archaeological_site_clues_add = @transcendent_imperial_heir_skill
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			has_astral_planes_dlc = yes
+			is_heir = yes
+			leader_class = scientist
+			exists = owner
+			owner = {
+				is_imperial_authority = yes
+				is_transcendent_authority = yes
+			}
+		}
+		ship_astral_rift_clues_add = @transcendent_imperial_heir_skill
+	}
+
+	triggered_councilor_modifier = {
+		potential = {
+			is_heir = yes
+			leader_class = official
+			exists = owner
+			owner = {
+				is_imperial_authority = yes
+				is_transcendent_authority = yes
+			}
+		}
+		planet_stability_add = @transcendent_imperial_heir_stability
+	}
+
+	on_gained_effect = {
+		change_background_job = noble
+	}
+	leader_class = { commander scientist official }
+	randomized = no
+}
+

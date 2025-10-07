@@ -1,0 +1,19 @@
+trait_deviants = {
+	cost = -1
+	category = normal
+	species_potential_add = {
+		can_add_negative_organic_traits = yes
+	}
+	modifier = { pop_government_ethic_attraction = -0.15 }
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic negative ethic_attraction individual }
+	opposites = { "trait_conformists" "trait_hive_mind" }
+	ai_weight = {
+		weight = 0
+	}
+	slave_cost = {
+		energy = -200
+	}
+}
+

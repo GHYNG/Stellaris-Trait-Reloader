@@ -1,0 +1,61 @@
+leader_trait_shroudwalker = {
+	inline_script = {
+		script = trait/icon_psionic
+		CLASS = leader
+		ICON = "GFX_leader_trait_shroudwalkers"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	planet_modifier = {
+		planet_amenities_mult = 0.05
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_gestalt_check = no
+		}
+		planet_telepaths_unity_produces_add = 3
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_gestalt_check = yes
+			trait_is_wilderness_check = no
+		}
+		planet_bureaucrats_unity_produces_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_wilderness_check = yes
+		}
+		planet_jobs_unity_produces_mult = 0.1
+	}
+	sector_modifier = {
+		planet_amenities_mult = 0.025
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_gestalt_check = no
+		}
+		planet_telepaths_unity_produces_add = 1
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_gestalt_check = yes
+			trait_is_wilderness_check = no
+		}
+		planet_bureaucrats_unity_produces_add = 1
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_wilderness_check = yes
+		}
+		planet_jobs_unity_produces_mult = 0.05
+	}
+	self_modifier = {
+		leader_lifespan_add = 30
+	}
+	leader_class = { official }
+	initial = no
+	randomized = no
+}
+

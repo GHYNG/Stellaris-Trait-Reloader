@@ -1,0 +1,51 @@
+trait_lithoid_scintillating = {
+	cost = 2
+	species_possible_add = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	opposites = { "trait_lithoid_volatile_excretions" "trait_lithoid_gaseous_byproducts" "trait_drake_scaled" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_LITHOID
+	}
+	species_class_override = {
+		hidden_trigger = {
+			OR = {
+				can_add_or_remove_phenotype_traits = yes
+				can_add_transgenic_traits = yes
+			}
+		}
+	}
+	tags = { organic positive rare_resource production lithoid species }
+	custom_tooltip = TRAIT_LITHOID_SCINTILLATING_EFFECT
+
+	resources = {
+		category = planet_pops
+		produces = {
+			trigger = {
+				is_slave_or_better = yes
+			}
+			rare_crystals = @lithoid_trait_resource_production
+			mult = value:lithoid_trait_mult
+		}
+	}
+
+	slave_cost = {
+		energy = 1000
+	}
+}
+

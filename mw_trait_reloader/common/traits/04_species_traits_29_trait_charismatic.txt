@@ -1,0 +1,30 @@
+trait_charismatic = {
+	cost = 2
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_remove_vocational_genetic_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	opposites = { "trait_repugnant" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_VOCATIONAL
+	}
+	tags = { organic positive pop_output amenities }
+	modifier = {
+		influential_jobs_bonus_workforce_mult = 0.20
+	}
+	slave_cost = {
+		energy = 500
+	}
+}
+

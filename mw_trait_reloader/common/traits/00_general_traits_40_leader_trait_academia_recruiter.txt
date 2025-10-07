@@ -1,0 +1,45 @@
+leader_trait_academia_recruiter = {
+	leader_trait_type = destiny
+	ethic_destiny_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_academia_recruiter"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	on_gained_effect = {
+		owner = {
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		}
+	}
+	planet_modifier = {
+		job_researcher_naval_cap_add = 4
+		planet_jobs_engineering_research_produces_mult = 0.10
+		planet_soldiers_engineering_research_produces_add = 1
+		planet_physicists_alloys_upkeep_add = 1
+		planet_biologists_alloys_upkeep_add = 1
+		planet_engineers_alloys_upkeep_add = 1
+	}
+	sector_modifier = {
+		job_researcher_naval_cap_add = 2
+		planet_jobs_engineering_research_produces_mult = 0.05
+		planet_soldiers_engineering_research_produces_add = 0.5
+		planet_physicists_alloys_upkeep_add = 0.5
+		planet_biologists_alloys_upkeep_add = 0.5
+		planet_engineers_alloys_upkeep_add = 0.5
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_governor
+		has_ethic = ethic_materialist
+	}
+	leader_class = { commander }
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+	background_icon = "GFX_leader_background_destiny_1"
+}
+

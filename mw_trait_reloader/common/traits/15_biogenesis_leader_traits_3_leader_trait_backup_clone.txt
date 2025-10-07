@@ -1,0 +1,124 @@
+leader_trait_backup_clone = {
+	force_councilor_trait = yes
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_backup_clone"
+		COUNCIL = triggered
+		TIER = 1
+	}
+	triggered_self_modifier = {
+		potential = {
+			leader_has_reduced_clone_degradation = no
+		}
+		leader_lifespan_mult = @clone_leader_lifespan_penalty
+		species_leader_exp_gain = @clone_leader_xp_penalty
+	}
+	triggered_self_modifier = {
+		potential = {
+			leader_has_reduced_clone_degradation = yes
+		}
+		leader_lifespan_mult = @clone_leader_lifespan_penalty
+		species_leader_exp_gain = @clone_leader_xp_penalty
+		mult = 0.5
+	}
+	self_modifier = {
+		leader_skill_add = @clone_leader_effective_skill_penalty
+	}
+	triggered_self_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_cloning_authority = yes
+				is_democratic_authority = yes
+			}
+		}
+		leaders_upkeep_mult = @cordant_multiplicity_clone_upkeep
+	}
+	leader_class = { commander scientist official }
+	selectable_weight = 0
+}
+
+leader_trait_backup_clone_2 = {
+	force_councilor_trait = yes
+	replace_traits = { leader_trait_backup_clone }
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_backup_clone"
+		COUNCIL = triggered
+		TIER = 2
+	}
+	triggered_self_modifier = {
+		potential = {
+			leader_has_reduced_clone_degradation = no
+		}
+		leader_skill_add = @clone_leader_effective_skill_penalty
+		leader_lifespan_mult = @clone_leader_lifespan_penalty
+		species_leader_exp_gain = @clone_leader_xp_penalty
+		mult = 2
+	}
+	triggered_self_modifier = {
+		potential = {
+			leader_has_reduced_clone_degradation = yes
+		}
+		leader_skill_add = @clone_leader_effective_skill_penalty
+		leader_lifespan_mult = @clone_leader_lifespan_penalty
+		species_leader_exp_gain = @clone_leader_xp_penalty
+	}
+	triggered_self_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_cloning_authority = yes
+				is_democratic_authority = yes
+			}
+		}
+		leaders_upkeep_mult = @cordant_multiplicity_clone_upkeep
+	}
+	leader_class = { commander scientist official }
+	selectable_weight = 0
+}
+
+leader_trait_backup_clone_3 = {
+	force_councilor_trait = yes
+	replace_traits = { leader_trait_backup_clone_2 }
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_backup_clone"
+		COUNCIL = triggered
+		TIER = 3
+	}
+	triggered_self_modifier = {
+		potential = {
+			leader_has_reduced_clone_degradation = no
+		}
+		leader_skill_add = @clone_leader_effective_skill_penalty
+		leader_lifespan_mult = @clone_leader_lifespan_penalty
+		species_leader_exp_gain = @clone_leader_xp_penalty
+		mult = 3
+	}
+	triggered_self_modifier = {
+		potential = {
+			leader_has_reduced_clone_degradation = yes
+		}
+		leader_skill_add = @clone_leader_effective_skill_penalty
+		leader_lifespan_mult = @clone_leader_lifespan_penalty
+		species_leader_exp_gain = @clone_leader_xp_penalty
+		mult = 2
+	}
+	triggered_self_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_cloning_authority = yes
+				is_democratic_authority = yes
+			}
+		}
+		leaders_upkeep_mult = @cordant_multiplicity_clone_upkeep
+	}
+	leader_class = { commander scientist official }
+	selectable_weight = 0
+}
+

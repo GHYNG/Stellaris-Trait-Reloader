@@ -1,0 +1,73 @@
+trait_lithoid = {
+	cost = 0
+
+	sorting_priority = 20
+
+	initial = yes
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	immortal_leaders = no
+
+	leader_age_min = 27
+	leader_age_max = 38
+
+	allowed_archetypes = { LITHOID PRESAPIENT }
+	tags = { organic positive habitability leader army lithoid special }
+	ai_weight = {
+		weight = 0
+	}
+
+	icon = "gfx/interface/icons/traits/trait_lithoid.dds"
+
+	resources = {
+		category = planet_pops
+		# Mineral Upkeep
+		upkeep = {
+			trigger = {
+				is_phototrophic = no
+				NOT = { has_trait = trait_voidling }
+				is_being_purged = no
+			}
+			minerals = @living_standard_food_normal
+		}
+
+		upkeep = {
+			trigger = {
+				is_phototrophic = yes
+				NOT = { has_trait = trait_voidling }
+				is_being_purged = no
+			}
+			minerals = @living_standard_phototrophic_normal
+		}
+	}
+
+	custom_tooltip_with_modifiers = TRAIT_LITHOID_EFFECT
+	modifier = {
+		logistic_growth_mult = -0.25
+		bonus_pop_growth_mult = -0.25
+		pop_environment_tolerance = 0.5
+		army_health = 0.5
+		leader_lifespan_add = 50
+	}
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				OR = {
+					has_modifier = lithoid_crater
+					has_deposit = d_lithoid_crater
+				}
+			}
+		}
+		pop_environment_tolerance = 0.5
+	}
+}
+

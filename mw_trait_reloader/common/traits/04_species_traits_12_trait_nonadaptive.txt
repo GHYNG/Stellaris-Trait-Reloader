@@ -1,0 +1,20 @@
+trait_nonadaptive = {
+	cost = -2
+	category = normal
+	species_potential_add = {
+		can_add_negative_organic_traits = yes
+	}
+	opposites = { "trait_adaptive" "trait_extremely_adaptive" "trait_robust" "trait_adaptive_lithoid" "trait_shelled" "trait_permeable_skin" "trait_genetic_memory" }
+	allowed_archetypes = { BIOLOGICAL }
+	tags = { organic negative habitability }
+	modifier = {
+		pop_environment_tolerance = -0.10
+	}
+	slave_cost = {
+		energy = -200
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+

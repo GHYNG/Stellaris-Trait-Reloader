@@ -1,0 +1,24 @@
+leader_trait_disciple_of_the_whisperers = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_disciple_of_the_whisperers"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	leader_class = { scientist }
+	triggered_councilor_modifier = {
+		rare_tech_draw_chance_mult = 0.25
+		rare_tech_research_speed_mult = 0.25
+	}
+	triggered_councilor_modifier = {
+		custom_tooltip = leader_trait_disciple_of_the_whisperers_effects
+		show_only_custom_tooltip = no
+		shroud_delve_cooldown = -0.2
+	}
+	initial = no
+	randomized = no
+}
+

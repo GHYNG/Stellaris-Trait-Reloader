@@ -1,0 +1,17 @@
+leader_trait_hacked = {
+	leader_trait_type = negative
+	randomized = no
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_cyber_puppet"
+		COUNCIL = no
+		TIER = none
+	}
+	self_modifier = {
+		leaders_upkeep_mult = 0.20
+		species_leader_exp_gain = -0.20
+		negative_traits_leader = 2
+	}
+	leader_class = { commander scientist official }
+}
+

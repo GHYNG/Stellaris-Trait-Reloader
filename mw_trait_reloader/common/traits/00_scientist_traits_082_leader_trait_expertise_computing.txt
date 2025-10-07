@@ -1,0 +1,92 @@
+@expertise_tier_1_mult = 0.15
+@expertise_tier_2_mult = 0.30
+@expertise_tier_3_mult = 0.50
+
+leader_trait_expertise_computing = {
+	# This is needed due to the technocracy effects
+	force_councilor_trait = yes
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_physics
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_computing"
+		RARITY = free_or_veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	councilor_modifier = {
+		category_computing_research_speed_mult = @expertise_tier_1_mult
+		category_computing_draw_chance_mult = 0.25
+	}
+	inline_script = {
+		script =  traits/technocracy_expertise_effects
+		FIELD = physics
+		TIER = 1
+	}
+	leader_potential_add = {
+		is_specialist_researcher_physics = no
+		can_leader_get_council_trait_trigger = yes
+		OR = {
+			has_paragon_dlc = no
+			has_trait = subclass_scientist_councilor
+		}
+	}
+	leader_class = { scientist }
+	ai_weight = 100
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_expertise_computing_2 = {
+	replace_traits = { "leader_trait_expertise_computing" }
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_physics
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_computing"
+		RARITY = free_or_veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		category_computing_research_speed_mult = @expertise_tier_2_mult
+		category_computing_draw_chance_mult = 0.35
+	}
+	inline_script = {
+		script =  traits/technocracy_expertise_effects
+		FIELD = physics
+		TIER = 2
+	}
+	leader_class = { scientist }
+	ai_weight = 100
+}
+
+leader_trait_expertise_computing_3 = {
+	replace_traits = { "leader_trait_expertise_computing_2" }
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon_physics
+		CLASS = scientist
+		ICON = "GFX_leader_trait_expertise_computing"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 3
+	}
+	councilor_modifier = {
+		category_computing_research_speed_mult = @expertise_tier_3_mult
+		category_computing_draw_chance_mult = 0.75
+	}
+	inline_script = {
+		script =  traits/technocracy_expertise_effects
+		FIELD = physics
+		TIER = 3
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist }
+	ai_weight = 100
+}
+

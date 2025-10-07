@@ -1,0 +1,52 @@
+trait_ruler_feedback_loop = {
+	starting_ruler_trait = yes
+	forbidden_origins = { origin_legendary_leader origin_treasure_hunters }
+	allowed_ethics = { ethic_gestalt_consciousness }
+	cost = 1
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_magnifying_glass"
+		RARITY = common
+		COUNCIL = yes
+		TIER = 1
+	}
+	councilor_modifier = {
+		planet_stability_add = 1
+		planet_amenities_no_happiness_add = 100
+	}
+	leader_potential_add = {
+		is_gestalt = yes
+	}
+	leader_class = { scientist official commander }
+	opposites = {
+		leader_trait_tyrannical
+		leader_trait_tyrannical_2
+	}
+	selectable_weight = {
+		weight = @shared_trait_weight
+		inline_script = "paragon/council_weight_mult"
+	}
+}
+
+trait_ruler_feedback_loop_2 = {
+	replace_traits = { "trait_ruler_feedback_loop" }
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_magnifying_glass"
+		RARITY = common
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		planet_stability_add = 2
+		planet_amenities_no_happiness_add = 300
+	}
+	leader_class = { scientist official commander }
+	opposites = {
+		leader_trait_tyrannical
+		leader_trait_tyrannical_2
+	}
+}
+

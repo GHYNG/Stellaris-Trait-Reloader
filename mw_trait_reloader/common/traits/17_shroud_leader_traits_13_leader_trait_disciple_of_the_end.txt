@@ -1,0 +1,23 @@
+leader_trait_disciple_of_the_end = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_disciple_of_the_end"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	leader_class = { commander }
+	triggered_fleet_modifier = {
+		custom_tooltip = leader_trait_disciple_of_the_end_effects
+		show_only_custom_tooltip = no
+		ship_jumpdrive_cooldown_mult = -0.50
+		ship_damage_against_starbases_mult = 0.5
+		ship_speed_mult = 0.25
+		ship_fire_rate_mult = 0.25
+	}
+	initial = no
+	randomized = no
+}
+

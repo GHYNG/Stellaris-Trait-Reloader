@@ -1,0 +1,36 @@
+trait_robot_suppressed = {
+	cost = 3
+	category = robotic
+
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine positive pop_output leader blocks_leaders modularity }
+
+	species_potential_add = {
+		can_do_advanced_robo_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	initial = no
+	randomized = no
+
+	opposites = { trait_robot_inquisitative_axioms trait_robot_learning_algorithms trait_robot_logic_engines trait_robot_enhanced_memory
+	}
+
+	modifier = {
+		pop_bonus_workforce_mult = 0.1
+		species_leader_exp_gain = -1
+		civilian_and_maintenance_drone_cat_bonus_workforce_mult = -0.85
+	}
+
+	slave_cost = {
+		energy = 750
+	}
+
+	custom_tooltip_with_modifiers = trait_robot_suppressed_tt
+}
+

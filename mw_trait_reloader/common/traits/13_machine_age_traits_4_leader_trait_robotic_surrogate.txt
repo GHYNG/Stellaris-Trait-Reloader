@@ -1,0 +1,30 @@
+leader_trait_robotic_surrogate = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_virtual"
+		RARITY = common
+		COUNCIL = triggered
+		TIER = none
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			is_councilor = yes
+		}
+		pop_engineer_bonus_workforce_mult = 0.05
+		pop_bureaucrat_bonus_workforce_mult = 0.05
+		pop_coordinator_bonus_workforce_mult = 0.05
+		pop_synapse_drone_bonus_workforce_mult = 0.05
+		council_agenda_progress_speed = -0.1
+	}
+	# Any Class - Ruler
+	self_modifier = {
+		negative_traits_leader = -1
+		species_leader_exp_gain = -0.25
+	}
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+	notify_on_gained = no
+}
+

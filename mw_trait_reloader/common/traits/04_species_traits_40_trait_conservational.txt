@@ -1,0 +1,23 @@
+trait_conservational = {
+	cost = 1
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_wasteful" "trait_hive_mind" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive upkeep consumer_goods individual }
+	modifier = {
+		planet_pops_consumer_goods_upkeep_mult = -0.10
+	}
+	slave_cost = {
+		energy = 500
+	}
+}
+

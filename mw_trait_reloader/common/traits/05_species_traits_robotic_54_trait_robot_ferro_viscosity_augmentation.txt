@@ -1,0 +1,60 @@
+trait_robot_ferro_viscosity_augmentation = {
+	cost = 2
+	category = robotic
+
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine positive leader amenities upkeep modularity }
+
+	species_potential_add = {
+		can_do_advanced_robo_modding = yes
+	}
+	species_possible_add = {
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	initial = no
+	randomized = no
+
+	modifier = {
+		leader_lifespan_mult = 0.5
+	}
+
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		pop_amenities_usage_no_happiness_mult = -0.50
+	}
+
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		pop_amenities_usage_mult = -0.50
+	}
+
+	slave_cost = {
+		energy = 750
+	}
+
+	resources = {
+		category = planet_pops
+		upkeep = {
+			sr_living_metal = 0.01
+		}
+	}
+
+	custom_tooltip_with_modifiers = trait_robot_ferro_viscosity_augmentation_tt
+}
+

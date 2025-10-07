@@ -1,0 +1,20 @@
+trait_sedentary = {
+	cost = -1
+	category = normal
+	species_potential_add = {
+		can_add_negative_organic_traits = yes
+	}
+	opposites = { "trait_nomadic" "trait_rooted" "trait_wilderness" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic negative migration }
+	modifier = {
+		pop_resettlement_cost_mult = 0.35
+	}
+	ai_weight = {
+		weight = 0
+	}
+	slave_cost = {
+		energy = -200
+	}
+}
+

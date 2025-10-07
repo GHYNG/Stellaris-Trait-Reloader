@@ -1,0 +1,22 @@
+trait_resilient = {
+	cost = 1
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive army }
+	modifier = {
+		army_defense_damage_mult = 0.5
+	}
+	slave_cost = {
+		energy = 500
+	}
+}
+

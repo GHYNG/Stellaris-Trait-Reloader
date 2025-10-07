@@ -1,0 +1,50 @@
+trait_organic = {
+	cost = 0
+
+	sorting_priority = 20
+
+	initial = yes
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	immortal_leaders = no
+
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	tags = { organic positive special }
+	ai_weight = {
+		weight = 0
+	}
+
+	resources = {
+		category = planet_pops
+		# Food Upkeep
+		upkeep = {
+			trigger = {
+				is_phototrophic = no
+				NOT = { has_trait = trait_voidling }
+				is_being_purged = no
+			}
+			food = @living_standard_food_normal
+		}
+		upkeep = {
+			trigger = {
+				is_phototrophic = yes
+				NOT = { has_trait = trait_voidling }
+				is_being_purged = no
+			}
+			food = @living_standard_phototrophic_normal
+		}
+	}
+
+	icon = "gfx/interface/icons/traits/trait_organic.dds"
+
+	custom_tooltip_with_modifiers = TRAIT_ORGANIC_EFFECT
+}
+

@@ -1,0 +1,44 @@
+trait_cyborg_integrated_weaponry = {
+	host_has_dlc = "The Machine Age"
+	cost = 1
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { organic positive army cybernetic }
+	initial = yes
+	opposites = { "trait_cyborg_delicate_frames" }
+	species_potential_add = {
+		OR = {
+			can_add_cybernetic_traits = yes
+			can_add_unplugged_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_cybernetic_traits = yes
+			can_remove_unplugged_traits = yes
+		}
+	}
+	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
+	randomized = no
+	category = cyborg
+	modifier = {
+		army_damage_mult = 1.0
+		enforcer_jobs_bonus_workforce_mult = 0.20
+	}
+	resources = {
+		category = planet_pops
+		upkeep = {
+			energy = @cyborg_energy_upkeep
+		}
+	}
+	slave_cost = {
+		energy = 1000
+	}
+	allowed_origins = {
+		origin_unplugged
+	}
+}
+

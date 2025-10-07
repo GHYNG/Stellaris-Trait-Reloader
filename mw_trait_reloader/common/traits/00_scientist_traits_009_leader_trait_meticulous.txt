@@ -1,0 +1,52 @@
+leader_trait_meticulous = {
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_meticulous"
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	modifier = {
+		ship_anomaly_generation_chance_mult = 0.1
+	}
+	leader_potential_add = {
+		is_ruler = no
+	}
+	leader_class = { scientist }
+	opposites = {
+		leader_trait_carefree
+		leader_trait_carefree_2
+	}
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/pilot_weight_mult
+		inline_script = {
+			script = paragon/subclass_weight_mult
+			SUBCLASS = scientist_explorer
+		}
+	}
+	ai_weight = 50
+}
+
+leader_trait_meticulous_2 = {
+	replace_traits = { "leader_trait_meticulous" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_meticulous"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		ship_anomaly_generation_chance_mult = 0.15
+	}
+	leader_class = { scientist }
+	opposites = {
+		leader_trait_carefree
+		leader_trait_carefree_2
+	}
+	ai_weight = 50
+}
+

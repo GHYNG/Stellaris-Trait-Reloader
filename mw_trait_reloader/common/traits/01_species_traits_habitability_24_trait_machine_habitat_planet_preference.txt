@@ -1,0 +1,32 @@
+@primary = 0.80
+
+trait_machine_habitat_planet_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_habitat_preference.dds"
+	short_name = "trait_machine_habitat_planet_preference_short"
+	allowed_archetypes = { MACHINE ROBOT }
+	sorting_priority = 30
+	bound_to_planet_classes = {
+		pc_habitat
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		hidden_trigger = { exists = from }
+		from = {
+			has_origin = origin_void_machines
+		}
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	modifier = {
+		pc_habitat_habitability = @primary
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+

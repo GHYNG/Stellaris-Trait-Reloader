@@ -1,0 +1,41 @@
+trait_flight = {
+	host_has_dlc = "BioGenesis"
+	cost = 2
+	opposites = { "trait_spatial_mastery" }
+	species_possible_add = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { AVI ART }
+	localized_tags = {
+		SPECIES_TRAIT_AVIAN
+		SPECIES_TRAIT_ARTHROPOID
+	}
+	species_class_override = {
+		hidden_trigger = {
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	portrait_override = { mam1 rep17 bio10 }
+	tags = { organic positive army leader avian arthropoid species }
+	modifier = {
+		commander_skill_add = 1
+		army_damage_taken_mult = -0.30
+	}
+	slave_cost = {
+		energy = 500
+	}
+}
+

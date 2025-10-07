@@ -1,0 +1,38 @@
+trait_wilderness = {
+	cost = 0
+	icon = gfx/interface/icons/traits/trait_wilderness.dds
+	opposites = {
+		"trait_incubator"
+		"trait_nomadic"
+		"trait_sedentary"
+		"trait_vat_grown"
+		"trait_nascent_stage"
+	}
+	initial = no
+	randomized = no
+	advanced_trait = no
+	sapient = yes
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic special }
+
+	modifier = {
+		pc_city_habitability = -2
+		pc_machine_habitability = -2
+		pc_relic_habitability = -2
+		pc_hive_habitability = -2
+		pc_ringworld_habitable_habitability = -2
+		pc_shattered_ring_habitable_habitability = -2
+		pc_nanotech_habitability = -2
+		pc_habitat_habitability = -2
+	}
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+}
+

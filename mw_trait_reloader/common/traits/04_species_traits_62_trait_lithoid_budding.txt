@@ -1,0 +1,56 @@
+trait_lithoid_budding = {
+	host_has_dlc = "Plantoids Species Pack"
+	cost = 2
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_remove_pop_growth_genetic_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_slow_breeders" "trait_rapid_breeders" "trait_rapid_breeders_lithoid" "trait_necrophage" "trait_clone_soldier_infertile" "trait_clone_soldier_infertile_full_potential" "trait_incubator" "trait_plantoid_budding" "trait_tiyanki" "trait_egg_laying" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_LITHOID
+	}
+	species_class_override = {
+		hidden_trigger = {
+			OR = {
+				can_add_or_remove_phenotype_traits = yes
+				can_add_transgenic_traits = yes
+			}
+		}
+	}
+	tags = { organic positive lithoid pop_growth species }
+	custom_tooltip = TRAIT_LITHOID_BUDDING_EFFECT
+
+	triggered_planet_pop_group_modifier_for_species = {
+		potential = {
+			has_budding_trait = yes
+			exists = planet
+			NOT = { planet = { has_deposit = d_lithoid_crater } }
+		}
+		divide_over_pop_groups = no
+		bonus_pop_growth = @plantoid_budding_rate
+	}
+	triggered_planet_pop_group_modifier_for_species = {
+		potential = {
+			has_budding_trait = yes
+			exists = planet
+			planet = { has_deposit = d_lithoid_crater }
+		}
+		bonus_pop_growth = @lithoid_crater_budding_rate
+	}
+
+
+	slave_cost = {
+		energy = 2000
+	}
+}
+

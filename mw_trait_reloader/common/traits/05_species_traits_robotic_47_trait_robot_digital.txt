@@ -1,0 +1,100 @@
+trait_robot_digital_1 = {
+	cost = 0
+	category = robotic
+	initial = no
+	randomized = no
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine positive habitability housing special }
+	opposites = { "trait_robot_latent_psionic" "trait_robot_psionic" }
+
+	species_potential_add = {
+		always = no
+	}
+
+	species_possible_remove = {
+		always = no
+	}
+
+	modifier = {
+		habitability_floor_add = 0.25
+		pop_housing_usage_mult = -0.9
+	}
+
+	resources = {
+		category = planet_pops
+		# Energy Upkeep
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_tradition = tr_virtuality_1
+				}
+			}
+			energy = 1	# All the maths is done in the script value
+			mult = value:virtuality_num_colonies
+		}
+	}
+
+	custom_tooltip = trait_robot_digital_1_tt
+
+	slave_cost = {
+		energy = 750
+	}
+}
+
+trait_robot_digital_2 = {
+	icon = "gfx/interface/icons/traits/trait_robot_digital_1.dds"
+	cost = 0
+	category = robotic
+	initial = no
+	randomized = no
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine positive pop_output habitability housing special }
+	opposites = { "trait_robot_latent_psionic" "trait_robot_psionic" }
+
+	species_potential_add = {
+		always = no
+	}
+
+	species_possible_remove = {
+		always = no
+	}
+
+	modifier = {
+		habitability_floor_add = 0.25
+		pop_housing_usage_mult = -0.9
+	}
+
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = tr_virtuality_1
+			}
+		}
+		pop_bonus_workforce_mult = 1
+		mult = value:virtuality_concentrated_production_mult
+	}
+
+	resources = {
+		category = planet_pops
+		# Energy Upkeep
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_tradition = tr_virtuality_1
+				}
+			}
+			energy = 1	# All the maths is done in the script value
+			mult = value:virtuality_num_colonies
+		}
+	}
+
+	custom_tooltip = trait_robot_digital_2_tt
+
+	slave_cost = {
+		energy = 750
+	}
+}
+

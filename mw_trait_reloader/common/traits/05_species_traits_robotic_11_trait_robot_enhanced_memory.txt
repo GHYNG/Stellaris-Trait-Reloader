@@ -1,0 +1,27 @@
+trait_robot_enhanced_memory = {
+	cost = 2
+	category = robotic
+
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine synthetic positive leader }
+
+	# Synth, Machine Intelligence or Individualist Machine
+	species_potential_add = {
+		OR = {
+			can_add_synth_traits = yes
+			owner_is_machine_intelligence = yes
+			owner_is_individual_machine = yes
+		}
+	}
+	modifier = {
+		negative_leader_traits_species = -1
+		leaders_upkeep_mult = -0.25
+	}
+	ai_weight = {
+		factor = 0
+	}
+	slave_cost = {
+		energy = 750
+	}
+}
+

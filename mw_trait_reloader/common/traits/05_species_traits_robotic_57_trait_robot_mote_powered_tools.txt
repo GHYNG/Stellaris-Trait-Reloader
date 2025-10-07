@@ -1,0 +1,58 @@
+trait_robot_mote_powered_tools = {
+	cost = 1
+	category = robotic
+
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine positive alloys consumer_goods pop_output upkeep modularity }
+
+	species_potential_add = {
+		can_do_advanced_robo_modding = yes
+	}
+	species_possible_add = {
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	initial = no
+	randomized = no
+
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				country_uses_consumer_goods = yes
+			}
+		}
+		foundry_jobs_bonus_workforce_mult = 0.2
+		artisan_jobs_bonus_workforce_mult = 0.2
+	}
+
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				country_uses_consumer_goods = no
+			}
+		}
+		foundry_jobs_bonus_workforce_mult = 0.2
+	}
+
+	slave_cost = {
+		energy = 750
+	}
+
+	resources = {
+		category = planet_pops
+		upkeep = {
+			minerals = 1
+			volatile_motes = 0.01
+		}
+	}
+
+	custom_tooltip_with_modifiers = trait_robot_mote_powered_tools_tt
+}
+

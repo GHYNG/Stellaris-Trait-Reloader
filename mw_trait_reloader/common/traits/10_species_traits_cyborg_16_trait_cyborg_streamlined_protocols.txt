@@ -1,0 +1,41 @@
+trait_cyborg_streamlined_protocols = {
+	cost = 1
+	opposites = { "trait_cyborg_high_bandwidth" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { organic positive empire_size cybernetic }
+	initial = yes
+	species_potential_add = {
+		OR = {
+			can_add_cybernetic_traits = yes
+			can_add_unplugged_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_cybernetic_traits = yes
+			can_remove_unplugged_traits = yes
+		}
+	}
+	randomized = no
+	category = cyborg
+	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
+	modifier = {
+		species_empire_size_mult = -0.10
+	}
+	resources = {
+		category = planet_pops
+		upkeep = {
+			energy = @cyborg_energy_upkeep
+		}
+	}
+	slave_cost = {
+		energy = 750
+	}
+	allowed_origins = {
+		origin_unplugged
+	}
+}
+

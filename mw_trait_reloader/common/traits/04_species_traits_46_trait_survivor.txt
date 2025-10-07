@@ -1,0 +1,18 @@
+trait_survivor = {
+	cost = 0
+	initial = no
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive habitability leader interesting special }
+	modifier = {
+		pc_nuked_habitability = 0.7
+		leader_lifespan_add = 10
+	}
+	slave_cost = {
+		energy = 500
+	}
+}
+

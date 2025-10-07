@@ -1,0 +1,120 @@
+leader_trait_whispering_mind = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_whispering_mind"
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.2
+		leader_lifespan_add = -10
+	}
+	triggered_fleet_modifier = {
+		potential = { leader_class = commander }
+		ship_tracking_mult = 0.1
+		ship_accuracy_mult = 0.05
+	}
+	triggered_modifier = {
+		potential = { leader_class = scientist }
+		ship_anomaly_generation_chance_mult = 0.1
+		ship_anomaly_research_speed_mult = 0.1
+	}
+	triggered_planet_modifier = {
+		potential = { leader_class = official }
+		planet_researchers_produces_mult = 0.05
+		planet_structures_cost_mult = -0.05
+	}
+	leader_potential_add = {
+		has_shroud_dlc = yes
+		exists = from
+		from = {
+			has_country_flag = knowledge_accord
+		}
+	}
+	leader_class = { commander scientist official }
+	selectable_weight = {
+		weight = @shared_trait_weight
+		inline_script = paragon/not_council_weight_mult
+	}
+}
+
+leader_trait_whispering_mind_2 = {
+	replace_traits = { "leader_trait_whispering_mind" }
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_whispering_mind"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.4
+		leader_lifespan_add = -20
+	}
+	triggered_fleet_modifier = {
+		potential = { leader_class = commander }
+		ship_tracking_mult = 0.15
+		ship_accuracy_mult = 0.1
+	}
+	triggered_modifier = {
+		potential = { leader_class = scientist }
+		ship_anomaly_generation_chance_mult = 0.15
+		ship_anomaly_research_speed_mult = 0.15
+	}
+	triggered_planet_modifier = {
+		potential = { leader_class = official }
+		planet_researchers_produces_mult = 0.1
+		planet_structures_cost_mult = -0.1
+	}
+	leader_potential_add = {
+		has_shroud_dlc = yes
+		exists = from
+		from = {
+			has_country_flag = knowledge_accord
+		}
+	}
+	leader_class = { commander scientist official }
+}
+
+leader_trait_whispering_mind_3 = {
+	replace_traits = { "leader_trait_whispering_mind_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_whispering_mind"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.6
+		leader_lifespan_add = -30
+	}
+	triggered_fleet_modifier = {
+		potential = { leader_class = commander }
+		ship_tracking_mult = 0.2
+		ship_accuracy_mult = 0.15
+	}
+	triggered_modifier = {
+		potential = { leader_class = scientist }
+		ship_anomaly_generation_chance_mult = 0.2
+		ship_anomaly_research_speed_mult = 0.2
+	}
+	triggered_planet_modifier = {
+		potential = { leader_class = official }
+		planet_researchers_produces_mult = 0.15
+		planet_structures_cost_mult = -0.15
+	}
+	leader_potential_add = {
+		has_shroud_dlc = yes
+		exists = from
+		from = {
+			has_country_flag = knowledge_accord
+		}
+	}
+	leader_class = { commander scientist official }
+}
+

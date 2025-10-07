@@ -1,0 +1,51 @@
+leader_trait_maven_of_war = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_maven_of_war
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	on_gained_effect = {
+		owner = {
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		}
+	}
+	councilor_modifier = {
+		ship_speed_mult = 0.15
+		shipclass_military_build_speed_mult = 0.3
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				country_uses_bio_ships = no
+			}
+		}
+		category_voidcraft_research_speed_mult = 0.05
+		category_voidcraft_draw_chance_mult = 0.25
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				country_uses_bio_ships = yes
+			}
+		}
+		category_biology_research_speed_mult = 0.05
+		category_biology_draw_chance_mult = 0.25
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_councilor
+	}
+	leader_class = { commander }
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+	background_icon = GFX_leader_background_destiny_1
+}
+

@@ -1,0 +1,36 @@
+@primary = 0.80
+@secondary = 0.60
+
+trait_machine_pc_nanotech_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_nuked_preference.dds"
+	short_name = "trait_machine_pc_nanotech_preference_short"
+	bound_to_planet_classes = {
+		pc_nanotech
+	}
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	initial = no
+	randomized = no
+	allowed_archetypes = { ROBOT MACHINE }
+	sorting_priority = 30
+	modifier = {
+		pc_nanotech_habitability = @primary
+		pc_desert_habitability = @secondary
+		pc_tropical_habitability = @secondary
+		pc_continental_habitability = @secondary
+		pc_ocean_habitability = @secondary
+		pc_arctic_habitability = @secondary
+		pc_tundra_habitability = @secondary
+		pc_arid_habitability = @secondary
+		pc_savannah_habitability = @secondary
+		pc_alpine_habitability = @secondary
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+

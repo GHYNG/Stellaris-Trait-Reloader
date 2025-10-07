@@ -1,0 +1,33 @@
+trait_robot_logic_engines = {
+	cost = 2
+	category = robotic
+
+	allowed_archetypes = { ROBOT MACHINE }
+	localized_tags = {
+		SPECIES_TRAIT_ADAPTIVE_FRAMES
+	}
+	tags = { machine synthetic positive pop_output research }
+
+	# Droids, Synths and Machines
+	species_potential_add = {
+		OR = {
+			can_add_droid_traits = yes
+			can_add_synth_traits = yes
+			owner_is_machine_intelligence = yes
+			owner_is_individual_machine = yes
+		}
+	}
+	modifier = {
+		researcher_jobs_bonus_workforce_mult = 0.10
+	}
+	slave_cost = {
+		energy = 750
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = { has_research_designation = yes }
+		}
+	}
+}
+

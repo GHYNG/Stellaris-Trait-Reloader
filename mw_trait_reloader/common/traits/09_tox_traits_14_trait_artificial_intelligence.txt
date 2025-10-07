@@ -1,0 +1,59 @@
+trait_artificial_intelligence = {
+	host_has_dlc = "Toxoids Species Pack"
+	cost = 1
+    category = overtuned
+	opposites = { "trait_syncretic_proles"}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_OVERTUNED
+		SPECIES_TRAIT_FLEETING_EXCELLENCE
+	}
+	tags = { organic positive pop_output research leader special }
+	allowed_origins = { origin_overtuned }
+	randomized = no
+	species_potential_add = {
+		can_add_overtuned_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_overtuned_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	custom_tooltip_with_modifiers = artificial_intelligence_tooltip
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = { NOT = { has_edict = damn_the_consequences } }
+		}
+		modifier = {
+			researcher_jobs_bonus_workforce_mult = 0.1
+		}
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_edict = damn_the_consequences }
+		}
+		modifier = {
+			researcher_jobs_bonus_workforce_mult = 0.2
+		}
+	}
+	modifier = {
+		leader_lifespan_add = -10
+	}
+	slave_cost = {
+		energy = 1000
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = { has_research_designation = yes }
+		}
+		modifier = {
+			add = 1.5
+			from = { has_building = building_order_keep }
+		}
+	}
+}
+

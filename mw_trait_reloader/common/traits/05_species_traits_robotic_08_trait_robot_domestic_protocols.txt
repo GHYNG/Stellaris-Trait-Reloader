@@ -1,0 +1,29 @@
+trait_robot_domestic_protocols = {
+	cost = 2
+	category = robotic
+
+	initial = no
+	randomized = no
+
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine synthetic positive pop_output amenities individual }
+
+	# Droid, Synth or Individualist Machine
+	species_potential_add = {
+		OR = {
+			can_add_droid_traits = yes
+			can_add_synth_traits = yes
+			owner_is_individual_machine = yes
+		}
+	}
+	forbidden_ethics = { ethic_gestalt_consciousness }
+	modifier = {
+		influential_jobs_bonus_workforce_mult = 0.20
+	}
+	slave_cost = {
+		energy = 750
+	}
+
+	custom_tooltip_with_modifiers = TRAIT_DOMESTIC_PROTOCOLS_EFFECT
+}
+

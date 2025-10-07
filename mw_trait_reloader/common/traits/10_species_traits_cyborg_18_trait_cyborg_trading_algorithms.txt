@@ -1,0 +1,34 @@
+trait_cyborg_trading_algorithms = {
+	cost = 1
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+		SPECIES_TRAIT_UNIVERSAL_AUGMENTATIONS
+	}
+	tags = { organic positive pop_output trade cybernetic }
+	initial = no
+	opposites = { "trait_cyborg_scarcity_algorithms" }
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+	randomized = no
+	category = cyborg
+	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
+	modifier = {
+		trader_jobs_bonus_workforce_mult = 0.25
+	}
+	resources = {
+		category = planet_pops
+		upkeep = {
+			energy = @cyborg_energy_upkeep
+		}
+	}
+	slave_cost = {
+		energy = 500
+	}
+}
+

@@ -1,0 +1,26 @@
+trait_presapient_docile_livestock = {
+	cost = 0
+	opposites = { "trait_intelligent" "trait_erudite" "trait_natural_engineers" "trait_natural_physicists" "trait_natural_sociologists" }
+	initial = no
+	sapient = no
+	species_possible_remove = {
+		can_remove_presapient_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	randomized = no
+	icon = "gfx/interface/icons/traits/trait_primitive.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	tags = { organic positive pop_growth pop_output unity energy research presapient }
+	modifier = {
+		logistic_growth_mult = 0.3
+		bureaucrat_jobs_bonus_workforce_mult = 0.1
+		technician_jobs_bonus_workforce_mult = -0.5
+		researcher_jobs_bonus_workforce_mult = -0.75
+	}
+}
+

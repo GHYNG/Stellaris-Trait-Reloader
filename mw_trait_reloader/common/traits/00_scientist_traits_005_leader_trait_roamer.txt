@@ -1,0 +1,52 @@
+leader_trait_roamer = {
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_roamer"
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	modifier = {
+		science_ship_survey_speed = 0.20
+	}
+	leader_potential_add = {
+		is_ruler = no
+	}
+	leader_class = { scientist }
+	opposites = {
+		leader_trait_neurotic
+		leader_trait_neurotic_2
+	}
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = paragon/pilot_weight_mult
+		inline_script = {
+			script = paragon/subclass_weight_mult
+			SUBCLASS = scientist_explorer
+		}
+	}
+	ai_weight = 100
+}
+
+leader_trait_roamer_2 = {
+	replace_traits = { "leader_trait_roamer" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_roamer"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		science_ship_survey_speed = 0.35
+	}
+	leader_class = { scientist }
+	opposites = {
+		leader_trait_neurotic
+		leader_trait_neurotic_2
+	}
+	ai_weight = 100
+}
+

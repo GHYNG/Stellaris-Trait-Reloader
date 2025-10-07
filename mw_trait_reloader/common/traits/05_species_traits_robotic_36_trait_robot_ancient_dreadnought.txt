@@ -1,0 +1,33 @@
+trait_robot_ancient_dreadnought = {
+	host_has_dlc = "The Machine Age"
+	cost = 3
+	category = robotic
+	# Synth, Machine Intelligence or Individualist Machine
+	species_potential_add = {
+		OR = {
+			can_add_synth_traits = yes
+			owner_is_machine_intelligence = yes
+			owner_is_individual_machine = yes
+		}
+		exists = from
+		from = {
+			has_technology = tech_leviathan_techgenesis
+			has_country_flag = harvested_dreadnought_parts
+		}
+	}
+	initial = no
+	randomized = no
+	opposites = {}
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine synthetic positive leviathan army alloys pop_output }
+
+	modifier = {
+		army_damage_mult = 5
+		foundry_jobs_bonus_workforce_mult = 0.15
+	}
+
+	slave_cost = {
+		energy = 1500
+	}
+}
+

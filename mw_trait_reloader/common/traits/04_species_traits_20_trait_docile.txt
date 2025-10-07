@@ -1,0 +1,23 @@
+trait_docile = {
+	cost = 2
+    category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_unruly" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive empire_size }
+	modifier = {
+		species_empire_size_mult = -0.10
+	}
+	slave_cost = {
+		energy = 500
+	}
+}
+

@@ -1,0 +1,24 @@
+trait_pc_cosmogenesis_world_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_machine_preference.dds"
+	short_name = "trait_pc_cosmogenesis_world_preference_short"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID MACHINE ROBOT }
+	sorting_priority = 30
+	bound_to_planet_classes = {
+		pc_cosmogenesis_world
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	modifier = {
+		pc_cosmogenesis_world_habitability = 1.0
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+

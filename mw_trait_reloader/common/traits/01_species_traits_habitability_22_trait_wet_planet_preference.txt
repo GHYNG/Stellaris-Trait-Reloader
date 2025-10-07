@@ -1,0 +1,40 @@
+@machine_primary = 0.75
+@machine_secondary = 0.50
+
+trait_wet_planet_preference = {
+	icon = "gfx/interface/icons/traits/trait_wet_planet_preference.dds"
+	short_name = "trait_wet_planet_preference_short"
+	allowed_archetypes = { MACHINE ROBOT }
+	sorting_priority = 30
+	bound_to_planet_classes = {
+		pc_ocean
+		pc_tropical
+		pc_continental
+	}
+	initial = no
+	randomized = no
+	species_possible_merge_add = {
+		always = yes
+	}
+	species_possible_remove = {
+		NOT = { has_trait = trait_robot_aquatic }
+	}
+	modifier = {
+		pc_ocean_habitability = @machine_primary
+		pc_continental_habitability = @machine_primary
+		pc_tropical_habitability = @machine_primary
+
+		pc_desert_habitability = @machine_secondary
+		pc_arid_habitability = @machine_secondary
+		pc_savannah_habitability = @machine_secondary
+
+		pc_arctic_habitability = @machine_secondary
+		pc_alpine_habitability = @machine_secondary
+		pc_tundra_habitability = @machine_secondary
+
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+

@@ -1,0 +1,17 @@
+trait_unruly = {
+	cost = -2
+	category = normal
+	species_potential_add = {
+		can_add_negative_organic_traits = yes
+	}
+	opposites = { "trait_docile" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic negative empire_size }
+	modifier = {
+		species_empire_size_mult = 0.10
+	}
+	slave_cost = {
+		energy = -200
+	}
+}
+

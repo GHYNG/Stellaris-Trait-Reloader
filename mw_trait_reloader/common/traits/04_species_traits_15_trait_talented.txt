@@ -1,0 +1,24 @@
+trait_talented = {
+	cost = 1
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive leader }
+	opposites = { "trait_nerve_stapled" "trait_syncretic_proles" }
+	slave_cost = {
+		energy = 500
+	}
+	modifier = {
+		negative_leader_traits_species = -1
+		leaders_upkeep_mult = -0.1
+	}
+}
+

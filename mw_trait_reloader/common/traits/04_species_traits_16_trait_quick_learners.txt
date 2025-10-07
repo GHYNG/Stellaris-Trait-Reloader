@@ -1,0 +1,23 @@
+trait_quick_learners = {
+	cost = 1
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_slow_learners" "trait_syncretic_proles" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive leader }
+	modifier = {
+		species_leader_exp_gain = 0.10
+	}
+	slave_cost = {
+		energy = 750
+	}
+}
+

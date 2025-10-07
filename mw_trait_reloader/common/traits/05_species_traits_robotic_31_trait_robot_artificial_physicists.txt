@@ -1,0 +1,27 @@
+trait_robot_artificial_physicists = {
+	host_has_dlc = "The Machine Age"
+	cost = 1
+	category = robotic
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine synthetic positive pop_output research }
+	opposites = {
+		"trait_robot_artificial_sociologists"
+		"trait_robot_artificial_engineers"
+	}
+	# Droid, Synth, Machine Intelligence or Individualist Machine
+	species_potential_add = {
+		OR = {
+			can_add_droid_traits = yes
+			can_add_synth_traits = yes
+			owner_is_machine_intelligence = yes
+			owner_is_individual_machine = yes
+		}
+	}
+	modifier = {
+		physicist_jobs_bonus_workforce_mult = 0.15
+	}
+	slave_cost = {
+		energy = 750
+	}
+}
+

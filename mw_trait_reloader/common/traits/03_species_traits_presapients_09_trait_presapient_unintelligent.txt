@@ -1,0 +1,26 @@
+trait_presapient_unintelligent = {
+	cost = 0
+	opposites = { "trait_intelligent" "trait_erudite" "trait_natural_engineers" "trait_natural_physicists" "trait_natural_sociologists" }
+	initial = no
+	sapient = no
+	species_possible_remove = {
+		can_remove_presapient_genetic_traits = no
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	randomized = no
+	forced_happiness = yes
+	icon = "gfx/interface/icons/traits/trait_primitive.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	tags = { organic negative pop_growth research presapient }
+	modifier = {
+		logistic_growth_mult = 0.2
+		technician_jobs_bonus_workforce_mult = -1
+		researcher_jobs_bonus_workforce_mult = -1
+	}
+}
+

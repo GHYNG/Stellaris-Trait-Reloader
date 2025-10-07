@@ -1,0 +1,28 @@
+leader_trait_disciple_of_the_eater = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_disciple_of_the_eater"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	leader_class = { commander }
+	triggered_fleet_modifier = {
+		ship_fire_rate_mult = 0.35
+		ship_weapon_damage = 0.25
+		ship_disengage_chance_mult = -1
+		custom_tooltip = leader_trait_disciple_of_the_eater_attunement_effect
+		custom_tooltip = leader_trait_disciple_of_the_eater_zro_fleet_attack_effect
+		show_only_custom_tooltip = no
+	}
+	triggered_army_modifier = {
+		army_damage_mult = 0.5
+		custom_tooltip = leader_trait_disciple_of_the_eater_zro_army_attack_effect
+		show_only_custom_tooltip = no
+	}
+	initial = no
+	randomized = no
+}
+

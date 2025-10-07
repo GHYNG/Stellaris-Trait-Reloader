@@ -1,0 +1,37 @@
+leader_trait_bureaucratic = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_bureaucratic"
+		COUNCIL = yes
+		TIER = 1
+	}
+	leader_potential_add = {
+		trait_is_wilderness_check = no
+	}
+	councilor_modifier = {
+		empire_size_pops_mult = 0.05
+	}
+	leader_class = { official scientist commander }
+	selectable_weight = {
+		weight = @shared_negative_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_bureaucratic_2 = {
+	leader_trait_type = negative
+	replace_traits = { "leader_trait_bureaucratic" }
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_bureaucratic"
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		empire_size_pops_mult = 0.15
+	}
+	leader_class = { official scientist commander }
+	selectable_weight = @tier2_negative_trait_weight
+}
+

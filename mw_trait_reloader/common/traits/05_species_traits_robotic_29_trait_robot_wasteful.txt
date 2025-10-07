@@ -1,0 +1,25 @@
+trait_robot_wasteful = {
+	icon = "gfx/interface/icons/traits/trait_wasteful.dds"
+	cost = -1
+    category = robotic
+	# Synths and Individualist Machines
+	species_potential_add = {
+		OR = {
+			can_add_synth_traits = yes
+			owner_is_individual_machine = yes
+		}
+	}
+	allowed_archetypes = { MACHINE ROBOT }
+	tags = { machine synthetic negative consumer_goods upkeep individual }
+	forbidden_ethics = { ethic_gestalt_consciousness }
+	modifier = {
+		planet_pops_consumer_goods_upkeep_mult = 0.10
+	}
+	ai_weight = {
+		weight = 0
+	}
+	slave_cost = {
+		energy = -200
+	}
+}
+

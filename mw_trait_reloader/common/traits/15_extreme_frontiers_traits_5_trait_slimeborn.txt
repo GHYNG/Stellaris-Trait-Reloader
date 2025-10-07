@@ -1,0 +1,25 @@
+trait_slimeborn = {
+	cost = 0
+	initial = no
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	allowed_archetypes = { BIOLOGICAL }
+
+	modifier = {
+		logistic_growth_mult = 0.1
+		planet_pops_upkeep_mult = -0.1
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+

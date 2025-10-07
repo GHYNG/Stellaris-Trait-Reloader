@@ -1,0 +1,45 @@
+leader_trait_shipbreaker = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_shipbreaker
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	# Effect in paragon_2.1005 event.
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		OR = {
+			has_trait = subclass_commander_admiral
+			has_trait = subclass_commander_general
+		}
+	}
+	leader_class = { commander }
+	custom_tooltip = leader_trait_shipbreaker_effect
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/pilot_weight_mult
+	}
+}
+
+leader_trait_shipbreaker_2 = {
+	leader_trait_type = veteran
+	replace_traits = { leader_trait_shipbreaker }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_shipbreaker
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	# Effect in paragon_2.1005 event.
+	fleet_modifier = {
+		ship_armor_hardening_add = 0.15
+	}
+	leader_class = { commander }
+	custom_tooltip = leader_trait_shipbreaker_2_effect
+}
+

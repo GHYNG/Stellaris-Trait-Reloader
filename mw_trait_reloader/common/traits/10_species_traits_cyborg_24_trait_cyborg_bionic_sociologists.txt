@@ -1,0 +1,31 @@
+trait_cyborg_bionic_sociologists = {
+	host_has_dlc = "The Machine Age"
+	cost = 1
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { organic positive pop_output research cybernetic }
+	initial = no
+	opposites = {
+		"trait_cyborg_bionic_physicists"
+		"trait_cyborg_bionic_engineers"
+	}
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+	randomized = no
+	category = cyborg
+	modifier = {
+		biologist_jobs_bonus_workforce_mult = 0.15
+	}
+
+	slave_cost = {
+		energy = 750
+	}
+}
+

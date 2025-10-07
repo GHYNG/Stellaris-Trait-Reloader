@@ -1,0 +1,20 @@
+trait_fleeting_lithoid = {
+	cost = -1
+	category = normal
+	species_potential_add = {
+		can_add_negative_organic_traits = yes
+	}
+	modifier = { leader_lifespan_add = -25 }
+	icon = "gfx/interface/icons/traits/trait_fleeting.dds"
+
+	opposites = { "trait_venerable" "trait_enduring" "trait_fleeting" "trait_syncretic_proles" }
+	allowed_archetypes = { LITHOID }
+	tags = { organic negative leader lithoid special }
+	ai_weight = {
+		weight = 0
+	}
+	slave_cost = {
+		energy = -200
+	}
+}
+

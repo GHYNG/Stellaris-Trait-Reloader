@@ -1,0 +1,31 @@
+leader_trait_gifted_trapper = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = GFX_leader_trait_gifted_trapper
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	on_gained_effect = {
+		owner = {
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		}
+	}
+	modifier = {
+		ship_capture_chance_add = 0.25
+		gravity_snare_cooldown_mult = -0.25
+		on_fauna_capture_scientist_exp_gain = @gravity_snare_experience_reward
+		ship_speed_mult = 0.1
+	}
+	leader_class = { scientist }
+	leader_potential_add = {
+		has_trait = subclass_scientist_explorer
+	}
+	background_icon = GFX_leader_background_destiny_1
+
+	initial = no
+	randomized = no
+}
+

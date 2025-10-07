@@ -1,0 +1,58 @@
+leader_trait_ambassador_favor_maker = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_ambassador_favor_maker"
+		RARITY = free_or_veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	leader_potential_add = {
+		OR = {
+			has_paragon_dlc = no
+			has_trait = subclass_official_diplomacy_councilor
+		}
+	}
+	custom_tooltip = leader_trait_ambassador_favor_maker_effect
+	# Implemented in event leader.300, fired by on_monthly_pulse_country
+	leader_class = { official }
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_ambassador_favor_maker_2 = {
+	leader_trait_type = veteran
+	replace_traits = { "leader_trait_ambassador_favor_maker" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_ambassador_favor_maker"
+		RARITY = free_or_veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	custom_tooltip = leader_trait_ambassador_favor_maker_2_effect
+	leader_class = { official }
+}
+
+leader_trait_ambassador_favor_maker_3 = {
+	leader_trait_type = veteran
+	replace_traits = { "leader_trait_ambassador_favor_maker_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_ambassador_favor_maker"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 3
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	custom_tooltip = leader_trait_ambassador_favor_maker_3_effect
+	leader_class = { official }
+}
+

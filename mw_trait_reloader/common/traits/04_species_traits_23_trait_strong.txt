@@ -1,0 +1,43 @@
+trait_strong = {
+	cost = 1
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_weak" "trait_very_strong" "trait_hollow_bones" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive pop_output army }
+	modifier = {
+		army_damage_mult = 0.20
+		worker_and_simple_drone_cat_bonus_workforce_mult = 0.025
+	}
+	slave_cost = {
+		energy = 1000
+	}
+	assembly_score = {
+		modifier = {
+			add = 0.25
+			from = {
+				OR = {
+					has_farming_designation = yes
+					has_generator_designation = yes
+					has_mining_designation = yes
+					has_rural_designation = yes
+				}
+			}
+		}
+		modifier = {
+			add = 0.75
+			from = {
+				has_fortress_designation = yes
+			}
+		}
+	}
+}
+

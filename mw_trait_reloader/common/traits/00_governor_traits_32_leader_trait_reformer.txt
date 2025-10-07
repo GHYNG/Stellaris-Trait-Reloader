@@ -1,0 +1,67 @@
+leader_trait_reformer = {
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_reformer"
+		RARITY = free_or_veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	leader_potential_add = {
+		is_gestalt = no
+		OR = {
+			has_paragon_dlc = no
+			has_trait = subclass_official_economy_councilor
+		}
+	}
+	councilor_modifier = {
+		country_unity_produces_mult = 0.05
+		pop_government_ethic_attraction = 0.35
+	}
+	leader_trait_type = veteran
+	leader_class = { official }
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_reformer_2 = {
+	replace_traits = { "leader_trait_reformer" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_reformer"
+		RARITY = free_or_veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		country_unity_produces_mult = 0.1
+		pop_government_ethic_attraction = 0.5
+	}
+	leader_trait_type = veteran
+	leader_class = { official }
+}
+
+leader_trait_reformer_3 = {
+	replace_traits = { "leader_trait_reformer_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_reformer"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 3
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	councilor_modifier = {
+		country_unity_produces_mult = 0.15
+		pop_government_ethic_attraction = 0.75
+	}
+	leader_trait_type = veteran
+	leader_class = { official }
+}
+

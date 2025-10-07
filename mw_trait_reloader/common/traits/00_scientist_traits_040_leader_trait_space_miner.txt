@@ -1,0 +1,121 @@
+leader_trait_space_miner = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_space_miner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_wilderness_check = no
+		}
+		planet_miners_minerals_produces_add = 0.25
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_wilderness_check = yes
+		}
+		planet_jobs_minerals_produces_mult = 0.025
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_wilderness_check = no
+		}
+		planet_miners_minerals_produces_add = 0.125
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_wilderness_check = yes
+		}
+		planet_jobs_minerals_produces_mult = 0.015
+	}
+	leader_potential_add = {
+		has_governor_subclass = yes
+		has_paragon_dlc = yes
+	}
+	leader_class = { scientist official commander }
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/governor_weight_mult
+	}
+}
+
+leader_trait_space_miner_2 = {
+	leader_trait_type = veteran
+	replace_traits = { "leader_trait_space_miner" }
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_space_miner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_wilderness_check = no
+		}
+		planet_miners_minerals_produces_add = 0.5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_wilderness_check = yes
+		}
+		planet_jobs_minerals_produces_mult = 0.05
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_wilderness_check = no
+		}
+		planet_miners_minerals_produces_add = 0.25
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_wilderness_check = yes
+		}
+		planet_jobs_minerals_produces_mult = 0.03
+	}
+	leader_class = { scientist official commander }
+}
+
+leader_trait_space_miner_3 = {
+	leader_trait_type = veteran
+	replace_traits = { "leader_trait_space_miner_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_space_miner"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_wilderness_check = no
+		}
+		planet_miners_minerals_produces_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_wilderness_check = yes
+		}
+		planet_jobs_minerals_produces_mult = 0.075
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_wilderness_check = no
+		}
+		planet_miners_minerals_produces_add = 0.5
+	}
+	triggered_sector_modifier = {
+		potential = {
+			trait_is_wilderness_check = yes
+		}
+		planet_jobs_minerals_produces_mult = 0.045
+	}
+	leader_class = { scientist official commander }
+}
+

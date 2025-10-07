@@ -1,0 +1,31 @@
+trait_robot_shielded_components = {
+	cost = 3
+	category = robotic
+
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine positive habitability pop_output leader modularity }
+
+	species_potential_add = {
+		can_do_advanced_robo_modding = yes
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	initial = no
+	randomized = no
+
+	modifier = {
+		pop_environment_tolerance = 0.30
+		pop_bonus_workforce_mult = 0.05
+		leader_lifespan_add = 50
+	}
+
+	slave_cost = {
+		energy = 750
+	}
+}
+

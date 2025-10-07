@@ -1,0 +1,39 @@
+trait_acidic_vascularity = {
+	host_has_dlc = "BioGenesis"
+	cost = 1
+	species_possible_add = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { NECROID TOX }
+	localized_tags = {
+		SPECIES_TRAIT_NECROID
+		SPECIES_TRAIT_TOXOID
+	}
+	species_class_override = {
+		hidden_trigger = {
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	tags = { organic positive army necroid toxoid species }
+	custom_tooltip = trait_acidic_vascularity_effect
+	modifier = {
+		pop_cat_purge_bonus_workforce_mult = -0.75
+	}
+	slave_cost = {
+		energy = 500
+	}
+}
+

@@ -1,0 +1,33 @@
+trait_robot_quarrelsome = {
+	icon = "gfx/interface/icons/traits/trait_quarrelsome.dds"
+	cost = -1
+    category = robotic
+	# Synths and Individualist Machines
+	species_potential_add = {
+		OR = {
+			can_add_synth_traits = yes
+			owner_is_individual_machine = yes
+		}
+	}
+	opposites = { "trait_robot_propaganda_machines" }
+	allowed_archetypes = { MACHINE ROBOT }
+	localized_tags = {
+		SPECIES_TRAIT_ADAPTIVE_FRAMES
+	}
+	tags = { machine synthetic negative pop_output unity individual }
+	forbidden_ethics = { ethic_gestalt_consciousness }
+	modifier = {
+		bureaucrat_jobs_bonus_workforce_mult = -0.1
+	}
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			years_passed > 5
+		}
+	}
+	slave_cost = {
+		energy = -200
+	}
+}
+

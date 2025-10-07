@@ -1,0 +1,38 @@
+trait_cyborg_high_maintenance = {
+	cost = -2
+	opposites = { "trait_cyborg_durable" }
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { organic negative amenities cybernetic }
+	initial = yes
+	species_potential_add = {
+		OR = {
+			can_add_cybernetic_traits = yes
+			can_add_unplugged_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_cybernetic_traits = yes
+			can_remove_unplugged_traits = yes
+		}
+	}
+	randomized = no
+	category = cyborg
+	modifier = {
+		pop_amenities_usage_add = 0.5
+	}
+	ai_weight = {
+		factor = 0
+	}
+	slave_cost = {
+		energy = -150
+	}
+	allowed_origins = {
+		origin_unplugged
+	}
+}
+

@@ -1,0 +1,37 @@
+trait_cyborg_ancient_dreadnought = {
+	host_has_dlc = "The Machine Age"
+	cost = 2
+	species_potential_add = {
+		exists = from
+		from = {
+			has_technology = tech_leviathan_techgenesis
+			has_country_flag = harvested_dreadnought_parts
+		}
+		can_add_cybernetic_traits = yes
+	}
+	initial = no
+	randomized = no
+	category = cyborg
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { organic positive army pop_output alloys leviathan cybernetic }
+
+	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
+
+	modifier = {
+		army_damage_mult = 5
+		foundry_jobs_bonus_workforce_mult = 0.15
+	}
+	resources = {
+		category = planet_pops
+		upkeep = {
+			energy = @cyborg_energy_upkeep
+		}
+	}
+	slave_cost = {
+		energy = 1500
+	}
+}
+

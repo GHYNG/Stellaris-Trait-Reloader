@@ -1,0 +1,46 @@
+trait_cyborg_climate_adjustment_wet = {
+	host_has_dlc = "The Machine Age"
+	cost = 1
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { organic positive habitability cybernetic }
+	initial = no
+	opposites = {
+		"trait_cyborg_climate_adjustment_cold"
+		"trait_cyborg_climate_adjustment_dry"
+	}
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
+	randomized = no
+	category = cyborg
+	modifier = {
+		pc_tropical_habitability = 0.3
+		pc_continental_habitability = 0.3
+		pc_ocean_habitability = 0.3
+
+		pc_desert_habitability = -0.1
+		pc_arid_habitability = -0.1
+		pc_savannah_habitability = -0.1
+		pc_arctic_habitability = -0.1
+		pc_tundra_habitability = -0.1
+		pc_alpine_habitability = -0.1
+	}
+	resources = {
+		category = planet_pops
+		upkeep = {
+			energy = @cyborg_energy_upkeep
+		}
+	}
+	slave_cost = {
+		energy = 500
+	}
+}
+

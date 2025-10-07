@@ -1,0 +1,71 @@
+leader_trait_legendary_genetic_purist = { #Origin trait - xenophobe
+	starting_ruler_trait = yes
+	leader_trait_type = veteran
+	allowed_origins = { origin_legendary_leader }
+	allowed_ethics = { ethic_xenophobe ethic_fanatic_xenophobe }
+	cost = 1
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_leader_trait_legendary_xenophobe_one"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
+
+	councilor_modifier = {
+		BIOLOGICAL_species_trait_points_add = 1
+		planet_pops_upkeep_mult = -0.10
+	}
+
+	leader_class = { official commander scientist }
+
+	initial = no
+	randomized = no
+}
+
+leader_trait_legendary_genetic_purist_2 = { #Origin trait - xenophobe
+	leader_trait_type = veteran
+	replace_traits = { "leader_trait_legendary_genetic_purist" }
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_leader_trait_legendary_xenophobe_one"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
+
+	councilor_modifier = {
+		BIOLOGICAL_species_trait_points_add = 2
+		planet_pops_upkeep_mult = -0.15
+	}
+
+	leader_class = { official commander scientist }
+
+	initial = no
+}
+
+leader_trait_legendary_genetic_purist_3 = { #Origin trait - xenophobe
+	leader_trait_type = veteran
+	replace_traits = { "leader_trait_legendary_genetic_purist_2" }
+	inline_script = {
+		script = trait/icon
+		ICON = "GFX_leader_trait_legendary_xenophobe_one"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 3
+	}
+	custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
+
+	councilor_modifier = {
+		BIOLOGICAL_species_trait_points_add = 2
+		BIOLOGICAL_species_trait_picks_add = 1
+		planet_pops_upkeep_mult = -0.25
+	}
+
+	leader_class = { official commander scientist }
+
+	initial = no
+}
+

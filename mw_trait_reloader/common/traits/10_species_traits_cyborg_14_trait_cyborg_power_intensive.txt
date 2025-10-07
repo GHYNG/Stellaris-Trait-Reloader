@@ -1,0 +1,34 @@
+trait_cyborg_power_intensive = {
+	cost = -1
+	opposites = { }
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { organic negative upkeep cybernetic }
+	initial = no
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+	randomized = no
+	category = cyborg
+	custom_tooltip = TRAIT_POWER_INTENSIVE_EFFECT
+
+	resources = {
+		category = planet_pops
+		# Energy Upkeep
+		upkeep = {
+			trigger = { is_being_purged = no }
+			energy = @living_standard_energy_normal
+		}
+	}
+
+	slave_cost = {
+		energy = -250
+	}
+}
+

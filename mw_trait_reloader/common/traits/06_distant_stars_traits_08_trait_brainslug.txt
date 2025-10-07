@@ -1,0 +1,22 @@
+trait_brainslug = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_brainslugged.dds"
+	initial = no
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive pop_output research unity pop_growth special }
+
+	modifier = {
+		researcher_jobs_bonus_workforce_mult = 0.10
+		bureaucrat_jobs_bonus_workforce_mult = 0.10
+		logistic_growth_mult = -0.25
+	}
+}
+

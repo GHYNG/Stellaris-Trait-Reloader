@@ -1,0 +1,44 @@
+leader_trait_victory_or_death = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_victory_or_death"
+		COUNCIL = no
+		TIER = 1
+	}
+	army_modifier = {
+		army_disengage_chance_mult = -0.3
+	}
+	leader_potential_add = {
+		trait_is_crisis_faction_check = no
+		NOT = { has_ethic = ethic_pacifist }
+	}
+	leader_class = { commander }
+	opposites = {
+		leader_trait_restrained
+	}
+	selectable_weight = {
+		weight = @class_negative_trait_weight
+		inline_script = paragon/army_weight_mult
+	}
+}
+
+leader_trait_victory_or_death_2 = {
+	leader_trait_type = negative
+	replace_traits = { "leader_trait_victory_or_death" }
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_victory_or_death"
+		COUNCIL = no
+		TIER = 2
+	}
+	army_modifier = {
+		army_disengage_chance_mult = -0.9
+	}
+	leader_class = { commander }
+	opposites = {
+		leader_trait_restrained
+	}
+	selectable_weight = @tier2_negative_trait_weight
+}
+

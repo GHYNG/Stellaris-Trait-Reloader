@@ -1,0 +1,24 @@
+trait_machine_pc_gaia_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_gaia_preference.dds"
+	short_name = "trait_machine_pc_gaia_preference_short"
+	allowed_archetypes = { ROBOT MACHINE }
+	bound_to_planet_classes = {
+		pc_gaia
+	}
+	initial = no
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	sorting_priority = 30
+	modifier = {
+		pc_gaia_habitability = 1.0
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+

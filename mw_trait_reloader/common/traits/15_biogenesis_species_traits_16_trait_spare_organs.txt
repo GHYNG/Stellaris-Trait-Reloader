@@ -1,0 +1,58 @@
+trait_spare_organs = {
+	host_has_dlc = "BioGenesis"
+	cost = 2
+	species_possible_add = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { MOL NECROID TOX }
+	localized_tags = {
+		SPECIES_TRAIT_MOLLUSCOID
+		SPECIES_TRAIT_NECROID
+		SPECIES_TRAIT_TOXOID
+	}
+	species_class_override = {
+		hidden_trigger = {
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	tags = { organic positive army leader molluscoid necroid toxoid species }
+	custom_tooltip = trait_spare_organs_effect
+	modifier = {
+		livestock_jobs_bonus_workforce_mult = 0.5
+	}
+
+	resources = {
+		category = planet_pops
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					NOT = {
+						has_origin = origin_evolutionary_predators
+					}
+					is_megacorp = yes
+					is_mutation_authority = yes
+				}
+			}
+			trade = 0.5
+		}
+	}
+
+	slave_cost = {
+		energy = 1000
+	}
+}
+

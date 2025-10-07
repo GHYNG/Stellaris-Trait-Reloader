@@ -1,0 +1,28 @@
+trait_robot_integrated_weaponry = {
+	host_has_dlc = "The Machine Age"
+	cost = 2
+	category = robotic
+
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine synthetic positive army }
+	opposites = { "trait_robot_delicate_frames" }
+	# Droid, Synth, Machine Intelligence or Individualist Machine
+	species_potential_add = {
+		OR = {
+			can_add_droid_traits = yes
+			can_add_synth_traits = yes
+			owner_is_machine_intelligence = yes
+			owner_is_individual_machine = yes
+		}
+	}
+	randomized = no
+	modifier = {
+		army_damage_mult = 1.0
+		enforcer_jobs_bonus_workforce_mult = 0.20
+	}
+
+	slave_cost = {
+		energy = 1000
+	}
+}
+

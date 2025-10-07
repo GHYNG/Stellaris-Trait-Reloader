@@ -1,0 +1,69 @@
+leader_trait_disciple_of_the_composer = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_disciple_of_the_composer"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	leader_class = { scientist }
+	triggered_planet_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.05
+		planet_jobs_society_research_produces_mult = 0.05
+		planet_jobs_engineering_research_produces_mult = 0.05
+		planet_researchers_sr_zro_produces_add = 0.1
+		planet_researchers_upkeep_mult = 0.15
+		planet_pops_upkeep_mult = 0.15
+		logistic_growth_mult = 0.15
+	}
+	triggered_sector_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.025
+		planet_jobs_society_research_produces_mult = 0.025
+		planet_jobs_engineering_research_produces_mult = 0.025
+		planet_researchers_sr_zro_produces_add = 0.05
+		planet_researchers_upkeep_mult = 0.075
+		planet_pops_upkeep_mult = 0.075
+		logistic_growth_mult = 0.075
+	}
+	initial = no
+	randomized = no
+}
+
+leader_trait_disciple_of_the_composer_2 = {
+	leader_trait_type = destiny
+	replace_traits = { "leader_trait_disciple_of_the_composer" }
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_disciple_of_the_composer"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = 2
+	}
+	leader_class = { scientist }
+	self_modifier = {
+		leader_lifespan_mult = -0.35
+	}
+	triggered_planet_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.1
+		planet_jobs_society_research_produces_mult = 0.1
+		planet_jobs_engineering_research_produces_mult = 0.1
+		planet_researchers_sr_zro_produces_add = 0.25
+		planet_researchers_upkeep_mult = 0.35
+		planet_pops_upkeep_mult = 0.35
+		logistic_growth_mult = 0.35
+	}
+	triggered_sector_modifier = {
+		planet_jobs_physics_research_produces_mult = 0.05
+		planet_jobs_society_research_produces_mult = 0.05
+		planet_jobs_engineering_research_produces_mult = 0.05
+		planet_researchers_sr_zro_produces_add = 0.125
+		planet_researchers_upkeep_mult = 0.175
+		planet_pops_upkeep_mult = 0.175
+		logistic_growth_mult = 0.175
+	}
+	initial = no
+}
+

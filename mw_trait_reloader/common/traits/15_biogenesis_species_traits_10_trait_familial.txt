@@ -1,0 +1,48 @@
+trait_familial = {
+	host_has_dlc = "BioGenesis"
+	cost = 2
+	species_possible_add = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+		owner_is_hive_empire = no
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	portrait_override = { fun16 fun4 lith_human pla17 aqu5 }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { HUM MAM AVI }
+	localized_tags = {
+		SPECIES_TRAIT_AVIAN
+		SPECIES_TRAIT_HUMANOID
+		SPECIES_TRAIT_MAMMALIAN
+	}
+	species_class_override = {
+		hidden_trigger = {
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	tags = { organic positive happiness humanoid mammalian avian individual species }
+	forbidden_ethics = { ethic_gestalt_consciousness }
+	custom_tooltip = trait_familial_effect
+	triggered_pop_group_modifier = {
+		pop_happiness = 0.00001
+		mult = planet.value:counter_familial
+	}
+	slave_cost = {
+		energy = 1000
+	}
+
+	assembly_score = {
+		base = 1
+	}
+}
+

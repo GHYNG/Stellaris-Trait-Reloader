@@ -1,0 +1,24 @@
+trait_auto_pc_habitat_preference = {
+	inline_script = {
+		script = traits/auto_preference_planet_class
+		PLANET_CLASS = pc_habitat
+	}
+	modifier = {
+		# Dry
+		pc_desert_habitability 			= @auto_penalty
+		pc_arid_habitability 			= @auto_penalty
+		pc_savannah_habitability 		= @auto_penalty
+		# Wet
+		pc_tropical_habitability 		= @auto_penalty
+		pc_continental_habitability 	= @auto_penalty
+		pc_ocean_habitability 			= @auto_penalty
+		# Cold
+		pc_tundra_habitability 			= @auto_penalty
+		pc_arctic_habitability 			= @auto_penalty
+		pc_alpine_habitability 			= @auto_penalty
+		# Special
+		pc_nuked_habitability 			= @auto_penalty
+		pc_habitat_habitability 		= @auto_base
+	}
+}
+

@@ -1,0 +1,28 @@
+trait_cyborg_welded_countenance = {
+	host_has_dlc = "The Machine Age"
+	cost = -2
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { organic positive leader cybernetic }
+	initial = no
+	opposites = { "trait_cyborg_stainless_steel_smile" }
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+	randomized = no
+	category = cyborg
+	modifier = {
+		influential_jobs_bonus_workforce_mult = -0.20
+	}
+
+	slave_cost = {
+		energy = -500
+	}
+}
+

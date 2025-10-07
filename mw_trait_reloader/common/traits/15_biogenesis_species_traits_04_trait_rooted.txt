@@ -1,0 +1,42 @@
+trait_rooted = {
+	host_has_dlc = "BioGenesis"
+	cost = -3
+	species_potential_add = {
+		OR = {
+			can_add_negative_organic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	opposites = { "trait_sedentary" "trait_nomadic" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { FUN PLANT }
+	localized_tags = {
+		SPECIES_TRAIT_FUNGOID
+		SPECIES_TRAIT_PLANTOID
+	}
+	species_class_override = {
+		hidden_trigger = {
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	portrait_override = { aqu7 lith6 nec3 }
+	tags = { organic negative migration fungoid plantoid species }
+	custom_tooltip = trait_rooted_effect
+	modifier = {
+		pop_resettlement_cost_mult = 2
+	}
+
+	slave_cost = {
+		energy = -400
+	}
+	assembly_score = {
+		modifier = {
+			from = { free_jobs = 0 }
+			add = -2
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+

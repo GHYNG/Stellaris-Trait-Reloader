@@ -1,0 +1,23 @@
+trait_unplugged_neurosavant = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_unplugged_neurosavant.dds"
+
+	initial = no
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic cybernetic species positive leader }
+	modifier = {
+		negative_leader_traits_species = -1
+		species_leader_exp_gain = 0.10
+	}
+}
+

@@ -1,0 +1,76 @@
+trait_permeable_skin = {
+	host_has_dlc = "BioGenesis"
+	cost = -1
+	species_potential_add = {
+		OR = {
+			can_add_negative_organic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	opposites = { "trait_adaptive" "trait_extremely_adaptive" }
+	allowed_planet_classes = {
+		pc_tropical
+		pc_arid
+		pc_continental
+		pc_ocean
+		pc_tundra
+		pc_arctic
+		pc_alpine
+		pc_savannah
+		pc_desert
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { MOL AQUATIC }
+	localized_tags = {
+		SPECIES_TRAIT_MOLLUSCOID
+		SPECIES_TRAIT_AQUATIC
+	}
+	species_class_override = {
+		hidden_trigger = {
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	tags = { organic negative habitability molluscoid aquatic species }
+	custom_tooltip = trait_permeable_skin_effect
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			exists = from
+			from = {
+				OR = {
+					AND = {
+						ideal_planet_is_wet = yes
+						root = {
+							OR = {
+								is_dry = yes
+								is_cold = yes
+							}
+						}
+					}
+					AND = {
+						ideal_planet_is_dry = yes
+						root = {
+							OR = {
+								is_wet = yes
+								is_cold = yes
+							}
+						}
+					}
+					AND = {
+						ideal_planet_is_cold = yes
+						root = {
+							OR = {
+								is_dry = yes
+								is_wet = yes
+							}
+						}
+					}
+				}
+			}
+		}
+		pop_environment_tolerance = -0.2
+	}
+	slave_cost = {
+		energy = -1000
+	}
+}
+

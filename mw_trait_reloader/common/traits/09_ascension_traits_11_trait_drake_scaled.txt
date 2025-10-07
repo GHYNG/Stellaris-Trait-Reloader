@@ -1,0 +1,42 @@
+trait_drake_scaled = {
+	cost = 3
+	species_potential_add = {
+		can_add_or_remove_leviathan_traits = yes
+		hidden_trigger = { exists = from }
+		from = {
+			has_country_flag = harvested_dragon_dna
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_leviathan_traits = yes
+		}
+	}
+	initial = no
+	randomized = no
+	opposites = { "trait_lithoid_gaseous_byproducts" "trait_lithoid_scintillating" "trait_lithoid_volatile_excretions" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive army production alloys leviathan genetic_ascension }
+
+	custom_tooltip_with_modifiers = TRAIT_DRAKE_SCALED_EFFECT
+
+	modifier = {
+		army_health = 1.00
+	}
+
+	resources = {
+		category = planet_pops
+		produces = {
+			trigger = {
+				is_slave_or_better = yes
+			}
+			alloys = @drake_scaled_trait_resource_production
+		}
+	}
+
+	slave_cost = {
+		energy = 1000
+	}
+}
+

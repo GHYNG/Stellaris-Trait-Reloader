@@ -1,0 +1,32 @@
+trait_auto_mod_robotic = {
+	cost = {
+		base = 3
+		modifier = {
+			add = -1
+			has_origin = origin_mechanists
+		}
+	}
+	auto_mod = yes
+	category = robotic
+
+	allowed_archetypes = { ROBOT MACHINE }
+	localized_tags = {
+		SPECIES_TRAIT_ADAPTIVE_FRAMES
+	}
+	tags = { machine positive automod }
+
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	slave_cost = {
+		energy = 1000
+	}
+	assembly_score = {
+		base = 2
+	}
+	custom_tooltip_with_modifiers = automodding_trait_robotic_tooltip
+}
+

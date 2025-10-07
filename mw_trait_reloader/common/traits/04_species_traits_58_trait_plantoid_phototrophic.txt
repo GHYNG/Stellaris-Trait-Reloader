@@ -1,0 +1,51 @@
+trait_plantoid_phototrophic = {
+	host_has_dlc = "Plantoids Species Pack"
+	cost = 1
+	species_possible_add = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_plantoid_radiotrophic" "trait_voidling" "trait_cave_dweller" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { PLANT FUN }
+	localized_tags = {
+		SPECIES_TRAIT_FUNGOID
+		SPECIES_TRAIT_PLANTOID
+	}
+	species_class_override = {
+		hidden_trigger = {
+			OR = {
+				can_add_or_remove_phenotype_traits = yes
+				can_add_transgenic_traits = yes
+			}
+		}
+	}
+	tags = { organic positive plantoid fungoid upkeep species }
+	sorting_priority = 30
+	custom_tooltip = TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT
+
+	resources = {
+		category = planet_pops
+		# Energy Upkeep
+		upkeep = {
+			trigger = { is_being_purged = no }
+			energy = @living_standard_phototrophic_normal
+		}
+	}
+
+	slave_cost = {
+		energy = 1000
+	}
+}
+

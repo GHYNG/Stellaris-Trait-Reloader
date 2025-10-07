@@ -1,0 +1,15 @@
+trait_leader_second_chanced = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_second_chance"
+		RARITY = common
+		COUNCIL = no
+		TIER = none
+	}
+	initial = no
+	randomized = no
+	ai_weight = 0
+	leader_class = { commander scientist official }
+}
+

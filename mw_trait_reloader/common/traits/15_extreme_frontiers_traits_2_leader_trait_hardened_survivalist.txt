@@ -1,0 +1,23 @@
+leader_trait_hardened_survivalist = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_hardened_survivalist"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+
+	leader_class = { scientist }
+
+	modifier = {
+		science_ship_survey_speed_uninhabitable = 0.25
+		ship_anomaly_research_speed_mult_uninhabitable = 0.25
+		ship_anomaly_generation_chance_mult_uninhabitable = 0.25
+	}
+
+	initial = no
+	randomized = no
+}
+

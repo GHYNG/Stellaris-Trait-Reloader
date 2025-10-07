@@ -1,0 +1,45 @@
+leader_trait_crusader = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_crusader"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		trait_is_crisis_faction_check = no
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = { commander }
+	# Effect in paragon_2.1005 and paragon_2.1040 events
+	custom_tooltip = leader_trait_crusader_effect
+	initial = no
+	randomized = no
+}
+
+leader_trait_crusader_2 = {
+	leader_trait_type = veteran
+	replace_traits = { "leader_trait_crusader" }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_crusader"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	fleet_modifier = {
+		damage_vs_rival_mult = 0.15
+	}
+	army_modifier = {
+		army_damage_mult = 0.1
+		army_morale = 0.25
+	}
+	leader_class = { commander }
+	# Effect in paragon_2.1005 and paragon_2.1040 events
+	custom_tooltip = leader_trait_crusader_2_effect
+}
+

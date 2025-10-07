@@ -1,0 +1,38 @@
+trait_industrious = {
+	cost = 2
+	category = normal
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_remove_vocational_genetic_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_VOCATIONAL
+	}
+	tags = { organic positive pop_output mineral }
+	modifier = {
+		miner_jobs_bonus_workforce_mult = 0.15
+	}
+	slave_cost = {
+		energy = 500
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = { has_mining_designation = yes }
+		}
+		modifier = {
+			add = 0.5
+			from = { has_rural_designation = yes }
+		}
+	}
+}
+

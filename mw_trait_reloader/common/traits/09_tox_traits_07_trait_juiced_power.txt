@@ -1,0 +1,49 @@
+trait_juiced_power = {
+	host_has_dlc = "Toxoids Species Pack"
+	cost = 1
+    category = overtuned
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_OVERTUNED
+	}
+	tags = { organic positive pop_output army leader special }
+	allowed_origins = { origin_overtuned }
+	randomized = no
+	species_potential_add = {
+		can_add_overtuned_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_overtuned_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	custom_tooltip_with_modifiers = juiced_power_tooltip
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = { NOT = { has_edict = damn_the_consequences } }
+		}
+		worker_and_simple_drone_cat_bonus_workforce_mult = 0.05
+		}
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_edict = damn_the_consequences }
+		}
+		worker_and_simple_drone_cat_bonus_workforce_mult = 0.1
+	}
+	modifier = {
+		army_damage_mult = 0.40
+		leader_lifespan_add = -10
+	}
+	assembly_score = {
+		modifier = {
+			add = 0.5 #always good
+		}
+	}
+	slave_cost = {
+		energy = 1000
+	}
+}
+

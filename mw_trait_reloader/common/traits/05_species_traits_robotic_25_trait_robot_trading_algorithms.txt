@@ -1,0 +1,25 @@
+trait_robot_trading_algorithms = {
+	cost = 2
+	category = robotic
+	allowed_archetypes = { ROBOT MACHINE }
+	localized_tags = {
+		SPECIES_TRAIT_ADAPTIVE_FRAMES
+	}
+	tags = { machine synthetic positive trade }
+	opposites = { trait_robot_scarcity_algorithms }
+	species_potential_add = {
+		OR = {
+			can_add_droid_traits = yes
+			can_add_synth_traits = yes
+			owner_is_individual_machine = yes
+			owner_is_machine_intelligence = yes
+		}
+	}
+	modifier = {
+		trader_jobs_bonus_workforce_mult = 0.25
+	}
+	slave_cost = {
+		energy = 500
+	}
+}
+

@@ -1,0 +1,48 @@
+trait_cyborg_enhanced_memory = {
+	cost = 1
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { organic positive leader cybernetic }
+	initial = yes
+	opposites = { "trait_cyborg_limited_memory" }
+	species_potential_add = {
+		OR = {
+			can_add_cybernetic_traits = yes
+			can_add_unplugged_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_cybernetic_traits = yes
+			can_remove_unplugged_traits = yes
+		}
+	}
+	randomized = no
+	category = cyborg
+	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
+	modifier = {
+		negative_leader_traits_species = -1
+		leaders_upkeep_mult = -0.25
+	}
+
+	resources = {
+		category = planet_pops
+		upkeep = {
+			energy = @cyborg_energy_upkeep
+		}
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+	slave_cost = {
+		energy = 750
+	}
+	allowed_origins = {
+		origin_unplugged
+	}
+}
+

@@ -1,0 +1,19 @@
+trait_robot_high_maintenance = {
+	cost = -1
+	category = robotic
+	opposites = { "trait_robot_durable" }
+
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine negative upkeep }
+
+	modifier = {
+		planet_pops_robotics_upkeep_mult = 0.10
+	}
+	ai_weight = {
+		factor = 0
+	}
+	slave_cost = {
+		energy = -150
+	}
+}
+

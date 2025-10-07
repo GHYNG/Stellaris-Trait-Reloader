@@ -1,0 +1,46 @@
+leader_trait_frontier_spirit = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_frontier_spirit"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	councilor_modifier = {
+		ship_colonizer_cost_mult = -0.10
+		planet_colony_development_speed_mult = 0.33
+		planet_resettlement_unemployed_mult = 0.25
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		trait_is_wilderness_check = no
+		has_trait = subclass_official_economy_councilor
+	}
+	leader_class = { official }
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_frontier_spirit_2 = {
+	leader_trait_type = veteran
+	replace_traits = { "leader_trait_frontier_spirit" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_frontier_spirit"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		ship_colonizer_cost_mult = -0.10
+		planet_colony_development_speed_mult = 0.50
+		planet_resettlement_unemployed_mult = 0.50
+	}
+	leader_class = { official }
+}
+

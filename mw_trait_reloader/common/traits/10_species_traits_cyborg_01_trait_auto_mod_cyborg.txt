@@ -1,0 +1,55 @@
+trait_auto_mod_cyborg = {
+	cost = 2
+	auto_mod = yes
+	category = cyborg
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+		SPECIES_TRAIT_UNIVERSAL_AUGMENTATIONS
+	}
+	tags = { organic positive automod cybernetic }
+	initial = no
+	randomized = no
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	slave_cost = {
+		energy = 1000
+	}
+	assembly_score = {
+		base = 2
+	}
+
+	resources = {
+		category = planet_pops
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_modifier = worse_parts
+				}
+			}
+			trade = 0.5
+		}
+		upkeep = {
+			energy = @cyborg_energy_upkeep
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = { has_modifier = optimized_parts }
+			}
+			energy = 0.1
+		}
+	}
+
+	custom_tooltip_with_modifiers = automodding_trait_cyborg_tooltip
+}
+

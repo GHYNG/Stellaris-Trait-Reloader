@@ -1,0 +1,69 @@
+leader_trait_federal_negotiator = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_federal_negotiator"
+		RARITY = free_or_veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		OR = {
+			AND = {
+				exists = owner
+				owner = {
+					exists = federation
+				}
+				has_paragon_dlc = no
+			}
+			has_trait = subclass_official_delegate
+		}
+	}
+	federation_modifier = {
+		federation_experience_add = 0.25
+	}
+	leader_class = { official }
+	selectable_weight = {
+		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/federation_weight_mult
+	}
+}
+
+leader_trait_federal_negotiator_2 = {
+	leader_trait_type = veteran
+	replace_traits = { "leader_trait_federal_negotiator" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_federal_negotiator"
+		RARITY = free_or_veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	federation_modifier = {
+		federation_experience_add = 0.50
+	}
+	leader_class = { official }
+}
+
+leader_trait_federal_negotiator_3 = {
+	leader_trait_type = veteran
+	replace_traits = { "leader_trait_federal_negotiator_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_federal_negotiator"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+	}
+	federation_modifier = {
+		federation_experience_add = 1.00
+	}
+	leader_class = { official }
+}
+

@@ -1,0 +1,35 @@
+trait_brittle = {
+	host_has_dlc = "BioGenesis"
+	cost = -3
+	species_potential_add = {
+		OR = {
+			can_add_negative_organic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { LITHOID NECROID }
+	localized_tags = {
+		SPECIES_TRAIT_LITHOID
+		SPECIES_TRAIT_NECROID
+	}
+	species_class_override = {
+		hidden_trigger = {
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	tags = { organic negative amenities lithoid necroid species }
+	modifier = {
+		pop_amenities_usage_add = 0.5
+	}
+	slave_cost = {
+		energy = -1000
+	}
+	assembly_score = {
+		modifier = {
+			add = -2
+			from = { free_amenities <= 10 }
+		}
+	}
+}
+

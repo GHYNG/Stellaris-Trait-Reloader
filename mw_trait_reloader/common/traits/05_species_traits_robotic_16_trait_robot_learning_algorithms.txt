@@ -1,0 +1,24 @@
+trait_robot_learning_algorithms = {
+	cost = 1
+	category = robotic
+	opposites = { "trait_robot_repurposed_hardware" }
+
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine synthetic positive leader }
+
+	# Synth, Machine Intelligence or Individualist Machine
+	species_potential_add = {
+		OR = {
+			can_add_synth_traits = yes
+			owner_is_machine_intelligence = yes
+			owner_is_individual_machine = yes
+		}
+	}
+	modifier = {
+		species_leader_exp_gain = 0.10
+	}
+	slave_cost = {
+		energy = 750
+	}
+}
+

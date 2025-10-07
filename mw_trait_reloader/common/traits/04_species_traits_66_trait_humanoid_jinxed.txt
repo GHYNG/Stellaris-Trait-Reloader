@@ -1,0 +1,20 @@
+trait_humanoid_jinxed = {
+	host_has_dlc = "Humanoids Species Pack"
+	category = normal
+	cost = -1
+	species_potential_add = {
+		can_add_negative_organic_traits = yes
+	}
+	opposites = { "trait_talented" "trait_syncretic_proles" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic negative leader }
+	icon = "gfx/interface/icons/traits/trait_jinxed.dds"
+	custom_tooltip = TRAIT_HUMANOID_JINXED_EFFECT
+	modifier = {
+		negative_leader_traits_species = 1
+	}
+	slave_cost = {
+		energy = -500
+	}
+}
+

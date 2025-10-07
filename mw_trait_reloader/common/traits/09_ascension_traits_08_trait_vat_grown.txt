@@ -1,0 +1,43 @@
+trait_vat_grown = {
+	cost = {
+		base = 2
+		modifier = {
+			add = -1
+			advanced_traits_have_reduced_cost = yes
+		}
+		modifier = {
+			mult = 0
+			owner = {
+				OR = {
+					has_active_tradition = tr_cloning_somatic_synthesization
+					has_active_tradition = tr_cloning_somatic_synthesization_clone_army
+				}
+			}
+		}
+	}
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_remove_pop_growth_genetic_traits = yes
+		}
+	}
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	opposites = { "trait_slow_breeders" "trait_rapid_breeders" "trait_rapid_breeders_lithoid" "trait_fertile" "trait_necrophage" "trait_clone_soldier_fertile" "trait_humanoid_existential_iteroparity" "trait_humanoid_psychological_infertility" "trait_egg_laying" "trait_incubator" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive pop_growth housing amenities genetic_ascension drawbacks }
+	modifier = {
+		bonus_pop_growth_mult = 0.33
+		pop_housing_usage_mult = -0.1
+		pop_amenities_usage_mult = -0.1
+	}
+	infertile = yes
+	slave_cost = {
+		energy = 2000
+	}
+}
+

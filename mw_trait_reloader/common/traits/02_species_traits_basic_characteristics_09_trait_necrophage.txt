@@ -1,0 +1,41 @@
+trait_necrophage = {
+	cost = 0
+	opposites = { "trait_plantoid_budding" "trait_lithoid_budding" "trait_tiyanki" }
+	sorting_priority = 20
+
+	initial = no
+	randomized = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	immortal_leaders = no
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive production leader drawbacks special }
+	ai_weight = {
+		weight = 0
+	}
+
+	icon = "gfx/interface/icons/traits/trait_necrophage.dds"
+
+	modifier = {
+		leader_lifespan_add = 80
+		logistic_growth_mult = -0.5
+		bonus_pop_growth_mult = -0.5
+		planet_pops_organics_food_upkeep_mult = -0.5
+		planet_pops_organics_minerals_upkeep_mult = -0.5
+		planet_pops_organics_energy_upkeep_mult = -0.5
+		pop_cat_ruler_bonus_workforce_mult = 0.05
+		pop_cat_specialist_bonus_workforce_mult = 0.05
+		pop_cat_worker_bonus_workforce_mult = -0.1
+	}
+
+	custom_tooltip_with_modifiers = trait_necrophage_gestalt_tooltip
+}
+

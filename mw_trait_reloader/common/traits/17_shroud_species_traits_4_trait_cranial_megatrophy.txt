@@ -1,0 +1,45 @@
+trait_cranial_megatrophy = {
+	host_has_dlc = "Shadows of the Shroud"
+	cost = 4
+	category = psionic
+
+	species_possible_add = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_intelligent" "trait_cranial_hypertrophy" }
+
+	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE }
+	species_class = { PSIONIC }
+	portrait_override = { psionic_01 psionic_02 psionic_03 psionic_04 psionic_05 psionic_06 psionic_07 psionic_08 psionic_09 psionic_10 psionic_12 humanoid_hp_16 fun8 nec6 tox10 aqu12 mol7 tox13 }
+	localized_tags = {
+		SPECIES_TRAIT_PSIONIC
+	}
+	species_class_override = {
+		hidden_trigger = {
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	tags = { organic positive pop_output psionic species }
+
+	modifier = {
+		researcher_jobs_bonus_workforce_mult = 0.25
+		worker_and_simple_drone_cat_bonus_workforce_mult = -0.2
+	}
+
+	slave_cost = {
+		energy = 2000
+	}
+}
+

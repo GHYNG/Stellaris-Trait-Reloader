@@ -1,0 +1,24 @@
+trait_quarrelsome = {
+	cost = -1
+	category = normal
+	species_potential_add = {
+		can_add_negative_organic_traits = yes
+	}
+	opposites = { "trait_traditional" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic negative pop_output unity }
+	modifier = {
+		bureaucrat_jobs_bonus_workforce_mult = -0.1
+	}
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			years_passed > 5
+		}
+	}
+	slave_cost = {
+		energy = -200
+	}
+}
+

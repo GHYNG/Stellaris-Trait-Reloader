@@ -1,0 +1,33 @@
+trait_adaptive_mutations = {
+	cost = 0
+	auto_mod = yes
+	category = mutation
+
+	initial = no
+	randomized = no
+	immortal_leaders = no
+
+	species_potential_add = {
+		can_add_mutation_traits = yes
+	}
+	species_possible_remove = {
+		OR = {
+			can_add_mutation_traits = yes
+			can_remove_beneficial_genetic_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = {
+		"trait_malleable_genes"
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive automod special }
+
+	slave_cost = {
+		energy = 500
+	}
+	custom_tooltip_with_modifiers = automodding_trait_adaptive_mutations_tt
+}
+

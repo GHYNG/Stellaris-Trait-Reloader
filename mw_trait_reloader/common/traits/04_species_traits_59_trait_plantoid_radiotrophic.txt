@@ -1,0 +1,82 @@
+trait_plantoid_radiotrophic = {
+	host_has_dlc = "Plantoids Species Pack"
+	cost = 2
+	species_possible_add = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	opposites = { "trait_plantoid_phototrophic" "trait_voidling" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { PLANT FUN LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_FUNGOID
+		SPECIES_TRAIT_PLANTOID
+		SPECIES_TRAIT_LITHOID
+	}
+	species_class_override = {
+		hidden_trigger = {
+			OR = {
+				can_add_or_remove_phenotype_traits = yes
+				can_add_transgenic_traits = yes
+				has_harvested_radiotrophic_dna = yes
+			}
+		}
+	}
+	tags = { organic positive plantoid fungoid lithoid upkeep species }
+	custom_tooltip = TRAIT_PLANTOID_RADIOTROPHIC_EFFECT
+
+	modifier = {
+		pc_nuked_habitability = 0.1
+	}
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			exists = planet
+			planet = { has_deposit = d_lithoid_crater }
+		}
+		pc_nuked_habitability = 0.05
+	}
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			exists = planet
+			planet = { is_planet_class = pc_nuked }
+		}
+		logistic_growth_mult = 0.1
+		mult = value:lithoid_trait_mult
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = planet
+			planet = { has_modifier = wasteland_radiation }
+		}
+		pop_happiness = 0.1
+		mult = value:lithoid_trait_mult
+	}
+	slave_cost = {
+		energy = 1500
+	}
+	assembly_score = {
+		modifier = {
+			add = 1
+			from = { is_planet_class = pc_nuked }
+		}
+		modifier = {
+			add = 0.05
+			from = {
+				is_planet_class = pc_nuked
+				has_deposit = d_lithoid_crater
+			}
+		}
+	}
+}
+

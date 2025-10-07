@@ -1,0 +1,30 @@
+trait_delicious = {
+	cost = {
+		base = 2
+		modifier = {
+			add = -1
+			advanced_traits_have_reduced_cost = yes
+		}
+	}
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	allowed_archetypes = { BIOLOGICAL }
+	tags = { organic positive food livestock genetic_ascension }
+	modifier = {
+		pop_livestock_bonus_workforce_mult = 1
+	}
+	slave_cost = {
+		energy = 1000
+	}
+}
+

@@ -1,0 +1,36 @@
+trait_cyborg_double_jointed = {
+	cost = 1
+	opposites = { "trait_cyborg_bulky" }
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { organic positive housing migration cybernetic }
+	initial = no
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+	randomized = no
+	category = cyborg
+	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
+	modifier = {
+		pop_housing_usage_mult = -0.1
+		pop_resettlement_cost_mult = -0.35
+	}
+
+	resources = {
+		category = planet_pops
+		upkeep = {
+			energy = @cyborg_energy_upkeep
+		}
+	}
+
+	slave_cost = {
+		energy = 1500
+	}
+}
+

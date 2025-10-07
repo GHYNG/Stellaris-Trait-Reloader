@@ -1,0 +1,27 @@
+leader_trait_disciple_of_the_instrument = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_disciple_of_the_instrument"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	leader_class = { official }
+	triggered_planet_modifier = {
+		planet_jobs_produces_mult = 0.2
+		planet_miners_sr_zro_produces_add = 0.5
+		planet_jobs_trade_produces_mult = 0.2
+		custom_tooltip = leader_trait_disciple_of_the_instrument_planetary_decision_effect
+		show_only_custom_tooltip = no
+	}
+	triggered_sector_modifier = {
+		planet_jobs_produces_mult = 0.1
+		planet_miners_sr_zro_produces_add = 0.25
+		planet_jobs_trade_produces_mult = 0.1
+	}
+	initial = no
+	randomized = no
+}
+

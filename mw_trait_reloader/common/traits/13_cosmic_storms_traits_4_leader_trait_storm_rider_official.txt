@@ -1,0 +1,86 @@
+leader_trait_storm_rider_official = {
+	cost = 0
+	ethic_destiny_trait = no
+	inline_script = {
+		script = trait/icon_triggered_glow
+		CLASS = official
+		ICON = "GFX_leader_trait_storm_rider"
+		RARITY = common
+		COUNCIL = triggered
+		TIER = none
+		TRIGGER = "is_leader_in_storm = yes"
+	}
+
+	leader_class = { official }
+	initial = no
+	randomized = no
+
+	custom_tooltip_with_modifiers = "mod_trait_storm_rider"
+
+	leader_potential_add = {
+		has_cosmic_storms_dlc = yes
+		owner = { has_origin = origin_storm_chasers }
+	}
+
+	#more XP, less lifespan in the field
+	triggered_self_modifier = {
+		potential = {
+			is_councilor = no
+			is_ruler = no
+		}
+		species_leader_exp_gain = 0.15
+		leader_lifespan_add = -10
+	}
+
+	#when governor, increase in amenity production
+	triggered_planet_modifier = {
+		potential = {
+			is_councilor = no
+			is_ruler = no
+			is_leader_in_storm = no
+		}
+		pop_entertainer_bonus_workforce_mult = 0.1
+		pop_maintenance_drone_bonus_workforce_mult = 0.1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_councilor = no
+			is_ruler = no
+			is_leader_in_storm = yes
+		}
+		pop_entertainer_bonus_workforce_mult = 0.2
+		pop_maintenance_drone_bonus_workforce_mult = 0.2
+	}
+	triggered_sector_modifier = {
+		potential = {
+			is_councilor = no
+			is_ruler = no
+			is_leader_in_storm = no
+		}
+		pop_entertainer_bonus_workforce_mult = 0.05
+		pop_maintenance_drone_bonus_workforce_mult = 0.05
+	}
+	triggered_sector_modifier = {
+		potential = {
+			is_councilor = no
+			is_ruler = no
+			is_leader_in_storm = yes
+		}
+		pop_entertainer_bonus_workforce_mult = 0.1
+		pop_maintenance_drone_bonus_workforce_mult = 0.1
+	}
+
+	#increases voting strength when attending galcom
+	triggered_galcom_modifier = {
+		potential = {
+			owner = { is_galactic_community_member = yes }
+		}
+		resolution_category_space_weather_exploitation_stances_vote_strength_mult = 0.05
+		resolution_category_storm_environmentalists_stances_vote_strength_mult = 0.05
+	}
+
+	councilor_modifier = {
+		edicts_upkeep_mult = -0.10
+	}
+}
+

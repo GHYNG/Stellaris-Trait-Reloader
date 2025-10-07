@@ -1,0 +1,43 @@
+trait_hollow_bones = {
+	host_has_dlc = "BioGenesis"
+	cost = -3
+	species_potential_add = {
+		OR = {
+			can_add_negative_organic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	opposites = { "trait_strong" "trait_very_strong" "trait_weak" "trait_tankbound" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	species_class = { TOX AVI }
+	localized_tags = {
+		SPECIES_TRAIT_AVIAN
+		SPECIES_TRAIT_TOXOID
+	}
+	species_class_override = {
+		hidden_trigger = {
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	tags = { organic negative pop_output avian toxoid species }
+	custom_tooltip = trait_hollow_bones_effect
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = planet
+		}
+		worker_and_simple_drone_cat_bonus_workforce_mult = -0.01	# -0.1%
+		mult = value:hollow_bones_mult								# Multiplied by 2/3 × planet size
+	}
+
+	slave_cost = {
+		energy = -400
+	}
+
+	assembly_score = {
+		modifier = {
+			from = { planet_size >= 15 }
+			add = -2
+		}
+	}
+}
+

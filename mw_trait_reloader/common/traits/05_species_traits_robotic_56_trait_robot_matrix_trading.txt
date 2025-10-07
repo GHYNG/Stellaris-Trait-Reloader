@@ -1,0 +1,47 @@
+trait_robot_matrix_trading = {
+	cost = 1
+	category = robotic
+
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine positive pop_output trade upkeep modularity }
+	opposites = { trait_robot_scarcity_algorithms }
+	species_potential_add = {
+		can_do_advanced_robo_modding = yes
+		OR = {
+			can_add_droid_traits = yes
+			can_add_synth_traits = yes
+			owner_is_individual_machine = yes
+			owner_is_machine_intelligence = yes
+		}
+	}
+	species_possible_add = {
+	}
+	species_possible_remove = {
+		always = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+
+	initial = no
+	randomized = no
+
+	modifier = {
+		trader_jobs_bonus_workforce_mult = 0.5
+	}
+
+	slave_cost = {
+		energy = 750
+	}
+
+	resources = {
+		category = planet_pops
+		upkeep = {
+			energy = 1
+			rare_crystals = 0.01
+		}
+	}
+
+	custom_tooltip_with_modifiers = trait_robot_matrix_trading_tt
+}
+

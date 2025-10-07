@@ -1,0 +1,64 @@
+leader_trait_cartographer = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_cartographer"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 1
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		OR = {
+			has_trait = subclass_official_economy_councilor
+			has_trait = subclass_scientist_councilor
+		}
+	}
+	councilor_modifier = {
+		terraform_speed_mult = 0.25
+		planet_clear_blocker_speed_mult = 0.10
+	}
+	leader_trait_type = veteran
+	leader_class = { official scientist }
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/council_weight_mult
+	}
+}
+
+leader_trait_cartographer_2 = {
+	replace_traits = { "leader_trait_cartographer" }
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_cartographer"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		terraform_speed_mult = 0.33
+		planet_clear_blocker_speed_mult = 0.25
+	}
+	leader_trait_type = veteran
+	leader_class = { official scientist }
+}
+
+leader_trait_cartographer_3 = {
+	replace_traits = { "leader_trait_cartographer_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_cartographer"
+		RARITY = veteran
+		COUNCIL = yes
+		TIER = 3
+	}
+	councilor_modifier = {
+		terraform_speed_mult = 0.5
+		planet_clear_blocker_speed_mult = 0.33
+	}
+	leader_trait_type = veteran
+	leader_class = { official scientist }
+}
+

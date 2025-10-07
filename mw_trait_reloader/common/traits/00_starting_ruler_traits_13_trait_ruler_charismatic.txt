@@ -1,0 +1,40 @@
+trait_ruler_charismatic = {
+	starting_ruler_trait = yes
+	forbidden_origins = { origin_legendary_leader origin_treasure_hunters }
+	cost = 1
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_charismatic"
+		RARITY = common
+		COUNCIL = yes
+		TIER = 1
+	}
+	councilor_modifier = {
+		edicts_upkeep_mult = -0.075
+		country_edict_fund_add = 15
+	}
+	leader_class = { scientist official commander }
+	selectable_weight = {
+		weight = @shared_trait_weight
+		inline_script = "paragon/council_weight_mult"
+	}
+}
+
+trait_ruler_charismatic_2 = {
+	replace_traits = { "trait_ruler_charismatic" }
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_charismatic"
+		RARITY = common
+		COUNCIL = yes
+		TIER = 2
+	}
+	councilor_modifier = {
+		edicts_upkeep_mult = -0.10
+		country_edict_fund_add = 35
+	}
+	leader_class = { scientist official commander }
+}
+

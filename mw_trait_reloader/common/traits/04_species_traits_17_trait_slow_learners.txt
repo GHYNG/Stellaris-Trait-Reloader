@@ -1,0 +1,20 @@
+trait_slow_learners = {
+	cost = -1
+	category = normal
+	species_potential_add = {
+		can_add_negative_organic_traits = yes
+	}
+	opposites = { "trait_quick_learners" "trait_enigmatic_intelligence" "trait_syncretic_proles" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic negative leader }
+	modifier = {
+		species_leader_exp_gain = -0.10
+	}
+	ai_weight = {
+		weight = 0
+	}
+	slave_cost = {
+		energy = -250
+	}
+}
+

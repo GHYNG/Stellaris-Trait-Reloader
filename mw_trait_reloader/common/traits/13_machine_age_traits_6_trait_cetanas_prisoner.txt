@@ -1,0 +1,25 @@
+trait_cetanas_prisoner = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_notofthisworld.dds"
+	initial = no
+	randomized = no
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_remove = {
+		always = no
+	}
+
+	allowed_archetypes = { ROBOT MACHINE }
+	modifier = {
+		pop_bonus_workforce_mult = -0.15
+	}
+	slave_cost = {
+		energy = -500
+	}
+}
+

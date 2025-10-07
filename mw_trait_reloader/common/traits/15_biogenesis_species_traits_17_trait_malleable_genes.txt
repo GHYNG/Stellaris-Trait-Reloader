@@ -1,0 +1,233 @@
+trait_malleable_genes = {
+	cost = 6
+	auto_mod = yes
+	category = malleable
+
+	initial = no
+	randomized = no
+	immortal_leaders = no
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	opposites = {
+		"trait_adaptive_mutations"
+	}
+
+	triggered_species_modifier = {
+		potential = {
+			exists = from
+			from = {
+				has_country_flag = imperialist_leading
+			}
+		}
+		foundry_jobs_bonus_workforce_mult = 0.1
+	}
+
+	triggered_species_modifier = {
+		potential = {
+			exists = from
+			from = {
+				has_country_flag = isolationist_leading
+			}
+		}
+		bureaucrat_jobs_bonus_workforce_mult = 0.1
+	}
+
+	triggered_species_modifier = {
+		potential = {
+			exists = from
+			from = {
+				has_country_flag = progressive_leading
+			}
+		}
+		pop_happiness = 0.1
+	}
+
+	triggered_species_modifier = {
+		potential = {
+			exists = from
+			from = {
+				has_country_flag = prosperity_leading
+			}
+		}
+		trader_jobs_bonus_workforce_mult = 0.20
+	}
+
+	triggered_species_modifier = {
+		potential = {
+			exists = from
+			from = {
+				has_country_flag = supremacist_leading
+			}
+		}
+		pop_cat_specialist_bonus_workforce_mult = 0.05
+		pop_cat_ruler_bonus_workforce_mult = 0.05
+	}
+
+	triggered_species_modifier = {
+		potential = {
+			exists = from
+			from = {
+				has_country_flag = technologist_leading
+			}
+		}
+		researcher_jobs_bonus_workforce_mult = 0.10
+	}
+
+	triggered_species_modifier = {
+		potential = {
+			exists = from
+			from = {
+				has_country_flag = totalitarian_leading
+			}
+		}
+		pop_cat_worker_bonus_workforce_mult = 0.15
+	}
+
+	triggered_species_modifier = {
+		potential = {
+			exists = from
+			from = {
+				has_country_flag = traditionalist_leading
+			}
+		}
+		pop_housing_usage_add = -0.5
+	}
+
+	triggered_species_modifier = {
+		potential = {
+			exists = from
+			from = {
+				has_country_flag = xenoist_leading
+			}
+		}
+		pop_environment_tolerance = 0.15
+	}
+
+	triggered_species_modifier = {
+		potential = {
+			exists = from
+			from = {
+				has_country_flag = manifesti_leading
+			}
+		}
+		pop_amenities_usage_add = -1
+	}
+
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+
+	tags = { organic positive automod special }
+
+	triggered_desc = {
+		trigger = {
+			exists = from.owner
+			from.owner = {
+				has_country_flag = imperialist_leading
+			}
+		}
+		text = trait_malleable_imperialist_effect
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = from.owner
+			from.owner = {
+				has_country_flag = isolationist_leading
+			}
+		}
+		text = trait_malleable_isolationist_effect
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = from.owner
+			from.owner = {
+				has_country_flag = progressive_leading
+			}
+		}
+		text = trait_malleable_progressive_effect
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = from.owner
+			from.owner = {
+				has_country_flag = prosperity_leading
+			}
+		}
+		text = trait_malleable_prosperity_effect
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = from.owner
+			from.owner = {
+				has_country_flag = supremacist_leading
+			}
+		}
+		text = trait_malleable_supremacist_effect
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = from.owner
+			from.owner = {
+				has_country_flag = technologist_leading
+			}
+		}
+		text = trait_malleable_technologist_effect
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = from.owner
+			from.owner = {
+				has_country_flag = totalitarian_leading
+			}
+		}
+		text = trait_malleable_totalitarian_effect
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = from.owner
+			from.owner = {
+				has_country_flag = traditionalist_leading
+			}
+		}
+		text = trait_malleable_traditionalist_effect
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = from.owner
+			from.owner = {
+				has_country_flag = xenoist_leading
+			}
+		}
+		text = trait_malleable_xenoist_effect
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = from.owner
+			from.owner = {
+				has_country_flag = manifesti_leading
+			}
+		}
+		text = trait_malleable_manifesti_effect
+	}
+
+	custom_tooltip = trait_malleable_genes_cant_modify
+	slave_cost = {
+		energy = 500
+	}
+}
+

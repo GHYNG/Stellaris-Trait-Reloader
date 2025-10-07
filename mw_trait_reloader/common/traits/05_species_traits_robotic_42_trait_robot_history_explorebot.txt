@@ -1,0 +1,26 @@
+trait_robot_history_explorebot = {
+	host_has_dlc = "The Machine Age"
+	cost = 0
+	category = robotic
+
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine positive background pop_output unity }
+
+	species_potential_add = {
+		always = no
+	}
+
+	species_possible_remove = {
+		always = no
+	}
+
+	opposites = { "trait_robot_history_warbot" "trait_robot_history_artbot" "trait_robot_history_researchbot" "trait_robot_history_resourcebot" "trait_robot_history_chatbot"}
+
+	modifier = {
+		bureaucrat_jobs_bonus_workforce_mult = 0.02
+	}
+	slave_cost = {
+		energy = 750
+	}
+}
+

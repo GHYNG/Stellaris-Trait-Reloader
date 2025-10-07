@@ -1,0 +1,20 @@
+leader_trait_altered_metabolism = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_altered_metabolism"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+
+	leader_class = { scientist }
+
+	self_modifier = {
+		leader_lifespan_add = 15
+	}
+
+	initial = no
+	randomized = no
+}
+

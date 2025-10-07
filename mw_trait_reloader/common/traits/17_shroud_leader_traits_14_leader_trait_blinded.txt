@@ -1,0 +1,25 @@
+leader_trait_blinded = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		CLASS = leader
+		ICON = "GFX_leader_trait_blinded"
+		RARITY = common
+		COUNCIL = no
+		TIER = none
+	}
+	triggered_modifier = {
+		potential = { leader_class = scientist }
+		science_ship_survey_speed = -1
+		ship_archaeological_site_excavation_speed_mult = -1
+		ship_astral_rift_speed_mult = -1
+	}
+	councilor_modifier = {
+		country_unity_produces_mult = 1
+		council_agenda_progress_speed = -0.1
+	}
+	leader_class = { commander scientist official }
+	initial = no
+	randomized = no
+}
+
