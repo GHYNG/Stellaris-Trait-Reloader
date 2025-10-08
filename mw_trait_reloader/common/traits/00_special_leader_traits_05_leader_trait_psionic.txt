@@ -7,7 +7,7 @@ leader_trait_psionic = {
 		COUNCIL = triggered
 		TIER = none
 	}
-	# Any Class - Ruler - Regular
+	
 	triggered_councilor_modifier = {
 		potential = {
 			is_ruler = yes
@@ -17,7 +17,7 @@ leader_trait_psionic = {
 		pop_government_ethic_attraction = 0.10
 		mult = value:transcended_psionic_multiplier
 	}
-	# Any Class - Ruler - Gestalt
+	
 	triggered_councilor_modifier = {
 		potential = {
 			is_ruler = yes
@@ -27,13 +27,13 @@ leader_trait_psionic = {
 		planet_crime_no_happiness_add = -10
 		mult = value:transcended_psionic_multiplier
 	}
-	# Any Class - Ruler - Common
+	
 	triggered_councilor_modifier = {
 		potential = { is_ruler = yes }
 		country_ruler_influence_produces_add = 0.5
 		mult = value:transcended_psionic_multiplier
 	}
-	# Commander - Fleet Modifier
+	
 	triggered_fleet_modifier = {
 		potential = {
 			is_ruler = no
@@ -43,7 +43,7 @@ leader_trait_psionic = {
 		ship_shield_hardening_add = 0.10
 		mult = value:transcended_psionic_multiplier
 	}
-	# Commander - Fleet Modifier
+	
 	triggered_fleet_modifier = {
 		potential = {
 			is_ruler = no
@@ -57,7 +57,7 @@ leader_trait_psionic = {
 		ship_sensor_range_add = @clairvoyance_sensor_range
 		mult = value:transcended_psionic_multiplier
 	}
-	# Commander - Army Modifier
+	
 	triggered_army_modifier = {
 		potential = {
 			is_ruler = no
@@ -67,7 +67,7 @@ leader_trait_psionic = {
 		army_morale_damage_mult = 0.10
 		mult = value:transcended_psionic_multiplier
 	}
-	# Scientist - Science Ship Modifier
+	
 	triggered_modifier = {
 		potential = {
 			is_ruler = no
@@ -77,7 +77,7 @@ leader_trait_psionic = {
 		ship_anomaly_generation_chance_mult = 0.05
 		mult = value:transcended_psionic_multiplier
 	}
-	# Scientist - Psychometry Science Ship Modifier
+	
 	triggered_modifier = {
 		potential = {
 			is_ruler = no
@@ -88,7 +88,7 @@ leader_trait_psionic = {
 		ship_archaeological_site_clues_add = 1
 		mult = value:transcended_psionic_multiplier
 	}
-	# Scientist - Psychometry Science Ship Modifier
+	
 	triggered_modifier = {
 		potential = {
 			has_astral_planes_dlc = yes
@@ -100,7 +100,7 @@ leader_trait_psionic = {
 		ship_astral_rift_clues_add = 1
 		mult = value:transcended_psionic_multiplier
 	}
-	# Official - GalCom Modifier
+	
 	triggered_galcom_modifier = {
 		potential = {
 			is_ruler = no
@@ -109,7 +109,7 @@ leader_trait_psionic = {
 		resolutions_cost_mult = -0.10
 		mult = value:transcended_psionic_multiplier
 	}
-	# Official - Federation Modifier
+	
 	triggered_federation_modifier = {
 		potential = {
 			is_ruler = no
@@ -118,7 +118,7 @@ leader_trait_psionic = {
 		federation_experience_add = 1
 		mult = value:transcended_psionic_multiplier
 	}
-	# Any Class - Planet Modifier
+	
 	triggered_planet_modifier = {
 		potential = {
 			is_ruler = no
@@ -126,7 +126,7 @@ leader_trait_psionic = {
 		planet_jobs_unity_produces_mult = 0.10
 		mult = value:transcended_psionic_multiplier
 	}
-	# Any Class - Sector Modifier
+	
 	triggered_sector_modifier = {
 		potential = {
 			is_ruler = no

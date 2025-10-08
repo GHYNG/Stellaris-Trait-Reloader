@@ -2,11 +2,15 @@ trait_plantoid_budding = {
 	host_has_dlc = "Plantoids Species Pack"
 	cost = 2
 	species_possible_add = {
-		can_add_genetic_traits = yes
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
 	}
 	species_possible_remove = {
 		OR = {
 			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
 			can_remove_pop_growth_genetic_traits = yes
 		}
 	}

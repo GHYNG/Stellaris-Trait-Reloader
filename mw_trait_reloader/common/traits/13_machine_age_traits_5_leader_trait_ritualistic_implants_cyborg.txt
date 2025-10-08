@@ -7,7 +7,7 @@ leader_trait_ritualistic_implants_cyborg = {
 		COUNCIL = triggered
 		TIER = none
 	}
-	# Any Class - Ruler
+	
 	triggered_councilor_modifier = {
 		potential = {
 			is_ruler = yes
@@ -15,7 +15,7 @@ leader_trait_ritualistic_implants_cyborg = {
 		planet_structures_upkeep_mult = -0.10
 		empire_size_districts_mult = -0.05
 	}
-	# Commander - Fleet Modifier
+	
 	triggered_fleet_modifier = {
 		potential = {
 			is_ruler = no
@@ -25,7 +25,7 @@ leader_trait_ritualistic_implants_cyborg = {
 		ship_weapon_range_mult = 0.10
 		ship_orbital_bombardment_mult = 0.15
 	}
-	# Commander - Self Modifier
+	
 	triggered_self_modifier = {
 		potential = {
 			is_ruler = no
@@ -33,7 +33,7 @@ leader_trait_ritualistic_implants_cyborg = {
 		}
 		planet_combat_width_add = 1
 	}
-	# Scientist - Science Ship Modifier
+	
 	triggered_modifier = {
 		potential = {
 			is_ruler = no
@@ -41,7 +41,7 @@ leader_trait_ritualistic_implants_cyborg = {
 		}
 		ship_anomaly_generation_chance_mult = 0.15
 	}
-	# Official - GalCom Modifier
+	
 	triggered_galcom_modifier = {
 		potential = {
 			is_ruler = no
@@ -49,7 +49,7 @@ leader_trait_ritualistic_implants_cyborg = {
 		}
 		diplo_weight_technology_mult = 0.05
 	}
-	# Official - Federation Modifier
+	
 	triggered_federation_modifier = {
 		potential = {
 			is_ruler = no
@@ -57,7 +57,7 @@ leader_trait_ritualistic_implants_cyborg = {
 		}
 		federation_experience_add = 0.5
 	}
-	# Any Class - Planet Modifier
+	
 	triggered_planet_modifier = {
 		potential = {
 			is_ruler = no
@@ -66,7 +66,7 @@ leader_trait_ritualistic_implants_cyborg = {
 		planet_jobs_society_research_produces_mult = 0.05
 		planet_jobs_engineering_research_produces_mult = 0.05
 	}
-	# Any Class - Sector Modifier
+	
 	triggered_sector_modifier = {
 		potential = {
 			is_ruler = no

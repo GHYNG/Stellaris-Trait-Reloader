@@ -1,4 +1,4 @@
-trait_social_pheromones = { #red
+trait_social_pheromones = { 
 	cost = {
 		base = 1
 		modifier = {

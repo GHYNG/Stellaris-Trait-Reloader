@@ -15,7 +15,7 @@ leader_trait_ambassador_favor_maker = {
 		}
 	}
 	custom_tooltip = leader_trait_ambassador_favor_maker_effect
-	# Implemented in event leader.300, fired by on_monthly_pulse_country
+	
 	leader_class = { official }
 	selectable_weight = {
 		inline_script = paragon/subclass_free_trait_weight

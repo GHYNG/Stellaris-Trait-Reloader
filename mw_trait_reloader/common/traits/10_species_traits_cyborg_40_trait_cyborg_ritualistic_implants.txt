@@ -25,7 +25,7 @@ trait_cyborg_ritualistic_implants = {
 		bureaucrat_jobs_bonus_workforce_mult = 0.1
 		pop_cat_worker_bonus_workforce_mult = 0.05
 		army_damage_mult = 0.05
-		# concept_cybernetic_creed_traits_desc should be updated if trait effects are changed
+		
 	}
 
 	icon = "gfx/interface/icons/traits/trait_cyborg_ritualistic_implants.dds"
@@ -34,7 +34,7 @@ trait_cyborg_ritualistic_implants = {
 	}
 	assembly_score = {
 		modifier = {
-			add = 0.5 #always good
+			add = 0.5 
 		}
 	}
 }

@@ -2,7 +2,7 @@ trait_robot_scavenger_bot = {
 	host_has_dlc = "The Machine Age"
 	cost = 3
 	category = robotic
-	# Synth, Machine Intelligence or Individualist Machine
+	
 	species_potential_add = {
 		OR = {
 			can_add_synth_traits = yes

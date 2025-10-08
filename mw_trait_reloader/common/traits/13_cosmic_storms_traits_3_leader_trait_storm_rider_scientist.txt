@@ -23,7 +23,7 @@ leader_trait_storm_rider_scientist = {
 		owner = { has_origin = origin_storm_chasers }
 	}
 
-	#more XP, less lifespan in the field
+	
 	triggered_self_modifier = {
 		potential = {
 			is_councilor = no
@@ -33,7 +33,7 @@ leader_trait_storm_rider_scientist = {
 		leader_lifespan_add = -10
 	}
 
-	#bonus to excavation/exploration speed, triple during storm.
+	
 	triggered_modifier = {
 		potential = {
 			is_councilor = no
@@ -53,7 +53,7 @@ leader_trait_storm_rider_scientist = {
 		ship_anomaly_research_speed_mult = 0.15
 	}
 
-	#when a planet/sector they govern is affected by storms, boost research
+	
 	triggered_planet_modifier = {
 		potential = {
 			is_councilor = no

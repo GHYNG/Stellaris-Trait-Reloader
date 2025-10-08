@@ -10,7 +10,7 @@ leader_trait_taskmaster = {
 	}
 	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+			country_event = { id = timeline.50 } 
 		}
 	}
 	planet_modifier = {

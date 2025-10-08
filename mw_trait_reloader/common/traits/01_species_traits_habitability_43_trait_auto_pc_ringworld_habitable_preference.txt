@@ -16,19 +16,19 @@ trait_auto_pc_ringworld_habitable_preference = {
 		weight = 0
 	}
 	modifier = {
-		# Dry
+		
 		pc_desert_habitability 						= @auto_penalty
 		pc_arid_habitability 						= @auto_penalty
 		pc_savannah_habitability 					= @auto_penalty
-		# Wet
+		
 		pc_tropical_habitability 					= @auto_penalty
 		pc_continental_habitability 				= @auto_penalty
 		pc_ocean_habitability 						= @auto_penalty
-		# Cold
+		
 		pc_tundra_habitability 						= @auto_penalty
 		pc_arctic_habitability 						= @auto_penalty
 		pc_alpine_habitability 						= @auto_penalty
-		# Special
+		
 		pc_ringworld_habitable_habitability			= @auto_ideal_bonus
 		pc_shattered_ring_habitable_habitability	= @auto_ideal_bonus
 		pc_nuked_habitability 						= @auto_penalty

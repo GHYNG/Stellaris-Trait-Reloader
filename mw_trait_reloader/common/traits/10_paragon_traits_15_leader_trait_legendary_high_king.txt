@@ -1,4 +1,4 @@
-leader_trait_legendary_high_king = { #Origin trait - authoritarian
+leader_trait_legendary_high_king = { 
 	starting_ruler_trait = yes
 	leader_trait_type = veteran
 	allowed_origins = { origin_legendary_leader }
@@ -25,7 +25,7 @@ leader_trait_legendary_high_king = { #Origin trait - authoritarian
 	randomized = no
 }
 
-leader_trait_legendary_high_king_2 = { #Origin trait - authoritarian
+leader_trait_legendary_high_king_2 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_high_king" }
 	inline_script = {
@@ -48,7 +48,7 @@ leader_trait_legendary_high_king_2 = { #Origin trait - authoritarian
 	initial = no
 }
 
-leader_trait_legendary_high_king_3 = { #Origin trait - authoritarian
+leader_trait_legendary_high_king_3 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_high_king_2" }
 	inline_script = {

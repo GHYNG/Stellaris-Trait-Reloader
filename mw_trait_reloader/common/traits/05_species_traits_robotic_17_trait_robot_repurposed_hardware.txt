@@ -6,7 +6,7 @@ trait_robot_repurposed_hardware = {
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine synthetic negative leader }
 
-	# Synth, Machine Intelligence or Individualist Machine
+	
 	species_potential_add = {
 		OR = {
 			can_add_synth_traits = yes

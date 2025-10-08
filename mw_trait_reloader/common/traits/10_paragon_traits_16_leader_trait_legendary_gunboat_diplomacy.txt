@@ -1,4 +1,4 @@
-leader_trait_legendary_gunboat_diplomacy = { #Origin trait - xenophile
+leader_trait_legendary_gunboat_diplomacy = { 
 	starting_ruler_trait = yes
 	leader_trait_type = veteran
 	allowed_origins = { origin_legendary_leader }
@@ -25,7 +25,7 @@ leader_trait_legendary_gunboat_diplomacy = { #Origin trait - xenophile
 	randomized = no
 }
 
-leader_trait_legendary_gunboat_diplomacy_2 = { #Origin trait - xenophile
+leader_trait_legendary_gunboat_diplomacy_2 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_gunboat_diplomacy" }
 	inline_script = {
@@ -48,7 +48,7 @@ leader_trait_legendary_gunboat_diplomacy_2 = { #Origin trait - xenophile
 	initial = no
 }
 
-leader_trait_legendary_gunboat_diplomacy_3 = { #Origin trait - xenophile
+leader_trait_legendary_gunboat_diplomacy_3 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_gunboat_diplomacy_2" }
 	inline_script = {

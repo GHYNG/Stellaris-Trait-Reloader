@@ -1,4 +1,4 @@
-leader_trait_legendary_pious_ascet = { #Origin trait - spiritualist
+leader_trait_legendary_pious_ascet = { 
 	starting_ruler_trait = yes
 	leader_trait_type = veteran
 	allowed_origins = { origin_legendary_leader }
@@ -25,7 +25,7 @@ leader_trait_legendary_pious_ascet = { #Origin trait - spiritualist
 	randomized = no
 }
 
-leader_trait_legendary_pious_ascet_2 = { #Origin trait - spiritualist
+leader_trait_legendary_pious_ascet_2 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_pious_ascet" }
 	inline_script = {
@@ -48,7 +48,7 @@ leader_trait_legendary_pious_ascet_2 = { #Origin trait - spiritualist
 	initial = no
 }
 
-leader_trait_legendary_pious_ascet_3 = { #Origin trait - spiritualist
+leader_trait_legendary_pious_ascet_3 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_pious_ascet_2" }
 	inline_script = {

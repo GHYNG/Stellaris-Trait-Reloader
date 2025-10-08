@@ -1,4 +1,4 @@
-trait_bioadaptability = { #green
+trait_bioadaptability = { 
 	cost = {
 		base = 1
 		modifier = {

@@ -7,6 +7,8 @@ trait_wilderness = {
 		"trait_sedentary"
 		"trait_vat_grown"
 		"trait_nascent_stage"
+		"trait_auto_mod_biological"
+		"trait_adaptive_mutations"
 	}
 	initial = no
 	randomized = no

@@ -29,7 +29,7 @@ trait_lithoid = {
 
 	resources = {
 		category = planet_pops
-		# Mineral Upkeep
+		
 		upkeep = {
 			trigger = {
 				is_phototrophic = no

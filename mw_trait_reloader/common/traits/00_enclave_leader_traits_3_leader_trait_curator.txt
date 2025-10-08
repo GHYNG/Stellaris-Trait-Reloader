@@ -11,7 +11,7 @@ leader_trait_curator = {
 	councilor_modifier = {
 		all_technology_research_speed = 0.10
 		science_ship_survey_speed = 0.25
-		# increased chance to discover rare techs (weighted in tech-script)
+		
 	}
 	triggered_councilor_modifier = {
 		potential = {

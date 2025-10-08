@@ -16,7 +16,7 @@ trait_seasonal_dormancy = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	portrait_override = { fun16 fun4 }
+	portrait_override = { fun16 fun4 mindwarden_01 }
 	opposites = { "trait_wasteful" "trait_conservational" "trait_low_maintenance" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	species_class = { MAM REP }

@@ -35,7 +35,20 @@ trait_plantoid_radiotrophic = {
 	}
 	tags = { organic positive plantoid fungoid lithoid upkeep species }
 	custom_tooltip = TRAIT_PLANTOID_RADIOTROPHIC_EFFECT
-
+	resources = {
+		category = planet_pops
+		
+		upkeep = {
+			trigger = {
+				is_being_purged = no
+				exists = planet
+				NOT = {
+					planet = { is_planet_class = pc_nuked }
+				}
+			}
+			energy = @living_standard_phototrophic_normal
+		}
+	}
 	modifier = {
 		pc_nuked_habitability = 0.1
 	}

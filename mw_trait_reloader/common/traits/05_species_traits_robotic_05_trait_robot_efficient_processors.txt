@@ -14,7 +14,7 @@ trait_robot_efficient_processors = {
 	}
 	assembly_score = {
 		modifier = {
-			add = 0.5 #always good
+			add = 0.5 
 		}
 	}
 }

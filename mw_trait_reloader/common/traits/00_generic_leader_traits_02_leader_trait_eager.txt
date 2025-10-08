@@ -15,7 +15,7 @@ leader_trait_eager = {
 	}
 	leader_potential_add = {
 		trait_is_crisis_faction_check = no
-		is_pool_leader = yes # Starting trait only.
+		is_pool_leader = yes 
 		NOT = { has_trait_tier1or2or3 = { TRAIT = leader_trait_adventurous_spirit } }
 	}
 	custom_tooltip_with_modifiers = "leader_trait_opportunity_custom_effect"

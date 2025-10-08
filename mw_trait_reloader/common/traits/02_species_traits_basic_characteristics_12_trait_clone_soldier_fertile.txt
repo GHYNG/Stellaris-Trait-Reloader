@@ -27,10 +27,10 @@ trait_clone_soldier_fertile = {
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier_descendant.dds"
 
 	modifier = {
-		# Pop modifiers
+		
 		pop_government_ethic_attraction = 0.20
 
-		# Leader modifiers
+		
 		army_damage_mult = 0.2
 	}
 	slave_cost = {

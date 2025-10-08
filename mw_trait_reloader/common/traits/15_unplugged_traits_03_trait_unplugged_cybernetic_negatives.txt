@@ -34,7 +34,7 @@ trait_unplugged_cybernetic_negatives_3 = {
 	}
 }
 
-trait_unplugged_cybernetic_negatives_2 = { # see also: player-facing string 'situation_unplugged_lost_negative_3'
+trait_unplugged_cybernetic_negatives_2 = { 
 	cost = 0
 	icon = "gfx/interface/icons/traits/trait_unplugged_negative_2.dds"
 
@@ -69,7 +69,7 @@ trait_unplugged_cybernetic_negatives_2 = { # see also: player-facing string 'sit
 	}
 }
 
-trait_unplugged_cybernetic_negatives_1 = { # see also: player-facing string 'situation_unplugged_lost_negative_2'
+trait_unplugged_cybernetic_negatives_1 = { 
 	cost = 0
 	icon = "gfx/interface/icons/traits/trait_unplugged_negative_1.dds"
 

@@ -1,4 +1,4 @@
-leader_trait_legendary_leader = { #Origin trait
+leader_trait_legendary_leader = { 
 	inline_script = {
 		script = trait/icon
 		ICON = "GFX_leader_trait_legendary_leader"

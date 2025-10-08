@@ -1,23 +1,27 @@
-leader_trait_armorer = {
+leader_trait_military_overseer = {
 	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		ICON = GFX_leader_trait_armorer
+		ICON = GFX_leader_trait_military_overseer
 		RARITY = paragon
 		COUNCIL = yes
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		if = {
+			limit = {
+				exists = owner
+			}
+			owner = {
+				country_event = { id = timeline.50 } 
+			}
 		}
 	}
 	councilor_modifier = {
-		ship_shield_add = 100
-		ship_armor_add = 100
-		ship_armor_hardening_add = 0.2
-		ship_shield_hardening_add = 0.2
+		country_power_projection_influence_produces_add = 2
+		shipclass_military_build_speed_mult = 0.25
+		ship_starting_experience_add = 500
 	}
 	leader_potential_add = {
 		has_paragon_dlc = yes

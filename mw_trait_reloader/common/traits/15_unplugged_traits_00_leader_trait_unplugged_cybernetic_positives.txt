@@ -22,7 +22,7 @@ leader_trait_unplugged_cybernetic_positives_3 = {
 	}
 }
 
-leader_trait_unplugged_cybernetic_positives_2 = { # see also: player-facing string 'situation_unplugged_lost_positive_3'
+leader_trait_unplugged_cybernetic_positives_2 = { 
 	icon = {
 		inline_script = trait/icon_element/rarity_common
 		layer = {
@@ -45,7 +45,7 @@ leader_trait_unplugged_cybernetic_positives_2 = { # see also: player-facing stri
 	}
 }
 
-leader_trait_unplugged_cybernetic_positives_1 = { # see also: player-facing string 'situation_unplugged_lost_positive_2'
+leader_trait_unplugged_cybernetic_positives_1 = { 
 	icon = {
 		inline_script = trait/icon_element/rarity_common
 		layer = {

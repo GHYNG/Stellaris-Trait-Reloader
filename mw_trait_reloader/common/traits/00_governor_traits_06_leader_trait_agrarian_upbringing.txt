@@ -13,7 +13,7 @@ leader_trait_agrarian_upbringing = {
 		has_global_flag = game_started
 		exists = owner
 		owner = { country_uses_food = yes }
-		is_pool_leader = yes # Starting trait only.
+		is_pool_leader = yes 
 	}
 	on_gained_effect = {
 		if = {

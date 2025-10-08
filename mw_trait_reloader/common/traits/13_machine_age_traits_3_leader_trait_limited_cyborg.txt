@@ -6,7 +6,7 @@ leader_trait_limited_cyborg = {
 		COUNCIL = triggered
 		TIER = none
 	}
-	# Any Class - Ruler
+	
 	triggered_councilor_modifier = {
 		potential = {
 			is_ruler = yes

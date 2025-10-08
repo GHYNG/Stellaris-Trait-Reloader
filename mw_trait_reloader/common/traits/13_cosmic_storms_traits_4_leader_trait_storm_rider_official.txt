@@ -22,7 +22,7 @@ leader_trait_storm_rider_official = {
 		owner = { has_origin = origin_storm_chasers }
 	}
 
-	#more XP, less lifespan in the field
+	
 	triggered_self_modifier = {
 		potential = {
 			is_councilor = no
@@ -32,7 +32,7 @@ leader_trait_storm_rider_official = {
 		leader_lifespan_add = -10
 	}
 
-	#when governor, increase in amenity production
+	
 	triggered_planet_modifier = {
 		potential = {
 			is_councilor = no
@@ -70,7 +70,7 @@ leader_trait_storm_rider_official = {
 		pop_maintenance_drone_bonus_workforce_mult = 0.1
 	}
 
-	#increases voting strength when attending galcom
+	
 	triggered_galcom_modifier = {
 		potential = {
 			owner = { is_galactic_community_member = yes }

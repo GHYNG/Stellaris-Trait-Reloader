@@ -1,4 +1,4 @@
-leader_trait_legendary_great_teacher = { #Origin trait - spiritualist
+leader_trait_legendary_great_teacher = { 
 	starting_ruler_trait = yes
 	leader_trait_type = veteran
 	allowed_origins = { origin_legendary_leader }
@@ -27,7 +27,7 @@ leader_trait_legendary_great_teacher = { #Origin trait - spiritualist
 	randomized = no
 }
 
-leader_trait_legendary_great_teacher_2 = { #Origin trait - spiritualist
+leader_trait_legendary_great_teacher_2 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_great_teacher" }
 	inline_script = {
@@ -52,7 +52,7 @@ leader_trait_legendary_great_teacher_2 = { #Origin trait - spiritualist
 	initial = no
 }
 
-leader_trait_legendary_great_teacher_3 = { #Origin trait - spiritualist
+leader_trait_legendary_great_teacher_3 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_great_teacher_2" }
 	inline_script = {

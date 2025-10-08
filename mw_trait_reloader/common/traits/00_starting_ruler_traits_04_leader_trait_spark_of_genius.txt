@@ -12,7 +12,7 @@ leader_trait_spark_of_genius = {
 	}
 	councilor_modifier = {
 		all_technology_research_speed = 0.03
-		# increased chance to discover rare techs (weighted in tech-script)
+		
 	}
 	leader_class = { scientist }
 	opposites = {
@@ -38,7 +38,7 @@ leader_trait_spark_of_genius_2 = {
 	}
 	councilor_modifier = {
 		all_technology_research_speed = 0.06
-		# increased chance to discover rare techs (weighted in tech-script)
+		
 	}
 	leader_class = { scientist }
 	opposites = {

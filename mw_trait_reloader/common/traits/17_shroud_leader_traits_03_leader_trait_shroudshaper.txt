@@ -8,29 +8,50 @@ leader_trait_shroudshaper = {
 		COUNCIL = triggered
 		TIER = none
 	}
+	
 	triggered_fleet_modifier = {
-		potential = { leader_class = commander }
+		potential = {
+			is_ruler = no
+			leader_class = commander
+		}
 		ship_speed_mult = 0.20
 		ship_fire_rate_mult = 0.20
 		ship_sensor_range_add = 2
+		mult = value:transcended_psionic_multiplier
 	}
+	
 	triggered_army_modifier = {
-		potential = { leader_class = commander }
+		potential = {
+			is_ruler = no
+			leader_class = commander
+		}
 		army_morale_damage_mult = 0.20
 		army_morale = 0.20
 		army_health = 0.20
 		army_damage_mult = 0.20
+		mult = value:transcended_psionic_multiplier
 	}
+	
 	triggered_galcom_modifier = {
-		potential = { leader_class = official }
+		potential = {
+				is_ruler = no
+				leader_class = official
+		}
 		resolution_category_greatergood_vote_strength_mult = 0.35
 		resolutions_cost_mult = -0.15
+		mult = value:transcended_psionic_multiplier
 	}
+	
 	triggered_federation_modifier = {
-		potential = { leader_class = official }
+		potential = {
+			is_ruler = no
+			leader_class = official
+		}
 		federation_experience_add = 1.5
 		cohesion_ethics_penalty_mult = -0.35
+		mult = value:transcended_psionic_multiplier
 	}
+	
 	triggered_modifier = {
 		potential = {
 			is_ruler = no
@@ -38,19 +59,65 @@ leader_trait_shroudshaper = {
 		}
 		science_ship_survey_speed = 0.10
 		ship_anomaly_generation_chance_mult = 0.05
+		mult = value:transcended_psionic_multiplier
 	}
-	planet_modifier = {
+	
+	triggered_planet_modifier = {
+		potential = { is_ruler = no }
 		planet_jobs_upkeep_mult = -0.10
-		job_telepath_per_pop = 0.04 # 1 per 25
+		mult = value:transcended_psionic_multiplier
 	}
-	sector_modifier = {
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no
+			trait_is_gestalt_check = no
+		}
+		job_telepath_add = 20			
+		mult = trigger:has_total_skill
+		
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no
+			trait_is_gestalt_check = yes
+		}
+		job_telepath_drone_add = 20
+		mult = trigger:has_total_skill
+		
+	}
+	
+	triggered_sector_modifier = {
+		potential = { is_ruler = no }
 		planet_jobs_upkeep_mult = -0.05
-		job_telepath_per_pop = 0.02 # 1 per 50
+		mult = value:transcended_psionic_multiplier
 	}
-	councilor_modifier = {
+	triggered_sector_modifier = {
+		potential = {
+			is_ruler = no
+			trait_is_gestalt_check = no
+		}
+		job_telepath_add = 10
+		mult = trigger:has_total_skill
+		
+	}
+	triggered_sector_modifier = {
+		potential = {
+			is_ruler = no
+			trait_is_gestalt_check = yes
+		}
+		job_telepath_drone_add = 10
+		mult = trigger:has_total_skill
+		
+	}
+	
+	triggered_councilor_modifier = {
+		potential = { is_ruler = yes }
+		country_ruler_influence_produces_add = 0.5
+		shroud_delve_cooldown = -0.05
 		all_technology_research_speed = 0.05
 		country_naval_cap_mult = 0.05
 		diplo_weight_mult = 0.05
+		mult = value:transcended_psionic_multiplier
 	}
 	leader_class = { commander scientist official }
 	initial = no

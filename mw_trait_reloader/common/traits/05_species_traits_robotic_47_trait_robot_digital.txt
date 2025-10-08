@@ -22,7 +22,7 @@ trait_robot_digital_1 = {
 
 	resources = {
 		category = planet_pops
-		# Energy Upkeep
+		
 		upkeep = {
 			trigger = {
 				exists = owner
@@ -30,7 +30,7 @@ trait_robot_digital_1 = {
 					has_tradition = tr_virtuality_1
 				}
 			}
-			energy = 1	# All the maths is done in the script value
+			energy = 1	
 			mult = value:virtuality_num_colonies
 		}
 	}
@@ -78,7 +78,7 @@ trait_robot_digital_2 = {
 
 	resources = {
 		category = planet_pops
-		# Energy Upkeep
+		
 		upkeep = {
 			trigger = {
 				exists = owner
@@ -86,7 +86,7 @@ trait_robot_digital_2 = {
 					has_tradition = tr_virtuality_1
 				}
 			}
-			energy = 1	# All the maths is done in the script value
+			energy = 1	
 			mult = value:virtuality_num_colonies
 		}
 	}

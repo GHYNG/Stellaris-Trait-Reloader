@@ -7,19 +7,19 @@ trait_auto_wet_preference = {
 		PLANET_CLASS_3 = pc_ocean
 	}
 	modifier = {
-		# Dry
+		
 		pc_desert_habitability 		= @auto_penalty
 		pc_arid_habitability 		= @auto_penalty
 		pc_savannah_habitability	= @auto_penalty
-		# Wet
+		
 		pc_tropical_habitability 	= @auto_bonus
 		pc_continental_habitability = @auto_bonus
 		pc_ocean_habitability 		= @auto_bonus
-		# Cold
+		
 		pc_tundra_habitability 		= @auto_penalty
 		pc_arctic_habitability 		= @auto_penalty
 		pc_alpine_habitability 		= @auto_penalty
-		# Special
+		
 		pc_nuked_habitability 		= @auto_penalty
 	}
 }

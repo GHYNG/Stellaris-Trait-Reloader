@@ -1,4 +1,4 @@
-leader_trait_legendary_scientific_diplomacy = { #Origin trait - xenophile
+leader_trait_legendary_scientific_diplomacy = { 
 	starting_ruler_trait = yes
 	leader_trait_type = veteran
 	allowed_origins = { origin_legendary_leader }
@@ -11,7 +11,7 @@ leader_trait_legendary_scientific_diplomacy = { #Origin trait - xenophile
 		COUNCIL = yes
 		TIER = 1
 	}
-	custom_tooltip_with_modifiers = "leader_trait_legendary_scientific_diplomacy_tt" #migration pacts produce 3 of each science
+	custom_tooltip_with_modifiers = "leader_trait_legendary_scientific_diplomacy_tt" 
 
 	councilor_modifier = {
 		diplo_weight_technology_mult = 0.1
@@ -24,7 +24,7 @@ leader_trait_legendary_scientific_diplomacy = { #Origin trait - xenophile
 	randomized = no
 }
 
-leader_trait_legendary_scientific_diplomacy_2 = { #Origin trait - xenophile
+leader_trait_legendary_scientific_diplomacy_2 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_scientific_diplomacy" }
 	inline_script = {
@@ -34,7 +34,7 @@ leader_trait_legendary_scientific_diplomacy_2 = { #Origin trait - xenophile
 		COUNCIL = yes
 		TIER = 2
 	}
-	custom_tooltip_with_modifiers = "leader_trait_legendary_scientific_diplomacy_2_tt" #migration pacts produce 9 of each science
+	custom_tooltip_with_modifiers = "leader_trait_legendary_scientific_diplomacy_2_tt" 
 
 	councilor_modifier = {
 		diplo_weight_technology_mult = 0.15
@@ -46,7 +46,7 @@ leader_trait_legendary_scientific_diplomacy_2 = { #Origin trait - xenophile
 	initial = no
 }
 
-leader_trait_legendary_scientific_diplomacy_3 = { #Origin trait - xenophile
+leader_trait_legendary_scientific_diplomacy_3 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_scientific_diplomacy_2" }
 	inline_script = {
@@ -56,7 +56,7 @@ leader_trait_legendary_scientific_diplomacy_3 = { #Origin trait - xenophile
 		COUNCIL = yes
 		TIER = 3
 	}
-	custom_tooltip_with_modifiers = "leader_trait_legendary_scientific_diplomacy_3_tt" #migration pacts produce 18 of each science
+	custom_tooltip_with_modifiers = "leader_trait_legendary_scientific_diplomacy_3_tt" 
 
 	councilor_modifier = {
 		diplo_weight_technology_mult = 0.2

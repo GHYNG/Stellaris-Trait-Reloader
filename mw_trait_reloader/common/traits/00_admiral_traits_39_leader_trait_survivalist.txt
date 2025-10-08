@@ -1,21 +1,27 @@
-leader_trait_destiny_engineer = {
+leader_trait_survivalist = {
 	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		ICON = GFX_leader_trait_engineer
+		ICON = GFX_leader_trait_survivalist
 		RARITY = paragon
 		COUNCIL = no
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		if = {
+			limit = {
+				exists = owner
+			}
+			owner = {
+				country_event = { id = timeline.50 } 
+			}
 		}
 	}
 	fleet_modifier = {
-		ship_hull_mult = 0.25
-		ship_hull_regen_add_perc = 0.02
+		ship_friendly_territory_evasion_mult = 0.45
+		ship_friendly_territory_fire_rate_mult = 0.45
+		ship_friendly_territory_shield_add = 300
 	}
 	leader_potential_add = {
 		has_paragon_dlc = yes

@@ -24,7 +24,7 @@ trait_organic = {
 
 	resources = {
 		category = planet_pops
-		# Food Upkeep
+		
 		upkeep = {
 			trigger = {
 				is_phototrophic = no

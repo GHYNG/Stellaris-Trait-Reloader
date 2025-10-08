@@ -8,7 +8,7 @@ trait_leader_genetic_purist = {
 		TIER = none
 	}
 
-	# Democratic
+	
 	triggered_self_modifier = {
 		potential = {
 			exists = owner
@@ -25,7 +25,7 @@ trait_leader_genetic_purist = {
 		mult = species.species_traits_purity_count
 	}
 
-	# Oligarchic
+	
 	triggered_councilor_modifier = {
 		potential = {
 			exists = owner
@@ -41,7 +41,7 @@ trait_leader_genetic_purist = {
 		mult = species.species_traits_purity_count
 	}
 
-	# Dictatorial
+	
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner

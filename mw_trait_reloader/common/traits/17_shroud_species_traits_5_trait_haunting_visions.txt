@@ -10,9 +10,9 @@ trait_haunting_visions = {
 		}
 	}
 
-	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
 	species_class = { PSIONIC }
-	portrait_override = { psionic_01 psionic_02 psionic_03 psionic_04 psionic_05 psionic_06 psionic_07 psionic_08 psionic_09 psionic_10 psionic_11 psionic_12 mindwarden_01 }
+	portrait_override = { psionic_01 psionic_02 psionic_03 psionic_04 psionic_05 psionic_06 psionic_07 psionic_08 psionic_09 psionic_10 psionic_12 mindwarden_01 mam_rat }
 	localized_tags = {
 		SPECIES_TRAIT_PSIONIC
 	}

@@ -3,7 +3,7 @@
 @expertise_tier_3_mult = 0.50
 
 leader_trait_expertise_biology = {
-	# This is needed due to the technocracy effects
+	
 	force_councilor_trait = yes
 	leader_trait_type = veteran
 	inline_script = {

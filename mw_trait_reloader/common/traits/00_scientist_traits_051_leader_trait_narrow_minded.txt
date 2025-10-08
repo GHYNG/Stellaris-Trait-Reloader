@@ -7,7 +7,7 @@ leader_trait_narrow_minded = {
 		TIER = 1
 	}
 	councilor_modifier = {
-		# Consider changing to reduced chance to draw Rare tech.
+		
 		all_technology_research_speed = -0.05
 	}
 	leader_class = { scientist }

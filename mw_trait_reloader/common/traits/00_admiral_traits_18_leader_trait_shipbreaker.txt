@@ -8,7 +8,7 @@ leader_trait_shipbreaker = {
 		COUNCIL = no
 		TIER = 1
 	}
-	# Effect in paragon_2.1005 event.
+	
 	leader_potential_add = {
 		has_paragon_dlc = yes
 		OR = {
@@ -35,7 +35,7 @@ leader_trait_shipbreaker_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	# Effect in paragon_2.1005 event.
+	
 	fleet_modifier = {
 		ship_armor_hardening_add = 0.15
 	}

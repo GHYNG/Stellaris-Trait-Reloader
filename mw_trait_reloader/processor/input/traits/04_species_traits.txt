@@ -4,6 +4,10 @@ trait_auto_mod_biological = {
 	auto_mod = yes
 	category = normal
 
+	opposites = {
+		"trait_wilderness"
+	}
+
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic automod positive }
 	initial = no
@@ -1995,7 +1999,20 @@ trait_plantoid_radiotrophic = {
 	}
 	tags = { organic positive plantoid fungoid lithoid upkeep species }
 	custom_tooltip = TRAIT_PLANTOID_RADIOTROPHIC_EFFECT
-
+	resources = {
+		category = planet_pops
+		# Energy Upkeep
+		upkeep = {
+			trigger = {
+				is_being_purged = no
+				exists = planet
+				NOT = {
+					planet = { is_planet_class = pc_nuked }
+				}
+			}
+			energy = @living_standard_phototrophic_normal
+		}
+	}
 	modifier = {
 		pc_nuked_habitability = 0.1
 	}
@@ -2044,11 +2061,15 @@ trait_plantoid_budding = {
 	host_has_dlc = "Plantoids Species Pack"
 	cost = 2
 	species_possible_add = {
-		can_add_genetic_traits = yes
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
 	}
 	species_possible_remove = {
 		OR = {
 			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
 			can_remove_pop_growth_genetic_traits = yes
 		}
 	}
@@ -2145,11 +2166,15 @@ trait_lithoid_budding = {
 	host_has_dlc = "Plantoids Species Pack"
 	cost = 2
 	species_possible_add = {
-		can_add_genetic_traits = yes
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
 	}
 	species_possible_remove = {
 		OR = {
 			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
 			can_remove_pop_growth_genetic_traits = yes
 		}
 	}

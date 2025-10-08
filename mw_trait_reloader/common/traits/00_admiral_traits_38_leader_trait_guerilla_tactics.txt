@@ -1,22 +1,36 @@
-leader_trait_master_gunner = {
+leader_trait_guerilla_tactics = {
 	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		ICON = GFX_leader_trait_master_gunner
+		ICON = GFX_leader_trait_guerilla_tactics
 		RARITY = paragon
 		COUNCIL = no
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		if = {
+			limit = {
+				exists = owner
+			}
+			owner = {
+				country_event = { id = timeline.50 } 
+			}
 		}
 	}
+	triggered_fleet_modifier = {
+		potential = { has_first_contact_dlc = no }
+		ship_disengage_chance_mult = 0.5
+	}
+	triggered_fleet_modifier = {
+		potential = { has_first_contact_dlc = yes }
+		ship_cloaking_strength_add = 2
+	}
 	fleet_modifier = {
-		ship_weapon_range_mult = 0.3
-		ship_tracking_mult = 0.3
-		ship_accuracy_mult = 0.3
+		ship_disengage_opportunities_add = 2
+		ship_evasion_add = 10
+		fleet_mia_time_mult = -0.5
+		command_limit_mult = -0.25
 	}
 	leader_potential_add = {
 		has_paragon_dlc = yes

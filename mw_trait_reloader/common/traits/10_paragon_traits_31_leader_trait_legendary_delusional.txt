@@ -1,4 +1,4 @@
-leader_trait_legendary_delusional = { #Origin trait - negative delusion trait
+leader_trait_legendary_delusional = { 
 	cost = 0
 	inline_script = {
 		script = trait/icon_negative_no_tiers

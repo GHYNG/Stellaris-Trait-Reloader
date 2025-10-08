@@ -1,4 +1,4 @@
-trait_limited_regeneration = { #blue
+trait_limited_regeneration = { 
 	cost = {
 		base = 1
 		modifier = {

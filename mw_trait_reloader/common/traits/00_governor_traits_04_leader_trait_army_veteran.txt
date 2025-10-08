@@ -13,7 +13,7 @@ leader_trait_army_veteran = {
 		army_defense_damage_mult = 0.25
 	}
 	leader_potential_add = {
-		is_pool_leader = yes # Starting trait only.
+		is_pool_leader = yes 
 	}
 	on_gained_effect = {
 		add_age = value:percent_of_leader_lifespan|PERCENT|10|

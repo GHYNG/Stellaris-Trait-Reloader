@@ -29,7 +29,7 @@ trait_chromalogs = {
 			can_add_or_remove_phenotype_traits = yes
 		}
 	}
-	portrait_override = { avi18 tox12 }
+	portrait_override = { avi18 tox12 mindwarden_01 }
 	tags = { organic positive army research pop_output unity aquatic arthropoid reptilian species }
 	modifier = {
 		physicist_jobs_bonus_workforce_mult = 0.20

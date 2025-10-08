@@ -23,7 +23,7 @@ leader_trait_storm_rider_commander = {
 		owner = { has_origin = origin_storm_chasers }
 	}
 
-	#more XP, less lifespan in the field
+	
 	triggered_self_modifier = {
 		potential = {
 			is_councilor = no
@@ -33,7 +33,7 @@ leader_trait_storm_rider_commander = {
 		leader_lifespan_add = -10
 	}
 
-	#higher fleet evasion
+	
 	triggered_fleet_modifier = {
 		potential = {
 			is_councilor = no
@@ -42,7 +42,7 @@ leader_trait_storm_rider_commander = {
 		}
 		ship_evasion_mult = 0.15
 	}
-	triggered_fleet_modifier = { #even higher evasion during storms
+	triggered_fleet_modifier = { 
 		potential = {
 			is_councilor = no
 			is_ruler = no
@@ -51,7 +51,7 @@ leader_trait_storm_rider_commander = {
 		ship_evasion_mult = 0.30
 	}
 
-	#limits storm devastation as governor
+	
 	triggered_planet_modifier = {
 		potential = {
 			is_ruler = no
@@ -65,7 +65,7 @@ leader_trait_storm_rider_commander = {
 		planet_storm_devastation_mult = -0.15
 	}
 
-	councilor_modifier = { #when on the council, waxes shiphulls so they go faster
+	councilor_modifier = { 
 		ship_speed_mult = 0.1
 	}
 }

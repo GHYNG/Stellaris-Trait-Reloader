@@ -6,7 +6,7 @@ trait_robot_integrated_weaponry = {
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine synthetic positive army }
 	opposites = { "trait_robot_delicate_frames" }
-	# Droid, Synth, Machine Intelligence or Individualist Machine
+	
 	species_potential_add = {
 		OR = {
 			can_add_droid_traits = yes

@@ -1,4 +1,4 @@
-leader_trait_legendary_too_open = { #Origin trait - bad xenophile
+leader_trait_legendary_too_open = { 
 	starting_ruler_trait = yes
 	allowed_origins = { origin_legendary_leader }
 	opposites = { leader_trait_legendary_unfriendly leader_trait_legendary_warmonger leader_trait_legendary_dreamlike leader_trait_legendary_harsh_ruler leader_trait_legendary_hoplofobia leader_trait_legendary_bad_meritocracy }

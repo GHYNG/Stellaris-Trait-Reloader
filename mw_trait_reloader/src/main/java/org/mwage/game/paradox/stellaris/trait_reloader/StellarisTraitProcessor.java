@@ -15,9 +15,7 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 // Thank you, DeepSeek
-public class StellarisTraitProcessor {
-	private static final String INPUT_DIR = "processor/input/traits";
-	private static final String OUTPUT_DIR = "processor/output/traits";
+public class StellarisTraitProcessor implements Config {
 	public static void main(String[] args) {
 		try {
 			processTraits();
@@ -26,8 +24,6 @@ public class StellarisTraitProcessor {
 		catch(Exception e) {
 			e.printStackTrace();
 		}
-	}
-	public static void produceEmptyFiles() {
 	}
 	public static void processTraits() throws IOException {
 		Path inputPath = Paths.get(INPUT_DIR);
@@ -81,6 +77,7 @@ public class StellarisTraitProcessor {
 		Files.writeString(emptyFile, "", StandardCharsets.UTF_8);
 	}
 	private static List<Variable> extractFileVariables(String content) {
+		content = removeComment(content);
 		List<Variable> variables = new ArrayList<>();
 		// 匹配文件级变量定义：@variable_name = value
 		Pattern pattern = Pattern.compile("^@(\\w+)\\s*=\\s*(.+)$", Pattern.MULTILINE);
@@ -93,6 +90,7 @@ public class StellarisTraitProcessor {
 		return variables;
 	}
 	private static List<Trait> extractTraits(String content) {
+		content = removeComment(content);
 		List<Trait> traits = new ArrayList<>();
 		// 匹配特质定义：trait_name = { ... }
 		Pattern pattern = Pattern.compile("^(\\w+)\\s*=\\s*\\{", Pattern.MULTILINE);
@@ -173,6 +171,40 @@ public class StellarisTraitProcessor {
 			}
 		}
 		return needed;
+	}
+	/// 修复：DeepSeek似乎会将注释语句后的第一个Trait忽略掉
+	private static String removeComment(String content) {
+		String[] lines = content.split("\\r?\\n|\\r");
+		StringBuilder sbContent = new StringBuilder();
+		for(String line : lines) {
+			String subline = line;
+			int indexComment = indexCommentAt(line);
+			if(indexComment >= 0) {
+				subline = line.substring(0, indexComment);
+			}
+			sbContent.append(subline).append(System.lineSeparator());
+		}
+		return sbContent.toString();
+	}
+	private static int indexCommentAt(String line) {
+		char[] cs = line.toCharArray();
+		if(cs.length == 0) {
+			return -1;
+		}
+		int length = cs.length;
+		int numQuote = 0;
+		for(int i = 0; i < length; i++) {
+			char c = cs[i];
+			if(c == '#') {
+				if(numQuote % 2 == 0) {
+					return i;
+				}
+			}
+			if(c == '"') {
+				numQuote++;
+			}
+		}
+		return -1;
 	}
 	// 内部类：表示变量
 	static class Variable {

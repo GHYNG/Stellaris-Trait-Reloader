@@ -8,7 +8,7 @@ trait_robot_artificial_engineers = {
 		"trait_robot_artificial_physicists"
 		"trait_robot_artificial_sociologists"
 	}
-	# Droid, Synth, Machine Intelligence or Individualist Machine
+	
 	species_potential_add = {
 		OR = {
 			can_add_droid_traits = yes

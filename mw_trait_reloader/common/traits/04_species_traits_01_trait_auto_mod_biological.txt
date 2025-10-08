@@ -3,6 +3,10 @@ trait_auto_mod_biological = {
 	auto_mod = yes
 	category = normal
 
+	opposites = {
+		"trait_wilderness"
+	}
+
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic automod positive }
 	initial = no

@@ -39,7 +39,7 @@ trait_juiced_power = {
 	}
 	assembly_score = {
 		modifier = {
-			add = 0.5 #always good
+			add = 0.5 
 		}
 	}
 	slave_cost = {

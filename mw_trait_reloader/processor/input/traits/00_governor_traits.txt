@@ -2410,6 +2410,14 @@ leader_trait_shroud_preacher = {
 	}
 	leader_potential_add = {
 		has_paragon_dlc = yes
+		from = {
+			NOT = {
+				has_origin = origin_mindwardens
+			}
+		}
+		NOT = {
+			has_leader_flag = mindwarden_commander
+		}
 		OR = {
 			has_trait = subclass_scientist_governor
 			has_trait = subclass_official_governor

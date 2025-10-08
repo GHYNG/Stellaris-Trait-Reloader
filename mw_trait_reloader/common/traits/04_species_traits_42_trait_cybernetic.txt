@@ -34,7 +34,7 @@ trait_cybernetic = {
 		}
 		species_empire_size_mult = -0.10
 	}
-	triggered_species_modifier = {  # Changes to these values need to be done in the loc too: cyber_subscription and cyber_subscription_megacorp
+	triggered_species_modifier = {  
 		potential = {
 			exists = from
 			from = {

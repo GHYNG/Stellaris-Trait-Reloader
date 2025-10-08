@@ -17,7 +17,7 @@ leader_trait_robotic_surrogate = {
 		pop_synapse_drone_bonus_workforce_mult = 0.05
 		council_agenda_progress_speed = -0.1
 	}
-	# Any Class - Ruler
+	
 	self_modifier = {
 		negative_traits_leader = -1
 		species_leader_exp_gain = -0.25

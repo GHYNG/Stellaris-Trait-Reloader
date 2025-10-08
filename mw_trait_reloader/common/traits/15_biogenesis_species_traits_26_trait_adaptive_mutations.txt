@@ -3,6 +3,10 @@ trait_adaptive_mutations = {
 	auto_mod = yes
 	category = mutation
 
+	opposites = {
+		"trait_wilderness"
+	}
+
 	initial = no
 	randomized = no
 	immortal_leaders = no

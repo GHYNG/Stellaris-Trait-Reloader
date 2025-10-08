@@ -17,10 +17,11 @@ trait_shroud_forged = {
 
 	allowed_archetypes = { ROBOT }
 
-	# custom_tooltip_with_modifiers = trait_shroud_forged_tooltip
+	
 	modifier = {
 		specialist_and_complex_drone_cat_bonus_workforce_mult = 0.25
 		worker_and_simple_drone_cat_bonus_workforce_mult = -0.25
+		shroud_forged_consumer_goods_upkeep = @living_standard_luxuries_high 
 	}
 
 	triggered_planet_growth_habitability_modifier = {
@@ -28,6 +29,19 @@ trait_shroud_forged = {
 			exists = planet
 		}
 		planet_crime_no_happiness_add = 1
+	}
+
+	assembly_score = {
+		modifier = {
+			add = 2
+			from = {
+				exists = owner
+				owner = {
+					has_origin = origin_shroud_forged
+					has_country_flag = finish_shroud_forged_liberation_flag
+				}
+			}
+		}
 	}
 }
 

@@ -1,4 +1,4 @@
-leader_trait_legendary_evervigilant = { #Origin trait - xenophobe
+leader_trait_legendary_evervigilant = { 
 	starting_ruler_trait = yes
 	leader_trait_type = veteran
 	allowed_origins = { origin_legendary_leader }
@@ -24,7 +24,7 @@ leader_trait_legendary_evervigilant = { #Origin trait - xenophobe
 	randomized = no
 }
 
-leader_trait_legendary_evervigilant_2 = { #Origin trait - xenophobe
+leader_trait_legendary_evervigilant_2 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_evervigilant" }
 	inline_script = {
@@ -46,7 +46,7 @@ leader_trait_legendary_evervigilant_2 = { #Origin trait - xenophobe
 	initial = no
 }
 
-leader_trait_legendary_evervigilant_3 = { #Origin trait - xenophobe
+leader_trait_legendary_evervigilant_3 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_evervigilant_2" }
 	inline_script = {

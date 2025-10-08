@@ -10,10 +10,10 @@ leader_trait_midas_touch = {
 	}
 	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+			country_event = { id = timeline.50 } 
 		}
 	}
-	# Additional trait effects in paragon_2.2003
+	
 	modifier = {
 		ship_anomaly_research_speed_mult = 0.25
 	}

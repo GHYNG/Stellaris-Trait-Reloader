@@ -1,4 +1,4 @@
-leader_trait_legendary_natural_ruler = { #Origin trait - pacifist
+leader_trait_legendary_natural_ruler = { 
 	starting_ruler_trait = yes
 	leader_trait_type = veteran
 	allowed_origins = { origin_legendary_leader }
@@ -25,7 +25,7 @@ leader_trait_legendary_natural_ruler = { #Origin trait - pacifist
 	randomized = no
 }
 
-leader_trait_legendary_natural_ruler_2 = { #Origin trait - pacifist
+leader_trait_legendary_natural_ruler_2 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_natural_ruler" }
 	inline_script = {
@@ -48,7 +48,7 @@ leader_trait_legendary_natural_ruler_2 = { #Origin trait - pacifist
 	initial = no
 }
 
-leader_trait_legendary_natural_ruler_3 = { #Origin trait - pacifist
+leader_trait_legendary_natural_ruler_3 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_natural_ruler_2" }
 	inline_script = {

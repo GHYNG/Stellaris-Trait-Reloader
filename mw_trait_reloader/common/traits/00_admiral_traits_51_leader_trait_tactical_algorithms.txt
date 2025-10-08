@@ -10,8 +10,13 @@ leader_trait_tactical_algorithms = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
-			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
+		if = {
+			limit = {
+				exists = owner
+			}
+			owner = {
+				country_event = { id = timeline.50 } 
+			}
 		}
 	}
 	immortal_leaders = yes

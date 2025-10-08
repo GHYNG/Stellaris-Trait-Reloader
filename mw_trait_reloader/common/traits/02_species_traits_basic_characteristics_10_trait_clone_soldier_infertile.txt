@@ -42,10 +42,10 @@ trait_clone_soldier_infertile = {
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier.dds"
 
 	modifier = {
-		# Pop modifiers
+		
 		pop_government_ethic_attraction = 0.50
 
-		# Leader modifiers
+		
 		leader_lifespan_add = -40
 		army_damage_mult = 0.5
 	}

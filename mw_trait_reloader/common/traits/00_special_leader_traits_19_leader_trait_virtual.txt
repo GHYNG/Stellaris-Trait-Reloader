@@ -8,7 +8,7 @@ leader_trait_virtual = {
 		COUNCIL = triggered
 		TIER = none
 	}
-	# Any Class - Ruler
+	
 	triggered_councilor_modifier = {
 		potential = {
 			is_ruler = yes
@@ -16,7 +16,7 @@ leader_trait_virtual = {
 		country_ruler_influence_produces_add = 0.5
 		intel_encryption_add = 1
 	}
-	# Commander - Fleet Modifier
+	
 	triggered_fleet_modifier = {
 		potential = {
 			is_ruler = no
@@ -25,7 +25,7 @@ leader_trait_virtual = {
 		ship_fire_rate_mult = 0.10
 		ship_disengage_chance_mult = 0.10
 	}
-	# Commander - Army Modifier
+	
 	triggered_army_modifier = {
 		potential = {
 			is_ruler = no
@@ -34,7 +34,7 @@ leader_trait_virtual = {
 		army_damage_taken_mult = -0.10
 		army_disengage_chance_mult = 0.10
 	}
-	# Scientist - Science Ship Modifier
+	
 	triggered_modifier = {
 		potential = {
 			is_ruler = no
@@ -51,7 +51,7 @@ leader_trait_virtual = {
 		}
 		ship_astral_rift_speed_mult = 0.10
 	}
-	# Official - GalCom Modifier
+	
 	triggered_galcom_modifier = {
 		potential = {
 			is_ruler = no
@@ -59,7 +59,7 @@ leader_trait_virtual = {
 		}
 		diplo_weight_technology_mult = 0.1
 	}
-	# Official - Federation Modifier
+	
 	triggered_federation_modifier = {
 		potential = {
 			is_ruler = no
@@ -67,7 +67,7 @@ leader_trait_virtual = {
 		}
 		federation_experience_add = 1
 	}
-	# Any Class - Planet Modifier
+	
 	triggered_planet_modifier = {
 		potential = {
 			is_ruler = no
@@ -76,7 +76,7 @@ leader_trait_virtual = {
 		planet_jobs_society_research_produces_mult = 0.10
 		planet_jobs_engineering_research_produces_mult = 0.10
 	}
-	# Any Class - Sector Modifier
+	
 	triggered_sector_modifier = {
 		potential = {
 			is_ruler = no

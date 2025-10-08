@@ -1,4 +1,4 @@
-leader_trait_legendary_great_inventor = { #Origin trait - materialist
+leader_trait_legendary_great_inventor = { 
 	starting_ruler_trait = yes
 	leader_trait_type = veteran
 	allowed_origins = { origin_legendary_leader }
@@ -11,7 +11,7 @@ leader_trait_legendary_great_inventor = { #Origin trait - materialist
 		COUNCIL = yes
 		TIER = 1
 	}
-	custom_tooltip_with_modifiers = "leader_trait_legendary_great_inventor_tt" #all roboticsts produce 1 amenities
+	custom_tooltip_with_modifiers = "leader_trait_legendary_great_inventor_tt" 
 
 	councilor_modifier = {
 		planet_pop_assembly_mult = 0.05
@@ -24,7 +24,7 @@ leader_trait_legendary_great_inventor = { #Origin trait - materialist
 	randomized = no
 }
 
-leader_trait_legendary_great_inventor_2 = { #Origin trait - materialist
+leader_trait_legendary_great_inventor_2 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_great_inventor" }
 	inline_script = {
@@ -34,7 +34,7 @@ leader_trait_legendary_great_inventor_2 = { #Origin trait - materialist
 		COUNCIL = yes
 		TIER = 2
 	}
-	custom_tooltip_with_modifiers = "leader_trait_legendary_great_inventor_2_tt" #all roboticsts produce 2 amenities
+	custom_tooltip_with_modifiers = "leader_trait_legendary_great_inventor_2_tt" 
 
 	councilor_modifier = {
 		planet_pop_assembly_mult = 0.1
@@ -46,7 +46,7 @@ leader_trait_legendary_great_inventor_2 = { #Origin trait - materialist
 	initial = no
 }
 
-leader_trait_legendary_great_inventor_3 = { #Origin trait - materialist
+leader_trait_legendary_great_inventor_3 = { 
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_great_inventor_2" }
 	inline_script = {
@@ -56,7 +56,7 @@ leader_trait_legendary_great_inventor_3 = { #Origin trait - materialist
 		COUNCIL = yes
 		TIER = 3
 	}
-	custom_tooltip_with_modifiers = "leader_trait_legendary_great_inventor_3_tt" #all roboticsts produce 3 amenities
+	custom_tooltip_with_modifiers = "leader_trait_legendary_great_inventor_3_tt" 
 
 	councilor_modifier = {
 		planet_pop_assembly_mult = 0.15
