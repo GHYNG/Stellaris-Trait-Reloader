@@ -23,3 +23,11 @@ This mod will clear all contents in the vanilla `00_admiral_traits.txt` file, an
 So that all traits are still loaded into the game engine as the same order as they would in vanilla way.
 
 Enough characters of `0` are added into the order part to ensure such order, so 11 does not load before 2.
+
+## To Modders
+
+When modding, the best practice is to follow the steps below:
+
+1. Copy the vanilla file which contains the trait you want to modify to folder `processor/input/traits`
+2. Edit the trait in the copied file. Do notice that, **DO NOT** add new traits (except new tiers of existing traits) in the middle of the file, because it will break the order of vanilla traits. If you want to add your own traits, just add them in your own files.
+3. Use the Java program provided to generate the trait files. You will see a lot of trait files generated in folder `processor/output/traits`. Copy and only copy the files containing traits you modified to the related mod paths.

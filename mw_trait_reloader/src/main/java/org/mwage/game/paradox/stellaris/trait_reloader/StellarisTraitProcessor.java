@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
 // Thank you, DeepSeek
 public class StellarisTraitProcessor {
 	private static final String INPUT_DIR = "processor/input/traits";
-	private static final String OUTPUT_DIR = "common/traits";
+	private static final String OUTPUT_DIR = "processor/output/traits";
 	public static void main(String[] args) {
 		try {
 			processTraits();
@@ -61,15 +61,21 @@ public class StellarisTraitProcessor {
 		// 为每个特质组生成文件
 		int traitCount = traits.size();
 		int padding = String.valueOf(traitCount).length();
+		/*
+		 * DeepSeek给的代码会将不同等级的相同特质独立计算出现顺序，因此文件名中的序号会出现跳过部分序号的情况（之前出现多级特质）。
+		 * 因此使用offset来将之后的序号减回去。
+		 */
+		int offset = 0;
 		for(Map.Entry<String, List<Trait>> entry : traitGroups.entrySet()) {
 			String baseTraitName = entry.getKey();
 			List<Trait> traitGroup = entry.getValue();
 			// 使用组中第一个特质的索引
-			int firstIndex = traits.indexOf(traitGroup.get(0)) + 1;
+			int firstIndex = traits.indexOf(traitGroup.get(0)) + 1 - offset;
 			String indexStr = String.format("%0" + padding + "d", firstIndex);
 			String outputFileName = baseName + "_" + indexStr + "_" + baseTraitName + ".txt";
 			Path outputFile = outputDir.resolve(outputFileName);
 			writeTraitFile(outputFile, traitGroup, fileVariables);
+			offset += traitGroup.size() - 1;
 		}
 		Path emptyFile = outputDir.resolve(inputFile.getFileName().toString());
 		Files.writeString(emptyFile, "", StandardCharsets.UTF_8);
