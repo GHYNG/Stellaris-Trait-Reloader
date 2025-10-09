@@ -45,13 +45,13 @@ public class StellarisTraitProcessor implements Config {
 		System.out.println("处理文件: " + fileName);
 		String content = Files.readString(inputFile);
 		// 提取文件级变量
-		List<Variable> fileVariables = extractFileVariables(content);
+		List<Variable> fileVariables = extractVariablesFile(content);
 		// 提取所有特质
 		List<Trait> traits = extractTraits(content);
 		// 按特质名分组（去除数字后缀）
 		Map<String, List<Trait>> traitGroups = new LinkedHashMap<>();
 		for(Trait trait : traits) {
-			String baseTraitName = getBaseTraitName(trait.name);
+			String baseTraitName = getNameBaseTrait(trait.name);
 			traitGroups.computeIfAbsent(baseTraitName, k -> new ArrayList<>()).add(trait);
 		}
 		// 为每个特质组生成文件
@@ -76,7 +76,7 @@ public class StellarisTraitProcessor implements Config {
 		Path emptyFile = outputDir.resolve(inputFile.getFileName().toString());
 		Files.writeString(emptyFile, "", StandardCharsets.UTF_8);
 	}
-	private static List<Variable> extractFileVariables(String content) {
+	private static List<Variable> extractVariablesFile(String content) {
 		content = removeComment(content);
 		List<Variable> variables = new ArrayList<>();
 		// 匹配文件级变量定义：@variable_name = value
@@ -89,59 +89,137 @@ public class StellarisTraitProcessor implements Config {
 		}
 		return variables;
 	}
+	// Rewrite method, because the old one DeepSeek provided is buggy.
 	private static List<Trait> extractTraits(String content) {
-		content = removeComment(content);
 		List<Trait> traits = new ArrayList<>();
-		// 匹配特质定义：trait_name = { ... }
-		Pattern pattern = Pattern.compile("^(\\w+)\\s*=\\s*\\{", Pattern.MULTILINE);
-		Matcher matcher = pattern.matcher(content);
-		while(matcher.find()) {
-			String traitName = matcher.group(1);
-			int start = matcher.start();
-			// 找到匹配的右大括号
-			int braceCount = 0;
-			int end = start;
-			boolean inString = false;
-			char stringChar = '\0';
-			for(int i = start; i < content.length(); i++) {
-				char c = content.charAt(i);
-				if(!inString) {
-					if(c == '"' || c == '\'') {
-						inString = true;
-						stringChar = c;
+		String[] lines = content.split("\\r?\\n|\\r");
+		int levelScope = 0;
+		int[] pointerL = {-1, -1}, pointerR = {-1, -1}; // [indexLine, indexCharInLine]
+		boolean[][] areaQuoted = new boolean[lines.length][];
+		boolean[][] areaCommented = new boolean[lines.length][];
+		parseLine: for(int indexLine = 0; indexLine < lines.length; indexLine++) {
+			String line = lines[indexLine];
+			char[] cs = line.toCharArray();
+			int numQuote = 0;
+			areaQuoted[indexLine] = new boolean[cs.length];
+			areaCommented[indexLine] = new boolean[cs.length];
+			boolean commented = false;
+			parseChar: for(int indexChar = 0; indexChar < cs.length; indexChar++) {
+				char c = cs[indexChar];
+				if(numQuote % 2 != 0) { // 在字符串内
+					if(c == '"') {
+						if(cs[indexChar - 1] != '\\') { // 考虑转义字符
+							numQuote++;
+						}
 					}
-					else if(c == '{') {
-						braceCount++;
+					areaQuoted[indexLine][indexChar] = true;
+				}
+				else { // 在字符串外
+					if(c == '#') {
+						commented = true;
 					}
-					else if(c == '}') {
-						braceCount--;
-						if(braceCount == 0) {
-							end = i + 1;
-							break;
+					if(commented) {
+						areaCommented[indexLine][indexChar] = true;
+						continue;
+					}
+					if(c == '"') {
+						numQuote++;
+						areaQuoted[indexLine][indexChar] = true;
+					}
+					if(c == '{') {
+						if(levelScope == 0) {
+							pointerL[0] = indexLine;
+							pointerL[1] = indexChar;
+						}
+						levelScope++;
+					}
+					if(c == '}') {
+						levelScope--;
+						if(levelScope == 0) {
+							pointerR[0] = indexLine;
+							pointerR[1] = indexChar;
+							String nameTrait = getNameTrait(lines, pointerL, areaQuoted, areaCommented);
+							String contentSub = STR."\{nameTrait} = \{getContentSub(lines, pointerL, pointerR)}";
+							traits.add(new Trait(nameTrait, contentSub));
 						}
 					}
 				}
-				else {
-					if(c == stringChar && content.charAt(i - 1) != '\\') {
-						inString = false;
-					}
-				}
-			}
-			if(end > start) {
-				String traitContent = content.substring(start, end);
-				traits.add(new Trait(traitName, traitContent));
 			}
 		}
 		return traits;
 	}
-	private static String getBaseTraitName(String traitName) {
+	private static String getContentSub(String[] lines, int[] pointerL, int[] pointerR) {
+		StringBuilder sbContent = new StringBuilder();
+		for(int indexLine = pointerL[0]; indexLine <= pointerR[0]; indexLine++) {
+			String line = lines[indexLine];
+			if(indexLine == pointerL[0]) {
+				int l = pointerL[1];
+				if(indexLine == pointerR[0]) {
+					int r = pointerR[1];
+					sbContent.append(line, l, r + 1);
+				}
+				else {
+					sbContent.append(line.substring(l));
+				}
+			}
+			else if(indexLine == pointerR[0]) {
+				int r = pointerR[1];
+				sbContent.append(line, 0, r + 1);
+			}
+			else {
+				sbContent.append(line);
+			}
+			sbContent.append(System.lineSeparator());
+		}
+		return sbContent.toString();
+	}
+	private static String getNameTrait(String[] lines, int[] pointerL, boolean[][] areaQuoted, boolean[][] areaCommented) {
+		System.out.println("getNameTrait");
+		boolean foundSignEqual = false; // =
+		for(int indexLine = pointerL[0]; indexLine >= 0; indexLine--) {
+			String line = lines[indexLine];
+			char[] cs = line.toCharArray();
+			int r = cs.length - 1;
+			if(indexLine == pointerL[0]) {
+				r = pointerL[1];
+			}
+			for(int indexChar = r; indexChar >= 0; indexChar--) {
+				if(areaQuoted[indexLine][indexChar] || areaCommented[indexLine][indexChar]) {
+					continue;
+				}
+				char c = cs[indexChar];
+				if(!foundSignEqual) {
+					if(c == '=') {
+						foundSignEqual = true;
+					}
+				}
+				else {
+					if(Character.isLetterOrDigit(c) || c == '_') { // found identifier!
+						System.out.println("found identifier!");
+						String identifier = "";
+						for(int index = indexChar; index >= 0; index--) {
+							boolean isLetterGoodForIdentifier = Character.isLetterOrDigit(cs[index]) || cs[index] == '_';
+							if(isLetterGoodForIdentifier) {
+								identifier = STR."\{cs[index]}\{identifier}";
+							}
+							if(!isLetterGoodForIdentifier || index == 0) {
+								return identifier;
+							}
+						}
+					}
+				}
+			}
+		}
+		throw new RuntimeException(STR."Identifier did not found, pointerL = {\{pointerL[0]}, \{pointerL[1]}}");
+	}
+	private static String getNameBaseTrait(String traitName) {
 		// 去除数字后缀，如 _2, _3 等
 		return traitName.replaceAll("_\\d+$", "");
 	}
 	private static void writeTraitFile(Path outputFile, List<Trait> traits, List<Variable> fileVariables) throws IOException {
 		StringBuilder content = new StringBuilder();
 		// 确定需要声明的变量
-		Set<Variable> neededVariables = findNeededVariables(traits, fileVariables);
+		Set<Variable> neededVariables = findVariablesNeeded(traits, fileVariables);
 		// 写入变量声明
 		for(Variable var : neededVariables) {
 			content.append("@").append(var.name).append(" = ").append(var.value).append("\n");
@@ -153,10 +231,10 @@ public class StellarisTraitProcessor implements Config {
 		for(Trait trait : traits) {
 			content.append(trait.content).append("\n\n");
 		}
-		Files.writeString(outputFile, content.toString());
+		Files.writeString(outputFile, UtilString.removeEmptyLines(content.toString()));
 		System.out.println("生成文件: " + outputFile.getFileName());
 	}
-	private static Set<Variable> findNeededVariables(List<Trait> traits, List<Variable> fileVariables) {
+	private static Set<Variable> findVariablesNeeded(List<Trait> traits, List<Variable> fileVariables) {
 		Set<Variable> needed = new LinkedHashSet<>();
 		// 构建所有特质内容的字符串
 		StringBuilder allContent = new StringBuilder();
