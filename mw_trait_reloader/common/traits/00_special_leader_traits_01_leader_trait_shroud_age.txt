@@ -14,4 +14,3 @@ leader_trait_shroud_age = {
 	initial = no
 	randomized = no
 }
-

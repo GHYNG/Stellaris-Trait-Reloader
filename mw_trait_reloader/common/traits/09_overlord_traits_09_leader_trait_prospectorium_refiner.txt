@@ -22,4 +22,3 @@ leader_trait_prospectorium_refiner = {
 	initial = no
 	randomized = no
 }
-

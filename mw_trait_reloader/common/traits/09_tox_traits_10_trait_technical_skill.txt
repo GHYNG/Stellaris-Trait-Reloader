@@ -55,4 +55,3 @@ trait_technical_skill = {
 		}
 	}
 }
-

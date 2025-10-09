@@ -13,9 +13,7 @@ leader_trait_bulwark_watcher = {
 		ship_friendly_territory_tracking_mult = 0.15
 		ship_sensor_range_add = 1
 	}
-
 	leader_class = { commander }
 	initial = no
 	randomized = no
 }
-

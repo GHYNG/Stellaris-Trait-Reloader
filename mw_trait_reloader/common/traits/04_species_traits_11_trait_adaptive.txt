@@ -20,4 +20,3 @@ trait_adaptive = {
 		energy = 500
 	}
 }
-

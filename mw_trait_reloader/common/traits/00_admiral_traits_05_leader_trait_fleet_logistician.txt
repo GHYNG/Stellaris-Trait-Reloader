@@ -19,4 +19,3 @@ leader_trait_fleet_logistician = {
 		inline_script = paragon/pilot_weight_mult
 	}
 }
-

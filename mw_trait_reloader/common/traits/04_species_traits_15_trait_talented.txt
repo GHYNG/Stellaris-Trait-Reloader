@@ -21,4 +21,3 @@ trait_talented = {
 		leaders_upkeep_mult = -0.1
 	}
 }
-

@@ -1,7 +1,6 @@
 @t1_mult = 1.00
 @t2_mult = 2.00
 @t3_mult = 5.00
-
 leader_trait_resolution_category_sanctions_focus = {
 	leader_trait_type = veteran
 	inline_script = {
@@ -37,7 +36,6 @@ leader_trait_resolution_category_sanctions_focus = {
 		inline_script = paragon/galcom_weight_mult
 	}
 }
-
 leader_trait_resolution_category_sanctions_focus_2 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_resolution_category_sanctions_focus" }
@@ -58,7 +56,6 @@ leader_trait_resolution_category_sanctions_focus_2 = {
 	custom_tooltip = leader_trait_resolution_category_sanctions_focus_2_tt
 	leader_class = { official }
 }
-
 leader_trait_resolution_category_sanctions_focus_3 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_resolution_category_sanctions_focus_2" }
@@ -82,4 +79,3 @@ leader_trait_resolution_category_sanctions_focus_3 = {
 	custom_tooltip = leader_trait_resolution_category_sanctions_focus_3_tt
 	leader_class = { official }
 }
-

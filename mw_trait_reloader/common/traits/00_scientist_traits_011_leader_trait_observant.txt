@@ -31,7 +31,6 @@ leader_trait_observant = {
 		}
 	}
 }
-
 leader_trait_observant_2 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_observant" }
@@ -43,7 +42,6 @@ leader_trait_observant_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-
 	modifier = {
 		ship_sensor_range_add = 3
 		ship_hyperlane_range_add = 4
@@ -51,4 +49,3 @@ leader_trait_observant_2 = {
 	}
 	leader_class = { commander scientist }
 }
-

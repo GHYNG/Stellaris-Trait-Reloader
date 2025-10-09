@@ -2,7 +2,7 @@ trait_robot_wasteful = {
 	icon = "gfx/interface/icons/traits/trait_wasteful.dds"
 	cost = -1
     category = robotic
-	
+	# Synths and Individualist Machines
 	species_potential_add = {
 		OR = {
 			can_add_synth_traits = yes
@@ -22,4 +22,3 @@ trait_robot_wasteful = {
 		energy = -200
 	}
 }
-

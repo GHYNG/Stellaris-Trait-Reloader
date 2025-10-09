@@ -27,4 +27,3 @@ trait_delicious = {
 		energy = 1000
 	}
 }
-

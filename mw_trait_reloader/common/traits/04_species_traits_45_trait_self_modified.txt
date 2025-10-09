@@ -1,10 +1,8 @@
 trait_self_modified = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/trait_cybernetic.dds"
-
 	initial = no
 	randomized = no
-
 	species_potential_add = {
 		always = no
 	}
@@ -14,11 +12,8 @@ trait_self_modified = {
 	species_possible_merge_add = {
 		always = no
 	}
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic special }
-
 	modifier = {
 	}
 }
-

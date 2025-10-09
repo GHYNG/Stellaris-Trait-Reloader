@@ -10,7 +10,7 @@ leader_trait_xeno_cataloger = {
 	}
 	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } 
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
 	modifier = {
@@ -33,4 +33,3 @@ leader_trait_xeno_cataloger = {
 	}
 	background_icon = "GFX_leader_background_destiny_1"
 }
-

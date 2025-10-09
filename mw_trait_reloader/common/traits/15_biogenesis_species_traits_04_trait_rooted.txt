@@ -25,7 +25,6 @@ trait_rooted = {
 	modifier = {
 		pop_resettlement_cost_mult = 2
 	}
-
 	slave_cost = {
 		energy = -400
 	}
@@ -39,4 +38,3 @@ trait_rooted = {
 		weight = 0
 	}
 }
-

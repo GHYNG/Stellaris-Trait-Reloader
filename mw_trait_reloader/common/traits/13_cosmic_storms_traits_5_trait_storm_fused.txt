@@ -11,7 +11,6 @@ trait_storm_fused = {
 	species_possible_merge_add = {
 		always = no
 	}
-
 	triggered_pop_group_modifier = {
 		potential = {
 			exists = planet
@@ -21,15 +20,11 @@ trait_storm_fused = {
 				}
 			}
 		}
-
 		pop_bonus_workforce_mult = 0.10
 		pop_happiness = 0.05
 	}
-
 	custom_tooltip_with_modifiers = "trait_storm_fused_modifier_tooltip"
-
 	ai_weight = {
 		weight = 0
 	}
 }
-

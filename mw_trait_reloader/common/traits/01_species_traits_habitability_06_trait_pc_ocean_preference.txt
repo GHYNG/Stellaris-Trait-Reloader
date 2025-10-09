@@ -1,7 +1,6 @@
 @primary = 0.80
 @secondary = 0.60
 @tertiary = 0.20
-
 trait_pc_ocean_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_ocean_preference.dds"
 	short_name = "trait_pc_ocean_preference_short"
@@ -14,7 +13,6 @@ trait_pc_ocean_preference = {
 		pc_ocean_habitability = @primary
 		pc_continental_habitability = @secondary
 		pc_tropical_habitability = @secondary
-
 		pc_desert_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_tundra_habitability = @tertiary
@@ -29,4 +27,3 @@ trait_pc_ocean_preference = {
 		weight = 0
 	}
 }
-

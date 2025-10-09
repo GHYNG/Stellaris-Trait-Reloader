@@ -8,7 +8,6 @@ leader_trait_govenor_caretaker_node = {
 		COUNCIL = yes
 		TIER = none
 	}
-
 	councilor_modifier = {
 		logistic_growth_mult = 0.05
 		pop_amenities_usage_no_happiness_mult = -0.10
@@ -16,11 +15,8 @@ leader_trait_govenor_caretaker_node = {
 	initial = no
 	randomized = no
 	immortal_leaders = yes
-
 	leader_class = { official }
-
 	ai_weight = {
 		weight = 0
 	}
 }
-

@@ -2,11 +2,9 @@ trait_auto_mod_biological = {
 	cost = 3
 	auto_mod = yes
 	category = normal
-
 	opposites = {
 		"trait_wilderness"
 	}
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic automod positive }
 	initial = no
@@ -34,4 +32,3 @@ trait_auto_mod_biological = {
 	}
 	custom_tooltip_with_modifiers = automodding_trait_biological_tooltip
 }
-

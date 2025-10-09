@@ -16,7 +16,6 @@ trait_wilderness = {
 	sapient = yes
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic special }
-
 	modifier = {
 		pc_city_habitability = -2
 		pc_machine_habitability = -2
@@ -37,4 +36,3 @@ trait_wilderness = {
 		always = no
 	}
 }
-

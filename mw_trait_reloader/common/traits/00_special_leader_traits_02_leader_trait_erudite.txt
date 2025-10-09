@@ -10,14 +10,14 @@ leader_trait_erudite = {
 	leader_potential_add = {
 		trait_is_wilderness_check = no
 	}
-	
+	# Any Class - Ruler
 	triggered_councilor_modifier = {
 		potential = {
 			is_ruler = yes
 		}
 		num_tech_alternatives_add = 1
 	}
-	
+	# Commander - Fleet Modifier
 	triggered_fleet_modifier = {
 		potential = {
 			is_ruler = no
@@ -26,7 +26,7 @@ leader_trait_erudite = {
 		ship_fire_rate_mult = 0.10
 		ship_disengage_chance_mult = 0.10
 	}
-	
+	# Commander - Army Modifier
 	triggered_army_modifier = {
 		potential = {
 			is_ruler = no
@@ -35,7 +35,7 @@ leader_trait_erudite = {
 		army_damage_taken_mult = -0.10
 		army_disengage_chance_mult = 0.10
 	}
-	
+	# Scientist - Self Modifier
 	triggered_self_modifier = {
 		potential = {
 			is_ruler = no
@@ -44,7 +44,7 @@ leader_trait_erudite = {
 		species_leader_exp_gain = 0.10
 		leader_trait_selection_options_add = 1
 	}
-	
+	# Official - GalCom Modifier
 	triggered_galcom_modifier = {
 		potential = {
 			is_ruler = no
@@ -52,7 +52,7 @@ leader_trait_erudite = {
 		}
 		diplo_weight_pops_mult = 0.05
 	}
-	
+	# Official - Federation Modifier
 	triggered_federation_modifier = {
 		potential = {
 			is_ruler = no
@@ -60,7 +60,7 @@ leader_trait_erudite = {
 		}
 		federation_experience_add = 1
 	}
-	
+	# Any Class - Planet Modifier
 	triggered_planet_modifier = {
 		potential = {
 			is_ruler = no
@@ -68,7 +68,7 @@ leader_trait_erudite = {
 		planet_pops_upkeep_mult = -0.10
 		pop_amenities_usage_mult = -0.10
 	}
-	
+	# Any Class - Sector Modifier
 	triggered_sector_modifier = {
 		potential = {
 			is_ruler = no
@@ -85,4 +85,3 @@ leader_trait_erudite = {
 	initial = no
 	randomized = no
 }
-

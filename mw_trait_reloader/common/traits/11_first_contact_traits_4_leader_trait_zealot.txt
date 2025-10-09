@@ -24,4 +24,3 @@ leader_trait_zealot = {
 	randomized = no
 	initial = no
 }
-

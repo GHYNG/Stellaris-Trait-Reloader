@@ -21,4 +21,3 @@ trait_pc_cosmogenesis_world_preference = {
 		weight = 0
 	}
 }
-

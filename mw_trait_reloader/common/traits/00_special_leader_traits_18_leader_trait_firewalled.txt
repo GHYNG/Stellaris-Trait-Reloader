@@ -23,4 +23,3 @@ leader_trait_firewalled = {
 	}
 	leader_class = { commander scientist official }
 }
-

@@ -16,4 +16,3 @@ leader_trait_clone_army_full_commander = {
 	initial = no
 	randomized = no
 }
-

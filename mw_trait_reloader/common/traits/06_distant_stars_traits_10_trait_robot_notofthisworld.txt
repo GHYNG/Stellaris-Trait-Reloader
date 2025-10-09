@@ -3,7 +3,6 @@ trait_robot_notofthisworld = {
 	icon = "gfx/interface/icons/traits/trait_notofthisworld.dds"
 	initial = no
 	randomized = no
-
 	species_potential_add = {
 		always = no
 	}
@@ -13,15 +12,12 @@ trait_robot_notofthisworld = {
 	species_possible_merge_add = {
 		always = no
 	}
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive production upkeep special }
-
 	custom_tooltip_with_modifiers = TRAIT_NOTOFTHISWORLD_EFFECT
 	modifier = {
 		planet_pops_upkeep_mult = 0.10
 	}
-
 	resources = {
 		category = planet_pops
 		produces = {
@@ -32,4 +28,3 @@ trait_robot_notofthisworld = {
 		}
 	}
 }
-

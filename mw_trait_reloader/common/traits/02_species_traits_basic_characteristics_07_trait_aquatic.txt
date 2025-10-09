@@ -1,9 +1,7 @@
 trait_aquatic = {
 	cost = 2
 	host_has_dlc = "Aquatics Species Pack"
-
 	sorting_priority = 20
-
 	random_weight = {
 		AQUATIC = 100
 		MOL = 10
@@ -11,18 +9,15 @@ trait_aquatic = {
 		MAM = 2
 		LITHOID = 0.5
 	}
-
 	allowed_planet_classes = {
 		pc_ocean
 	}
-
 	allowed_planet_classes_override = {
 		hidden_trigger = {
 			can_add_auto_preference_traits = yes
 			can_add_or_remove_phenotype_traits = yes
 		}
 	}
-
 	species_possible_remove = {
 		if = {
 			limit = {
@@ -50,10 +45,8 @@ trait_aquatic = {
 		}
 	}
 	initial = yes
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive production habitability drawbacks special }
-
 	ai_weight = {
 		weight = 1
 		modifier = {
@@ -61,7 +54,6 @@ trait_aquatic = {
 			NOT = { has_trait = trait_pc_ocean_preference }
 		}
 	}
-
 	custom_tooltip_with_modifiers = trait_aquatic_tooltip
 	triggered_pop_group_modifier = {
 		potential = {
@@ -119,7 +111,7 @@ trait_aquatic = {
 		}
 		pop_housing_usage_mult = 0.15
 	}
-	
+	# To make it be able to evaluate habitability of planet it has not settled yet. Only applies to this species
 	triggered_planet_growth_habitability_modifier = {
 		potential = {
 			NOR = {
@@ -151,9 +143,7 @@ trait_aquatic = {
 	modifier = {
 		pc_ocean_habitability = 0.2
 	}
-
 	icon = "gfx/interface/icons/traits/trait_aquatic.dds"
-
 	assembly_score = {
 		modifier = {
 			add = 1
@@ -164,7 +154,6 @@ trait_aquatic = {
 				}
 			}
 		}
-
 		modifier = {
 			subtract = 1
 			from = {
@@ -177,4 +166,3 @@ trait_aquatic = {
 		}
 	}
 }
-

@@ -26,7 +26,6 @@ leader_trait_adventurous_spirit = {
 		inline_script = paragon/not_council_weight_mult
 	}
 }
-
 leader_trait_adventurous_spirit_2 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_adventurous_spirit" }
@@ -48,7 +47,6 @@ leader_trait_adventurous_spirit_2 = {
 	custom_tooltip_with_modifiers = leader_trait_adventurous_spirit_effect
 	leader_class = { commander scientist official }
 }
-
 leader_trait_adventurous_spirit_3 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_adventurous_spirit_2" }
@@ -70,4 +68,3 @@ leader_trait_adventurous_spirit_3 = {
 	custom_tooltip_with_modifiers = leader_trait_adventurous_spirit_effect
 	leader_class = { commander scientist official }
 }
-

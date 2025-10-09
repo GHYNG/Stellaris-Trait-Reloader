@@ -33,7 +33,6 @@ trait_spare_organs = {
 	modifier = {
 		livestock_jobs_bonus_workforce_mult = 0.5
 	}
-
 	resources = {
 		category = planet_pops
 		produces = {
@@ -50,9 +49,7 @@ trait_spare_organs = {
 			trade = 0.5
 		}
 	}
-
 	slave_cost = {
 		energy = 1000
 	}
 }
-

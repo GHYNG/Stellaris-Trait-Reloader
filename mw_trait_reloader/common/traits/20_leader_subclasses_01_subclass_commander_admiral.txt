@@ -1,6 +1,5 @@
 @ai_selection_high = 5
 @ai_selection_low = 0.1
-
 subclass_commander_admiral = {
 	custom_subtitle = commander_subclass
 	leader_trait_type = subclass
@@ -49,4 +48,3 @@ subclass_commander_admiral = {
 	leader_class = { commander }
 	background_icon = "GFX_leader_subclass_commander_admiral_background"
 }
-

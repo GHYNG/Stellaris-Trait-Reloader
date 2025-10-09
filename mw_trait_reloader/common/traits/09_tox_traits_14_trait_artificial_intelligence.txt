@@ -56,4 +56,3 @@ trait_artificial_intelligence = {
 		}
 	}
 }
-

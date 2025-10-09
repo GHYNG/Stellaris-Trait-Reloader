@@ -1,6 +1,5 @@
 trait_cyborg_enhanced_memory = {
 	cost = 1
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -27,14 +26,12 @@ trait_cyborg_enhanced_memory = {
 		negative_leader_traits_species = -1
 		leaders_upkeep_mult = -0.25
 	}
-
 	resources = {
 		category = planet_pops
 		upkeep = {
 			energy = @cyborg_energy_upkeep
 		}
 	}
-
 	ai_weight = {
 		factor = 0
 	}
@@ -45,4 +42,3 @@ trait_cyborg_enhanced_memory = {
 		origin_unplugged
 	}
 }
-

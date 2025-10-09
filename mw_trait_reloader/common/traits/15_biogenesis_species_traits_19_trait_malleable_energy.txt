@@ -35,4 +35,3 @@ trait_malleable_energy = {
 		technician_jobs_bonus_workforce_mult = 0.15
 	}
 }
-

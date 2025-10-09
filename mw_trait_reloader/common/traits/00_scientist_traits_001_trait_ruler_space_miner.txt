@@ -20,4 +20,3 @@ trait_ruler_space_miner = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-

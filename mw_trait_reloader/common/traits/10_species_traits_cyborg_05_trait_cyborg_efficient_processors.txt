@@ -1,6 +1,5 @@
 trait_cyborg_efficient_processors = {
 	cost = 2
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -19,16 +18,13 @@ trait_cyborg_efficient_processors = {
 	modifier = {
 		pop_bonus_workforce_mult = 0.05
 	}
-
 	resources = {
 		category = planet_pops
 		upkeep = {
 			energy = @cyborg_energy_upkeep
 		}
 	}
-
 	slave_cost = {
 		energy = 500
 	}
 }
-

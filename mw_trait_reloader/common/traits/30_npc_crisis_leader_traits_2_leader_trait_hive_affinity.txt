@@ -14,4 +14,3 @@ leader_trait_hive_affinity = {
 	initial = no
 	randomized = no
 }
-

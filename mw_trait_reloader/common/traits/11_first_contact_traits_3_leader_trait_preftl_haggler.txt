@@ -20,4 +20,3 @@ leader_trait_preftl_haggler = {
 	initial = no
 	randomized = no
 }
-

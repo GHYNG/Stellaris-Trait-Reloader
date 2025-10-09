@@ -10,7 +10,7 @@ leader_trait_surveyor = {
 	}
 	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } 
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
 	leader_potential_add = {
@@ -34,4 +34,3 @@ leader_trait_surveyor = {
 	}
 	background_icon = "GFX_leader_background_destiny_1"
 }
-

@@ -38,7 +38,6 @@ leader_trait_insider_trading = {
 		inline_script = paragon/governor_weight_mult
 	}
 }
-
 leader_trait_insider_trading_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_insider_trading" }
@@ -74,4 +73,3 @@ leader_trait_insider_trading_2 = {
 	}
 	selectable_weight = @tier2_negative_trait_weight
 }
-

@@ -22,4 +22,3 @@ leader_trait_scholarium_investigator = {
 	initial = no
 	randomized = no
 }
-

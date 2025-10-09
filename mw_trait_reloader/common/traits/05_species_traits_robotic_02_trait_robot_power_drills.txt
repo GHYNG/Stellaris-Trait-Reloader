@@ -1,13 +1,11 @@
 trait_robot_power_drills = {
 	cost = 2
 	category = robotic
-
 	allowed_archetypes = { ROBOT MACHINE }
 	localized_tags = {
 		SPECIES_TRAIT_ADAPTIVE_FRAMES
 	}
 	tags = { machine positive pop_output mineral }
-
 	modifier = {
 		miner_jobs_bonus_workforce_mult = 0.15
 	}
@@ -25,4 +23,3 @@ trait_robot_power_drills = {
 		}
 	}
 }
-

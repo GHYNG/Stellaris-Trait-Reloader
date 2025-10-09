@@ -31,7 +31,6 @@ leader_trait_procrastinator = {
 		}
 	}
 }
-
 leader_trait_procrastinator_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_procrastinator" }
@@ -53,4 +52,3 @@ leader_trait_procrastinator_2 = {
 	}
 	selectable_weight = @tier2_negative_trait_weight
 }
-

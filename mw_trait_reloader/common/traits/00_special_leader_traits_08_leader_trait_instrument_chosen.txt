@@ -8,7 +8,7 @@ leader_trait_instrument_chosen = {
 		COUNCIL = triggered
 		TIER = none
 	}
-	
+	# Any Class - Ruler
 	triggered_councilor_modifier = {
 		potential = {
 			is_ruler = yes
@@ -16,7 +16,7 @@ leader_trait_instrument_chosen = {
 		planet_jobs_trade_produces_mult = 0.20
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Any Class - Ruler - non-Gestalt
 	triggered_councilor_modifier = {
 		potential = {
 			is_ruler = yes
@@ -26,7 +26,7 @@ leader_trait_instrument_chosen = {
 		pop_happiness = 0.20
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Any Class - Ruler
 	triggered_councilor_modifier = {
 		potential = {
 			is_ruler = yes
@@ -36,7 +36,7 @@ leader_trait_instrument_chosen = {
 		planet_stability_mult = 0.02
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Commander - Fleet Modifier
 	triggered_fleet_modifier = {
 		potential = {
 			is_ruler = no
@@ -48,7 +48,7 @@ leader_trait_instrument_chosen = {
 		ship_disengage_chance_mult = 0.20
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Commander - Army Modifier
 	triggered_army_modifier = {
 		potential = {
 			is_ruler = no
@@ -58,7 +58,7 @@ leader_trait_instrument_chosen = {
 		army_morale_damage_mult = 0.10
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Scientist - Science Ship Modifier
 	triggered_modifier = {
 		potential = {
 			is_ruler = no
@@ -67,7 +67,7 @@ leader_trait_instrument_chosen = {
 		science_ship_survey_speed = 0.20
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Scientist - Self Modifier
 	triggered_self_modifier = {
 		potential = {
 			is_ruler = no
@@ -76,7 +76,7 @@ leader_trait_instrument_chosen = {
 		leader_scientists_sr_zro_produces_add = 2
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Official - GalCom Modifier
 	triggered_galcom_modifier = {
 		potential = {
 			is_ruler = no
@@ -86,7 +86,7 @@ leader_trait_instrument_chosen = {
 		resolution_category_commerce_vote_strength_mult = 0.25
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Official - Federation Modifier
 	triggered_federation_modifier = {
 		potential = {
 			is_ruler = no
@@ -96,7 +96,7 @@ leader_trait_instrument_chosen = {
 		cohesion_ethics_penalty_mult = -0.25
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Any Class - Planet Modifier
 	triggered_planet_modifier = {
 		potential = {
 			is_ruler = no
@@ -105,7 +105,7 @@ leader_trait_instrument_chosen = {
 		planet_stability_add = 5
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Any Class - Sector Modifier
 	triggered_sector_modifier = {
 		potential = {
 			is_ruler = no
@@ -127,4 +127,3 @@ leader_trait_instrument_chosen = {
 	initial = no
 	randomized = no
 }
-

@@ -28,4 +28,3 @@ leader_trait_sapient_AI_assistant = {
 	}
 	ai_weight = 70
 }
-

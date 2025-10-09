@@ -6,7 +6,6 @@ trait_invasive = {
 	"trait_cranial_hypertrophy" "trait_cranial_megatrophy" }
 	host_has_dlc = "Plantoids Species Pack"
 	sorting_priority = 30
-
 	initial = yes
 	randomized = no
 	species_potential_add = {
@@ -37,7 +36,6 @@ trait_invasive = {
 		}
 	}
 	tags = { organic positive plantoid fungoid pop_growth habitability species }
-
 	custom_tooltip_with_modifiers = TRAIT_INVASIVE_EFFECT
 	triggered_planet_growth_habitability_modifier = {
 		logistic_growth_mult = 0.05
@@ -51,4 +49,3 @@ trait_invasive = {
 		mult = value:count_negative_traits
 	}
 }
-

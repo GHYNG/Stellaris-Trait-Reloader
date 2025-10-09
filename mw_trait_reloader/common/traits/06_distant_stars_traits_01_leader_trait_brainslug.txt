@@ -56,11 +56,8 @@ leader_trait_brainslug = {
 	}
 	initial = no
 	randomized = no
-
 	leader_class = { commander official scientist }
-
 	ai_weight = {
 		weight = 0
 	}
 }
-

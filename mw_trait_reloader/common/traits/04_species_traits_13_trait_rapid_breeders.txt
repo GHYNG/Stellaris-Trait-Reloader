@@ -23,4 +23,3 @@ trait_rapid_breeders = {
 		energy = 1000
 	}
 }
-

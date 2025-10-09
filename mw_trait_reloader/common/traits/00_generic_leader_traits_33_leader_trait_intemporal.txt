@@ -12,4 +12,3 @@ leader_trait_intemporal = {
 	initial = no
 	randomized = no
 }
-

@@ -1,6 +1,5 @@
 @ai_selection_high = 5
 @ai_selection_low = 0.1
-
 subclass_scientist_governor = {
 	custom_subtitle = scientist_subclass
 	leader_trait_type = subclass
@@ -41,4 +40,3 @@ subclass_scientist_governor = {
 	leader_class = { scientist }
 	background_icon = "GFX_leader_subclass_scientist_governor_background"
 }
-

@@ -28,7 +28,6 @@ leader_trait_gale_speed = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 leader_trait_gale_speed_2 = {
 	leader_trait_type = veteran
 	replace_traits = { leader_trait_gale_speed }
@@ -49,4 +48,3 @@ leader_trait_gale_speed_2 = {
 		leader_trait_lethargic_2
 	}
 }
-

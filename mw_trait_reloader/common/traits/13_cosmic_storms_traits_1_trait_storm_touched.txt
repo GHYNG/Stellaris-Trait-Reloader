@@ -12,7 +12,6 @@ trait_storm_touched = {
 		always = no
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE }
-
 	triggered_pop_group_modifier = {
 		potential = {
 			exists = planet
@@ -23,11 +22,8 @@ trait_storm_touched = {
 		pop_bonus_workforce_mult = 0.1
 		pop_amenities_usage_mult = -0.1
 	}
-
 	custom_tooltip_with_modifiers = "trait_storm_touched_modifier_tooltip"
-
 	ai_weight = {
 		weight = 0
 	}
 }
-

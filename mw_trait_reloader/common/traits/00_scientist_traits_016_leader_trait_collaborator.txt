@@ -32,7 +32,6 @@ leader_trait_collaborator = {
 		inline_script = paragon/governor_weight_mult
 	}
 }
-
 leader_trait_collaborator_2 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_collaborator" }
@@ -60,7 +59,6 @@ leader_trait_collaborator_2 = {
 		leader_trait_opinionated_2
 	}
 }
-
 leader_trait_collaborator_3 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_collaborator_2" }
@@ -88,4 +86,3 @@ leader_trait_collaborator_3 = {
 		leader_trait_opinionated_2
 	}
 }
-

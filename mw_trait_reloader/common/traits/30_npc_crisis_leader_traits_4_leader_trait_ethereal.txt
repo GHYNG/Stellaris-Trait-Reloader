@@ -14,4 +14,3 @@ leader_trait_ethereal = {
 	initial = no
 	randomized = no
 }
-

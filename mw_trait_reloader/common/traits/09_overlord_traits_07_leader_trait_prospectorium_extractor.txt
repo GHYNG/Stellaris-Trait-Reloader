@@ -22,4 +22,3 @@ leader_trait_prospectorium_extractor = {
 	initial = no
 	randomized = no
 }
-

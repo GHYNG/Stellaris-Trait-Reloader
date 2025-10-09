@@ -10,7 +10,7 @@ leader_trait_pirate_queen = {
 	}
 	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } 
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
 	fleet_modifier = {
@@ -22,8 +22,6 @@ leader_trait_pirate_queen = {
 		has_trait = subclass_commander_admiral
 	}
 	background_icon = GFX_leader_background_destiny_1
-
 	initial = no
 	randomized = no
 }
-

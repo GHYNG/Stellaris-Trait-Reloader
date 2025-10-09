@@ -17,4 +17,3 @@ leader_trait_plague_hardened = {
 	randomized = no
 	initial = no
 }
-

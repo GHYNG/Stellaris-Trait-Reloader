@@ -1,6 +1,5 @@
 trait_uplifted = {
 	cost = 0
-
 	initial = no
 	species_potential_add = {
 		always = no
@@ -12,12 +11,9 @@ trait_uplifted = {
 		always = no
 	}
 	randomized = no
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive special }
-
 	ai_weight = {
 		weight = 0
 	}
 }
-

@@ -14,17 +14,14 @@ trait_cyborg_creed_of_research = {
 		always = no
 	}
 	infertile = no
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive pop_output research unity cybernetic special }
 	modifier = {
 		researcher_jobs_bonus_workforce_mult = 0.2
 		bureaucrat_jobs_bonus_workforce_mult = 0.10
 	}
-
 	icon = "gfx/interface/icons/traits/trait_cyborg_creed_of_research.dds"
 	slave_cost = {
 		energy = 500
 	}
 }
-

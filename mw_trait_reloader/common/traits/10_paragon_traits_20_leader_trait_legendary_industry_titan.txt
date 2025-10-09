@@ -1,4 +1,4 @@
-leader_trait_legendary_industry_titan = { 
+leader_trait_legendary_industry_titan = { #Origin trait - materialist
 	starting_ruler_trait = yes
 	leader_trait_type = veteran
 	allowed_origins = { origin_legendary_leader }
@@ -12,20 +12,16 @@ leader_trait_legendary_industry_titan = {
 		TIER = 1
 	}
 	custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
-
 	councilor_modifier = {
 		planet_jobs_minerals_produces_mult = 0.1
 		planet_jobs_alloys_produces_mult = 0.05
 		planet_jobs_consumer_goods_produces_mult = 0.05
 	}
-
 	leader_class = { official commander scientist }
-
 	initial = no
 	randomized = no
 }
-
-leader_trait_legendary_industry_titan_2 = { 
+leader_trait_legendary_industry_titan_2 = { #Origin trait - materialist
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_industry_titan" }
 	inline_script = {
@@ -36,19 +32,15 @@ leader_trait_legendary_industry_titan_2 = {
 		TIER = 2
 	}
 	custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
-
 	councilor_modifier = {
 		planet_jobs_minerals_produces_mult = 0.15
 		planet_jobs_alloys_produces_mult = 0.1
 		planet_jobs_consumer_goods_produces_mult = 0.1
 	}
-
 	leader_class = { official commander scientist }
-
 	initial = no
 }
-
-leader_trait_legendary_industry_titan_3 = { 
+leader_trait_legendary_industry_titan_3 = { #Origin trait - materialist
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_industry_titan_2" }
 	inline_script = {
@@ -59,15 +51,11 @@ leader_trait_legendary_industry_titan_3 = {
 		TIER = 3
 	}
 	custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
-
 	councilor_modifier = {
 		planet_jobs_minerals_produces_mult = 0.3
 		planet_jobs_alloys_produces_mult = 0.15
 		planet_jobs_consumer_goods_produces_mult = 0.15
 	}
-
 	leader_class = { official commander scientist }
-
 	initial = no
 }
-

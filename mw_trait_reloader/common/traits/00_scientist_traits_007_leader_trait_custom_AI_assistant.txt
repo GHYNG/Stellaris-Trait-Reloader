@@ -25,4 +25,3 @@ leader_trait_custom_AI_assistant = {
 	}
 	ai_weight = 50
 }
-

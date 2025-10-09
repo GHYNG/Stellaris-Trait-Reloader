@@ -2,10 +2,8 @@ trait_robot_exotic_fuel_consumption = {
 	host_has_dlc = "The Machine Age"
 	cost = 1
 	category = robotic
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive pop_output upkeep }
-
 	species_potential_add = {
 		always = yes
 	}
@@ -17,25 +15,19 @@ trait_robot_exotic_fuel_consumption = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	initial = no
 	randomized = no
-
 	modifier = {
 		pop_bonus_workforce_mult = 0.10
 	}
-
 	slave_cost = {
 		energy = 750
 	}
-
 	resources = {
 		category = planet_pops
 		upkeep = {
 			exotic_gases = 0.04
 		}
 	}
-
 	custom_tooltip_with_modifiers = trait_robot_exotic_fuel_consumption_tt
 }
-

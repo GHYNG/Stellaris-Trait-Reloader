@@ -28,7 +28,6 @@ leader_trait_slipshod = {
 		}
 	}
 }
-
 leader_trait_slipshod_2 = {
 	leader_trait_type = negative
 	replace_traits = { leader_trait_slipshod }
@@ -48,4 +47,3 @@ leader_trait_slipshod_2 = {
 	}
 	selectable_weight = @tier2_negative_trait_weight
 }
-

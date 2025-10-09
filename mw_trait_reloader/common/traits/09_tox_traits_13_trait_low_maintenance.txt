@@ -44,4 +44,3 @@ trait_low_maintenance = {
 		energy = 1000
 	}
 }
-

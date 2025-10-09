@@ -66,4 +66,3 @@ leader_trait_ancient_knowledge = {
 	initial = no
 	randomized = no
 }
-

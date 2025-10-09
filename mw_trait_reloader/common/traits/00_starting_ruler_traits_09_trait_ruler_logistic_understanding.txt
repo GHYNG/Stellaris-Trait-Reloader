@@ -20,7 +20,6 @@ trait_ruler_logistic_understanding = {
 		inline_script = "paragon/council_weight_mult"
 	}
 }
-
 trait_ruler_logistic_understanding_2 = {
 	replace_traits = { "trait_ruler_logistic_understanding" }
 	inline_script = {
@@ -37,4 +36,3 @@ trait_ruler_logistic_understanding_2 = {
 	}
 	leader_class = { commander scientist official }
 }
-

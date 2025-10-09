@@ -27,4 +27,3 @@ trait_adaptive_lithoid = {
 		energy = 1000
 	}
 }
-

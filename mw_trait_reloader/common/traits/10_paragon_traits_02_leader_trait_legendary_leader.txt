@@ -1,4 +1,4 @@
-leader_trait_legendary_leader = { 
+leader_trait_legendary_leader = { #Origin trait
 	inline_script = {
 		script = trait/icon
 		ICON = "GFX_leader_trait_legendary_leader"
@@ -6,7 +6,6 @@ leader_trait_legendary_leader = {
 		COUNCIL = yes
 		TIER = none
 	}
-
 	triggered_councilor_modifier = {
 		potential = {
 			NOT = { has_leader_flag = legendary_leader_coma }
@@ -29,10 +28,7 @@ leader_trait_legendary_leader = {
 		species_leader_exp_gain = -2.0
 		leader_lifespan_add = 300
 	}
-
 	leader_class = { official commander scientist }
-
 	initial = no
 	randomized = no
 }
-

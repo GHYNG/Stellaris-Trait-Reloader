@@ -15,4 +15,3 @@ trait_survivor = {
 		energy = 500
 	}
 }
-

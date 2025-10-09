@@ -27,7 +27,6 @@ leader_trait_settler = {
 		inline_script = paragon/governor_weight_mult
 	}
 }
-
 leader_trait_settler_2 = {
 	replace_traits = { "leader_trait_settler" }
 	inline_script = {
@@ -49,7 +48,6 @@ leader_trait_settler_2 = {
 	leader_trait_type = veteran
 	leader_class = { official }
 }
-
 leader_trait_settler_3 = {
 	replace_traits = { "leader_trait_settler_2" }
 	inline_script = {
@@ -71,4 +69,3 @@ leader_trait_settler_3 = {
 	leader_trait_type = veteran
 	leader_class = { official }
 }
-

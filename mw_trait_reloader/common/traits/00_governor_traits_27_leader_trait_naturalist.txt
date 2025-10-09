@@ -27,7 +27,6 @@ leader_trait_naturalist = {
 		inline_script = paragon/governor_weight_mult
 	}
 }
-
 leader_trait_naturalist_2 = {
 	replace_traits = { "leader_trait_naturalist" }
 	inline_script = {
@@ -47,7 +46,6 @@ leader_trait_naturalist_2 = {
 	leader_trait_type = veteran
 	leader_class = { official scientist }
 }
-
 leader_trait_naturalist_3 = {
 	replace_traits = { "leader_trait_naturalist_2" }
 	inline_script = {
@@ -67,4 +65,3 @@ leader_trait_naturalist_3 = {
 	leader_trait_type = veteran
 	leader_class = { official scientist }
 }
-

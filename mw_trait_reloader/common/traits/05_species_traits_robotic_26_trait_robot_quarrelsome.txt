@@ -2,7 +2,7 @@ trait_robot_quarrelsome = {
 	icon = "gfx/interface/icons/traits/trait_quarrelsome.dds"
 	cost = -1
     category = robotic
-	
+	# Synths and Individualist Machines
 	species_potential_add = {
 		OR = {
 			can_add_synth_traits = yes
@@ -30,4 +30,3 @@ trait_robot_quarrelsome = {
 		energy = -200
 	}
 }
-

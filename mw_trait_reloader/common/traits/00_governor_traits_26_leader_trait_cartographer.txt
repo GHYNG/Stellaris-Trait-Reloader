@@ -25,7 +25,6 @@ leader_trait_cartographer = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 leader_trait_cartographer_2 = {
 	replace_traits = { "leader_trait_cartographer" }
 	inline_script = {
@@ -43,7 +42,6 @@ leader_trait_cartographer_2 = {
 	leader_trait_type = veteran
 	leader_class = { official scientist }
 }
-
 leader_trait_cartographer_3 = {
 	replace_traits = { "leader_trait_cartographer_2" }
 	inline_script = {
@@ -61,4 +59,3 @@ leader_trait_cartographer_3 = {
 	leader_trait_type = veteran
 	leader_class = { official scientist }
 }
-

@@ -31,8 +31,7 @@ trait_robust = {
 	}
 	assembly_score = {
 		modifier = {
-			add = 0.5 
+			add = 0.5 #always good
 		}
 	}
 }
-

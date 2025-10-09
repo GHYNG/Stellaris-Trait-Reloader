@@ -18,13 +18,10 @@ trait_drake_scaled = {
 	opposites = { "trait_lithoid_gaseous_byproducts" "trait_lithoid_scintillating" "trait_lithoid_volatile_excretions" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive army production alloys leviathan genetic_ascension }
-
 	custom_tooltip_with_modifiers = TRAIT_DRAKE_SCALED_EFFECT
-
 	modifier = {
 		army_health = 1.00
 	}
-
 	resources = {
 		category = planet_pops
 		produces = {
@@ -34,9 +31,7 @@ trait_drake_scaled = {
 			alloys = @drake_scaled_trait_resource_production
 		}
 	}
-
 	slave_cost = {
 		energy = 1000
 	}
 }
-

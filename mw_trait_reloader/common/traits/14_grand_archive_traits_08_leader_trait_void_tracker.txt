@@ -26,7 +26,6 @@ leader_trait_void_tracker = {
 		inline_script = paragon/pilot_weight_mult
 	}
 }
-
 leader_trait_void_tracker_2 = {
 	replace_traits = { "leader_trait_void_tracker" }
 	inline_script = {
@@ -45,4 +44,3 @@ leader_trait_void_tracker_2 = {
 	}
 	leader_class = { scientist }
 }
-

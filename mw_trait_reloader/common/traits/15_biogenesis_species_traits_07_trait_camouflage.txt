@@ -35,7 +35,6 @@ trait_camouflage = {
 		physicist_jobs_bonus_workforce_mult = 0.10
 		army_health = 0.2
 	}
-
 	assembly_score = {
 		modifier = {
 			add = 1
@@ -46,9 +45,7 @@ trait_camouflage = {
 			from = { has_building = building_order_keep }
 		}
 	}
-
 	slave_cost = {
 		energy = 500
 	}
 }
-

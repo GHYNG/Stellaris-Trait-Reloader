@@ -10,19 +10,15 @@ leader_trait_storm_rider_official = {
 		TIER = none
 		TRIGGER = "is_leader_in_storm = yes"
 	}
-
 	leader_class = { official }
 	initial = no
 	randomized = no
-
 	custom_tooltip_with_modifiers = "mod_trait_storm_rider"
-
 	leader_potential_add = {
 		has_cosmic_storms_dlc = yes
 		owner = { has_origin = origin_storm_chasers }
 	}
-
-	
+	#more XP, less lifespan in the field
 	triggered_self_modifier = {
 		potential = {
 			is_councilor = no
@@ -31,8 +27,7 @@ leader_trait_storm_rider_official = {
 		species_leader_exp_gain = 0.15
 		leader_lifespan_add = -10
 	}
-
-	
+	#when governor, increase in amenity production
 	triggered_planet_modifier = {
 		potential = {
 			is_councilor = no
@@ -69,8 +64,7 @@ leader_trait_storm_rider_official = {
 		pop_entertainer_bonus_workforce_mult = 0.1
 		pop_maintenance_drone_bonus_workforce_mult = 0.1
 	}
-
-	
+	#increases voting strength when attending galcom
 	triggered_galcom_modifier = {
 		potential = {
 			owner = { is_galactic_community_member = yes }
@@ -78,9 +72,7 @@ leader_trait_storm_rider_official = {
 		resolution_category_space_weather_exploitation_stances_vote_strength_mult = 0.05
 		resolution_category_storm_environmentalists_stances_vote_strength_mult = 0.05
 	}
-
 	councilor_modifier = {
 		edicts_upkeep_mult = -0.10
 	}
 }
-

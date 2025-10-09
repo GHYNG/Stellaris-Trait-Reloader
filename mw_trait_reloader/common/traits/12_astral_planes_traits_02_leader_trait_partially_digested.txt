@@ -19,4 +19,3 @@ leader_trait_partially_digested = {
 	initial = no
 	randomized = no
 }
-

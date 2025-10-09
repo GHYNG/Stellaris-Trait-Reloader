@@ -39,4 +39,3 @@ trait_adaptive_research = {
 		researcher_jobs_bonus_workforce_mult = @adaptive_boosted_output
 	}
 }
-

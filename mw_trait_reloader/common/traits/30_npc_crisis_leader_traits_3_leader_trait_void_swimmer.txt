@@ -14,4 +14,3 @@ leader_trait_void_swimmer = {
 	initial = no
 	randomized = no
 }
-

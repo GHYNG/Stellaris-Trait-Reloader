@@ -17,7 +17,6 @@ trait_natural_machinist = {
 	advanced_trait = yes
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive pop_output alloys consumer_goods genetic_ascension }
-
 	modifier = {
 		foundry_jobs_bonus_workforce_mult = 0.25
 		artisan_jobs_bonus_workforce_mult = 0.25
@@ -32,4 +31,3 @@ trait_natural_machinist = {
 		}
 	}
 }
-

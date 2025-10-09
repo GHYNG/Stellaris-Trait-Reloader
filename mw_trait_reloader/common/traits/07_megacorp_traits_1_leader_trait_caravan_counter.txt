@@ -11,9 +11,7 @@ leader_trait_caravan_counter = {
 	fleet_modifier = {
 		ship_emergency_ftl_mult = -0.10
 	}
-
 	leader_class = { commander }
 	initial = no
 	randomized = no
 }
-

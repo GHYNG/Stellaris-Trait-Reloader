@@ -37,7 +37,7 @@ trait_plantoid_radiotrophic = {
 	custom_tooltip = TRAIT_PLANTOID_RADIOTROPHIC_EFFECT
 	resources = {
 		category = planet_pops
-		
+		# Energy Upkeep
 		upkeep = {
 			trigger = {
 				is_being_purged = no
@@ -92,4 +92,3 @@ trait_plantoid_radiotrophic = {
 		}
 	}
 }
-

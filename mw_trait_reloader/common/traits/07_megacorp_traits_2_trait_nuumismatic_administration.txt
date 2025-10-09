@@ -18,4 +18,3 @@ trait_nuumismatic_administration = {
 		}
 	}
 }
-

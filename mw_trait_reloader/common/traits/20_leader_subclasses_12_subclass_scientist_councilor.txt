@@ -1,6 +1,5 @@
 @ai_selection_high = 5
 @ai_selection_low = 0.1
-
 subclass_scientist_councilor = {
 	custom_subtitle = councilor_subclass_scientist
 	leader_trait_type = subclass
@@ -10,7 +9,6 @@ subclass_scientist_councilor = {
 		COUNCIL = yes
 	}
 	custom_tooltip_with_modifiers = councilor_subclass_tt
-
 	triggered_councilor_modifier = {
 		potential = {
 			exists = owner
@@ -37,4 +35,3 @@ subclass_scientist_councilor = {
 	leader_class = { scientist }
 	background_icon = "GFX_leader_subclass_scientist_councilor_background"
 }
-

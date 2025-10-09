@@ -2,11 +2,9 @@ trait_robot_repurposed_hardware = {
 	cost = -1
 	category = robotic
 	opposites = { "trait_robot_learning_algorithms" }
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine synthetic negative leader }
-
-	
+	# Synth, Machine Intelligence or Individualist Machine
 	species_potential_add = {
 		OR = {
 			can_add_synth_traits = yes
@@ -28,4 +26,3 @@ trait_robot_repurposed_hardware = {
 		energy = -250
 	}
 }
-

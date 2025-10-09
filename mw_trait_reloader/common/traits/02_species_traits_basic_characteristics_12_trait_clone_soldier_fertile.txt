@@ -2,7 +2,6 @@ trait_clone_soldier_fertile = {
 	cost = 0
 	opposites = { "trait_vat_grown" "trait_clone_soldier_infertile" "trait_clone_soldier_infertile_full_potential" }
 	sorting_priority = 20
-
 	initial = no
 	randomized = no
 	improves_leaders = yes
@@ -17,24 +16,19 @@ trait_clone_soldier_fertile = {
 	}
 	immortal_leaders = no
 	infertile = no
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive army ethic_attraction special }
 	ai_weight = {
 		weight = 0
 	}
-
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier_descendant.dds"
-
 	modifier = {
-		
+		# Pop modifiers
 		pop_government_ethic_attraction = 0.20
-
-		
+		# Leader modifiers
 		army_damage_mult = 0.2
 	}
 	slave_cost = {
 		energy = 1000
 	}
 }
-

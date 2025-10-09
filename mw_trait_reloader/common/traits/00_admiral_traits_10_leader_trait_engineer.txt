@@ -17,4 +17,3 @@ leader_trait_engineer = {
 		inline_script = paragon/pilot_weight_mult
 	}
 }
-

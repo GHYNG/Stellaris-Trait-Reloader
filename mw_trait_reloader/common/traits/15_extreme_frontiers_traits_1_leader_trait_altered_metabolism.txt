@@ -7,14 +7,10 @@ leader_trait_altered_metabolism = {
 		COUNCIL = no
 		TIER = 3
 	}
-
 	leader_class = { scientist }
-
 	self_modifier = {
 		leader_lifespan_add = 15
 	}
-
 	initial = no
 	randomized = no
 }
-

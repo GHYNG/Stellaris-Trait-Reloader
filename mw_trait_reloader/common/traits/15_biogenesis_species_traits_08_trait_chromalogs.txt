@@ -37,7 +37,6 @@ trait_chromalogs = {
 		army_health = 0.4
 		pop_government_ethic_attraction = 0.15
 	}
-
 	assembly_score = {
 		modifier = {
 			add = 1.5
@@ -52,9 +51,7 @@ trait_chromalogs = {
 			from = { has_building = building_order_keep }
 		}
 	}
-
 	slave_cost = {
 		energy = 1500
 	}
 }
-

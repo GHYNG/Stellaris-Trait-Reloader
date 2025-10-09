@@ -28,4 +28,3 @@ trait_nascent_stage = {
 		energy = -1000
 	}
 }
-

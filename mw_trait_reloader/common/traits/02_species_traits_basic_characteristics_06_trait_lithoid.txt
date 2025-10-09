@@ -1,8 +1,6 @@
 trait_lithoid = {
 	cost = 0
-
 	sorting_priority = 20
-
 	initial = yes
 	randomized = no
 	species_potential_add = {
@@ -15,21 +13,17 @@ trait_lithoid = {
 		always = no
 	}
 	immortal_leaders = no
-
 	leader_age_min = 27
 	leader_age_max = 38
-
 	allowed_archetypes = { LITHOID PRESAPIENT }
 	tags = { organic positive habitability leader army lithoid special }
 	ai_weight = {
 		weight = 0
 	}
-
 	icon = "gfx/interface/icons/traits/trait_lithoid.dds"
-
 	resources = {
 		category = planet_pops
-		
+		# Mineral Upkeep
 		upkeep = {
 			trigger = {
 				is_phototrophic = no
@@ -38,7 +32,6 @@ trait_lithoid = {
 			}
 			minerals = @living_standard_food_normal
 		}
-
 		upkeep = {
 			trigger = {
 				is_phototrophic = yes
@@ -48,7 +41,6 @@ trait_lithoid = {
 			minerals = @living_standard_phototrophic_normal
 		}
 	}
-
 	custom_tooltip_with_modifiers = TRAIT_LITHOID_EFFECT
 	modifier = {
 		logistic_growth_mult = -0.25
@@ -70,4 +62,3 @@ trait_lithoid = {
 		pop_environment_tolerance = 0.5
 	}
 }
-

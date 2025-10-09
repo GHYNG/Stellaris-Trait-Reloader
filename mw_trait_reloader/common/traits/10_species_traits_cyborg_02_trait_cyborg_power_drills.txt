@@ -6,7 +6,6 @@ trait_cyborg_power_drills = {
 			owner = { has_country_flag = augmentation_bazaars_power_drills }
 		}
 	}
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -25,7 +24,6 @@ trait_cyborg_power_drills = {
 	modifier = {
 		miner_jobs_bonus_workforce_mult = 0.1
 	}
-
 	slave_cost = {
 		energy = 750
 	}
@@ -40,4 +38,3 @@ trait_cyborg_power_drills = {
 		}
 	}
 }
-

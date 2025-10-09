@@ -22,4 +22,3 @@ trait_robot_trading_algorithms = {
 		energy = 500
 	}
 }
-

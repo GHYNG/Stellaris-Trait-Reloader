@@ -1,4 +1,4 @@
-leader_trait_bureaucrat = { 
+leader_trait_bureaucrat = { # Unifier
 	inline_script = {
 		script = trait/icon
 		CLASS = official
@@ -40,4 +40,3 @@ leader_trait_bureaucrat = {
 		}
 	}
 }
-

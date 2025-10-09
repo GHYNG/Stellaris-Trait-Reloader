@@ -10,7 +10,7 @@ leader_trait_shroud_preacher = {
 	}
 	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } 
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
 	planet_modifier = {
@@ -63,4 +63,3 @@ leader_trait_shroud_preacher = {
 	}
 	background_icon = "GFX_leader_background_destiny_1"
 }
-

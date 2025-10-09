@@ -1,6 +1,5 @@
 @ai_selection_high = 5
 @ai_selection_low = 0.1
-
 subclass_official_delegate = {
 	custom_subtitle = governor_subclass
 	leader_trait_type = subclass
@@ -11,15 +10,12 @@ subclass_official_delegate = {
 	}
 	leader_class = { official }
 	custom_tooltip_with_modifiers = delegate_subclass_tt
-
 	federation_modifier = {
 		cohesion_add = 0.5
 	}
-
 	galcom_modifier = {
 		diplo_weight_mult = 0.05
 	}
-
 	ai_weight = {
 		modifier = {
 			is_councilor = yes
@@ -46,4 +42,3 @@ subclass_official_delegate = {
 	}
 	background_icon = "GFX_leader_subclass_official_delegate_background"
 }
-

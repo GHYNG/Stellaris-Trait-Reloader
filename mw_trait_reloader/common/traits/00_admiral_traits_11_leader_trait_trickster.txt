@@ -7,7 +7,6 @@ leader_trait_trickster = {
 		COUNCIL = no
 		TIER = 1
 	}
-
 	fleet_modifier = {
 		ship_emergency_ftl_mult = -0.2
 		ship_disengage_chance_mult = 0.4
@@ -23,4 +22,3 @@ leader_trait_trickster = {
 		inline_script = paragon/pilot_weight_mult
 	}
 }
-

@@ -2,15 +2,12 @@ trait_adaptive_mutations = {
 	cost = 0
 	auto_mod = yes
 	category = mutation
-
 	opposites = {
 		"trait_wilderness"
 	}
-
 	initial = no
 	randomized = no
 	immortal_leaders = no
-
 	species_potential_add = {
 		can_add_mutation_traits = yes
 	}
@@ -28,10 +25,8 @@ trait_adaptive_mutations = {
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive automod special }
-
 	slave_cost = {
 		energy = 500
 	}
 	custom_tooltip_with_modifiers = automodding_trait_adaptive_mutations_tt
 }
-

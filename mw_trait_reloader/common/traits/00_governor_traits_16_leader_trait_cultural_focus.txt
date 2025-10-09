@@ -21,7 +21,6 @@ leader_trait_cultural_focus = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 leader_trait_cultural_focus_2 = {
 	replace_traits = { "leader_trait_cultural_focus" }
 	inline_script = {
@@ -38,7 +37,6 @@ leader_trait_cultural_focus_2 = {
 	leader_trait_type = veteran
 	leader_class = { official }
 }
-
 leader_trait_cultural_focus_3 = {
 	replace_traits = { "leader_trait_cultural_focus_2" }
 	inline_script = {
@@ -55,4 +53,3 @@ leader_trait_cultural_focus_3 = {
 	leader_trait_type = veteran
 	leader_class = { official }
 }
-

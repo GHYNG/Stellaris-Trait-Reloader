@@ -19,7 +19,6 @@ leader_trait_principled = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 leader_trait_principled_2 = {
 	replace_traits = { "leader_trait_principled" }
 	inline_script = {
@@ -35,4 +34,3 @@ leader_trait_principled_2 = {
 	}
 	leader_class = { official }
 }
-

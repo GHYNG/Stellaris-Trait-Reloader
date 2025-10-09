@@ -1,10 +1,8 @@
 trait_robot_monoform = {
 	cost = 4
 	category = robotic
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive pop_growth housing modularity }
-
 	species_potential_add = {
 		can_do_advanced_robo_modding = yes
 	}
@@ -14,17 +12,13 @@ trait_robot_monoform = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	initial = no
 	randomized = no
-
 	modifier = {
 		pop_housing_usage_mult = -0.8
 		planet_pop_assembly_mult = 0.2
 	}
-
 	slave_cost = {
 		energy = 750
 	}
 }
-

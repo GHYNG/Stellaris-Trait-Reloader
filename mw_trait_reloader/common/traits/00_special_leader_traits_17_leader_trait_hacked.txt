@@ -14,4 +14,3 @@ leader_trait_hacked = {
 	}
 	leader_class = { commander scientist official }
 }
-

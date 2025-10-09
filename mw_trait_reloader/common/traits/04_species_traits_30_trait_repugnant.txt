@@ -4,14 +4,12 @@ trait_repugnant = {
 	species_potential_add = {
 		can_add_negative_organic_traits = yes
 	}
-
 	opposites = { "trait_charismatic" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic negative pop_output amenities }
 	modifier = {
 		influential_jobs_bonus_workforce_mult = -0.20
 	}
-
 	ai_weight = {
 		weight = 0
 	}
@@ -19,4 +17,3 @@ trait_repugnant = {
 		energy = -200
 	}
 }
-

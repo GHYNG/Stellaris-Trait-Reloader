@@ -47,7 +47,6 @@ leader_trait_corrupt = {
 		}
 	}
 }
-
 leader_trait_corrupt_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_corrupt" }
@@ -82,4 +81,3 @@ leader_trait_corrupt_2 = {
 	}
 	selectable_weight = @tier2_negative_trait_weight
 }
-

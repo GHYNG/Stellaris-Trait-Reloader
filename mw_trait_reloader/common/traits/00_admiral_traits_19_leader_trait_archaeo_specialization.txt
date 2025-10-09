@@ -33,7 +33,6 @@ leader_trait_archaeo_specialization = {
 		}
 	}
 }
-
 leader_trait_archaeo_specialization_2 = {
 	leader_trait_type = veteran
 	replace_traits = { leader_trait_archaeo_specialization }
@@ -51,4 +50,3 @@ leader_trait_archaeo_specialization_2 = {
 	}
 	leader_class = { commander }
 }
-

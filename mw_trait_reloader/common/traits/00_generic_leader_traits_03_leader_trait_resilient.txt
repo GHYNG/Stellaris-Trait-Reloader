@@ -30,4 +30,3 @@ leader_trait_resilient = {
 	}
 	selectable_weight = @shared_trait_weight
 }
-

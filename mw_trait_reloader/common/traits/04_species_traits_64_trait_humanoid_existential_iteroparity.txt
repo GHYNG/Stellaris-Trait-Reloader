@@ -31,4 +31,3 @@ trait_humanoid_existential_iteroparity = {
 		energy = 1000
 	}
 }
-

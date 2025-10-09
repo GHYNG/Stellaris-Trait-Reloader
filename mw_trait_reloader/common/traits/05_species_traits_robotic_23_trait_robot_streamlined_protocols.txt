@@ -11,4 +11,3 @@ trait_robot_streamlined_protocols = {
 		energy = 750
 	}
 }
-

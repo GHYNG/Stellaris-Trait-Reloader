@@ -23,7 +23,6 @@ leader_trait_border_guard = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 leader_trait_border_guard_2 = {
 	leader_trait_type = veteran
 	replace_traits = { leader_trait_border_guard }
@@ -42,4 +41,3 @@ leader_trait_border_guard_2 = {
 	}
 	leader_class = { commander }
 }
-

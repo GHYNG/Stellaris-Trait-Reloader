@@ -26,7 +26,6 @@ leader_trait_explorer_cloaking_focus = {
 		}
 	}
 }
-
 leader_trait_explorer_cloaking_focus_2 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_explorer_cloaking_focus" }
@@ -44,7 +43,6 @@ leader_trait_explorer_cloaking_focus_2 = {
 	prerequisites = { tech_cloaking_1 }
 	leader_class = { scientist }
 }
-
 leader_trait_explorer_cloaking_focus_3 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_explorer_cloaking_focus_2" }
@@ -63,4 +61,3 @@ leader_trait_explorer_cloaking_focus_3 = {
 	prerequisites = { tech_cloaking_1 }
 	leader_class = { scientist }
 }
-

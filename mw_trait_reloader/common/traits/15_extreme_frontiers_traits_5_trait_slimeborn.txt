@@ -12,14 +12,11 @@ trait_slimeborn = {
 		always = no
 	}
 	allowed_archetypes = { BIOLOGICAL }
-
 	modifier = {
 		logistic_growth_mult = 0.1
 		planet_pops_upkeep_mult = -0.1
 	}
-
 	ai_weight = {
 		weight = 0
 	}
 }
-

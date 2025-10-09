@@ -19,4 +19,3 @@ leader_trait_black_light_blinded = {
 	initial = no
 	randomized = no
 }
-

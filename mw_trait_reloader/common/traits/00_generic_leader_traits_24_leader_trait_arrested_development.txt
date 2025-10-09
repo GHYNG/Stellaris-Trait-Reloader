@@ -12,7 +12,6 @@ leader_trait_arrested_development = {
 	leader_class = { commander scientist official }
 	initial = no
 }
-
 leader_trait_arrested_development_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_arrested_development" }
@@ -28,4 +27,3 @@ leader_trait_arrested_development_2 = {
 	leader_class = { commander scientist official }
 	initial = no
 }
-

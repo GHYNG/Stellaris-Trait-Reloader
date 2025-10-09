@@ -1,7 +1,6 @@
 trait_cyborg_delicate_frames = {
 	host_has_dlc = "The Machine Age"
 	cost = -1
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -21,9 +20,7 @@ trait_cyborg_delicate_frames = {
 		army_damage_mult = -0.5
 		worker_and_simple_drone_cat_bonus_workforce_mult = -0.05
 	}
-
 	slave_cost = {
 		energy = -250
 	}
 }
-

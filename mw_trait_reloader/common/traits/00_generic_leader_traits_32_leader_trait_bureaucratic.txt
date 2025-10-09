@@ -18,7 +18,6 @@ leader_trait_bureaucratic = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 leader_trait_bureaucratic_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_bureaucratic" }
@@ -34,4 +33,3 @@ leader_trait_bureaucratic_2 = {
 	leader_class = { official scientist commander }
 	selectable_weight = @tier2_negative_trait_weight
 }
-

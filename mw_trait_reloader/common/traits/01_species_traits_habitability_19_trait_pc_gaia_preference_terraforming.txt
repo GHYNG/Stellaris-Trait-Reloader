@@ -26,4 +26,3 @@ trait_pc_gaia_preference_terraforming = {
 		pop_bonus_workforce_mult = 0.05
 	}
 }
-

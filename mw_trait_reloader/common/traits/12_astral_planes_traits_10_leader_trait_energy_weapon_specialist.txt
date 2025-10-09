@@ -19,4 +19,3 @@ leader_trait_energy_weapon_specialist = {
 	initial = no
 	randomized = no
 }
-

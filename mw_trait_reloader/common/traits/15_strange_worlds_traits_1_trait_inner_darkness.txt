@@ -13,7 +13,6 @@ trait_inner_darkness = {
 		always = no
 	}
 	tags = { organic positive pop_output research leader pop_growth special }
-
 	modifier = {
 		physicist_jobs_bonus_workforce_mult = 0.15
 		leader_lifespan_add = -20
@@ -22,4 +21,3 @@ trait_inner_darkness = {
 	}
 	custom_tooltip = trait_inner_darkness_ct
 }
-

@@ -27,7 +27,6 @@ leader_trait_iron_fist = {
 		inline_script = paragon/governor_weight_mult
 	}
 }
-
 leader_trait_iron_fist_2 = {
 	replace_traits = { "leader_trait_iron_fist" }
 	inline_script = {
@@ -46,4 +45,3 @@ leader_trait_iron_fist_2 = {
 	}
 	leader_class = { commander }
 }
-

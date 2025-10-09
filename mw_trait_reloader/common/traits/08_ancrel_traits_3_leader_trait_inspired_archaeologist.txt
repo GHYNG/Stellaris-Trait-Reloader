@@ -17,4 +17,3 @@ leader_trait_inspired_archaeologist = {
 	initial = no
 	randomized = no
 }
-

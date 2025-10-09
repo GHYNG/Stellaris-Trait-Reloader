@@ -39,4 +39,3 @@ trait_adaptive_food = {
 		farmer_jobs_bonus_workforce_mult = @adaptive_boosted_output
 	}
 }
-

@@ -25,4 +25,3 @@ trait_pc_ai_preference = {
 		weight = 0
 	}
 }
-

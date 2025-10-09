@@ -17,4 +17,3 @@ leader_trait_adaptable = {
 	}
 	selectable_weight = @shared_trait_weight
 }
-

@@ -25,4 +25,3 @@ leader_trait_politician = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-

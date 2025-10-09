@@ -20,4 +20,3 @@ trait_docile = {
 		energy = 500
 	}
 }
-

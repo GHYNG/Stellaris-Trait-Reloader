@@ -2,7 +2,7 @@ trait_robot_scavenger_bot = {
 	host_has_dlc = "The Machine Age"
 	cost = 3
 	category = robotic
-	
+	# Synth, Machine Intelligence or Individualist Machine
 	species_potential_add = {
 		OR = {
 			can_add_synth_traits = yes
@@ -20,13 +20,10 @@ trait_robot_scavenger_bot = {
 	opposites = {}
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine synthetic positive leviathan pop_growth }
-
 	modifier = {
 		planet_pop_assembly_mult = 0.5
 	}
-
 	slave_cost = {
 		energy = 1500
 	}
 }
-

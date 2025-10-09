@@ -15,4 +15,3 @@ trait_fleeting = {
 		energy = -200
 	}
 }
-

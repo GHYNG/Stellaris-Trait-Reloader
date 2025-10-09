@@ -25,7 +25,6 @@ trait_imperial_heir = {
 		}
 		leader_trait_selection_options_add = 1
 	}
-
 	triggered_background_planet_modifier = {
 		potential = {
 			is_ruler = yes
@@ -39,7 +38,6 @@ trait_imperial_heir = {
 		job_bureaucrat_add = 100
 		mult = value:imperial_cult_effective_ruler_level
 	}
-
 	triggered_self_modifier = {
 		potential = {
 			exists = owner
@@ -52,7 +50,6 @@ trait_imperial_heir = {
 		species_leader_exp_gain = @purity_traits_imperial_bloodline
 		mult = species.species_traits_purity_count
 	}
-
 	triggered_self_modifier = {
 		potential = {
 			OR = {
@@ -68,7 +65,6 @@ trait_imperial_heir = {
 		leader_skill_add = @purity_traits_imperial_level
 		mult = species.species_traits_purity_count
 	}
-
 	triggered_councilor_modifier = {
 		potential = {
 			is_heir = yes
@@ -82,7 +78,6 @@ trait_imperial_heir = {
 		ship_hull_mult = @transcendent_imperial_heir_mult
 		ship_speed_mult = @transcendent_imperial_heir_mult
 	}
-
 	triggered_councilor_modifier = {
 		potential = {
 			is_heir = yes
@@ -108,7 +103,6 @@ trait_imperial_heir = {
 		}
 		ship_astral_rift_clues_add = @transcendent_imperial_heir_skill
 	}
-
 	triggered_councilor_modifier = {
 		potential = {
 			is_heir = yes
@@ -121,11 +115,9 @@ trait_imperial_heir = {
 		}
 		planet_stability_add = @transcendent_imperial_heir_stability
 	}
-
 	on_gained_effect = {
 		change_background_job = noble
 	}
 	leader_class = { commander scientist official }
 	randomized = no
 }
-

@@ -24,4 +24,3 @@ leader_trait_disciple_of_the_instrument = {
 	initial = no
 	randomized = no
 }
-

@@ -24,7 +24,6 @@ trait_ruler_recruiter = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 trait_ruler_recruiter_2 = {
 	leader_trait_type = veteran
 	replace_traits = { "trait_ruler_recruiter" }
@@ -42,4 +41,3 @@ trait_ruler_recruiter_2 = {
 	}
 	leader_class = { commander }
 }
-

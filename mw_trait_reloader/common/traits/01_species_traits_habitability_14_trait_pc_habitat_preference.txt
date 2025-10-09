@@ -1,5 +1,4 @@
 @primary = 0.80
-
 trait_pc_habitat_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_habitat_preference.dds"
 	short_name = "trait_pc_habitat_preference_short"
@@ -25,4 +24,3 @@ trait_pc_habitat_preference = {
 		weight = 0
 	}
 }
-

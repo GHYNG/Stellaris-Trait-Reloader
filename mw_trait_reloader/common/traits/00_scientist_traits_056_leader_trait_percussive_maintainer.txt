@@ -18,4 +18,3 @@ leader_trait_percussive_maintainer = {
 	randomized = no
 	ai_weight = 100
 }
-

@@ -18,16 +18,13 @@ trait_noxious = {
 		pop_happiness = @noxious_happiness_bonus
 		mult = planet.value:counter_noxious
 	}
-
 	modifier = {
 		habitability_floor_add = 0.3
 		habitability_ceil_add = -0.3
 		army_damage_mult = 0.50
 		pop_housing_usage_mult = 0.1
 	}
-
 	slave_cost = {
 		energy = -500
 	}
 }
-

@@ -17,4 +17,3 @@ leader_trait_inspired_surveyor = {
 	initial = no
 	randomized = no
 }
-

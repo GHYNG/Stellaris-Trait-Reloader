@@ -15,7 +15,6 @@ trait_lithoid_scintillating = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	opposites = { "trait_lithoid_volatile_excretions" "trait_lithoid_gaseous_byproducts" "trait_drake_scaled" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	species_class = { LITHOID }
@@ -32,7 +31,6 @@ trait_lithoid_scintillating = {
 	}
 	tags = { organic positive rare_resource production lithoid species }
 	custom_tooltip = TRAIT_LITHOID_SCINTILLATING_EFFECT
-
 	resources = {
 		category = planet_pops
 		produces = {
@@ -43,9 +41,7 @@ trait_lithoid_scintillating = {
 			mult = value:lithoid_trait_mult
 		}
 	}
-
 	slave_cost = {
 		energy = 1000
 	}
 }
-

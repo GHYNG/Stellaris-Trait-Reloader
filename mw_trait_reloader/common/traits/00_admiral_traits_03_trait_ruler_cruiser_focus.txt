@@ -25,4 +25,3 @@ trait_ruler_cruiser_focus = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-

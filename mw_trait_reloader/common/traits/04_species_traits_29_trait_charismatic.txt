@@ -13,7 +13,6 @@ trait_charismatic = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	opposites = { "trait_repugnant" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
@@ -27,4 +26,3 @@ trait_charismatic = {
 		energy = 500
 	}
 }
-

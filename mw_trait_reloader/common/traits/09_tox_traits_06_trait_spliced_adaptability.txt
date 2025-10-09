@@ -40,4 +40,3 @@ trait_spliced_adaptability = {
 		energy = 1000
 	}
 }
-

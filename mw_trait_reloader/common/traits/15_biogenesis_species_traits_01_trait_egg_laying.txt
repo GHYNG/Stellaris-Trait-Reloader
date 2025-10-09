@@ -53,7 +53,6 @@ trait_egg_laying = {
 		}
 		logistic_growth_mult = 0.15
 	}
-
 	assembly_score = {
 		modifier = {
 			add = 2
@@ -73,9 +72,7 @@ trait_egg_laying = {
 			}
 		}
 	}
-
 	slave_cost = {
 		energy = 500
 	}
 }
-

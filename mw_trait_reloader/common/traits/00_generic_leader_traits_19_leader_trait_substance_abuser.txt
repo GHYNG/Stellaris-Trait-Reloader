@@ -33,7 +33,6 @@ leader_trait_substance_abuser = {
 		}
 	}
 }
-
 leader_trait_substance_abuser_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_substance_abuser" }
@@ -63,4 +62,3 @@ leader_trait_substance_abuser_2 = {
 		}
 	}
 }
-

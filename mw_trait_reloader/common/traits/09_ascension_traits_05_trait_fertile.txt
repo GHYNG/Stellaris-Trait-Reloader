@@ -33,4 +33,3 @@ trait_fertile = {
 		energy = 2000
 	}
 }
-

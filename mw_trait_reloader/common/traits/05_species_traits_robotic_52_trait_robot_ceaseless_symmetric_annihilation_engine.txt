@@ -1,10 +1,8 @@
 trait_robot_ceaseless_symmetric_annihilation_engine = {
 	cost = 2
 	category = robotic
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive pop_output upkeep modularity }
-
 	species_potential_add = {
 		can_do_advanced_robo_modding = yes
 	}
@@ -16,25 +14,19 @@ trait_robot_ceaseless_symmetric_annihilation_engine = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	initial = no
 	randomized = no
-
 	modifier = {
 		pop_bonus_workforce_mult = 0.40
 	}
-
 	slave_cost = {
 		energy = 750
 	}
-
 	resources = {
 		category = planet_pops
 		upkeep = {
 			sr_dark_matter = 0.02
 		}
 	}
-
 	custom_tooltip_with_modifiers = trait_robot_ceaseless_symmetric_annihilation_engine_tt
 }
-

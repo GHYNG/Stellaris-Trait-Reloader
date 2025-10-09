@@ -18,10 +18,8 @@ trait_nivlac = {
 	species_possible_merge_add = {
 		always = no
 	}
-
 	allowed_archetypes = { BIOLOGICAL }
 	tags = { organic positive habitability pop_growth special }
-
 	modifier = {
 		pop_environment_tolerance = 0.50
 		logistic_growth_mult = 0.15
@@ -30,4 +28,3 @@ trait_nivlac = {
 		energy = 100
 	}
 }
-

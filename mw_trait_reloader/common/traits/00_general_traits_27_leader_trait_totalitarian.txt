@@ -11,7 +11,7 @@ leader_trait_totalitarian = {
 	}
 	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } 
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
 	councilor_modifier = {
@@ -36,4 +36,3 @@ leader_trait_totalitarian = {
 	}
 	background_icon = "GFX_leader_background_destiny_1"
 }
-

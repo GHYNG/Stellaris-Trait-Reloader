@@ -38,4 +38,3 @@ trait_cyborg_streamlined_protocols = {
 		origin_unplugged
 	}
 }
-

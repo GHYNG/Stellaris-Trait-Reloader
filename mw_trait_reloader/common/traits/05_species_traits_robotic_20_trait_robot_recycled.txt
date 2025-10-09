@@ -2,10 +2,8 @@ trait_robot_recycled = {
 	cost = 2
 	category = robotic
 	opposites = { "trait_robot_luxurious" }
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive upkeep pop_growth }
-
 	modifier = {
 		roboticist_jobs_bonus_workforce_mult = 0.20
 	}
@@ -13,4 +11,3 @@ trait_robot_recycled = {
 		energy = 1500
 	}
 }
-

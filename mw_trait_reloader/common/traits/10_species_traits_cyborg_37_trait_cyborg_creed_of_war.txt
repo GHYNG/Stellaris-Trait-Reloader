@@ -14,7 +14,6 @@ trait_cyborg_creed_of_war = {
 		always = no
 	}
 	infertile = no
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive army pop_output unity cybernetic special }
 	modifier = {
@@ -22,10 +21,8 @@ trait_cyborg_creed_of_war = {
 		army_defense_damage_mult = 0.25
 		bureaucrat_jobs_bonus_workforce_mult = 0.1
 	}
-
 	icon = "gfx/interface/icons/traits/trait_cyborg_creed_of_war.dds"
 	slave_cost = {
 		energy = 500
 	}
 }
-

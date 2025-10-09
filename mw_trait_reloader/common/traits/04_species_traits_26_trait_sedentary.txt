@@ -17,4 +17,3 @@ trait_sedentary = {
 		energy = -200
 	}
 }
-

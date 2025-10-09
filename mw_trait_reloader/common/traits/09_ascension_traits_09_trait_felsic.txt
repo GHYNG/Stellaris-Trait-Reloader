@@ -17,7 +17,6 @@ trait_felsic = {
 	advanced_trait = yes
 	allowed_archetypes = { LITHOID }
 	tags = { organic positive livestock mineral genetic_ascension }
-
 	modifier = {
 		pop_livestock_lithoid_bonus_workforce_mult = 1
 	}
@@ -25,4 +24,3 @@ trait_felsic = {
 		energy = 1000
 	}
 }
-

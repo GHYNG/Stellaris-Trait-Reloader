@@ -5,14 +5,11 @@ trait_solitary = {
 		can_add_negative_organic_traits = yes
 	}
 	opposites = { "trait_communal" }
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic negative housing }
-
 	modifier = {
 		pop_housing_usage_mult = 0.1
 	}
-
 	ai_weight = {
 		weight = 0
 	}
@@ -20,4 +17,3 @@ trait_solitary = {
 		energy = -200
 	}
 }
-

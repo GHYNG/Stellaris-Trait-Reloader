@@ -8,7 +8,7 @@ leader_trait_composer_chosen = {
 		COUNCIL = triggered
 		TIER = none
 	}
-	
+	# Any Class - Ruler
 	triggered_councilor_modifier = {
 		potential = {
 			is_ruler = yes
@@ -20,7 +20,7 @@ leader_trait_composer_chosen = {
 		country_scientist_cap_add = 1
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Commander - Fleet Modifier
 	triggered_fleet_modifier = {
 		potential = {
 			is_ruler = no
@@ -30,7 +30,7 @@ leader_trait_composer_chosen = {
 		ship_armor_regen_add_perc = 0.20
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Commander - Army Modifier
 	triggered_army_modifier = {
 		potential = {
 			is_ruler = no
@@ -40,7 +40,7 @@ leader_trait_composer_chosen = {
 		army_damage_mult = 0.20
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Scientist - Science Ship Modifier
 	triggered_modifier = {
 		potential = {
 			is_ruler = no
@@ -49,7 +49,7 @@ leader_trait_composer_chosen = {
 		science_ship_survey_speed = 0.20
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Scientist - Self Modifier
 	triggered_self_modifier = {
 		potential = {
 			is_ruler = no
@@ -60,7 +60,7 @@ leader_trait_composer_chosen = {
 		leader_scientists_rare_crystals_produces_add = 2
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Official - GalCom Modifier
 	triggered_galcom_modifier = {
 		potential = {
 			is_ruler = no
@@ -70,7 +70,7 @@ leader_trait_composer_chosen = {
 		resolution_category_ecology_vote_strength_mult = 0.25
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Official - Federation Modifier
 	triggered_federation_modifier = {
 		potential = {
 			is_ruler = no
@@ -80,7 +80,7 @@ leader_trait_composer_chosen = {
 		cohesion_ethics_penalty_mult = -0.25
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Any Class - Planet Modifier
 	triggered_planet_modifier = {
 		potential = {
 			is_ruler = no
@@ -89,7 +89,7 @@ leader_trait_composer_chosen = {
 		planet_jobs_produces_mult = 0.05
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Any Class - Sector Modifier
 	triggered_sector_modifier = {
 		potential = {
 			is_ruler = no
@@ -112,4 +112,3 @@ leader_trait_composer_chosen = {
 	initial = no
 	randomized = no
 }
-

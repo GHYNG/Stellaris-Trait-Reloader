@@ -26,7 +26,6 @@ leader_trait_annihilator = {
 		}
 	}
 }
-
 leader_trait_annihilator_2 = {
 	replace_traits = { leader_trait_annihilator }
 	leader_trait_type = veteran
@@ -44,4 +43,3 @@ leader_trait_annihilator_2 = {
 	}
 	leader_class = { commander }
 }
-

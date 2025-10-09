@@ -23,7 +23,6 @@ leader_trait_armchair_commander = {
 		inline_script = paragon/army_weight_mult
 	}
 }
-
 leader_trait_armchair_commander_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_armchair_commander" }
@@ -43,4 +42,3 @@ leader_trait_armchair_commander_2 = {
 	}
 	selectable_weight = @tier2_negative_trait_weight
 }
-

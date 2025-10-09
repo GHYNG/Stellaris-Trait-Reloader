@@ -21,4 +21,3 @@ trait_presapient_forcefully_devolved = {
 		species_leader_exp_gain = -0.20
 	}
 }
-

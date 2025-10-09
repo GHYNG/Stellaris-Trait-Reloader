@@ -27,4 +27,3 @@ trait_rapid_breeders_lithoid = {
 		energy = 2000
 	}
 }
-

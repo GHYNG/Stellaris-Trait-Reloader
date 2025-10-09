@@ -31,4 +31,3 @@ trait_cyborg_high_bandwidth = {
 		origin_unplugged
 	}
 }
-

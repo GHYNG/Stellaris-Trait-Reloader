@@ -18,4 +18,3 @@ trait_venerable = {
 		energy = 1000
 	}
 }
-

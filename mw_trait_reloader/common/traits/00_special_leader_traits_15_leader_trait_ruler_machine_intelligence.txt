@@ -15,4 +15,3 @@ leader_trait_ruler_machine_intelligence = {
 	randomized = no
 	hide_age = yes
 }
-

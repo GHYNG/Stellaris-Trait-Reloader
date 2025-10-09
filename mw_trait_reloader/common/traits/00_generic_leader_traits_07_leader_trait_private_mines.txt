@@ -69,7 +69,6 @@ leader_trait_private_mines = {
 		}
 	}
 }
-
 leader_trait_private_mines_2 = {
 	replace_traits = { "leader_trait_private_mines" }
 	inline_script = {
@@ -144,4 +143,3 @@ leader_trait_private_mines_2 = {
 	}
 	leader_class = { commander scientist official }
 }
-

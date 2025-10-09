@@ -8,7 +8,7 @@ leader_trait_eater_chosen = {
 		COUNCIL = triggered
 		TIER = none
 	}
-	
+	# Any Class - Ruler
 	triggered_councilor_modifier = {
 		potential = {
 			is_ruler = yes
@@ -18,7 +18,7 @@ leader_trait_eater_chosen = {
 		starbase_shipyard_build_speed_mult = 0.20
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Commander - Fleet Modifier
 	triggered_fleet_modifier = {
 		potential = {
 			is_ruler = no
@@ -28,7 +28,7 @@ leader_trait_eater_chosen = {
 		ship_accuracy_add = 10
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Commander - Army Modifier
 	triggered_army_modifier = {
 		potential = {
 			is_ruler = no
@@ -39,7 +39,7 @@ leader_trait_eater_chosen = {
 		army_damage_mult = 0.40
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Scientist - Science Ship Modifier
 	triggered_modifier = {
 		potential = {
 			is_ruler = no
@@ -58,7 +58,7 @@ leader_trait_eater_chosen = {
 		ship_astral_rift_clues_add = 1
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Official - GalCom Modifier
 	triggered_galcom_modifier = {
 		potential = {
 			is_ruler = no
@@ -68,7 +68,7 @@ leader_trait_eater_chosen = {
 		resolution_category_mutualdefense_vote_strength_mult = 0.25
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Official - Federation Modifier
 	triggered_federation_modifier = {
 		potential = {
 			is_ruler = no
@@ -78,7 +78,7 @@ leader_trait_eater_chosen = {
 		cohesion_ethics_penalty_mult = -0.25
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Any Class - Planet Modifier
 	triggered_planet_modifier = {
 		potential = {
 			is_ruler = no
@@ -86,7 +86,7 @@ leader_trait_eater_chosen = {
 		job_soldier_per_pop = 0.1
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Any Class - Sector Modifier
 	triggered_sector_modifier = {
 		potential = {
 			is_ruler = no
@@ -108,4 +108,3 @@ leader_trait_eater_chosen = {
 	initial = no
 	randomized = no
 }
-

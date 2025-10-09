@@ -2,7 +2,6 @@ trait_limited_cybernetic = {
 	cost = 0
 	opposites = { "trait_latent_psionic" "trait_psionic" }
 	icon = "gfx/interface/icons/traits/trait_limited_cybernetic.dds"
-
 	improves_leaders = yes
 	initial = no
 	randomized = no
@@ -17,9 +16,7 @@ trait_limited_cybernetic = {
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive pop_output cybernetic special }
-
 	modifier = {
 		pop_bonus_workforce_mult = 0.05
 	}
 }
-

@@ -29,4 +29,3 @@ leader_trait_butcher = {
 		}
 	}
 }
-

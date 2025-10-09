@@ -14,4 +14,3 @@ trait_presapient_stage = {
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	tags = { organic negative presapient special }
 }
-

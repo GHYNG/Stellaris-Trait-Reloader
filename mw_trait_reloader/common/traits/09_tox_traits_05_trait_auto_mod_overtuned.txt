@@ -3,7 +3,6 @@ trait_auto_mod_overtuned = {
 	cost = 2
 	auto_mod = yes
 	category = overtuned
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_OVERTUNED
@@ -11,7 +10,6 @@ trait_auto_mod_overtuned = {
 	}
 	tags = { organic positive automod leader special }
 	allowed_origins = { origin_overtuned }
-
 	species_potential_add = {
 		can_add_overtuned_traits = yes
 	}
@@ -32,4 +30,3 @@ trait_auto_mod_overtuned = {
 	}
 	custom_tooltip_with_modifiers = automodding_trait_overtuned_tooltip
 }
-

@@ -18,7 +18,6 @@ trait_incubator = {
 	randomized = no
 	opposites = { "trait_slow_breeders" "trait_rapid_breeders" "trait_fertile" "trait_plantoid_budding" "trait_lithoid_budding" "trait_rapid_breeders_lithoid" "trait_humanoid_existential_iteroparity" "trait_egg_laying" "trait_wilderness" "trait_vat_grown"}
 	custom_tooltip_with_modifiers = incubator_tooltip
-
 	triggered_planet_growth_habitability_modifier = {
 		logistic_growth_mult = 0.01
 		mult = planet.value:incubator_growth
@@ -27,4 +26,3 @@ trait_incubator = {
 		energy = 2000
 	}
 }
-

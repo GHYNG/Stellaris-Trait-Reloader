@@ -30,7 +30,6 @@ leader_trait_disciple_of_the_composer = {
 	initial = no
 	randomized = no
 }
-
 leader_trait_disciple_of_the_composer_2 = {
 	leader_trait_type = destiny
 	replace_traits = { "leader_trait_disciple_of_the_composer" }
@@ -66,4 +65,3 @@ leader_trait_disciple_of_the_composer_2 = {
 	}
 	initial = no
 }
-

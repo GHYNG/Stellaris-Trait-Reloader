@@ -11,9 +11,7 @@ leader_trait_bulwark_retaliator = {
 	fleet_modifier = {
 		ship_friendly_territory_fire_rate_mult = 0.3
 	}
-
 	leader_class = { commander }
 	initial = no
 	randomized = no
 }
-

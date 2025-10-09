@@ -14,10 +14,8 @@ leader_trait_dragonslayer = {
 	army_modifier = {
 		army_damage_mult = 0.1
 		army_disengage_chance_mult = 0.1
-
 	}
 	leader_class = { commander }
 	initial = no
 	randomized = no
 }
-

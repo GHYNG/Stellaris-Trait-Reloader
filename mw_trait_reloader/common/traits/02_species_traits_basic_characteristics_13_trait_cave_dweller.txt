@@ -2,11 +2,9 @@ trait_cave_dweller = {
 	cost = 0
 	opposites = { "trait_plantoid_phototrophic" }
 	sorting_priority = 20
-
 	initial = no
 	randomized = no
 	immortal_leaders = no
-
 	species_potential_add = {
 		always = no
 	}
@@ -16,13 +14,11 @@ trait_cave_dweller = {
 	species_possible_merge_add = {
 		always = no
 	}
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive habitability mineral production interesting special }
 	ai_weight = {
 		weight = 0
 	}
-
 	icon = "gfx/interface/icons/traits/trait_cave_dweller.dds"
 	custom_tooltip_with_modifiers = trait_cave_dweller_tooltip
 	modifier = {
@@ -53,4 +49,3 @@ trait_cave_dweller = {
 		}
 	}
 }
-

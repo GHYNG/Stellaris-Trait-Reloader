@@ -72,7 +72,6 @@ leader_trait_entrepreneur = {
 		}
 	}
 }
-
 leader_trait_entrepreneur_2 = {
 	replace_traits = { "leader_trait_entrepreneur" }
 	inline_script = {
@@ -117,4 +116,3 @@ leader_trait_entrepreneur_2 = {
 	}
 	leader_class = { commander scientist official }
 }
-

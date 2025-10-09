@@ -78,7 +78,6 @@ leader_trait_homesteader = {
 		}
 	}
 }
-
 leader_trait_homesteader_2 = {
 	replace_traits = { "leader_trait_homesteader" }
 	inline_script = {
@@ -128,4 +127,3 @@ leader_trait_homesteader_2 = {
 	}
 	leader_class = { commander scientist official }
 }
-

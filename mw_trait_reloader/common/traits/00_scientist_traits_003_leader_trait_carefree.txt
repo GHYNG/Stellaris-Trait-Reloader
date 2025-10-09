@@ -30,7 +30,6 @@ leader_trait_carefree = {
 	}
 	ai_weight = 50
 }
-
 leader_trait_carefree_2 = {
 	replace_traits = { "leader_trait_carefree" }
 	inline_script = {
@@ -53,4 +52,3 @@ leader_trait_carefree_2 = {
 	}
 	ai_weight = 50
 }
-

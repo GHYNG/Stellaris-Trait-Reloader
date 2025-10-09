@@ -13,9 +13,7 @@ leader_trait_legendary_terraformation_nucleus_2_buds = {
 		RESOURCE = food
 		AMOUNT = 20
 	}
-
 	leader_class = { scientist }
 	initial = no
 	randomized = no
 }
-

@@ -20,7 +20,6 @@ leader_trait_intolerant = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 leader_trait_intolerant_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_intolerant" }
@@ -41,4 +40,3 @@ leader_trait_intolerant_2 = {
 	}
 	selectable_weight = @tier2_negative_trait_weight
 }
-

@@ -10,7 +10,6 @@ leader_trait_unplugged_cybernetic_positives_3 = {
 		}
 		inline_script = trait/icon_element/tier_3
 	}
-
 	fleet_modifier = {
 		ship_fire_rate_mult = 0.20
 	}
@@ -21,8 +20,7 @@ leader_trait_unplugged_cybernetic_positives_3 = {
 		origin_unplugged
 	}
 }
-
-leader_trait_unplugged_cybernetic_positives_2 = { 
+leader_trait_unplugged_cybernetic_positives_2 = { # see also: player-facing string 'situation_unplugged_lost_positive_3'
 	icon = {
 		inline_script = trait/icon_element/rarity_common
 		layer = {
@@ -44,8 +42,7 @@ leader_trait_unplugged_cybernetic_positives_2 = {
 		origin_unplugged
 	}
 }
-
-leader_trait_unplugged_cybernetic_positives_1 = { 
+leader_trait_unplugged_cybernetic_positives_1 = { # see also: player-facing string 'situation_unplugged_lost_positive_2'
 	icon = {
 		inline_script = trait/icon_element/rarity_common
 		layer = {
@@ -67,4 +64,3 @@ leader_trait_unplugged_cybernetic_positives_1 = {
 		origin_unplugged
 	}
 }
-

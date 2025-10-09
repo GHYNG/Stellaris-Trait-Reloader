@@ -20,4 +20,3 @@ leader_trait_disciple_of_the_end = {
 	initial = no
 	randomized = no
 }
-

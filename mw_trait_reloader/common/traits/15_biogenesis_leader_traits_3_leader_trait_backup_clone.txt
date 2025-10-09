@@ -38,7 +38,6 @@ leader_trait_backup_clone = {
 	leader_class = { commander scientist official }
 	selectable_weight = 0
 }
-
 leader_trait_backup_clone_2 = {
 	force_councilor_trait = yes
 	replace_traits = { leader_trait_backup_clone }
@@ -79,7 +78,6 @@ leader_trait_backup_clone_2 = {
 	leader_class = { commander scientist official }
 	selectable_weight = 0
 }
-
 leader_trait_backup_clone_3 = {
 	force_councilor_trait = yes
 	replace_traits = { leader_trait_backup_clone_2 }
@@ -121,4 +119,3 @@ leader_trait_backup_clone_3 = {
 	leader_class = { commander scientist official }
 	selectable_weight = 0
 }
-

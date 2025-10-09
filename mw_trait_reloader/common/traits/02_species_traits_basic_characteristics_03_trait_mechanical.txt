@@ -1,7 +1,6 @@
 trait_mechanical = {
 	cost = 0
 	sorting_priority = 20
-
 	initial = no
 	randomized = no
 	species_potential_add = {
@@ -13,29 +12,22 @@ trait_mechanical = {
 	species_possible_merge_add = {
 		always = no
 	}
-
 	immortal_leaders = no
-
 	allowed_archetypes = { ROBOT MACHINE}
 	tags = { machine positive leader special }
-
 	leader_age_min = 1
 	leader_age_max = 10
-
 	custom_tooltip_with_modifiers = TRAIT_MECHANICAL_UNIT_EFFECT
-
 	modifier = {
 		pc_machine_habitability = 1
 		habitability_floor_add = 0.5
 	}
-
 	resources = {
 		category = planet_pops
-		
+		# Energy Upkeep
 		upkeep = {
 			trigger = { is_being_purged = no }
 			energy = @living_standard_energy_normal
 		}
 	}
 }
-

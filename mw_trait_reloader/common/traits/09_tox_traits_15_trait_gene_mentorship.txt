@@ -45,4 +45,3 @@ trait_gene_mentorship = {
 		energy = 1000
 	}
 }
-

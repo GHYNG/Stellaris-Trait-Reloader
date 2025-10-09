@@ -14,7 +14,7 @@ leader_trait_destiny_engineer = {
 				exists = owner
 			}
 			owner = {
-				country_event = { id = timeline.50 } 
+				country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 			}
 		}
 	}
@@ -37,4 +37,3 @@ leader_trait_destiny_engineer = {
 	}
 	background_icon = GFX_leader_background_destiny_1
 }
-

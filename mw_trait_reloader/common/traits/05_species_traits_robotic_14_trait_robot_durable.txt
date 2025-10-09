@@ -2,10 +2,8 @@ trait_robot_durable = {
 	cost = 1
 	category = robotic
 	opposites = { "trait_robot_high_maintenance" }
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive upkeep }
-
 	modifier = {
 		planet_pops_robotics_upkeep_mult = -0.10
 	}
@@ -13,4 +11,3 @@ trait_robot_durable = {
 		energy = 750
 	}
 }
-

@@ -35,4 +35,3 @@ trait_malleable_research = {
 		researcher_jobs_bonus_workforce_mult = 0.15
 	}
 }
-

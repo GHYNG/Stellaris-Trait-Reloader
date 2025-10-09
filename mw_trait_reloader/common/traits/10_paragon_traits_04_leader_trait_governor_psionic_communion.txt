@@ -19,4 +19,3 @@ leader_trait_governor_psionic_communion = {
 	initial = no
 	randomized = no
 }
-

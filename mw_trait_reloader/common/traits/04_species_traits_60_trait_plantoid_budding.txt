@@ -35,7 +35,6 @@ trait_plantoid_budding = {
 	portrait_override = { aqu7 nec3 }
 	tags = { organic positive plantoid fungoid pop_growth species }
 	custom_tooltip = TRAIT_PLANTOID_BUDDING_EFFECT
-
 	triggered_planet_pop_group_modifier_for_species = {
 		potential = {
 			has_budding_trait = yes
@@ -43,9 +42,7 @@ trait_plantoid_budding = {
 		divide_over_pop_groups = no
 		bonus_pop_growth = @plantoid_budding_rate
 	}
-
 	slave_cost = {
 		energy = 2000
 	}
 }
-

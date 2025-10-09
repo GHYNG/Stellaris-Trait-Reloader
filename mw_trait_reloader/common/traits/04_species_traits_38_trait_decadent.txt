@@ -4,9 +4,7 @@ trait_decadent = {
 	species_potential_add = {
 		can_add_negative_organic_traits = yes
 	}
-
 	opposites = { "trait_hive_mind" "trait_syncretic_proles" }
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic negative happiness individual }
 	modifier = {
@@ -20,4 +18,3 @@ trait_decadent = {
 		energy = -200
 	}
 }
-

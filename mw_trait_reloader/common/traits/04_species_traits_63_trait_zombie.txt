@@ -14,7 +14,6 @@ trait_zombie = {
 		always = no
 	}
 	infertile = yes
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic negative upkeep pop_output blocks_leaders }
 	modifier = {
@@ -22,7 +21,6 @@ trait_zombie = {
 		civilian_and_maintenance_drone_cat_bonus_workforce_mult = -0.50
 		planet_pops_upkeep_mult = -1
 	}
-
 	triggered_pop_group_modifier = {
 		potential = {
 			OR = {
@@ -32,11 +30,9 @@ trait_zombie = {
 		}
 		pop_demotion_time_mult = -10.0
 	}
-
 	icon = "gfx/interface/icons/traits/trait_zombie.dds"
 	custom_tooltip = TRAIT_ZOMBIE_EFFECT
 	slave_cost = {
 		energy = 500
 	}
 }
-

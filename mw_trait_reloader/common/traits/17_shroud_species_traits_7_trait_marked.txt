@@ -1,9 +1,7 @@
 trait_marked = {
 	host_has_dlc = "Shadows of the Shroud"
-
 	initial = no
 	randomized = no
-
 	species_possible_add = {
 		always = no
 	}
@@ -13,14 +11,11 @@ trait_marked = {
 	species_possible_merge_remove = {
 		always = no
 	}
-
 	modifier = {
 		army_health = -0.06
 		army_morale_damage_mult = 0.06
 	}
-
 	custom_tooltip_with_modifiers = "trait_marked_unity_bonus"
-
 	resources = {
 		category = planet_pops
 		produces = {
@@ -35,4 +30,3 @@ trait_marked = {
 		}
 	}
 }
-

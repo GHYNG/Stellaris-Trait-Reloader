@@ -18,11 +18,8 @@ leader_trait_admiral_hells_heart = {
 	custom_tooltip_with_modifiers = hells_heart_effect
 	initial = no
 	randomized = no
-
 	leader_class = { commander }
-
 	ai_weight = {
 		weight = 0
 	}
 }
-

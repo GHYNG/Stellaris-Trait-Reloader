@@ -40,7 +40,6 @@ leader_trait_profligate = {
 		}
 	}
 }
-
 leader_trait_profligate_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_profligate" }
@@ -69,4 +68,3 @@ leader_trait_profligate_2 = {
 	leader_class = { commander official scientist }
 	selectable_weight = @tier2_negative_trait_weight
 }
-

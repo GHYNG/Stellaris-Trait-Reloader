@@ -14,4 +14,3 @@ trait_robot_emotion_emulators = {
 		energy = 750
 	}
 }
-

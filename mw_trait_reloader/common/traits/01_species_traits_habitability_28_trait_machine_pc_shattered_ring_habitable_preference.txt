@@ -21,4 +21,3 @@ trait_machine_pc_shattered_ring_habitable_preference = {
 		weight = 0
 	}
 }
-

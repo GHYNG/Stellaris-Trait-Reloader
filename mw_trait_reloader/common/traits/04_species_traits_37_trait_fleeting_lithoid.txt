@@ -6,7 +6,6 @@ trait_fleeting_lithoid = {
 	}
 	modifier = { leader_lifespan_add = -25 }
 	icon = "gfx/interface/icons/traits/trait_fleeting.dds"
-
 	opposites = { "trait_venerable" "trait_enduring" "trait_fleeting" "trait_syncretic_proles" }
 	allowed_archetypes = { LITHOID }
 	tags = { organic negative leader lithoid special }
@@ -17,4 +16,3 @@ trait_fleeting_lithoid = {
 		energy = -200
 	}
 }
-

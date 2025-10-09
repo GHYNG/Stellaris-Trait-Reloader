@@ -1,4 +1,4 @@
-leader_trait_legendary_commanding_presence = { 
+leader_trait_legendary_commanding_presence = { #Origin trait - authoritarian
 	starting_ruler_trait = yes
 	leader_trait_type = veteran
 	allowed_origins = { origin_legendary_leader }
@@ -12,19 +12,15 @@ leader_trait_legendary_commanding_presence = {
 		TIER = 1
 	}
 	custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
-
 	councilor_modifier = {
 		monthly_loyalty_from_subjects = 0.4
 		diplo_action_acceptance_add = 5
 	}
-
 	leader_class = { official commander scientist }
-
 	initial = no
 	randomized = no
 }
-
-leader_trait_legendary_commanding_presence_2 = { 
+leader_trait_legendary_commanding_presence_2 = { #Origin trait - authoritarian
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_commanding_presence" }
 	inline_script = {
@@ -35,18 +31,14 @@ leader_trait_legendary_commanding_presence_2 = {
 		TIER = 2
 	}
 	custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
-
 	councilor_modifier = {
 		monthly_loyalty_from_subjects = 0.6
 		diplo_action_acceptance_add = 10
 	}
-
 	leader_class = { official commander scientist }
-
 	initial = no
 }
-
-leader_trait_legendary_commanding_presence_3 = { 
+leader_trait_legendary_commanding_presence_3 = { #Origin trait - authoritarian
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_commanding_presence_2" }
 	inline_script = {
@@ -57,14 +49,10 @@ leader_trait_legendary_commanding_presence_3 = {
 		TIER = 3
 	}
 	custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
-
 	councilor_modifier = {
 		monthly_loyalty_from_subjects = 1
 		diplo_action_acceptance_add = 15
 	}
-
 	leader_class = { official commander scientist }
-
 	initial = no
 }
-

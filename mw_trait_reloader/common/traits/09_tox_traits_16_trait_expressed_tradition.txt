@@ -55,4 +55,3 @@ trait_expressed_tradition = {
 		energy = 1000
 	}
 }
-

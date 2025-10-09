@@ -14,4 +14,3 @@ leader_trait_sentinel = {
 	initial = no
 	randomized = no
 }
-

@@ -13,9 +13,7 @@ leader_trait_fotd_commander = {
 		ship_fire_rate_mult = 0.05
 		ship_cloaking_strength_add = 2
 	}
-
 	leader_class = { commander }
 	initial = no
 	randomized = no
 }
-

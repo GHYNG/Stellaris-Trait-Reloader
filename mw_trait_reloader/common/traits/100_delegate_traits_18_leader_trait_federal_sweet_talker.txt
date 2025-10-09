@@ -29,7 +29,6 @@ leader_trait_federal_sweet_talker = {
 		inline_script = paragon/federation_weight_mult
 	}
 }
-
 leader_trait_federal_sweet_talker_2 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_federal_sweet_talker" }
@@ -46,7 +45,6 @@ leader_trait_federal_sweet_talker_2 = {
 	}
 	leader_class = { official }
 }
-
 leader_trait_federal_sweet_talker_3 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_federal_sweet_talker_2" }
@@ -66,4 +64,3 @@ leader_trait_federal_sweet_talker_3 = {
 	}
 	leader_class = { official }
 }
-

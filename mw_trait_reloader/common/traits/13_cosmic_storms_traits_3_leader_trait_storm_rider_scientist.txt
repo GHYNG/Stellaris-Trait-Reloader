@@ -10,20 +10,16 @@ leader_trait_storm_rider_scientist = {
 		TIER = none
 		TRIGGER = "is_leader_in_storm = yes"
 	}
-
 	leader_class = { scientist }
 	initial = no
 	randomized = no
-
 	custom_tooltip_with_modifiers = "mod_trait_storm_rider"
-
 	leader_potential_add = {
 		has_cosmic_storms_dlc = yes
 		exists = owner
 		owner = { has_origin = origin_storm_chasers }
 	}
-
-	
+	#more XP, less lifespan in the field
 	triggered_self_modifier = {
 		potential = {
 			is_councilor = no
@@ -32,8 +28,7 @@ leader_trait_storm_rider_scientist = {
 		species_leader_exp_gain = 0.15
 		leader_lifespan_add = -10
 	}
-
-	
+	#bonus to excavation/exploration speed, triple during storm.
 	triggered_modifier = {
 		potential = {
 			is_councilor = no
@@ -52,8 +47,7 @@ leader_trait_storm_rider_scientist = {
 		ship_archaeological_site_excavation_speed_mult = 0.15
 		ship_anomaly_research_speed_mult = 0.15
 	}
-
-	
+	#when a planet/sector they govern is affected by storms, boost research
 	triggered_planet_modifier = {
 		potential = {
 			is_councilor = no
@@ -74,9 +68,7 @@ leader_trait_storm_rider_scientist = {
 		planet_jobs_society_research_produces_mult = 0.035
 		planet_jobs_engineering_research_produces_mult = 00.035
 	}
-
 	councilor_modifier = {
 		species_leader_exp_gain = 0.10
 	}
 }
-

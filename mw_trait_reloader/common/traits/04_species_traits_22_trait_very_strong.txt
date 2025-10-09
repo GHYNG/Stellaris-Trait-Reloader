@@ -13,12 +13,10 @@ trait_very_strong = {
 	opposites = { "trait_weak" "trait_strong" "trait_hollow_bones"}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive pop_output army }
-
 	modifier = {
 		army_damage_mult = 0.40
 		worker_and_simple_drone_cat_bonus_workforce_mult = 0.05
 	}
-
 	slave_cost = {
 		energy = 2000
 	}
@@ -42,4 +40,3 @@ trait_very_strong = {
 		}
 	}
 }
-

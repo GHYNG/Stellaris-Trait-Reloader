@@ -1,21 +1,17 @@
 trait_robot_efficient_processors = {
 	cost = 3
 	category = robotic
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive pop_output }
-
 	modifier = {
 		pop_bonus_workforce_mult = 0.05
 	}
-
 	slave_cost = {
 		energy = 500
 	}
 	assembly_score = {
 		modifier = {
-			add = 0.5 
+			add = 0.5 #always good
 		}
 	}
 }
-

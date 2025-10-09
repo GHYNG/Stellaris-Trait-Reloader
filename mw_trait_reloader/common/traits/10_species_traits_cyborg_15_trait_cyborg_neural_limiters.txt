@@ -1,8 +1,6 @@
 trait_cyborg_neural_limiters = {
 	cost = -2
-
 	opposites = { "trait_cyborg_learning_algorithms" }
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -28,7 +26,6 @@ trait_cyborg_neural_limiters = {
 		negative_leader_traits_species = 1
 		leaders_upkeep_mult = 0.1
 	}
-
 	ai_weight = {
 		weight = 1
 		modifier = {
@@ -43,4 +40,3 @@ trait_cyborg_neural_limiters = {
 		origin_unplugged
 	}
 }
-

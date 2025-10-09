@@ -51,4 +51,3 @@ trait_commercial_genius = {
 		}
 	}
 }
-

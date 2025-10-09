@@ -1,7 +1,6 @@
 trait_cyborg_double_jointed = {
 	cost = 1
 	opposites = { "trait_cyborg_bulky" }
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -21,16 +20,13 @@ trait_cyborg_double_jointed = {
 		pop_housing_usage_mult = -0.1
 		pop_resettlement_cost_mult = -0.35
 	}
-
 	resources = {
 		category = planet_pops
 		upkeep = {
 			energy = @cyborg_energy_upkeep
 		}
 	}
-
 	slave_cost = {
 		energy = 1500
 	}
 }
-

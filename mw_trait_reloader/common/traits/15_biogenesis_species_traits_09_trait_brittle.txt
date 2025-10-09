@@ -32,4 +32,3 @@ trait_brittle = {
 		}
 	}
 }
-

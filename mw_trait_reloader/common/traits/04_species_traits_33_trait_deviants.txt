@@ -5,7 +5,6 @@ trait_deviants = {
 		can_add_negative_organic_traits = yes
 	}
 	modifier = { pop_government_ethic_attraction = -0.15 }
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic negative ethic_attraction individual }
 	opposites = { "trait_conformists" "trait_hive_mind" }
@@ -16,4 +15,3 @@ trait_deviants = {
 		energy = -200
 	}
 }
-

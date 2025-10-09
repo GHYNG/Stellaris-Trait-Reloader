@@ -20,4 +20,3 @@ leader_trait_aggressive = {
 		inline_script = paragon/pilot_weight_mult
 	}
 }
-

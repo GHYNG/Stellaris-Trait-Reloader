@@ -2,10 +2,8 @@ trait_robot_mass_produced = {
 	cost = 1
 	category = robotic
 	opposites = { "trait_robot_custom_made" }
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive pop_growth }
-
 	modifier = {
 		planet_pop_assembly_mult = 0.15
 	}
@@ -13,4 +11,3 @@ trait_robot_mass_produced = {
 		energy = 1500
 	}
 }
-

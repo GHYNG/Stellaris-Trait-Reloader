@@ -20,4 +20,3 @@ leader_trait_shipwright = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-

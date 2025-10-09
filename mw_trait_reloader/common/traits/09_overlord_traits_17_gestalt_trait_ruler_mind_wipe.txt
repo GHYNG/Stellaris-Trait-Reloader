@@ -12,12 +12,10 @@ gestalt_trait_ruler_mind_wipe_01 = {
 		planet_structures_cost_mult = -0.15
 		empire_size_mult = 0.1
 	}
-
 	leader_class = { commander official scientist }
 	initial = no
 	randomized = no
 }
-
 gestalt_trait_ruler_mind_wipe_02 = {
 	cost = 0
 	inline_script = {
@@ -33,9 +31,7 @@ gestalt_trait_ruler_mind_wipe_02 = {
 		army_damage_mult = 0.15
 		empire_size_mult = 0.1
 	}
-
 	leader_class = { commander official scientist }
 	initial = no
 	randomized = no
 }
-

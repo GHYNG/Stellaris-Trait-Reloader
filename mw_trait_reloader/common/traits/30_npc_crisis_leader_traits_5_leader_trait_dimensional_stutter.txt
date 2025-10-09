@@ -14,4 +14,3 @@ leader_trait_dimensional_stutter = {
 	initial = no
 	randomized = no
 }
-

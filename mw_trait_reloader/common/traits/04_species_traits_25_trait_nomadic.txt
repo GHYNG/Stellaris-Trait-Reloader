@@ -23,4 +23,3 @@ trait_nomadic = {
 		energy = 500
 	}
 }
-

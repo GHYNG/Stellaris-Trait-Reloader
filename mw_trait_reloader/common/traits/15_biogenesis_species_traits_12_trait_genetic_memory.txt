@@ -46,4 +46,3 @@ trait_genetic_memory = {
 		energy = 1000
 	}
 }
-

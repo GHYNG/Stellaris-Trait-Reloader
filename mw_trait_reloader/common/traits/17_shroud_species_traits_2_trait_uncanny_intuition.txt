@@ -2,7 +2,6 @@ trait_uncanny_intuition = {
 	host_has_dlc = "Shadows of the Shroud"
 	cost = 3
 	category = psionic
-
 	species_possible_add = {
 		OR = {
 			can_add_genetic_traits = yes
@@ -18,7 +17,6 @@ trait_uncanny_intuition = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	species_class = { PSIONIC }
 	portrait_override = { psionic_01 psionic_02 psionic_03 psionic_04 psionic_05 psionic_06 psionic_07 psionic_08 psionic_09 psionic_10 psionic_12 mindwarden_01 mam_rat }
@@ -31,13 +29,10 @@ trait_uncanny_intuition = {
 		}
 	}
 	tags = { organic positive psionic species }
-
 	modifier = {
 		councilor_skill_add = 2
 	}
-
 	slave_cost = {
 		energy = 2000
 	}
 }
-

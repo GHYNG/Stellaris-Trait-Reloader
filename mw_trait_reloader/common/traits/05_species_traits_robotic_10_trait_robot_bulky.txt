@@ -2,10 +2,8 @@ trait_robot_bulky = {
 	cost = -1
 	category = robotic
 	opposites = { "trait_robot_double_jointed" }
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine negative housing }
-
 	modifier = {
 		pop_housing_usage_mult = 0.1
 	}
@@ -16,4 +14,3 @@ trait_robot_bulky = {
 		energy = -150
 	}
 }
-

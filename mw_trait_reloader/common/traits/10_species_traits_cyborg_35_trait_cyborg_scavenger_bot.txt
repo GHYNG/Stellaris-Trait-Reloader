@@ -17,9 +17,7 @@ trait_cyborg_scavenger_bot = {
 		SPECIES_TRAIT_CYBORG
 	}
 	tags = { organic positive pop_growth leviathan cybernetic }
-
 	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
-
 	modifier = {
 		logistic_growth_mult = 1
 	}
@@ -33,4 +31,3 @@ trait_cyborg_scavenger_bot = {
 		energy = 1500
 	}
 }
-

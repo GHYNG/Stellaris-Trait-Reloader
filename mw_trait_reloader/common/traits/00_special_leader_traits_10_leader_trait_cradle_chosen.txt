@@ -8,7 +8,7 @@ leader_trait_cradle_chosen = {
 		COUNCIL = triggered
 		TIER = none
 	}
-	
+	# Any Class - Ruler
 	triggered_councilor_modifier = {
 		potential = {
 			is_ruler = yes
@@ -17,7 +17,7 @@ leader_trait_cradle_chosen = {
 		diplo_action_acceptance_add = 10
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Commander - Fleet Modifier
 	triggered_fleet_modifier = {
 		potential = {
 			is_ruler = no
@@ -27,7 +27,7 @@ leader_trait_cradle_chosen = {
 		ship_friendly_territory_hull_mult = 0.3
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Commander - Army Modifier
 	triggered_army_modifier = {
 		potential = {
 			is_ruler = no
@@ -37,7 +37,7 @@ leader_trait_cradle_chosen = {
 		army_health = 0.4
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Scientist - Science Ship Modifier
 	triggered_modifier = {
 		potential = {
 			is_ruler = no
@@ -46,7 +46,7 @@ leader_trait_cradle_chosen = {
 		science_ship_survey_speed = 0.20
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Official - GalCom Modifier
 	triggered_galcom_modifier = {
 		potential = {
 			is_ruler = no
@@ -56,7 +56,7 @@ leader_trait_cradle_chosen = {
 		resolutions_cost_mult = -0.2
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Official - Federation Modifier
 	triggered_federation_modifier = {
 		potential = {
 			is_ruler = no
@@ -66,7 +66,7 @@ leader_trait_cradle_chosen = {
 		cohesion_ethics_penalty_mult = -0.5
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Any Class - Planet Modifier
 	triggered_planet_modifier = {
 		potential = {
 			is_ruler = no
@@ -90,7 +90,7 @@ leader_trait_cradle_chosen = {
 		planet_crime_no_happiness_mult = -0.2
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Any Class - Sector Modifier
 	triggered_sector_modifier = {
 		potential = {
 			is_ruler = no
@@ -127,4 +127,3 @@ leader_trait_cradle_chosen = {
 	initial = no
 	randomized = no
 }
-

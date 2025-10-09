@@ -18,4 +18,3 @@ leader_trait_enclave_trader = {
 	initial = no
 	randomized = no
 }
-

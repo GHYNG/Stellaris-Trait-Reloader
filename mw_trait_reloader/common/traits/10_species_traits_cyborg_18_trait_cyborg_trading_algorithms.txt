@@ -1,6 +1,5 @@
 trait_cyborg_trading_algorithms = {
 	cost = 1
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -31,4 +30,3 @@ trait_cyborg_trading_algorithms = {
 		energy = 500
 	}
 }
-

@@ -20,11 +20,9 @@ trait_exotic_metabolism = {
 		logistic_growth_mult = 0.25
 		pop_environment_tolerance = 0.25
 	}
-
 	modifier = {
 		leader_lifespan_add = 50
 	}
-
 	resources = {
 		category = planet_pops
 		upkeep = {
@@ -34,9 +32,7 @@ trait_exotic_metabolism = {
 			exotic_gases = @exotic_metabolism
 		}
 	}
-
 	slave_cost = {
 		energy = 750
 	}
 }
-

@@ -1,7 +1,6 @@
 trait_cyborg_stainless_steel_smile = {
 	host_has_dlc = "The Machine Age"
 	cost = 1
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -32,4 +31,3 @@ trait_cyborg_stainless_steel_smile = {
 		energy = 750
 	}
 }
-

@@ -36,7 +36,6 @@ leader_trait_opinionated = {
 		}
 	}
 }
-
 leader_trait_opinionated_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_opinionated" }
@@ -64,4 +63,3 @@ leader_trait_opinionated_2 = {
 	}
 	selectable_weight = @tier2_negative_trait_weight
 }
-

@@ -13,9 +13,7 @@ gestalt_trait_scientist_mind_wipe_02 = {
 		ship_archaeological_site_excavation_speed_mult = 0.2
 		ship_archaeological_site_clues_add = 1
 	}
-
 	leader_class = { scientist }
 	initial = no
 	randomized = no
 }
-

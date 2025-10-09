@@ -38,4 +38,3 @@ trait_flight = {
 		energy = 500
 	}
 }
-

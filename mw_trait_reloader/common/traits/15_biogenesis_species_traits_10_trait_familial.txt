@@ -40,9 +40,7 @@ trait_familial = {
 	slave_cost = {
 		energy = 1000
 	}
-
 	assembly_score = {
 		base = 1
 	}
 }
-

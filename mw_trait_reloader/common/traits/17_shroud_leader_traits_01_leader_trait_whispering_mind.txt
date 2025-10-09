@@ -39,7 +39,6 @@ leader_trait_whispering_mind = {
 		inline_script = paragon/not_council_weight_mult
 	}
 }
-
 leader_trait_whispering_mind_2 = {
 	replace_traits = { "leader_trait_whispering_mind" }
 	inline_script = {
@@ -78,7 +77,6 @@ leader_trait_whispering_mind_2 = {
 	}
 	leader_class = { commander scientist official }
 }
-
 leader_trait_whispering_mind_3 = {
 	replace_traits = { "leader_trait_whispering_mind_2" }
 	inline_script = {
@@ -117,4 +115,3 @@ leader_trait_whispering_mind_3 = {
 	}
 	leader_class = { commander scientist official }
 }
-

@@ -20,7 +20,6 @@ leader_trait_spycraft = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 leader_trait_spycraft_2 = {
 	replace_traits = { "leader_trait_spycraft" }
 	inline_script = {
@@ -37,4 +36,3 @@ leader_trait_spycraft_2 = {
 	}
 	leader_class = { official }
 }
-

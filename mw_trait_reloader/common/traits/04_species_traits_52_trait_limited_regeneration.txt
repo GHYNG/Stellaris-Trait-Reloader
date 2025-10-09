@@ -1,4 +1,4 @@
-trait_limited_regeneration = { 
+trait_limited_regeneration = { #blue
 	cost = {
 		base = 1
 		modifier = {
@@ -7,7 +7,6 @@ trait_limited_regeneration = {
 			owner = { has_country_flag = modification_blue }
 		}
 	}
-
 	initial = no
 	species_potential_add = {
 		can_add_or_remove_special_traits = yes
@@ -19,10 +18,8 @@ trait_limited_regeneration = {
 		}
 	}
 	randomized = no
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive army leader amenities pop_growth interesting special }
-
 	modifier = {
 		army_damage_mult = 0.15
 		leader_lifespan_mult = 0.10
@@ -32,9 +29,7 @@ trait_limited_regeneration = {
 	slave_cost = {
 		energy = 250
 	}
-
 	ai_weight = {
 		weight = 0
 	}
 }
-

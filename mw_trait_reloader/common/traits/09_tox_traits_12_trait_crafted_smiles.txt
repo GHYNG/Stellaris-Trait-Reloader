@@ -43,4 +43,3 @@ trait_crafted_smiles = {
 		energy = 1000
 	}
 }
-

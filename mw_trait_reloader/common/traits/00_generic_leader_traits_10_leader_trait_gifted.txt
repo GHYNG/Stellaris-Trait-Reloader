@@ -26,7 +26,6 @@ leader_trait_gifted = {
 	leader_class = { commander scientist official }
 	selectable_weight = 5
 }
-
 leader_trait_gifted_2 = {
 	replace_traits = { "leader_trait_gifted" }
 	inline_script = {
@@ -42,4 +41,3 @@ leader_trait_gifted_2 = {
 	}
 	leader_class = { commander scientist official }
 }
-

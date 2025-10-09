@@ -20,7 +20,6 @@ leader_trait_melancholic = {
 	leader_class = { commander scientist official }
 	selectable_weight = @shared_negative_trait_weight
 }
-
 leader_trait_melancholic_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_melancholic" }
@@ -44,4 +43,3 @@ leader_trait_melancholic_2 = {
 	leader_class = { commander scientist official }
 	selectable_weight = @tier2_negative_trait_weight
 }
-

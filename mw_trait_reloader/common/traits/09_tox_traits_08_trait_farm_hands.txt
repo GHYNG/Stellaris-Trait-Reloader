@@ -51,4 +51,3 @@ trait_farm_hands = {
 		energy = 1000
 	}
 }
-

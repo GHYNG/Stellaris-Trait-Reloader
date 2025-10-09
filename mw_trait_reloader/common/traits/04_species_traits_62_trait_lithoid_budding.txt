@@ -33,7 +33,6 @@ trait_lithoid_budding = {
 	}
 	tags = { organic positive lithoid pop_growth species }
 	custom_tooltip = TRAIT_LITHOID_BUDDING_EFFECT
-
 	triggered_planet_pop_group_modifier_for_species = {
 		potential = {
 			has_budding_trait = yes
@@ -51,10 +50,7 @@ trait_lithoid_budding = {
 		}
 		bonus_pop_growth = @lithoid_crater_budding_rate
 	}
-
-
 	slave_cost = {
 		energy = 2000
 	}
 }
-

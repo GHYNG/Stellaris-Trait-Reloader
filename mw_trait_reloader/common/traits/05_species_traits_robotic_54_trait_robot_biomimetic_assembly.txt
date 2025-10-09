@@ -1,10 +1,8 @@
 trait_robot_biomimetic_assembly = {
 	cost = 1
 	category = robotic
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive pop_growth upkeep modularity }
-
 	species_potential_add = {
 		can_do_advanced_robo_modding = yes
 	}
@@ -16,18 +14,14 @@ trait_robot_biomimetic_assembly = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	initial = no
 	randomized = no
-
 	modifier = {
 		roboticist_jobs_bonus_workforce_mult = 0.5
 	}
-
 	slave_cost = {
 		energy = 750
 	}
-
 	resources = {
 		category = planet_pops
 		upkeep = {
@@ -35,7 +29,5 @@ trait_robot_biomimetic_assembly = {
 			exotic_gases = 0.02
 		}
 	}
-
 	custom_tooltip_with_modifiers = trait_robot_biomimetic_assembly_tt
 }
-

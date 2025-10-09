@@ -1,6 +1,5 @@
 @ai_selection_high = 5
 @ai_selection_low = 0.1
-
 subclass_official_economy_councilor = {
 	custom_subtitle = councilor_subclass_governor
 	leader_trait_type = subclass
@@ -10,7 +9,6 @@ subclass_official_economy_councilor = {
 		COUNCIL = yes
 	}
 	custom_tooltip_with_modifiers = councilor_subclass_tt
-
 	triggered_councilor_modifier = {
 		potential = {
 			exists = owner
@@ -19,7 +17,6 @@ subclass_official_economy_councilor = {
 		planet_pops_upkeep_mult = -0.05
 		planet_jobs_trade_produces_mult = 0.05
 	}
-
 	leader_potential_add = {
 		NAND = {
 			exists = owner
@@ -39,4 +36,3 @@ subclass_official_economy_councilor = {
 	leader_class = { official }
 	background_icon = "GFX_leader_subclass_official_economy_councilor_background"
 }
-

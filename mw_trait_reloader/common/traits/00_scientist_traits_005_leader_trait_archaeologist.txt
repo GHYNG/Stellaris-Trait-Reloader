@@ -21,7 +21,6 @@ leader_trait_archaeologist = {
 	}
 	ai_weight = 100
 }
-
 leader_trait_archaeologist_2 = {
 	replace_traits = { "leader_trait_archaeologist" }
 	inline_script = {
@@ -38,4 +37,3 @@ leader_trait_archaeologist_2 = {
 	leader_class = { scientist }
 	ai_weight = 100
 }
-

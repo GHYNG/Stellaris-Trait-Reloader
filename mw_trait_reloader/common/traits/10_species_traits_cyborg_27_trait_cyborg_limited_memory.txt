@@ -1,7 +1,6 @@
 trait_cyborg_limited_memory = {
 	host_has_dlc = "The Machine Age"
 	cost = -2
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -26,7 +25,6 @@ trait_cyborg_limited_memory = {
 	modifier = {
 		species_leader_exp_gain = -0.4
 	}
-
 	slave_cost = {
 		energy = -150
 	}
@@ -34,4 +32,3 @@ trait_cyborg_limited_memory = {
 		origin_unplugged
 	}
 }
-

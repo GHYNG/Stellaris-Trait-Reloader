@@ -16,4 +16,3 @@ leader_trait_towel = {
 	randomized = no
 	ai_weight = 100
 }
-

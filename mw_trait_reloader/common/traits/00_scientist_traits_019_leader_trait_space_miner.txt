@@ -42,7 +42,6 @@ leader_trait_space_miner = {
 		inline_script = paragon/governor_weight_mult
 	}
 }
-
 leader_trait_space_miner_2 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_space_miner" }
@@ -80,7 +79,6 @@ leader_trait_space_miner_2 = {
 	}
 	leader_class = { scientist official commander }
 }
-
 leader_trait_space_miner_3 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_space_miner_2" }
@@ -118,4 +116,3 @@ leader_trait_space_miner_3 = {
 	}
 	leader_class = { scientist official commander }
 }
-

@@ -19,4 +19,3 @@ trait_presapient_earthbound = {
 		army_defense_damage_mult = 0.5
 	}
 }
-

@@ -1,7 +1,6 @@
 @t1_mult = 1.00
 @t2_mult = 2.00
 @t3_mult = 5.00
-
 leader_trait_resolution_category_industry_focus = {
 	leader_trait_type = veteran
 	inline_script = {
@@ -34,7 +33,6 @@ leader_trait_resolution_category_industry_focus = {
 		inline_script = paragon/galcom_weight_mult
 	}
 }
-
 leader_trait_resolution_category_industry_focus_2 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_resolution_category_industry_focus" }
@@ -52,7 +50,6 @@ leader_trait_resolution_category_industry_focus_2 = {
 	custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_2_favor_tt
 	leader_class = { official }
 }
-
 leader_trait_resolution_category_industry_focus_3 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_resolution_category_industry_focus_2" }
@@ -73,4 +70,3 @@ leader_trait_resolution_category_industry_focus_3 = {
 	custom_tooltip_with_modifiers = leader_trait_resolution_category_focus_3_favor_tt
 	leader_class = { official }
 }
-

@@ -35,4 +35,3 @@ trait_enigmatic_intelligence_poor = {
 		}
 	}
 }
-

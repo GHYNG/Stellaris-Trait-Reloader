@@ -20,7 +20,6 @@ leader_trait_traumatized = {
 	initial = no
 	randomized = no
 }
-
 leader_trait_traumatized_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_traumatized" }
@@ -43,4 +42,3 @@ leader_trait_traumatized_2 = {
 	leader_class = { scientist }
 	selectable_weight = @tier2_negative_trait_weight
 }
-

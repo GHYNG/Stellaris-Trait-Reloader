@@ -1,11 +1,9 @@
 trait_robot_propaganda_machines = {
 	cost = 1
 	category = robotic
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine synthetic positive pop_output upkeep unity }
-
-	
+	# Droid, Synth, Machine Intelligence or Individualist Machine
 	species_potential_add = {
 		OR = {
 			can_add_droid_traits = yes
@@ -28,4 +26,3 @@ trait_robot_propaganda_machines = {
 		}
 	}
 }
-

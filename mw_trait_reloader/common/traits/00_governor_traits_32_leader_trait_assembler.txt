@@ -53,7 +53,6 @@ leader_trait_assembler = {
 		inline_script = paragon/governor_weight_mult
 	}
 }
-
 leader_trait_assembler_2 = {
 	replace_traits = { "leader_trait_assembler" }
 	inline_script = {
@@ -91,7 +90,6 @@ leader_trait_assembler_2 = {
 	}
 	leader_class = { official scientist }
 }
-
 leader_trait_assembler_3 = {
 	replace_traits = { "leader_trait_assembler_2" }
 	inline_script = {
@@ -129,4 +127,3 @@ leader_trait_assembler_3 = {
 	}
 	leader_class = { official scientist }
 }
-

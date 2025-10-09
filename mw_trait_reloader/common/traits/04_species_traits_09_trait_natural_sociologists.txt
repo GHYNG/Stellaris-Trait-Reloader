@@ -30,4 +30,3 @@ trait_natural_sociologists = {
 		}
 	}
 }
-

@@ -1,7 +1,6 @@
 trait_unplugged_cybernetic_positives_3 = {
 	cost = 0
 	icon = "gfx/interface/icons/traits/trait_unplugged_positive_3.dds"
-
 	initial = no
 	randomized = no
 	species_potential_add = {
@@ -16,12 +15,10 @@ trait_unplugged_cybernetic_positives_3 = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	opposites = { "trait_nascent_stage" }
 	custom_tooltip_with_modifiers = trait_unplugged_cybernetic_positives_3_tt
-
 	modifier = {
 		army_damage_mult = 0.75
 		logistic_growth_mult = -0.20
 	}
-
 	triggered_pop_group_modifier = {
 		potential = {
 			exists = owner
@@ -35,11 +32,9 @@ trait_unplugged_cybernetic_positives_3 = {
 		pop_happiness = 0.3
 	}
 }
-
-trait_unplugged_cybernetic_positives_2 = { 
+trait_unplugged_cybernetic_positives_2 = { # see also: player-facing string 'situation_unplugged_lost_positive_3'
 	cost = 0
 	icon = "gfx/interface/icons/traits/trait_unplugged_positive_2.dds"
-
 	initial = no
 	randomized = no
 	species_potential_add = {
@@ -54,17 +49,14 @@ trait_unplugged_cybernetic_positives_2 = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	opposites = { "trait_nascent_stage" }
 	custom_tooltip_with_modifiers = trait_unplugged_cybernetic_positives_2_tt
-
 	modifier = {
 		army_damage_mult = 0.5
 		logistic_growth_mult = -0.10
 	}
 }
-
-trait_unplugged_cybernetic_positives_1 = { 
+trait_unplugged_cybernetic_positives_1 = { # see also: player-facing string 'situation_unplugged_lost_positive_2'
 	cost = 0
 	icon = "gfx/interface/icons/traits/trait_unplugged_positive_1.dds"
-
 	initial = no
 	randomized = no
 	species_potential_add = {
@@ -79,9 +71,7 @@ trait_unplugged_cybernetic_positives_1 = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	opposites = { "trait_nascent_stage" }
 	custom_tooltip_with_modifiers = trait_unplugged_cybernetic_positives_1_tt
-
 	modifier = {
 		army_damage_mult = 0.25
 	}
 }
-

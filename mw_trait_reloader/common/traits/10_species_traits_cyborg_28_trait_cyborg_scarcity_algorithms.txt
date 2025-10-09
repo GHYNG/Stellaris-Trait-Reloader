@@ -1,7 +1,6 @@
 trait_cyborg_scarcity_algorithms = {
 	host_has_dlc = "The Machine Age"
 	cost = -1
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -20,9 +19,7 @@ trait_cyborg_scarcity_algorithms = {
 	modifier = {
 		trader_jobs_bonus_workforce_mult = -0.25
 	}
-
 	slave_cost = {
 		energy = -150
 	}
 }
-

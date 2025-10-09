@@ -13,12 +13,10 @@ gestalt_trait_general_mind_wipe_01 = {
 		army_collateral_damage_mult = 0.1
 		army_morale = -0.1
 	}
-
 	leader_class = { commander }
 	initial = no
 	randomized = no
 }
-
 gestalt_trait_general_mind_wipe_02 = {
 	cost = 0
 	inline_script = {
@@ -34,9 +32,7 @@ gestalt_trait_general_mind_wipe_02 = {
 		army_morale = 0.1
 		armies_upkeep_mult = 0.15
 	}
-
 	leader_class = { commander }
 	initial = no
 	randomized = no
 }
-

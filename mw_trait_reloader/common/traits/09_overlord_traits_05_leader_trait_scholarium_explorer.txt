@@ -11,9 +11,7 @@ leader_trait_scholarium_explorer = {
 	modifier = {
 		science_ship_survey_speed = 0.2
 	}
-
 	leader_class = { scientist }
 	initial = no
 	randomized = no
 }
-

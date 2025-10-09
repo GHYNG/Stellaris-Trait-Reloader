@@ -19,4 +19,3 @@ leader_trait_emotional_support_pet = {
 	leader_class = { commander scientist official }
 	selectable_weight = @shared_trait_weight
 }
-

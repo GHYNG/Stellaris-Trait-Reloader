@@ -39,7 +39,6 @@ leader_trait_martinet = {
 		inline_script = paragon/governor_weight_mult
 	}
 }
-
 leader_trait_martinet_2 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_martinet" }
@@ -73,4 +72,3 @@ leader_trait_martinet_2 = {
 		leader_trait_lawless_2
 	}
 }
-

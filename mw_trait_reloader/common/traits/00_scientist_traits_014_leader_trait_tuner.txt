@@ -25,7 +25,6 @@ leader_trait_tuner = {
 		}
 	}
 }
-
 leader_trait_tuner_2 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_tuner" }
@@ -42,4 +41,3 @@ leader_trait_tuner_2 = {
 	}
 	leader_class = { scientist }
 }
-

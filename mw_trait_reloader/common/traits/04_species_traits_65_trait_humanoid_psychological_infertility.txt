@@ -25,4 +25,3 @@ trait_humanoid_psychological_infertility = {
 		energy = -1000
 	}
 }
-

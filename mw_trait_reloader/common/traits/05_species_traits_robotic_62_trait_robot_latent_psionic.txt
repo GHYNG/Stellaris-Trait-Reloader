@@ -2,9 +2,7 @@ trait_robot_latent_psionic = {
 	cost = 0
 	category = robotic
 	icon = "gfx/interface/icons/traits/trait_latent_psionic_species.dds"
-
 	opposites = { "trait_robot_digital_1" "trait_robot_digital_2" }
-
 	initial = no
 	randomized = no
 	species_potential_add = {
@@ -18,7 +16,5 @@ trait_robot_latent_psionic = {
 	}
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive pop_output research unity psionic }
-
 	inline_script = "traits/latent_psionic_effects"
 }
-

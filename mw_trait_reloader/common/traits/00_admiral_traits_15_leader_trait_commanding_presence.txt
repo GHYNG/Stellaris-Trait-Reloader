@@ -25,7 +25,6 @@ leader_trait_commanding_presence = {
 		}
 	}
 }
-
 leader_trait_commanding_presence_2 = {
 	leader_trait_type = veteran
 	replace_traits = { leader_trait_commanding_presence }
@@ -42,4 +41,3 @@ leader_trait_commanding_presence_2 = {
 	}
 	leader_class = { commander }
 }
-

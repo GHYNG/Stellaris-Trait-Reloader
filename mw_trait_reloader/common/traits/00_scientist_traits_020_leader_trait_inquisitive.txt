@@ -27,7 +27,6 @@ leader_trait_inquisitive = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 leader_trait_inquisitive_2 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_inquisitive" }
@@ -50,7 +49,6 @@ leader_trait_inquisitive_2 = {
 		leader_trait_narrow_minded_2
 	}
 }
-
 leader_trait_inquisitive_3 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_inquisitive_2" }
@@ -73,4 +71,3 @@ leader_trait_inquisitive_3 = {
 		leader_trait_narrow_minded_2
 	}
 }
-

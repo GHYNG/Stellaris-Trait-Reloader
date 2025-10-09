@@ -1,11 +1,9 @@
 trait_robot_loyalty_circuits = {
 	cost = 2
 	category = robotic
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine synthetic positive happiness individual }
-
-	
+	# Synth or Individualist Machine
 	species_potential_add = {
 		OR = {
 			can_add_synth_traits = yes
@@ -20,4 +18,3 @@ trait_robot_loyalty_circuits = {
 		energy = 500
 	}
 }
-

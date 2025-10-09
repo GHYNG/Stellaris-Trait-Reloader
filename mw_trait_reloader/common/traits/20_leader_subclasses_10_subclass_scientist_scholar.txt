@@ -1,6 +1,5 @@
 @ai_selection_high = 5
 @ai_selection_low = 0.1
-
 subclass_scientist_scholar = {
 	custom_subtitle = scientist_subclass
 	leader_trait_type = subclass
@@ -10,7 +9,6 @@ subclass_scientist_scholar = {
 		COUNCIL = no
 	}
 	custom_tooltip_with_modifiers = scholar_subclass_tt
-
 	modifier = {
 		ship_anomaly_research_speed_mult = 0.1
 		ship_archaeological_site_excavation_speed_mult = 0.1
@@ -41,8 +39,6 @@ subclass_scientist_scholar = {
 			factor = @ai_selection_low
 		}
 	}
-
 	leader_class = { scientist }
 	background_icon = "GFX_leader_subclass_scientist_scholar_background"
 }
-

@@ -1,10 +1,8 @@
 trait_robot_immortality = {
 	cost = 4
 	category = robotic
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive leader }
-
 	species_potential_add = {
 		OR = {
 			can_add_synth_traits = yes
@@ -21,14 +19,11 @@ trait_robot_immortality = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	initial = yes
 	randomized = no
 	immortal_leaders = yes
-
 	slave_cost = {
 		energy = 1000
 	}
 	custom_tooltip = trait_robot_immortality_tt
 }
-

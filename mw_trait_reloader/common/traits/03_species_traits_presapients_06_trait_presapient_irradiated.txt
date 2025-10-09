@@ -18,4 +18,3 @@ trait_presapient_irradiated = {
 		leader_lifespan_add = 30
 	}
 }
-

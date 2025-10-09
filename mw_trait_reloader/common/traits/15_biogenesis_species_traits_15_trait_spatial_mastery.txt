@@ -39,4 +39,3 @@ trait_spatial_mastery = {
 		energy = 1000
 	}
 }
-

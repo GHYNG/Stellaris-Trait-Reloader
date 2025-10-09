@@ -20,4 +20,3 @@ trait_quick_learners = {
 		energy = 750
 	}
 }
-

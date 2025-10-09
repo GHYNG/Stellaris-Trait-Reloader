@@ -11,10 +11,8 @@ trait_communal = {
 		always = yes
 	}
 	opposites = { "trait_solitary" "trait_shelled" "trait_spatial_mastery" }
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive housing }
-
 	modifier = {
 		pop_housing_usage_mult = -0.1
 	}
@@ -22,4 +20,3 @@ trait_communal = {
 		energy = 500
 	}
 }
-

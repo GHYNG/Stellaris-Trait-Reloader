@@ -58,4 +58,3 @@ leader_trait_shroudwalker = {
 	initial = no
 	randomized = no
 }
-

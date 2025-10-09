@@ -40,4 +40,3 @@ trait_vat_grown = {
 		energy = 2000
 	}
 }
-

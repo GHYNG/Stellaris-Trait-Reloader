@@ -24,7 +24,6 @@ leader_trait_pop_focused = {
 		inline_script = paragon/governor_weight_mult
 	}
 }
-
 leader_trait_pop_focused_2 = {
 	replace_traits = { "leader_trait_pop_focused" }
 	inline_script = {
@@ -46,7 +45,6 @@ leader_trait_pop_focused_2 = {
 	}
 	leader_class = { official }
 }
-
 leader_trait_pop_focused_3 = {
 	replace_traits = { "leader_trait_pop_focused_2" }
 	inline_script = {
@@ -72,14 +70,11 @@ leader_trait_pop_focused_3 = {
 		}
 		planet_jobs_ruler_produces_mult = 0.05
 	}
-
 	triggered_sector_modifier = {
 		potential = {
 			trait_is_gestalt_check = no
 		}
 		planet_jobs_ruler_produces_mult = 0.025
 	}
-
 	leader_class = { official }
 }
-

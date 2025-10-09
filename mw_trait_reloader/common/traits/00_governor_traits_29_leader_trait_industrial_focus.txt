@@ -1,5 +1,4 @@
 @designation_bonus = 50
-
 leader_trait_industrial_focus = {
 	inline_script = {
 		script = trait/icon
@@ -39,7 +38,6 @@ leader_trait_industrial_focus = {
 		}
 	}
 }
-
 leader_trait_industrial_focus_2 = {
 	replace_traits = { "leader_trait_industrial_focus" }
 	inline_script = {
@@ -60,7 +58,6 @@ leader_trait_industrial_focus_2 = {
 	leader_class = { official }
 	custom_tooltip_with_modifiers = only_one_governor_focus
 }
-
 leader_trait_industrial_focus_3 = {
 	replace_traits = { "leader_trait_industrial_focus_2" }
 	inline_script = {
@@ -81,4 +78,3 @@ leader_trait_industrial_focus_3 = {
 	leader_class = { official }
 	custom_tooltip_with_modifiers = only_one_governor_focus
 }
-

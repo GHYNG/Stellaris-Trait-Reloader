@@ -14,7 +14,6 @@ trait_cyborg_creed_of_construction = {
 		always = no
 	}
 	infertile = no
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive pop_output alloys consumer_goods unity cybernetic special }
 	modifier = {
@@ -22,10 +21,8 @@ trait_cyborg_creed_of_construction = {
 		artisan_jobs_bonus_workforce_mult = 0.2
 		bureaucrat_jobs_bonus_workforce_mult = 0.1
 	}
-
 	icon = "gfx/interface/icons/traits/trait_cyborg_creed_of_construction.dds"
 	slave_cost = {
 		energy = 500
 	}
 }
-

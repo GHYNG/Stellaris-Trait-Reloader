@@ -31,7 +31,6 @@ leader_trait_excessive = {
 		}
 	}
 }
-
 leader_trait_excessive_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_excessive" }
@@ -49,4 +48,3 @@ leader_trait_excessive_2 = {
 	leader_class = { official scientist commander }
 	selectable_weight = @tier2_negative_trait_weight
 }
-

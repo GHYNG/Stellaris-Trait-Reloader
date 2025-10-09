@@ -12,7 +12,6 @@ trait_void_dweller_1 = {
 			has_trait = trait_pc_habitat_preference
 			has_trait = trait_auto_hab_preference
 		}
-
 	}
 	species_possible_remove = {
 		can_remove_beneficial_genetic_traits = yes
@@ -21,8 +20,8 @@ trait_void_dweller_1 = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive habitability pop_output special }
 	sorting_priority = 30
-	custom_tooltip_with_modifiers = void_dweller_trait_tooltip 
-	triggered_pop_group_modifier = { 
+	custom_tooltip_with_modifiers = void_dweller_trait_tooltip #unlike custom_tooltip, this shows in addition to the modifiers
+	triggered_pop_group_modifier = { #won't show in trait tooltips, use custom_tooltip/custom_tooltip_with_modifiers
 		potential = {
 			exists = planet
 			planet = { is_artificial = no }
@@ -37,7 +36,6 @@ trait_void_dweller_1 = {
 		}
 		pop_bonus_workforce_mult = 0.15
 	}
-
 	ai_weight = {
 		weight = 0
 	}
@@ -57,7 +55,6 @@ trait_void_dweller_1 = {
 		}
 	}
 }
-
 trait_void_dweller_2 = {
 	icon = "gfx/interface/icons/traits/trait_void_dweller_2.dds"
 	initial = no
@@ -80,9 +77,8 @@ trait_void_dweller_2 = {
 	allowed_archetypes = { MACHINE ROBOT }
 	tags = { machine positive habitability pop_output special }
 	sorting_priority = 30
-
 	custom_tooltip_with_modifiers = void_dweller_2_trait_tooltip
-	triggered_pop_group_modifier = { 
+	triggered_pop_group_modifier = { #won't show in trait tooltips, use custom_tooltip/custom_tooltip_with_modifiers
 		potential = {
 			exists = planet
 			planet = { is_artificial = no }
@@ -116,4 +112,3 @@ trait_void_dweller_2 = {
 		}
 	}
 }
-

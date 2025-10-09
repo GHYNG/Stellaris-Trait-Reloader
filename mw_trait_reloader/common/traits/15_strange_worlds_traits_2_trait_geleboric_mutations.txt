@@ -13,7 +13,6 @@ trait_geleboric_mutations = {
 		always = no
 	}
 	tags = { organic negative leader happiness pop_growth pop_output research special }
-
 	modifier = {
 		leader_lifespan_mult = -0.2
 		logistic_growth_mult = -0.2
@@ -21,4 +20,3 @@ trait_geleboric_mutations = {
 		biologist_jobs_bonus_workforce_mult = 0.25
 	}
 }
-

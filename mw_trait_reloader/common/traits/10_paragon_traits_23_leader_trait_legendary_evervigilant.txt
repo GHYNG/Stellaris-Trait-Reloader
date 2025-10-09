@@ -1,4 +1,4 @@
-leader_trait_legendary_evervigilant = { 
+leader_trait_legendary_evervigilant = { #Origin trait - xenophobe
 	starting_ruler_trait = yes
 	leader_trait_type = veteran
 	allowed_origins = { origin_legendary_leader }
@@ -12,19 +12,15 @@ leader_trait_legendary_evervigilant = {
 		TIER = 1
 	}
 	custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
-
 	councilor_modifier = {
 		intel_decryption_add = 1
 		intel_encryption_add = 1
 	}
-
 	leader_class = { official commander scientist }
-
 	initial = no
 	randomized = no
 }
-
-leader_trait_legendary_evervigilant_2 = { 
+leader_trait_legendary_evervigilant_2 = { #Origin trait - xenophobe
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_evervigilant" }
 	inline_script = {
@@ -35,18 +31,14 @@ leader_trait_legendary_evervigilant_2 = {
 		TIER = 2
 	}
 	custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
-
 	councilor_modifier = {
 		intel_decryption_add = 2
 		intel_encryption_add = 2
 	}
-
 	leader_class = { official commander scientist }
-
 	initial = no
 }
-
-leader_trait_legendary_evervigilant_3 = { 
+leader_trait_legendary_evervigilant_3 = { #Origin trait - xenophobe
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_legendary_evervigilant_2" }
 	inline_script = {
@@ -57,14 +49,10 @@ leader_trait_legendary_evervigilant_3 = {
 		TIER = 3
 	}
 	custom_tooltip_with_modifiers = "leader_trait_legendary_origin_desc"
-
 	councilor_modifier = {
 		intel_decryption_add = 2
 		intel_encryption_add = 4
 	}
-
 	leader_class = { official commander scientist }
-
 	initial = no
 }
-

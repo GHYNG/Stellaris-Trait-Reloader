@@ -21,7 +21,7 @@ leader_trait_has_backup_clone = {
 		}
 		leader_skill_add = 2
 	}
-	
+	# Oligarchy - Commander
 	triggered_councilor_modifier = {
 		potential = {
 			exists = owner
@@ -37,7 +37,7 @@ leader_trait_has_backup_clone = {
 		}
 		country_naval_cap_mult = 0.05
 	}
-	
+	# Oligarchy - Official
 	triggered_councilor_modifier = {
 		potential = {
 			exists = owner
@@ -53,7 +53,7 @@ leader_trait_has_backup_clone = {
 		}
 		country_trade_produces_mult = 0.15
 	}
-	
+	# Oligarchy - Scientist
 	triggered_councilor_modifier = {
 		potential = {
 			exists = owner
@@ -80,4 +80,3 @@ leader_trait_has_backup_clone = {
 		inline_script = paragon/not_council_weight_mult
 	}
 }
-

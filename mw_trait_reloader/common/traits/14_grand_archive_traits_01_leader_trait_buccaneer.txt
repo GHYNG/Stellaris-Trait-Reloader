@@ -9,17 +9,13 @@ leader_trait_buccaneer = {
 		COUNCIL = yes
 		TIER = 1
 	}
-
 	councilor_modifier = {
 		enemy_ship_destroyed_energy_add = 25
 	}
-
 	leader_class = { official commander scientist }
-
 	initial = no
 	randomized = no
 }
-
 leader_trait_buccaneer_2 = {
 	replace_traits = { "leader_trait_buccaneer" }
 	inline_script = {
@@ -29,16 +25,12 @@ leader_trait_buccaneer_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-
 	councilor_modifier = {
 		enemy_ship_destroyed_energy_add = 50
 	}
-
 	leader_class = { official commander scientist }
-
 	initial = no
 }
-
 leader_trait_buccaneer_3 = {
 	replace_traits = { "leader_trait_buccaneer_2" }
 	inline_script = {
@@ -48,13 +40,9 @@ leader_trait_buccaneer_3 = {
 		COUNCIL = yes
 		TIER = 3
 	}
-
 	councilor_modifier = {
 		enemy_ship_destroyed_energy_add = 75
 	}
-
 	leader_class = { official commander scientist }
-
 	initial = no
 }
-

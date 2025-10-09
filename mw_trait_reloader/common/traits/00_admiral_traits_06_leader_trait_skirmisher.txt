@@ -17,4 +17,3 @@ leader_trait_skirmisher = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-

@@ -16,9 +16,7 @@ leader_trait_legendary_far_from_home = {
 	self_modifier = {
 		leader_lifespan_add = 10
 	}
-
 	leader_class = { scientist }
 	initial = no
 	randomized = no
 }
-

@@ -57,4 +57,3 @@ trait_elevated_synapses = {
 		energy = 2000
 	}
 }
-

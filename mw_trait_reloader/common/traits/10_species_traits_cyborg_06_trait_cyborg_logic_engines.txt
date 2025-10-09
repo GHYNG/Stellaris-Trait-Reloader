@@ -1,6 +1,5 @@
 trait_cyborg_logic_engines = {
 	cost = 1
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -8,7 +7,6 @@ trait_cyborg_logic_engines = {
 	}
 	tags = { organic positive pop_output research cybernetic }
 	initial = no
-
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
 	}
@@ -21,14 +19,12 @@ trait_cyborg_logic_engines = {
 	modifier = {
 		researcher_jobs_bonus_workforce_mult = 0.10
 	}
-
 	resources = {
 		category = planet_pops
 		upkeep = {
 			energy = @cyborg_energy_upkeep
 		}
 	}
-
 	slave_cost = {
 		energy = 750
 	}
@@ -40,4 +36,3 @@ trait_cyborg_logic_engines = {
 		}
 	}
 }
-

@@ -60,4 +60,3 @@ leader_trait_governor_oracle = {
 	initial = no
 	randomized = no
 }
-

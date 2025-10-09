@@ -17,9 +17,7 @@ trait_cyborg_enigmatic_fortress = {
 		SPECIES_TRAIT_CYBORG
 	}
 	tags = { organic positive amenities leviathan cybernetic }
-
 	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
-
 	modifier = {
 		pop_amenities_usage_mult = -0.5
 	}
@@ -33,4 +31,3 @@ trait_cyborg_enigmatic_fortress = {
 		energy = 1500
 	}
 }
-

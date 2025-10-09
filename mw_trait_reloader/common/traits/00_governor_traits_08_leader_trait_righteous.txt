@@ -36,7 +36,6 @@ leader_trait_righteous = {
 		inline_script = paragon/governor_weight_mult
 	}
 }
-
 leader_trait_righteous_2 = {
 	replace_traits = { "leader_trait_righteous" }
 	inline_script = {
@@ -69,4 +68,3 @@ leader_trait_righteous_2 = {
 		leader_trait_corrupt_2
 	}
 }
-

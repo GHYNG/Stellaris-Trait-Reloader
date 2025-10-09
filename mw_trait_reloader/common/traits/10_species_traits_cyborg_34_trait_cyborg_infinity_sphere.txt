@@ -17,9 +17,7 @@ trait_cyborg_infinity_sphere = {
 		SPECIES_TRAIT_CYBORG
 	}
 	tags = { organic positive upkeep research cybernetic }
-
 	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
-
 	modifier = {
 		planet_researchers_upkeep_mult = -0.5
 	}
@@ -33,4 +31,3 @@ trait_cyborg_infinity_sphere = {
 		energy = 1500
 	}
 }
-

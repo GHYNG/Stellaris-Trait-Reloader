@@ -1,10 +1,8 @@
 trait_robot_inquisitative_axioms = {
 	cost = 4
 	category = robotic
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive pop_output research leader modularity }
-
 	species_potential_add = {
 		can_do_advanced_robo_modding = yes
 	}
@@ -14,20 +12,15 @@ trait_robot_inquisitative_axioms = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	initial = no
 	randomized = no
-
 	modifier = {
 		researcher_jobs_bonus_workforce_mult = 0.2
 		leaders_upkeep_mult = -0.1
 		negative_traits_leader = -1
 	}
-
 	opposites = { trait_robot_suppressed }
-
 	slave_cost = {
 		energy = 750
 	}
 }
-

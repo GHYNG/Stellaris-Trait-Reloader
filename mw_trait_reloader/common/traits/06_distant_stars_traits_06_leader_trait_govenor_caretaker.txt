@@ -8,7 +8,6 @@ leader_trait_govenor_caretaker = {
 		COUNCIL = yes
 		TIER = none
 	}
-
 	councilor_modifier = {
 		logistic_growth_mult = 0.05
 	}
@@ -31,11 +30,8 @@ leader_trait_govenor_caretaker = {
 	initial = no
 	randomized = no
 	immortal_leaders = yes
-
 	leader_class = { official }
-
 	ai_weight = {
 		weight = 0
 	}
 }
-

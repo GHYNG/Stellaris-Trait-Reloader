@@ -15,7 +15,6 @@ leader_trait_stubborn = {
 	}
 	selectable_weight = @shared_negative_trait_weight
 }
-
 leader_trait_stubborn_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_stubborn" }
@@ -35,4 +34,3 @@ leader_trait_stubborn_2 = {
 	}
 	selectable_weight = @tier2_negative_trait_weight
 }
-

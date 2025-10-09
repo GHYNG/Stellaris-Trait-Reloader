@@ -49,7 +49,6 @@ leader_trait_planar_theorist = {
 	}
 	ai_weight = 100
 }
-
 leader_trait_planar_theorist_2 = {
 	replace_traits = { "leader_trait_planar_theorist" }
 	inline_script = {
@@ -70,4 +69,3 @@ leader_trait_planar_theorist_2 = {
 	leader_class = { scientist }
 	ai_weight = 100
 }
-

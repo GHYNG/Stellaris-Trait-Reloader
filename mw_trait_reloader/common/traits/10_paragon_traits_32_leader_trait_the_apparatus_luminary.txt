@@ -8,17 +8,13 @@ leader_trait_the_apparatus_luminary = {
 		COUNCIL = yes
 		TIER = none
 	}
-
 	inline_script = {
 		script = paragon/leader_resource_upkeep
 		RESOURCE = energy
 		AMOUNT = 50
 	}
-
 	leader_class = { official commander scientist }
-
 	initial = no
 	randomized = no
 	immortal_leaders = yes
 }
-

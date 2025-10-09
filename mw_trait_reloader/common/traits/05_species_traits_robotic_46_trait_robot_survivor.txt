@@ -1,17 +1,13 @@
 trait_robot_survivor = {
 	cost = 0
 	category = robotic
-
 	initial = no
 	randomized = no
-
 	species_potential_add = {
 		always = no
 	}
-
 	allowed_archetypes = { MACHINE ROBOT }
 	tags = { machine positive habitability leader special }
-
 	modifier = {
 		pc_nuked_habitability = 0.7
 		leader_lifespan_add = 10
@@ -20,4 +16,3 @@ trait_robot_survivor = {
 		energy = 500
 	}
 }
-

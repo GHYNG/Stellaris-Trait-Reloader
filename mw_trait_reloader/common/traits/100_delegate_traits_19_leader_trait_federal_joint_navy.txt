@@ -30,7 +30,6 @@ leader_trait_federal_joint_navy = {
 		inline_script = paragon/federation_weight_mult
 	}
 }
-
 leader_trait_federal_joint_navy_2 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_federal_joint_navy" }
@@ -48,7 +47,6 @@ leader_trait_federal_joint_navy_2 = {
 	}
 	leader_class = { official }
 }
-
 leader_trait_federal_joint_navy_3 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_federal_joint_navy_2" }
@@ -69,4 +67,3 @@ leader_trait_federal_joint_navy_3 = {
 	}
 	leader_class = { official }
 }
-

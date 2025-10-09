@@ -15,4 +15,3 @@ leader_trait_ruler_hive_mind = {
 	initial = no
 	randomized = no
 }
-

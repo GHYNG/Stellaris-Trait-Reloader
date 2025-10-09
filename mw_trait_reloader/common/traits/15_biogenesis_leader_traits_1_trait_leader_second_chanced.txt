@@ -12,4 +12,3 @@ trait_leader_second_chanced = {
 	ai_weight = 0
 	leader_class = { commander scientist official }
 }
-

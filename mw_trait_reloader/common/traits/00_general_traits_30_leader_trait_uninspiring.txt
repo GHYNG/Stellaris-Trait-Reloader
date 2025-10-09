@@ -22,7 +22,6 @@ leader_trait_uninspiring = {
 		inline_script = paragon/army_weight_mult
 	}
 }
-
 leader_trait_uninspiring_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_uninspiring" }
@@ -38,4 +37,3 @@ leader_trait_uninspiring_2 = {
 	leader_class = { commander }
 	selectable_weight = @tier2_negative_trait_weight
 }
-

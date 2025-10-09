@@ -15,7 +15,7 @@ leader_trait_tactical_algorithms = {
 				exists = owner
 			}
 			owner = {
-				country_event = { id = timeline.50 } 
+				country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 			}
 		}
 	}
@@ -34,4 +34,3 @@ leader_trait_tactical_algorithms = {
 	randomized = no
 	trade_acceptance_weight = -10
 }
-

@@ -8,7 +8,7 @@ leader_trait_shroudshaper = {
 		COUNCIL = triggered
 		TIER = none
 	}
-	
+	# Commander - Fleet Modifier
 	triggered_fleet_modifier = {
 		potential = {
 			is_ruler = no
@@ -19,7 +19,7 @@ leader_trait_shroudshaper = {
 		ship_sensor_range_add = 2
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Commander - Army Modifier
 	triggered_army_modifier = {
 		potential = {
 			is_ruler = no
@@ -31,7 +31,7 @@ leader_trait_shroudshaper = {
 		army_damage_mult = 0.20
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Official - GalCom Modifier
 	triggered_galcom_modifier = {
 		potential = {
 				is_ruler = no
@@ -41,7 +41,7 @@ leader_trait_shroudshaper = {
 		resolutions_cost_mult = -0.15
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Official - Federation Modifier
 	triggered_federation_modifier = {
 		potential = {
 			is_ruler = no
@@ -51,7 +51,7 @@ leader_trait_shroudshaper = {
 		cohesion_ethics_penalty_mult = -0.35
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Scientist - Science Ship Modifier
 	triggered_modifier = {
 		potential = {
 			is_ruler = no
@@ -61,7 +61,7 @@ leader_trait_shroudshaper = {
 		ship_anomaly_generation_chance_mult = 0.05
 		mult = value:transcended_psionic_multiplier
 	}
-	
+	# Any Class - Planet Modifier
 	triggered_planet_modifier = {
 		potential = { is_ruler = no }
 		planet_jobs_upkeep_mult = -0.10
@@ -72,9 +72,9 @@ leader_trait_shroudshaper = {
 			is_ruler = no
 			trait_is_gestalt_check = no
 		}
-		job_telepath_add = 20			
+		job_telepath_add = 20			# This means a level 10 Shroudshaper provides as many Telepaths as a Psi-Corps building
 		mult = trigger:has_total_skill
-		
+		# Bonus jobs are explicitly not increased by transcended authorities, since they scale by leader level
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -83,9 +83,9 @@ leader_trait_shroudshaper = {
 		}
 		job_telepath_drone_add = 20
 		mult = trigger:has_total_skill
-		
+		# Bonus jobs are explicitly not increased by transcended authorities, since they scale by leader level
 	}
-	
+	# Any Class - Sector Modifier
 	triggered_sector_modifier = {
 		potential = { is_ruler = no }
 		planet_jobs_upkeep_mult = -0.05
@@ -98,7 +98,7 @@ leader_trait_shroudshaper = {
 		}
 		job_telepath_add = 10
 		mult = trigger:has_total_skill
-		
+		# Bonus jobs are explicitly not increased by transcended authorities, since they scale by leader level
 	}
 	triggered_sector_modifier = {
 		potential = {
@@ -107,9 +107,9 @@ leader_trait_shroudshaper = {
 		}
 		job_telepath_drone_add = 10
 		mult = trigger:has_total_skill
-		
+		# Bonus jobs are explicitly not increased by transcended authorities, since they scale by leader level
 	}
-	
+	# Any Class - Ruler
 	triggered_councilor_modifier = {
 		potential = { is_ruler = yes }
 		country_ruler_influence_produces_add = 0.5
@@ -123,4 +123,3 @@ leader_trait_shroudshaper = {
 	initial = no
 	randomized = no
 }
-

@@ -17,4 +17,3 @@ leader_trait_defence_engineer = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-

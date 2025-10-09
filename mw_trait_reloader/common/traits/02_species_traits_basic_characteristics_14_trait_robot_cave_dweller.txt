@@ -1,10 +1,8 @@
 trait_robot_cave_dweller = {
 	cost = 0
 	sorting_priority = 20
-
 	initial = no
 	randomized = no
-
 	species_potential_add = {
 		always = no
 	}
@@ -14,13 +12,11 @@ trait_robot_cave_dweller = {
 	species_possible_merge_add = {
 		always = no
 	}
-
 	allowed_archetypes = { MACHINE ROBOT }
 	tags = { machine positive habitability mineral production special }
 	ai_weight = {
 		weight = 0
 	}
-
 	icon = "gfx/interface/icons/traits/trait_robot_cave_dweller.dds"
 	custom_tooltip_with_modifiers = trait_robot_cave_dweller_tooltip
 	modifier = {
@@ -45,4 +41,3 @@ trait_robot_cave_dweller = {
 		}
 	}
 }
-

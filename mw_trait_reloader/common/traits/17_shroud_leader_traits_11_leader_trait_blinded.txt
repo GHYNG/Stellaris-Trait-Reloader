@@ -22,4 +22,3 @@ leader_trait_blinded = {
 	initial = no
 	randomized = no
 }
-

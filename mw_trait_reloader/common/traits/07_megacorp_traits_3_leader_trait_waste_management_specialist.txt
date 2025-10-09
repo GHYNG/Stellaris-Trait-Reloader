@@ -18,4 +18,3 @@ leader_trait_waste_management_specialist = {
 	initial = no
 	randomized = no
 }
-

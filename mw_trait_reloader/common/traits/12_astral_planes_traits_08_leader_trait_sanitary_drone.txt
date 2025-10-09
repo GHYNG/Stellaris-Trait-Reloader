@@ -20,4 +20,3 @@ leader_trait_sanitary_drone = {
 	initial = no
 	randomized = no
 }
-

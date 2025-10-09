@@ -26,4 +26,3 @@ leader_trait_disciple_of_the_cradle = {
 	initial = no
 	randomized = no
 }
-

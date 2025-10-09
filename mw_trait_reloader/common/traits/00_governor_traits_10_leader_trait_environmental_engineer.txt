@@ -34,4 +34,3 @@ leader_trait_environmental_engineer = {
 		}
 	}
 }
-

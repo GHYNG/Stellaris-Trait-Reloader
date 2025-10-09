@@ -15,7 +15,6 @@ leader_trait_gullible = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 leader_trait_gullible_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_gullible" }
@@ -31,4 +30,3 @@ leader_trait_gullible_2 = {
 	leader_class = { official scientist commander }
 	selectable_weight = @tier2_negative_trait_weight
 }
-

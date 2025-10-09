@@ -1,9 +1,8 @@
 @expertise_tier_1_mult = 0.15
 @expertise_tier_2_mult = 0.30
 @expertise_tier_3_mult = 0.50
-
 leader_trait_expertise_computing = {
-	
+	# This is needed due to the technocracy effects
 	force_councilor_trait = yes
 	leader_trait_type = veteran
 	inline_script = {
@@ -38,7 +37,6 @@ leader_trait_expertise_computing = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 leader_trait_expertise_computing_2 = {
 	replace_traits = { "leader_trait_expertise_computing" }
 	leader_trait_type = veteran
@@ -62,7 +60,6 @@ leader_trait_expertise_computing_2 = {
 	leader_class = { scientist }
 	ai_weight = 100
 }
-
 leader_trait_expertise_computing_3 = {
 	replace_traits = { "leader_trait_expertise_computing_2" }
 	leader_trait_type = veteran
@@ -89,4 +86,3 @@ leader_trait_expertise_computing_3 = {
 	leader_class = { scientist }
 	ai_weight = 100
 }
-

@@ -21,7 +21,6 @@ leader_trait_intimidator = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 leader_trait_intimidator_2 = {
 	leader_trait_type = veteran
 	replace_traits = { leader_trait_intimidator }
@@ -38,4 +37,3 @@ leader_trait_intimidator_2 = {
 	}
 	leader_class = { commander }
 }
-

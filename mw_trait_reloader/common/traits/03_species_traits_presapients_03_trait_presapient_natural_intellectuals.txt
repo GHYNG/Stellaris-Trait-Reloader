@@ -20,4 +20,3 @@ trait_presapient_natural_intellectuals = {
 		worker_and_simple_drone_cat_bonus_workforce_mult = -0.1
 	}
 }
-

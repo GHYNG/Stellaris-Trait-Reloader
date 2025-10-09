@@ -17,4 +17,3 @@ trait_nonadaptive = {
 		weight = 0
 	}
 }
-

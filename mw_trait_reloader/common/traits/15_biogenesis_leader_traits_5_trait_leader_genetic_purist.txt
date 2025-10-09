@@ -7,8 +7,7 @@ trait_leader_genetic_purist = {
 		COUNCIL = triggered
 		TIER = none
 	}
-
-	
+	# Democratic
 	triggered_self_modifier = {
 		potential = {
 			exists = owner
@@ -24,8 +23,7 @@ trait_leader_genetic_purist = {
 		species_leader_exp_gain = @purity_traits_leader_xp
 		mult = species.species_traits_purity_count
 	}
-
-	
+	# Oligarchic
 	triggered_councilor_modifier = {
 		potential = {
 			exists = owner
@@ -40,8 +38,7 @@ trait_leader_genetic_purist = {
 		council_agenda_progress_speed = @purity_traits_council_speed
 		mult = species.species_traits_purity_count
 	}
-
-	
+	# Dictatorial
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -72,10 +69,8 @@ trait_leader_genetic_purist = {
 		planet_stability_add = @purity_traits_governor_sector_stability
 		mult = species.species_traits_purity_count
 	}
-
 	initial = no
 	randomized = no
 	ai_weight = 0
 	leader_class = { commander scientist official }
 }
-

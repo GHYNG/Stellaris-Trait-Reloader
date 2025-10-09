@@ -1,7 +1,6 @@
 trait_cyborg_bionic_physicists = {
 	host_has_dlc = "The Machine Age"
 	cost = 1
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -23,9 +22,7 @@ trait_cyborg_bionic_physicists = {
 	modifier = {
 		physicist_jobs_bonus_workforce_mult = 0.15
 	}
-
 	slave_cost = {
 		energy = 750
 	}
 }
-

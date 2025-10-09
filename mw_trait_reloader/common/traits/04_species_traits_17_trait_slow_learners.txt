@@ -17,4 +17,3 @@ trait_slow_learners = {
 		energy = -250
 	}
 }
-

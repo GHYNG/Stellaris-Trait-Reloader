@@ -29,4 +29,3 @@ leader_trait_governor_gray = {
 	initial = no
 	randomized = no
 }
-

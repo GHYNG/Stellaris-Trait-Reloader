@@ -10,7 +10,7 @@ leader_trait_gifted_trapper = {
 	}
 	on_gained_effect = {
 		owner = {
-			country_event = { id = timeline.50 } 
+			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
 	modifier = {
@@ -24,8 +24,6 @@ leader_trait_gifted_trapper = {
 		has_trait = subclass_scientist_explorer
 	}
 	background_icon = GFX_leader_background_destiny_1
-
 	initial = no
 	randomized = no
 }
-

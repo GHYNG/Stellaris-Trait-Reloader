@@ -1,9 +1,7 @@
 trait_tankbound = {
 	host_has_dlc = "Shadows of the Shroud"
-
 	initial = no
 	randomized = no
-
 	species_possible_add = {
 		always = no
 	}
@@ -14,15 +12,11 @@ trait_tankbound = {
 		always = no
 	}
 	opposites = { "trait_weak" "trait_hollow_bones" }
-
 	custom_tooltip_with_modifiers = trait_tankbound_effects
-
 	portrait_override = { nec9 tox13 psionic_07 }
-
 	modifier = {
 		planet_pops_food_upkeep_mult = -0.5
 		pop_amenities_usage_mult = 0.5
 		logistic_growth_mult = -0.25
 	}
 }
-

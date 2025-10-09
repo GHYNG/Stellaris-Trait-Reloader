@@ -1,6 +1,5 @@
 @ai_selection_high = 5
 @ai_selection_low = 0.1
-
 subclass_scientist_explorer = {
 	custom_subtitle = scientist_subclass
 	leader_trait_type = subclass
@@ -15,7 +14,6 @@ subclass_scientist_explorer = {
 		science_ship_survey_speed = 0.1
 		ship_anomaly_generation_chance_mult = 0.1
 	}
-
 	ai_weight = {
 		modifier = {
 			is_councilor = yes
@@ -41,8 +39,6 @@ subclass_scientist_explorer = {
 			factor = @ai_selection_low
 		}
 	}
-
 	leader_class = { scientist }
 	background_icon = "GFX_leader_subclass_scientist_explorer_background"
 }
-

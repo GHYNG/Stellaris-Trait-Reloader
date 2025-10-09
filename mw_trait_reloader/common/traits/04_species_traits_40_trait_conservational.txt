@@ -20,4 +20,3 @@ trait_conservational = {
 		energy = 500
 	}
 }
-

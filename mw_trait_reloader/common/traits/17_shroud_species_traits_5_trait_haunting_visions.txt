@@ -2,14 +2,12 @@ trait_haunting_visions = {
 	host_has_dlc = "Shadows of the Shroud"
 	cost = -2
 	category = psionic
-
 	species_possible_add = {
 		OR = {
 			can_add_negative_organic_traits = yes
 			can_add_or_remove_phenotype_traits = yes
 		}
 	}
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	species_class = { PSIONIC }
 	portrait_override = { psionic_01 psionic_02 psionic_03 psionic_04 psionic_05 psionic_06 psionic_07 psionic_08 psionic_09 psionic_10 psionic_12 mindwarden_01 mam_rat }
@@ -22,14 +20,11 @@ trait_haunting_visions = {
 		}
 	}
 	tags = { organic negative pop_output psionic species }
-
 	modifier = {
 		specialist_and_complex_drone_cat_bonus_workforce_mult = -0.1
 		pop_cat_ruler_bonus_workforce_mult = -0.1
 	}
-
 	slave_cost = {
 		energy = -1000
 	}
 }
-

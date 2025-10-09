@@ -14,12 +14,11 @@ leader_trait_crusader = {
 		has_trait = subclass_commander_general
 	}
 	leader_class = { commander }
-	
+	# Effect in paragon_2.1005 and paragon_2.1040 events
 	custom_tooltip = leader_trait_crusader_effect
 	initial = no
 	randomized = no
 }
-
 leader_trait_crusader_2 = {
 	leader_trait_type = veteran
 	replace_traits = { "leader_trait_crusader" }
@@ -39,7 +38,6 @@ leader_trait_crusader_2 = {
 		army_morale = 0.25
 	}
 	leader_class = { commander }
-	
+	# Effect in paragon_2.1005 and paragon_2.1040 events
 	custom_tooltip = leader_trait_crusader_2_effect
 }
-

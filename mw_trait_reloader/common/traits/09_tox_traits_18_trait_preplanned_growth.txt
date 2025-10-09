@@ -65,4 +65,3 @@ trait_preplanned_growth = {
 		energy = 2000
 	}
 }
-

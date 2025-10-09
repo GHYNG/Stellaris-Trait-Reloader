@@ -14,4 +14,3 @@ leader_trait_master_salvager = {
 	leader_class = { scientist }
 	ai_weight = 100
 }
-

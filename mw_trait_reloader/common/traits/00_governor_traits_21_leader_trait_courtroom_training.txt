@@ -28,7 +28,6 @@ leader_trait_courtroom_training = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 leader_trait_courtroom_training_2 = {
 	replace_traits = { "leader_trait_courtroom_training" }
 	inline_script = {
@@ -49,7 +48,6 @@ leader_trait_courtroom_training_2 = {
 	}
 	leader_trait_type = veteran
 }
-
 leader_trait_courtroom_training_3 = {
 	replace_traits = { "leader_trait_courtroom_training_2" }
 	inline_script = {
@@ -70,4 +68,3 @@ leader_trait_courtroom_training_3 = {
 	}
 	leader_trait_type = veteran
 }
-

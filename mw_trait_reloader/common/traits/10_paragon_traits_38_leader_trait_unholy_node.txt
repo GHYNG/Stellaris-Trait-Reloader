@@ -16,11 +16,8 @@ leader_trait_unholy_node = {
 	}
 	initial = no
 	randomized = no
-
 	leader_class = { commander }
-
 	ai_weight = {
 		weight = 0
 	}
 }
-

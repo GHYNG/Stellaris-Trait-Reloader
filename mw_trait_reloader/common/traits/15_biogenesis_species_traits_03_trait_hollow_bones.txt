@@ -25,14 +25,12 @@ trait_hollow_bones = {
 		potential = {
 			exists = planet
 		}
-		worker_and_simple_drone_cat_bonus_workforce_mult = -0.01	
-		mult = value:hollow_bones_mult								
+		worker_and_simple_drone_cat_bonus_workforce_mult = -0.01	# -0.1%
+		mult = value:hollow_bones_mult								# Multiplied by 2/3 × planet size
 	}
-
 	slave_cost = {
 		energy = -400
 	}
-
 	assembly_score = {
 		modifier = {
 			from = { planet_size >= 15 }
@@ -40,4 +38,3 @@ trait_hollow_bones = {
 		}
 	}
 }
-

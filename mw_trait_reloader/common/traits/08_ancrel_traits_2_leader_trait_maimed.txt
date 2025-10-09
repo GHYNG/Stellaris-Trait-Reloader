@@ -12,4 +12,3 @@ leader_trait_maimed = {
 	initial = no
 	randomized = no
 }
-

@@ -45,4 +45,3 @@ trait_shelled = {
 		energy = 1500
 	}
 }
-

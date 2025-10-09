@@ -19,7 +19,6 @@ trait_ruler_industrialist = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 trait_ruler_industrialist_2 = {
 	replace_traits = { "trait_ruler_industrialist" }
 	inline_script = {
@@ -35,4 +34,3 @@ trait_ruler_industrialist_2 = {
 	}
 	leader_class = { official scientist }
 }
-

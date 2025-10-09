@@ -22,7 +22,6 @@ leader_trait_crew_trainer = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 leader_trait_crew_trainer_2 = {
 	leader_trait_type = veteran
 	replace_traits = { leader_trait_crew_trainer }
@@ -40,4 +39,3 @@ leader_trait_crew_trainer_2 = {
 	}
 	leader_class = { commander }
 }
-

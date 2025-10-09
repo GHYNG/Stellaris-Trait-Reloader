@@ -31,7 +31,6 @@ trait_nerve_stapled = {
 	slave_cost = {
 		energy = 1500
 	}
-
 	triggered_pop_group_modifier = {
 		potential = {
 			OR = {
@@ -55,4 +54,3 @@ trait_nerve_stapled = {
 		}
 	}
 }
-

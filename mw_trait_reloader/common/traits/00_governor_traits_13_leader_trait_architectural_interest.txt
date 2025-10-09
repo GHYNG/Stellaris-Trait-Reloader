@@ -28,4 +28,3 @@ leader_trait_architectural_interest = {
 		inline_script = paragon/governor_weight_mult
 	}
 }
-

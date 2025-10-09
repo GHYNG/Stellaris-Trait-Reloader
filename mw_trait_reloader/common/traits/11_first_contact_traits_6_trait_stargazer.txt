@@ -24,4 +24,3 @@ trait_stargazer = {
 		pop_environment_tolerance = 0.1
 	}
 }
-

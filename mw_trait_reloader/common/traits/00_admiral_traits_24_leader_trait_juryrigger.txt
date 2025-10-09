@@ -14,7 +14,7 @@ leader_trait_juryrigger = {
 	}
 	fleet_modifier = {
 		create_debris_chance = -1
-		
+		# Effect in paragon_2.1005 event.
 	}
 	leader_class = { commander }
 	custom_tooltip_with_modifiers = leader_trait_juryrigger_effect
@@ -31,7 +31,6 @@ leader_trait_juryrigger = {
 		}
 	}
 }
-
 leader_trait_juryrigger_2 = {
 	leader_trait_type = veteran
 	replace_traits = { leader_trait_juryrigger }
@@ -45,7 +44,7 @@ leader_trait_juryrigger_2 = {
 	}
 	fleet_modifier = {
 		create_debris_chance = -1
-		
+		# Effect in paragon_2.1005 event.
 	}
 	leader_class = { commander }
 	custom_tooltip_with_modifiers = leader_trait_juryrigger_2_effect
@@ -54,4 +53,3 @@ leader_trait_juryrigger_2 = {
 		leader_trait_wrecker_2
 	}
 }
-

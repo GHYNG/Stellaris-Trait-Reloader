@@ -2,7 +2,6 @@ trait_clone_soldier_infertile = {
 	cost = 0
 	opposites = { "trait_fertile" "trait_slow_breeders" "trait_rapid_breeders" "trait_clone_soldier_infertile_full_potential" "trait_clone_soldier_fertile" "trait_plantoid_budding" "trait_lithoid_budding" "trait_tiyanki" "trait_humanoid_psychological_infertility" "trait_humanoid_existential_iteroparity" "trait_egg_laying" }
 	sorting_priority = 20
-
 	initial = no
 	randomized = no
 	improves_leaders = yes
@@ -29,25 +28,19 @@ trait_clone_soldier_infertile = {
 	}
 	immortal_leaders = no
 	infertile = yes
-
 	leader_age_min = 5
 	leader_age_max = 20
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive army ethic_attraction drawbacks special }
 	ai_weight = {
 		weight = 0
 	}
-
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_clone_soldier.dds"
-
 	modifier = {
-		
+		# Pop modifiers
 		pop_government_ethic_attraction = 0.50
-
-		
+		# Leader modifiers
 		leader_lifespan_add = -40
 		army_damage_mult = 0.5
 	}
 }
-

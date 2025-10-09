@@ -1,5 +1,4 @@
 @primary = 0.80
-
 trait_machine_habitat_planet_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_habitat_preference.dds"
 	short_name = "trait_machine_habitat_planet_preference_short"
@@ -29,4 +28,3 @@ trait_machine_habitat_planet_preference = {
 		weight = 0
 	}
 }
-

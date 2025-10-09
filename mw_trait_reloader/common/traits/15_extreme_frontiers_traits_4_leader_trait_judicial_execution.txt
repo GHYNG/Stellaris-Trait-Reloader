@@ -8,12 +8,8 @@ leader_trait_judicial_execution = {
 		COUNCIL = no
 		TIER = none
 	}
-
 	leader_class = { commander }
-
 	custom_tooltip = leader_trait_judicial_execution_effect
-
 	initial = no
 	randomized = no
 }
-

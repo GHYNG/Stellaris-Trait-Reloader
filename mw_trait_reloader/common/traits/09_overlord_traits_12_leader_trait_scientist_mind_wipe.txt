@@ -12,12 +12,10 @@ leader_trait_scientist_mind_wipe_01 = {
 		all_technology_research_speed = 0.10
 		category_psionics_research_speed_mult = 0.25
 	}
-
 	leader_class = { scientist }
 	initial = no
 	randomized = no
 }
-
 leader_trait_scientist_mind_wipe_02 = {
 	cost = 0
 	inline_script = {
@@ -32,9 +30,7 @@ leader_trait_scientist_mind_wipe_02 = {
 		ship_archaeological_site_excavation_speed_mult = 0.2
 		ship_archaeological_site_clues_add = 1
 	}
-
 	leader_class = { scientist }
 	initial = no
 	randomized = no
 }
-

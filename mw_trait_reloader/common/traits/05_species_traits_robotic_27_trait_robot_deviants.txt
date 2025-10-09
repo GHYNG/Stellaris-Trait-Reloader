@@ -2,7 +2,7 @@ trait_robot_deviants = {
 	icon = "gfx/interface/icons/traits/trait_deviants.dds"
 	cost = -1
     category = robotic
-	
+	# Synths and Individualist Machines
 	species_potential_add = {
 		OR = {
 			can_add_synth_traits = yes
@@ -10,7 +10,6 @@ trait_robot_deviants = {
 		}
 	}
 	modifier = { pop_government_ethic_attraction = -0.15 }
-
 	allowed_archetypes = { MACHINE ROBOT }
 	tags = { machine synthetic negative ethic_attraction individual }
 	forbidden_ethics = { ethic_gestalt_consciousness }
@@ -21,4 +20,3 @@ trait_robot_deviants = {
 		energy = -200
 	}
 }
-

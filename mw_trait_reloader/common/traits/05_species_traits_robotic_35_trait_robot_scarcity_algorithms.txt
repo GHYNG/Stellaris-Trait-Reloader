@@ -2,11 +2,9 @@ trait_robot_scarcity_algorithms = {
 	host_has_dlc = "The Machine Age"
 	cost = -1
 	category = robotic
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine synthetic negative pop_output trade }
 	opposites = { "trait_robot_trading_algorithms" "trait_robot_matrix_trading" }
-
 	species_potential_add = {
 		OR = {
 			can_add_droid_traits = yes
@@ -15,7 +13,6 @@ trait_robot_scarcity_algorithms = {
 			owner_is_machine_intelligence = yes
 		}
 	}
-
 	randomized = no
 	modifier = {
 		trader_jobs_bonus_workforce_mult = -0.25
@@ -24,4 +21,3 @@ trait_robot_scarcity_algorithms = {
 		energy = -150
 	}
 }
-

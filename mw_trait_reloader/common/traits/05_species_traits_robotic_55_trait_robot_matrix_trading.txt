@@ -1,7 +1,6 @@
 trait_robot_matrix_trading = {
 	cost = 1
 	category = robotic
-
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive pop_output trade upkeep modularity }
 	opposites = { trait_robot_scarcity_algorithms }
@@ -22,18 +21,14 @@ trait_robot_matrix_trading = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-
 	initial = no
 	randomized = no
-
 	modifier = {
 		trader_jobs_bonus_workforce_mult = 0.5
 	}
-
 	slave_cost = {
 		energy = 750
 	}
-
 	resources = {
 		category = planet_pops
 		upkeep = {
@@ -41,7 +36,5 @@ trait_robot_matrix_trading = {
 			rare_crystals = 0.01
 		}
 	}
-
 	custom_tooltip_with_modifiers = trait_robot_matrix_trading_tt
 }
-

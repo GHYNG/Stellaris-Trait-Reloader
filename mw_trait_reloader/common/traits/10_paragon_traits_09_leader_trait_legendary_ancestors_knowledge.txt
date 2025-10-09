@@ -60,9 +60,7 @@ leader_trait_legendary_ancestors_knowledge = {
 	self_modifier = {
 		leader_lifespan_add = 25
 	}
-
 	leader_class = { official commander scientist }
 	initial = no
 	randomized = no
 }
-

@@ -22,7 +22,6 @@ leader_trait_victory_or_death = {
 		inline_script = paragon/army_weight_mult
 	}
 }
-
 leader_trait_victory_or_death_2 = {
 	leader_trait_type = negative
 	replace_traits = { "leader_trait_victory_or_death" }
@@ -41,4 +40,3 @@ leader_trait_victory_or_death_2 = {
 	}
 	selectable_weight = @tier2_negative_trait_weight
 }
-

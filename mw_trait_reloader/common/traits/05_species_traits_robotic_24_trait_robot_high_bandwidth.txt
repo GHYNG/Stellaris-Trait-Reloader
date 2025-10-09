@@ -11,4 +11,3 @@ trait_robot_high_bandwidth = {
 		energy = -150
 	}
 }
-

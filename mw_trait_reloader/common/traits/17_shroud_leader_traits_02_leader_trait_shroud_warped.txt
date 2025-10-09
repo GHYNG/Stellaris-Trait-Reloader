@@ -47,4 +47,3 @@ leader_trait_shroud_warped = {
 	initial = no
 	randomized = no
 }
-

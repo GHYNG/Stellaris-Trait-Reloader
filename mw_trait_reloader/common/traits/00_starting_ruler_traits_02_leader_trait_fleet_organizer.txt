@@ -23,7 +23,6 @@ leader_trait_fleet_organizer = {
 		inline_script = paragon/council_weight_mult
 	}
 }
-
 leader_trait_fleet_organizer_2 = {
 	replace_traits = { "leader_trait_fleet_organizer" }
 	inline_script = {
@@ -43,4 +42,3 @@ leader_trait_fleet_organizer_2 = {
 		leader_trait_nervous_2
 	}
 }
-

@@ -18,4 +18,3 @@ leader_trait_mercenary_warrior = {
 	initial = no
 	randomized = no
 }
-

@@ -8,7 +8,7 @@ leader_trait_corsair = {
 		COUNCIL = no
 		TIER = 1
 	}
-	
+	# Effect in paragon_2.1005 event.
 	leader_potential_add = {
 		has_paragon_dlc = yes
 		has_trait = subclass_commander_admiral
@@ -18,7 +18,6 @@ leader_trait_corsair = {
 	initial = no
 	randomized = no
 }
-
 leader_trait_corsair_2 = {
 	leader_trait_type = veteran
 	replace_traits = { leader_trait_corsair }
@@ -30,7 +29,7 @@ leader_trait_corsair_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	
+	# Effect in paragon_2.1005 event.
 		fleet_modifier = {
 		ship_orbit_upkeep_mult = -0.2
 	}
@@ -41,4 +40,3 @@ leader_trait_corsair_2 = {
 	leader_class = { commander }
 	custom_tooltip = leader_trait_corsair_2_effect
 }
-

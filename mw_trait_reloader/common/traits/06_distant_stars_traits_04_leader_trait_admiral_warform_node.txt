@@ -17,11 +17,8 @@ leader_trait_admiral_warform_node = {
 	initial = no
 	randomized = no
 	immortal_leaders = yes
-
 	leader_class = { commander }
-
 	ai_weight = {
 		weight = 0
 	}
 }
-

@@ -17,4 +17,3 @@ leader_trait_inspired_researcher = {
 	initial = no
 	randomized = no
 }
-

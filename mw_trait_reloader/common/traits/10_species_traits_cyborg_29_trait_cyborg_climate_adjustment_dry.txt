@@ -1,7 +1,6 @@
 trait_cyborg_climate_adjustment_dry = {
 	host_has_dlc = "The Machine Age"
 	cost = 1
-
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
@@ -25,7 +24,6 @@ trait_cyborg_climate_adjustment_dry = {
 		pc_desert_habitability = 0.3
 		pc_arid_habitability = 0.3
 		pc_savannah_habitability = 0.3
-
 		pc_tropical_habitability = -0.1
 		pc_continental_habitability = -0.1
 		pc_tundra_habitability = -0.1
@@ -43,4 +41,3 @@ trait_cyborg_climate_adjustment_dry = {
 		energy = 500
 	}
 }
-

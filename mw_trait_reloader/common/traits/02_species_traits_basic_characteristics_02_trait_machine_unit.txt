@@ -12,28 +12,23 @@ trait_machine_unit = {
 	species_possible_merge_add = {
 		always = no
 	}
-
 	icon = "gfx/interface/icons/traits/trait_machine_unit.dds"
 	allowed_archetypes = { MACHINE ROBOT }
 	tags = { machine positive habitability leader special }
-
 	immortal_leaders = no
-
 	modifier = {
 		pc_machine_habitability = 1
 		leader_lifespan_add = 20
 		habitability_floor_add = 0.5
 	}
-
 	resources = {
 		category = planet_pops
-		
+		# Energy Upkeep
 		upkeep = {
 			trigger = { is_being_purged = no }
 			energy = @living_standard_energy_normal
 		}
 	}
-
 	triggered_planet_growth_habitability_modifier = {
 		potential = {
 			exists = owner
@@ -43,10 +38,7 @@ trait_machine_unit = {
 		}
 		pc_nanotech_habitability = 1
 	}
-
 	leader_age_min = 5
 	leader_age_max = 10
-
 	custom_tooltip_with_modifiers = TRAIT_MACHINE_UNIT_EFFECT
 }
-
