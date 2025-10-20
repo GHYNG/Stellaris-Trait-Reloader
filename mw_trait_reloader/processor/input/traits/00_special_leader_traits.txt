@@ -850,7 +850,7 @@ leader_trait_instrument_chosen = {
 		potential = {
 			is_ruler = no
 		}
-		planet_jobs_slave_produces_mult = 0.20
+		pop_slave_bonus_workforce_mult = 0.20
 		planet_stability_add = 5
 		mult = value:transcended_psionic_multiplier
 	}
@@ -859,7 +859,7 @@ leader_trait_instrument_chosen = {
 		potential = {
 			is_ruler = no
 		}
-		planet_jobs_slave_produces_mult = 0.10
+		pop_slave_bonus_workforce_mult = 0.10
 		planet_stability_add = 2.5
 	}
 	triggered_councilor_modifier = {
@@ -1335,7 +1335,7 @@ leader_trait_ancient_knowledge = {
 		}
 		planet_jobs_produces_mult = 0.05
 		pop_amenities_usage_mult = -0.05
-		planet_jobs_slave_produces_mult = 0.1
+		pop_slave_bonus_workforce_mult = 0.1
 	}
 	triggered_sector_modifier = {
 		potential = {
@@ -1343,7 +1343,7 @@ leader_trait_ancient_knowledge = {
 		}
 		planet_jobs_produces_mult = 0.025
 		pop_amenities_usage_mult = -0.025
-		planet_jobs_slave_produces_mult = 0.05
+		pop_slave_bonus_workforce_mult = 0.05
 	}
 	triggered_modifier = {
 		potential = {

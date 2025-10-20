@@ -22,7 +22,7 @@ leader_trait_arbiter = {
 			trait_is_individual_machine_check = no
 		}
 		planet_jobs_worker_produces_mult = 0.5
-		planet_jobs_slave_produces_mult = 0.5
+		pop_slave_bonus_workforce_mult = 0.5
 		planet_pops_upkeep_mult = -0.35
 		pop_happiness = -0.1
 		logistic_growth_mult = -0.05
@@ -32,7 +32,7 @@ leader_trait_arbiter = {
 			trait_is_individual_machine_check = no
 		}
 		planet_jobs_worker_produces_mult = 0.25
-		planet_jobs_slave_produces_mult = 0.25
+		pop_slave_bonus_workforce_mult = 0.25
 		planet_pops_upkeep_mult = -0.175
 		pop_happiness = -0.05
 		logistic_growth_mult = -0.025
@@ -42,7 +42,7 @@ leader_trait_arbiter = {
 			trait_is_individual_machine_check = yes
 		}
 		planet_jobs_worker_produces_mult = 0.5
-		planet_jobs_slave_produces_mult = 0.5
+		pop_slave_bonus_workforce_mult = 0.5
 		planet_pops_upkeep_mult = -0.35
 		pop_happiness = -0.1
 		planet_pop_assembly_mult = -0.05
@@ -52,7 +52,7 @@ leader_trait_arbiter = {
 			trait_is_individual_machine_check = yes
 		}
 		planet_jobs_worker_produces_mult = 0.25
-		planet_jobs_slave_produces_mult = 0.25
+		pop_slave_bonus_workforce_mult = 0.25
 		planet_pops_upkeep_mult = -0.175
 		pop_happiness = -0.05
 		planet_pop_assembly_mult = -0.025

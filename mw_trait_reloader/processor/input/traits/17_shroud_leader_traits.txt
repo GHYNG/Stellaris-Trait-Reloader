@@ -343,13 +343,14 @@ leader_trait_disciple_of_the_cradle = {
 	planet_modifier = {
 		planet_stability_add = 10
 		planet_crime_add = -10
-		planet_jobs_produces_mult = -0.10
 		planet_jobs_sr_zro_produces_mult = 0.10
 	}
 	triggered_councilor_modifier = {
 		custom_tooltip = leader_trait_disciple_of_the_cradle_envoys_zro
 		show_only_custom_tooltip = no
 		envoy_harm_relations_mult = 0.25
+		envoy_improve_relations_mult = 0.25
+		country_trust_cap_add = 25
 	}
 	initial = no
 	randomized = no
