@@ -6,6 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -17,6 +18,7 @@ import java.util.regex.Pattern;
 // Thank you, DeepSeek
 public class StellarisTraitProcessor implements Config {
 	public static void main(String[] args) {
+		System.out.println("Generator Version 1.2");
 		try {
 			processTraits();
 			System.out.println("特质文件处理完成！");
@@ -55,7 +57,7 @@ public class StellarisTraitProcessor implements Config {
 			traitGroups.computeIfAbsent(baseTraitName, k -> new ArrayList<>()).add(trait);
 		}
 		// 为每个特质组生成文件
-		int traitCount = traits.size();
+		int traitCount = getCountActualTraits(traits);
 		int padding = String.valueOf(traitCount).length();
 		/*
 		 * DeepSeek给的代码会将不同等级的相同特质独立计算出现顺序，因此文件名中的序号会出现跳过部分序号的情况（之前出现多级特质）。
@@ -75,6 +77,14 @@ public class StellarisTraitProcessor implements Config {
 		}
 		Path emptyFile = outputDir.resolve(inputFile.getFileName().toString());
 		Files.writeString(emptyFile, "", StandardCharsets.UTF_8);
+	}
+	/// 因为部分特质是相同的（等级不同），存入同一文件。所以要减去重复的特质数量，以避免文件名中过多的0。
+	private static int getCountActualTraits(List<Trait> traits) {
+		Set<String> names = new HashSet<>();
+		for(Trait trait : traits) {
+			names.add(getNameBaseTrait(trait.name));
+		}
+		return names.size();
 	}
 	private static List<Variable> extractVariablesFile(String content) {
 		content = removeComment(content);
@@ -174,7 +184,6 @@ public class StellarisTraitProcessor implements Config {
 		return sbContent.toString();
 	}
 	private static String getNameTrait(String[] lines, int[] pointerL, boolean[][] areaQuoted, boolean[][] areaCommented) {
-		System.out.println("getNameTrait");
 		boolean foundSignEqual = false; // =
 		for(int indexLine = pointerL[0]; indexLine >= 0; indexLine--) {
 			String line = lines[indexLine];
@@ -195,7 +204,6 @@ public class StellarisTraitProcessor implements Config {
 				}
 				else {
 					if(Character.isLetterOrDigit(c) || c == '_') { // found identifier!
-						System.out.println("found identifier!");
 						String identifier = "";
 						for(int index = indexChar; index >= 0; index--) {
 							boolean isLetterGoodForIdentifier = Character.isLetterOrDigit(cs[index]) || cs[index] == '_';

@@ -1,4 +1,4 @@
-version="Game-4.1.6-Mod-1.1"
+version="Game-4.1.6-Mod-1.2"
 tags={
 	"Utilities"
 }
