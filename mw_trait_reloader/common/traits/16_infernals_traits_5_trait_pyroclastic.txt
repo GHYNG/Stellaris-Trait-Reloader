@@ -1,0 +1,52 @@
+trait_pyroclastic = {
+	host_has_dlc = "Infernals Species Pack"
+	cost = 1
+	category = normal
+	species_possible_add = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	species_class_override = {
+		hidden_trigger = {
+			OR = {
+				can_add_or_remove_phenotype_traits = yes
+				can_add_transgenic_traits = yes
+			}
+		}
+	}
+	opposites = { "trait_rapid_breeders" "trait_incubator" "trait_slow_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" "trait_plantoid_budding" "trait_lithoid_budding" "trait_vat_grown" "trait_tiyanki" "trait_humanoid_existential_iteroparity" "trait_egg_laying" }
+	initial = yes
+	randomized = yes
+	allowed_archetypes = { BIOLOGICAL }
+	tags = { organic infernal positive pop_growth species }
+	species_class = { INF }
+	localized_tags = {
+		SPECIES_TRAIT_INFERNAL
+	}
+	ai_weight = {
+		weight = 0
+	}
+	icon = "gfx/interface/icons/traits/trait_pyroclastic.dds"
+	custom_tooltip = trait_pyroclastic_tooltip
+	slave_cost = {
+		trade = 500
+	}
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			is_planet_class = pc_volcanic
+		}
+		# Adjust trait_pyroclastic_tooltip if this changes
+		logistic_growth_mult = 0.10
+	}
+}

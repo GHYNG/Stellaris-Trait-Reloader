@@ -18,7 +18,7 @@ trait_robot_domestic_protocols = {
 		influential_jobs_bonus_workforce_mult = 0.20
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	custom_tooltip_with_modifiers = TRAIT_DOMESTIC_PROTOCOLS_EFFECT
 }

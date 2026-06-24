@@ -23,7 +23,7 @@ trait_robot_immortality = {
 	randomized = no
 	immortal_leaders = yes
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 	custom_tooltip = trait_robot_immortality_tt
 }

@@ -36,7 +36,10 @@ trait_exd = {
 		}
 		# Energy Upkeep
 		upkeep = {
-			trigger = { is_being_purged = no }
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
 			energy = @living_standard_energy_normal
 		}
 	}

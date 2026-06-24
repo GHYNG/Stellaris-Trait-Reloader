@@ -11,11 +11,16 @@ trait_tankbound = {
 	species_possible_merge_remove = {
 		always = no
 	}
-	opposites = { "trait_weak" "trait_hollow_bones" }
+	opposites = { "trait_weak" "trait_hollow_bones" "trait_photoadaptive" }
 	custom_tooltip_with_modifiers = trait_tankbound_effects
-	portrait_override = { nec9 tox13 psionic_07 }
-	modifier = {
+	portrait_override = { nec9 tox13 psionic_07 inf4 }
+	triggered_pop_group_modifier = {
+		planet_pops_alloys_upkeep_mult = -0.5
+		planet_pops_minerals_upkeep_mult = -0.5
 		planet_pops_food_upkeep_mult = -0.5
+		planet_pops_energy_upkeep_mult = -0.5
+	}
+	modifier = {
 		pop_amenities_usage_mult = 0.5
 		logistic_growth_mult = -0.25
 	}

@@ -1,0 +1,26 @@
+trait_cyborg_infinity_sphere = {
+	cost = 2
+	host_has_dlc = "The Machine Age"
+	species_potential_add = {
+		exists = from
+		from = {
+			has_technology = tech_leviathan_techgenesis
+			has_country_flag = harvested_sphere_parts
+		}
+		can_add_cybernetic_traits = yes
+	}
+	initial = no
+	randomized = no
+	category = cyborg
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { organic positive pop_output research cybernetic }
+	modifier = {
+		researcher_jobs_bonus_workforce_mult = 0.25
+	}
+	slave_cost = {
+		trade = 1500
+	}
+}

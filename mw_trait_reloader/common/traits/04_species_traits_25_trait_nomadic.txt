@@ -20,6 +20,6 @@ trait_nomadic = {
 		pop_resettlement_cost_mult = -0.35
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

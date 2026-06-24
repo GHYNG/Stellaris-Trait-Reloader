@@ -1,3 +1,4 @@
+@overtuned_growth_penalty = -0.015
 trait_crack_miner = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
@@ -36,9 +37,10 @@ trait_crack_miner = {
 	}
 	modifier = {
 		leader_lifespan_add = -10
+		logistic_growth_mult = @overtuned_growth_penalty
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 	assembly_score = {
 		modifier = {

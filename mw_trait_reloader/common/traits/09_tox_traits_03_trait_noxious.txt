@@ -25,6 +25,6 @@ trait_noxious = {
 		pop_housing_usage_mult = 0.1
 	}
 	slave_cost = {
-		energy = -500
+		trade = -500
 	}
 }

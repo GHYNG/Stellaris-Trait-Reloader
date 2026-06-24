@@ -18,11 +18,12 @@ trait_plantoid_radiotrophic = {
 	}
 	opposites = { "trait_plantoid_phototrophic" "trait_voidling" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
-	species_class = { PLANT FUN LITHOID }
+	species_class = { PLANT FUN LITHOID INF }
 	localized_tags = {
 		SPECIES_TRAIT_FUNGOID
 		SPECIES_TRAIT_PLANTOID
 		SPECIES_TRAIT_LITHOID
+		SPECIES_TRAIT_INFERNAL
 	}
 	species_class_override = {
 		hidden_trigger = {
@@ -33,7 +34,7 @@ trait_plantoid_radiotrophic = {
 			}
 		}
 	}
-	tags = { organic positive plantoid fungoid lithoid upkeep species }
+	tags = { organic positive plantoid fungoid lithoid infernal upkeep species }
 	custom_tooltip = TRAIT_PLANTOID_RADIOTROPHIC_EFFECT
 	resources = {
 		category = planet_pops
@@ -45,6 +46,7 @@ trait_plantoid_radiotrophic = {
 				NOT = {
 					planet = { is_planet_class = pc_nuked }
 				}
+				is_sapient = yes
 			}
 			energy = @living_standard_phototrophic_normal
 		}
@@ -76,7 +78,7 @@ trait_plantoid_radiotrophic = {
 		mult = value:lithoid_trait_mult
 	}
 	slave_cost = {
-		energy = 1500
+		trade = 1500
 	}
 	assembly_score = {
 		modifier = {

@@ -1,0 +1,33 @@
+trait_cyborg_mass_produced = {
+	host_has_dlc = "The Machine Age"
+	cost = 1
+	#opposites = {}
+	category = cyborg
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { cybernetic positive pop_growth }
+	initial = yes
+	species_potential_add = {
+		OR = {
+			can_add_cybernetic_traits = yes
+			can_add_unplugged_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_cybernetic_traits = yes
+			can_remove_unplugged_traits = yes
+		}
+	}
+	modifier = {
+		logistic_growth_mult = 0.10
+	}
+	slave_cost = {
+		trade = 1500
+	}
+	allowed_origins = {
+		origin_unplugged
+	}
+}

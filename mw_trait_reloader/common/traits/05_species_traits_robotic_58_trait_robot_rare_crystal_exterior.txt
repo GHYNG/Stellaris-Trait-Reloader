@@ -29,15 +29,19 @@ trait_robot_rare_crystal_exterior = {
 	initial = no
 	randomized = no
 	modifier = {
-		foundry_jobs_bonus_workforce_mult = 0.2
+		pop_environment_tolerance = 0.3
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	resources = {
 		category = planet_pops
 		upkeep = {
-			rare_crystals = 0.02
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
+			rare_crystals = 0.05
 		}
 	}
 	custom_tooltip_with_modifiers = trait_robot_rare_crystal_exterior_tt

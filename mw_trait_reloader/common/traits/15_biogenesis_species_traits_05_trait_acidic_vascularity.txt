@@ -33,6 +33,6 @@ trait_acidic_vascularity = {
 		pop_cat_purge_bonus_workforce_mult = -0.75
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

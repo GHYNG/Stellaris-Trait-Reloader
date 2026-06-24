@@ -1,3 +1,4 @@
+@overtuned_growth_penalty = -0.015
 trait_crafted_smiles = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
@@ -19,7 +20,10 @@ trait_crafted_smiles = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	modifier = { leader_lifespan_add = -10 }
+	modifier = {
+		leader_lifespan_add = -10
+		logistic_growth_mult = @overtuned_growth_penalty
+	}
 	custom_tooltip_with_modifiers = crafted_smiles_tooltip
 	triggered_pop_group_modifier = {
 		potential = {
@@ -40,6 +44,6 @@ trait_crafted_smiles = {
 		}
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }

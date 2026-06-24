@@ -23,6 +23,6 @@ trait_robot_repurposed_hardware = {
 		}
 	}
 	slave_cost = {
-		energy = -250
+		trade = -250
 	}
 }

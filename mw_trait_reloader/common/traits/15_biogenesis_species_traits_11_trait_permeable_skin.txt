@@ -70,6 +70,6 @@ trait_permeable_skin = {
 		pop_environment_tolerance = -0.2
 	}
 	slave_cost = {
-		energy = -1000
+		trade = -1000
 	}
 }

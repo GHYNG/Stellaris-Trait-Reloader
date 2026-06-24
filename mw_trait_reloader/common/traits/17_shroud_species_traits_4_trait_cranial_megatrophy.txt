@@ -35,6 +35,6 @@ trait_cranial_megatrophy = {
 		worker_and_simple_drone_cat_bonus_workforce_mult = -0.2
 	}
 	slave_cost = {
-		energy = 2000
+		trade = 2000
 	}
 }

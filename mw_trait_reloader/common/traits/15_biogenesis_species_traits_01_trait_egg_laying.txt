@@ -17,7 +17,7 @@ trait_egg_laying = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	opposites = { "trait_slow_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" "trait_plantoid_budding" "trait_lithoid_budding" "trait_vat_grown" "trait_tiyanki" "trait_humanoid_existential_iteroparity" }
+	opposites = { "trait_pyroclastic" "trait_slow_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" "trait_plantoid_budding" "trait_lithoid_budding" "trait_vat_grown" "trait_tiyanki" "trait_humanoid_existential_iteroparity" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	species_class = { REP AVI AQUATIC }
 	localized_tags = {
@@ -47,7 +47,13 @@ trait_egg_laying = {
 					planet = {
 						NOT = { has_deficit = food }
 					}
-					from = { NOT = { has_trait = trait_lithoid } }
+					from = { has_trait = trait_organic }
+				}
+				AND = {
+					planet = {
+						NOT = { has_deficit = alloys }
+					}
+					from = { has_trait = trait_infernal }
 				}
 			}
 		}
@@ -67,12 +73,17 @@ trait_egg_laying = {
 					from = {
 						NOT = { has_deficit = food }
 					}
-					has_trait = trait_organic
+				}
+				AND = {
+					from = {
+						NOT = { has_deficit = alloys }
+					}
+					has_trait = trait_infernal
 				}
 			}
 		}
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

@@ -21,6 +21,6 @@ trait_robot_inquisitative_axioms = {
 	}
 	opposites = { trait_robot_suppressed }
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 }

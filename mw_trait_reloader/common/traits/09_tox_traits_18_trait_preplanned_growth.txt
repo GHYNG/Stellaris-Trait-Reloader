@@ -59,9 +59,12 @@ trait_preplanned_growth = {
 		}
 	}
 	modifier = {
+		planet_pops_organics_food_upkeep_mult = 0.15
+		planet_pops_organics_minerals_upkeep_mult = 0.15
+		planet_pops_organics_alloys_upkeep_mult = 0.15
 		leader_lifespan_add = -30
 	}
 	slave_cost = {
-		energy = 2000
+		trade = 2000
 	}
 }

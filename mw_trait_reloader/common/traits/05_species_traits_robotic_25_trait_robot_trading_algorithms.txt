@@ -19,6 +19,6 @@ trait_robot_trading_algorithms = {
 		trader_jobs_bonus_workforce_mult = 0.25
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

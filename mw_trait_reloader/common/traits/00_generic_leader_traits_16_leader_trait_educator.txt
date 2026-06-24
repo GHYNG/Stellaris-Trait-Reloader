@@ -9,7 +9,7 @@ leader_trait_educator = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}

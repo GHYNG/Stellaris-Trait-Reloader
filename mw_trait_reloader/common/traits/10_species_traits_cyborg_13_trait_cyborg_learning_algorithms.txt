@@ -21,20 +21,12 @@ trait_cyborg_learning_algorithms = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
-		species_leader_exp_gain = 0.10
-		negative_leader_traits_species = -1
-		leaders_upkeep_mult = -0.1
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			energy = @cyborg_energy_upkeep
-		}
+		species_leader_exp_gain = 0.25
+		leader_skill_add = 1
 	}
 	slave_cost = {
-		energy = 1500
+		trade = 1500
 	}
 	allowed_origins = {
 		origin_unplugged

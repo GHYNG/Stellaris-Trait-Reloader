@@ -28,7 +28,7 @@ trait_cyborg_high_maintenance = {
 		factor = 0
 	}
 	slave_cost = {
-		energy = -150
+		trade = -150
 	}
 	allowed_origins = {
 		origin_unplugged

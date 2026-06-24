@@ -7,10 +7,11 @@ trait_robot_emotion_emulators = {
 		SPECIES_TRAIT_ADAPTIVE_FRAMES
 	}
 	tags = { machine positive pop_output amenities }
+	opposites = { "trait_interconnected" }
 	modifier = {
 		influential_jobs_bonus_workforce_mult = 0.20
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 }

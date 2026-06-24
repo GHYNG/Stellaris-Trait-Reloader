@@ -17,6 +17,6 @@ trait_robot_deviants = {
 		weight = 0
 	}
 	slave_cost = {
-		energy = -200
+		trade = -200
 	}
 }

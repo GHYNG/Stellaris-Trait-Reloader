@@ -13,6 +13,7 @@ leader_trait_home_guard = {
 		planet_orbital_bombardment_damage = -0.1
 	}
 	leader_potential_add = {
+		trait_is_nomad_check = no
 		has_paragon_dlc = yes
 		has_trait = subclass_commander_councilor
 	}

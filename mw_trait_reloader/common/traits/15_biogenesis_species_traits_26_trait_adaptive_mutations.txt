@@ -26,7 +26,7 @@ trait_adaptive_mutations = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive automod special }
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 	custom_tooltip_with_modifiers = automodding_trait_adaptive_mutations_tt
 }

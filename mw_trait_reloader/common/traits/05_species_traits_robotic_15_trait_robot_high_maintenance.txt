@@ -11,6 +11,6 @@ trait_robot_high_maintenance = {
 		factor = 0
 	}
 	slave_cost = {
-		energy = -150
+		trade = -150
 	}
 }

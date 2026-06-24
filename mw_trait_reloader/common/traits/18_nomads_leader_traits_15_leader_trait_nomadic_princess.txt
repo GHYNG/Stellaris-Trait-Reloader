@@ -1,0 +1,52 @@
+leader_trait_nomadic_princess_1 = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_nomadic_princess_1"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		pop_ethic_pacifist_attraction_mult = 0.15
+		country_trust_cap_add = 25
+	}
+	leader_potential_add = {
+		has_nomads_dlc = yes
+		has_trait = subclass_official_delegate
+	}
+	leader_class = { official }
+	background_icon = "GFX_leader_background_destiny_1"
+	initial = no
+	randomized = no
+}
+leader_trait_nomadic_princess_2 = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_nomadic_princess_2"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	triggered_planet_modifier = {
+		potential = {
+			colony.ship? = { has_ship_flag = nomadic_princess_ship }
+		}
+		show_if_not_potential = yes
+		not_potential_override_text_key = nomadic_princess_not_aboard_ship
+		planet_jobs_produces_mult = 0.05
+		planet_building_build_speed_mult = 0.2
+		custom_tooltip = leader_trait_nomadic_princess_effect
+	}
+	leader_potential_add = {
+		has_nomads_dlc = yes
+		has_trait = subclass_official_delegate
+	}
+	leader_class = { official }
+	background_icon = "GFX_leader_background_destiny_1"
+	initial = no
+	randomized = no
+}

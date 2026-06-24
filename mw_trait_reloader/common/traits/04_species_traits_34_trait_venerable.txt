@@ -15,6 +15,6 @@ trait_venerable = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive leader }
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }

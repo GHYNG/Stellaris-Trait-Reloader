@@ -27,6 +27,6 @@ trait_robot_synthetic_dawn = {
 	randomized = no
 	immortal_leaders = no
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }

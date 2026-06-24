@@ -14,17 +14,10 @@ trait_cyborg_efficient_processors = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
 		pop_bonus_workforce_mult = 0.05
 	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			energy = @cyborg_energy_upkeep
-		}
-	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

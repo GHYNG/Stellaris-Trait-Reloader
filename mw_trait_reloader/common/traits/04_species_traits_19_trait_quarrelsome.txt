@@ -18,6 +18,6 @@ trait_quarrelsome = {
 		}
 	}
 	slave_cost = {
-		energy = -200
+		trade = -200
 	}
 }

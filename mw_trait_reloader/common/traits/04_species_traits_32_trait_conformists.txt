@@ -18,6 +18,6 @@ trait_conformists = {
 		weight = 0
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

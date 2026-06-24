@@ -21,18 +21,11 @@ trait_cyborg_streamlined_protocols = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
 		species_empire_size_mult = -0.10
 	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			energy = @cyborg_energy_upkeep
-		}
-	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	allowed_origins = {
 		origin_unplugged

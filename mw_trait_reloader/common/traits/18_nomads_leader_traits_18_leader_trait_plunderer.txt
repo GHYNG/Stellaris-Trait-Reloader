@@ -1,0 +1,52 @@
+leader_trait_plunderer = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_plunderer
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	forbidden_ethics = { ethic_xenophile ethic_fanatic_xenophile ethic_pacifist ethic_fanatic_pacifist }
+	fleet_modifier = {
+		ship_speed_mult = 0.05
+		ship_evasion_mult = 0.05
+	}
+	# Effect in paragon_2.1005 event.
+	leader_potential_add = {
+		OR = {
+			has_paragon_dlc = no
+			has_trait = subclass_commander_admiral
+			has_trait = subclass_commander_general
+		}
+	}
+	leader_class = { commander }
+	custom_tooltip_with_modifiers = leader_trait_plunderer_effects
+	initial = no
+	randomized = no
+}
+leader_trait_plunderer_2 = {
+	replace_traits = { leader_trait_plunderer }
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_plunderer
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	fleet_modifier = {
+		ship_speed_mult = 0.10
+		ship_evasion_mult = 0.05
+	}
+	# Effect in paragon_2.1005 event.
+	leader_class = { commander }
+	custom_tooltip_with_modifiers = leader_trait_plunderer_2_effects
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/pilot_weight_mult
+	}
+	initial = no
+}

@@ -24,6 +24,6 @@ trait_robot_scavenger_bot = {
 		planet_pop_assembly_mult = 0.5
 	}
 	slave_cost = {
-		energy = 1500
+		trade = 1500
 	}
 }

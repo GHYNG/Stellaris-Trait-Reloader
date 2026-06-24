@@ -24,6 +24,6 @@ trait_robot_enigmatic_fortress = {
 		pop_amenities_usage_mult = -0.5
 	}
 	slave_cost = {
-		energy = 1500
+		trade = 1500
 	}
 }

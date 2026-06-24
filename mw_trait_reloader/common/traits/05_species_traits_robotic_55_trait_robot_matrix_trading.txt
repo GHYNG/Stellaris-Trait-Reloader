@@ -24,16 +24,20 @@ trait_robot_matrix_trading = {
 	initial = no
 	randomized = no
 	modifier = {
-		trader_jobs_bonus_workforce_mult = 0.5
+		trader_jobs_bonus_workforce_mult = 0.2
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	resources = {
 		category = planet_pops
 		upkeep = {
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
 			energy = 1
-			rare_crystals = 0.01
+			rare_crystals = 0.02
 		}
 	}
 	custom_tooltip_with_modifiers = trait_robot_matrix_trading_tt

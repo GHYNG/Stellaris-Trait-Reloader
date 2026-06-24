@@ -1,0 +1,40 @@
+trait_interconnected = {
+	host_has_dlc = "Nomads"
+	cost = 2
+	icon = "gfx/interface/icons/traits/trait_interconnected.dds"
+	initial = yes
+	species_possible_add = {
+		has_trait = trait_pc_ark_preference
+	}
+	allowed_planet_classes = { pc_ark }
+	localized_tags = { SPECIES_TRAIT_NOMAD }
+	randomized = yes
+	allowed_archetypes = { MACHINE ROBOT }
+	tags = { machine positive pop_growth amenities upkeep drawbacks }
+	opposites = { trait_robot_double_jointed trait_robot_emotion_emulators trait_defence_drones }
+	custom_tooltip = trait_interconnected_effects
+	triggered_pop_group_modifier = {
+		potential = { planet? = { is_planet_class = pc_ark } }
+		planet_pops_robotics_upkeep_mult = -0.01
+		mult = planet.value:trait_interconnected_value
+	}
+	triggered_pop_group_modifier = {
+		potential = { planet? = { is_planet_class = pc_ark } }
+		pop_amenities_usage_mult = -0.01
+		mult = planet.value:trait_interconnected_amenities_value
+	}
+	ai_weight = { weight = 0 }
+	slave_cost = { trade = 500 }
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = { uses_district_set = arkship }
+		}
+		modifier = {
+			subtract = 1.5
+			from = {
+				NOT = { uses_district_set = arkship }
+			}
+		}
+	}
+}

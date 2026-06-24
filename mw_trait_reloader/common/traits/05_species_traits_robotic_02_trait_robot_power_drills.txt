@@ -10,7 +10,7 @@ trait_robot_power_drills = {
 		miner_jobs_bonus_workforce_mult = 0.15
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	assembly_score = {
 		modifier = {

@@ -54,6 +54,14 @@ leader_trait_expertise_archaeostudies = {
 						is_site_completed = yes
 					}
 				}
+				any_owned_nonprimary_starbase = {
+					is_waystation_starbase = yes
+					solar_system? = {
+						any_archaeological_site = {
+							is_site_completed = yes
+						}
+					}
+				}
 				any_owned_planet = {
 					has_active_building = building_archaeostudies_faculty
 				}

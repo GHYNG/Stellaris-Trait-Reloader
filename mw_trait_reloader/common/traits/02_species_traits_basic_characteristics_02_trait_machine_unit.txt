@@ -25,7 +25,10 @@ trait_machine_unit = {
 		category = planet_pops
 		# Energy Upkeep
 		upkeep = {
-			trigger = { is_being_purged = no }
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
 			energy = @living_standard_energy_normal
 		}
 	}
@@ -37,6 +40,15 @@ trait_machine_unit = {
 			}
 		}
 		pc_nanotech_habitability = 1
+	}
+	triggered_planet_growth_habitability_modifier = {
+		potential = {
+			exists = planet
+			planet = {
+				is_planet_class = pc_volcanic
+			}
+		}
+		habitability_floor_add = -0.25
 	}
 	leader_age_min = 5
 	leader_age_max = 10

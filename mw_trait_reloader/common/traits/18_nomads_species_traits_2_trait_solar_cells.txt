@@ -1,0 +1,45 @@
+trait_solar_cells = {
+	host_has_dlc = "Nomads"
+	cost = 2
+	icon = "gfx/interface/icons/traits/trait_solar_cells.dds"
+	initial = yes
+	localized_tags = { SPECIES_TRAIT_NOMAD }
+	randomized = yes
+	allowed_archetypes = { MACHINE ROBOT }
+	tags = { machine positive pop_output drawbacks research leader special }
+	opposites = { trait_robot_delicate_frames }
+	custom_tooltip_with_modifiers = trait_photoadaptive_effects
+	modifier = {
+		leader_lifespan_add = 10
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			colony.solar_system? = { NOT = { has_star_flag = shielded_star } }
+		}
+		worker_and_simple_drone_cat_bonus_workforce_mult = 1
+		mult = colony.solar_system.value:trait_photoadaptive_value
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			colony.solar_system? = {
+				any_system_planet = { is_planet_class = pc_black_hole }
+			}
+		}
+		physicist_jobs_bonus_workforce_mult = 0.15
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			colony.solar_system? = {
+				any_system_planet = {
+					OR = {
+						is_planet_class = pc_m_star
+						is_planet_class = pc_m_giant_star
+					}
+				}
+			}
+		}
+		engineer_jobs_bonus_workforce_mult = 0.15
+	}
+	ai_weight = { weight = 0 }
+	slave_cost = { trade = 1000 }
+}

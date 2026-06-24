@@ -7,7 +7,7 @@ trait_robot_efficient_processors = {
 		pop_bonus_workforce_mult = 0.05
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 	assembly_score = {
 		modifier = {

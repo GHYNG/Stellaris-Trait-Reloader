@@ -19,7 +19,7 @@ trait_robot_logic_engines = {
 		researcher_jobs_bonus_workforce_mult = 0.10
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	assembly_score = {
 		modifier = {

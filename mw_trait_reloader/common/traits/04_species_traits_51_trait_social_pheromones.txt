@@ -21,12 +21,12 @@ trait_social_pheromones = { #red
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive housing amenities pop_growth interesting special }
 	modifier = {
-		pop_housing_usage_mult = -0.15
-		pop_amenities_usage_mult = -0.10
+		pop_housing_usage_mult = -0.05
+		pop_amenities_usage_mult = -0.05
 		logistic_growth_mult = 0.05
 	}
 	slave_cost = {
-		energy = 250
+		trade = 250
 	}
 	ai_weight = {
 		weight = 0

@@ -22,9 +22,8 @@ trait_cyborg_neural_limiters = {
 	randomized = no
 	category = cyborg
 	modifier = {
-		species_leader_exp_gain = -0.10
-		negative_leader_traits_species = 1
-		leaders_upkeep_mult = 0.1
+		species_leader_exp_gain = -0.20
+		councilor_skill_add = -1
 	}
 	ai_weight = {
 		weight = 1
@@ -34,7 +33,7 @@ trait_cyborg_neural_limiters = {
 		}
 	}
 	slave_cost = {
-		energy = -500
+		trade = -500
 	}
 	allowed_origins = {
 		origin_unplugged

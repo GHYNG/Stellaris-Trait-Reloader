@@ -10,13 +10,13 @@ trait_adaptive = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	opposites = { "trait_nonadaptive" "trait_extremely_adaptive" "trait_robust" "trait_adaptive_lithoid" "trait_shelled" "trait_permeable_skin" }
+	opposites = { "trait_nonadaptive" "trait_extremely_adaptive" "trait_robust" "trait_adaptive_lithoid" "trait_shelled" "trait_permeable_skin" "trait_terraphobic" }
 	allowed_archetypes = { BIOLOGICAL }
 	tags = { organic positive habitability }
 	modifier = {
 		pop_environment_tolerance = 0.10
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

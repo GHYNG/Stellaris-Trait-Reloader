@@ -14,7 +14,7 @@ trait_talented = {
 	tags = { organic positive leader }
 	opposites = { "trait_nerve_stapled" "trait_syncretic_proles" }
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 	modifier = {
 		negative_leader_traits_species = -1

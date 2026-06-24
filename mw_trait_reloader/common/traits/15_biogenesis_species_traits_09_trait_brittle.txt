@@ -23,7 +23,7 @@ trait_brittle = {
 		pop_amenities_usage_add = 0.5
 	}
 	slave_cost = {
-		energy = -1000
+		trade = -1000
 	}
 	assembly_score = {
 		modifier = {

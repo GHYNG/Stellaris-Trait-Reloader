@@ -1,0 +1,29 @@
+@machine_primary = 0.75
+@machine_secondary = 0.50
+trait_volcanic_planet_preference = {
+	host_has_dlc = "Infernals Species Pack"
+	icon = "gfx/interface/icons/traits/trait_pc_volcanic_preference.dds"
+	short_name = "trait_pc_volcanic_preference_short"
+	allowed_archetypes = { MACHINE ROBOT }
+	sorting_priority = 30
+	bound_to_planet_classes = {
+		pc_volcanic
+	}
+	initial = no
+	randomized = no
+	species_possible_merge_add = {
+		always = yes
+	}
+	modifier = {
+		pc_volcanic_habitability = @machine_primary
+		pc_desert_habitability = @machine_secondary
+		pc_arid_habitability = @machine_secondary
+		pc_savannah_habitability = @machine_secondary
+		pc_ocean_habitability = @machine_secondary
+		pc_continental_habitability = @machine_secondary
+		pc_tropical_habitability = @machine_secondary
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

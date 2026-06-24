@@ -15,6 +15,7 @@ trait_ruler_fortifier = {
 		shipclass_military_station_hull_mult = 0.05
 	}
 	leader_potential_add = {
+		FROM = { is_nomadic = no }
 		OR = {
 			has_paragon_dlc = no
 			has_trait = subclass_commander_councilor
@@ -42,6 +43,9 @@ trait_ruler_fortifier_2 = {
 		ship_military_station_small_cost_mult = -0.10
 		shipclass_starbase_hull_mult = 0.10
 		shipclass_military_station_hull_mult = 0.10
+	}
+	leader_potential_add = {
+		FROM = { is_nomadic = no }
 	}
 	leader_class = { commander }
 }

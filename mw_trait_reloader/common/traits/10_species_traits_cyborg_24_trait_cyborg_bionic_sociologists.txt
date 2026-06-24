@@ -23,6 +23,6 @@ trait_cyborg_bionic_sociologists = {
 		biologist_jobs_bonus_workforce_mult = 0.15
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 }

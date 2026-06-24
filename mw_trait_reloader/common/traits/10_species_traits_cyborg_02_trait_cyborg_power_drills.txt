@@ -1,23 +1,26 @@
 trait_cyborg_power_drills = {
-	cost = {
-		base = 1
-		modifier = {
-			mult = 0
-			owner = { has_country_flag = augmentation_bazaars_power_drills }
-		}
-	}
+	cost = 1
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
 		SPECIES_TRAIT_UNIVERSAL_AUGMENTATIONS
 	}
 	tags = { organic positive pop_output mineral cybernetic }
-	initial = no
+	initial = yes
 	species_potential_add = {
-		can_add_cybernetic_traits = yes
+		OR = {
+			can_add_aug_bazaar_traits = yes
+			can_add_cybernetic_traits = yes
+		}
 	}
 	species_possible_remove = {
-		can_remove_cybernetic_traits = yes
+		OR = {
+			can_add_aug_bazaar_traits = yes
+			can_add_cybernetic_traits = yes
+		}
+	}
+	allowed_civics = {
+		civic_augmentation_bazaars
 	}
 	randomized = no
 	category = cyborg
@@ -25,7 +28,7 @@ trait_cyborg_power_drills = {
 		miner_jobs_bonus_workforce_mult = 0.1
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	assembly_score = {
 		modifier = {

@@ -35,6 +35,7 @@ leader_trait_space_miner = {
 	leader_potential_add = {
 		has_governor_subclass = yes
 		has_paragon_dlc = yes
+		trait_is_nomad_check = no
 	}
 	leader_class = { scientist official commander }
 	selectable_weight = {

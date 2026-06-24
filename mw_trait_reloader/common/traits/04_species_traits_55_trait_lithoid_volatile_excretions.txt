@@ -42,6 +42,6 @@ trait_lithoid_volatile_excretions = {
 		}
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }

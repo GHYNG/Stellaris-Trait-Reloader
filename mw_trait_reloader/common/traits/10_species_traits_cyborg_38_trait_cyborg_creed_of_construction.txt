@@ -1,0 +1,28 @@
+trait_cyborg_creed_of_construction = {
+	cost = 0
+	initial = no
+	randomized = no
+	category = cyborg
+	advanced_trait = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	infertile = no
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive pop_output alloys consumer_goods unity cybernetic special }
+	modifier = {
+		foundry_jobs_bonus_workforce_mult = 0.1
+		artisan_jobs_bonus_workforce_mult = 0.1
+		bureaucrat_jobs_bonus_workforce_mult = 0.1
+	}
+	icon = "gfx/interface/icons/traits/trait_cyborg_creed_of_construction.dds"
+	slave_cost = {
+		trade = 500
+	}
+}

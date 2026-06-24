@@ -88,7 +88,7 @@ trait_malleable_genes = {
 				has_country_flag = traditionalist_leading
 			}
 		}
-		pop_housing_usage_add = -0.5
+		pop_housing_usage_add = -0.25
 	}
 	triggered_species_modifier = {
 		potential = {
@@ -202,6 +202,6 @@ trait_malleable_genes = {
 	}
 	custom_tooltip = trait_malleable_genes_cant_modify
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

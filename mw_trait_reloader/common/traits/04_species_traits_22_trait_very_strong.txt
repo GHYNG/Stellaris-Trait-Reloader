@@ -16,9 +16,10 @@ trait_very_strong = {
 	modifier = {
 		army_damage_mult = 0.40
 		worker_and_simple_drone_cat_bonus_workforce_mult = 0.05
+		soldier_jobs_bonus_workforce_mult = 0.15
 	}
 	slave_cost = {
-		energy = 2000
+		trade = 2000
 	}
 	assembly_score = {
 		modifier = {

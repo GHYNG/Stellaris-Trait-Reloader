@@ -1,0 +1,34 @@
+trait_cyborg_propaganda_machines = {
+	host_has_dlc = "The Machine Age"
+	cost = 1
+	category = cyborg
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+		SPECIES_TRAIT_UNIVERSAL_AUGMENTATIONS
+	}
+	tags = { cybernetic positive pop_output unity }
+	initial = yes
+	species_potential_add = {
+		OR = {
+			can_add_aug_bazaar_traits = yes
+			can_add_cybernetic_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_add_aug_bazaar_traits = yes
+			can_add_cybernetic_traits = yes
+		}
+	}
+	allowed_civics = {
+		civic_augmentation_bazaars
+	}
+	#opposites = { "trait_robot_quarrelsome" }
+	modifier = {
+		bureaucrat_jobs_bonus_workforce_mult = 0.10
+	}
+	slave_cost = {
+		trade = 750
+	}
+}

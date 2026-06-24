@@ -17,15 +17,19 @@ trait_robot_ceaseless_symmetric_annihilation_engine = {
 	initial = no
 	randomized = no
 	modifier = {
-		pop_bonus_workforce_mult = 0.40
+		pop_bonus_workforce_mult = 0.20
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	resources = {
 		category = planet_pops
 		upkeep = {
-			sr_dark_matter = 0.02
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
+			sr_dark_matter = 0.03
 		}
 	}
 	custom_tooltip_with_modifiers = trait_robot_ceaseless_symmetric_annihilation_engine_tt

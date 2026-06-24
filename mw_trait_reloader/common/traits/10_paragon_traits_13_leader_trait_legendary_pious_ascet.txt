@@ -15,7 +15,7 @@ leader_trait_legendary_pious_ascet = { #Origin trait - spiritualist
 	councilor_modifier = {
 		pop_amenities_usage_mult = -0.1
 		pop_housing_usage_mult = -0.1
-		planet_bureaucrats_society_research_produces_add = 0.5
+		planet_bureaucrats_society_research_produces_add = 0.25
 	}
 	leader_class = { official commander scientist }
 	initial = no
@@ -35,7 +35,7 @@ leader_trait_legendary_pious_ascet_2 = { #Origin trait - spiritualist
 	councilor_modifier = {
 		pop_amenities_usage_mult = -0.15
 		pop_housing_usage_mult = -0.15
-		planet_bureaucrats_society_research_produces_add = 1
+		planet_bureaucrats_society_research_produces_add = 0.5
 	}
 	leader_class = { official commander scientist }
 	initial = no
@@ -54,7 +54,7 @@ leader_trait_legendary_pious_ascet_3 = { #Origin trait - spiritualist
 	councilor_modifier = {
 		pop_amenities_usage_mult = -0.20
 		pop_housing_usage_mult = -0.20
-		planet_bureaucrats_society_research_produces_add = 2
+		planet_bureaucrats_society_research_produces_add = 1
 	}
 	leader_class = { official commander scientist }
 	initial = no

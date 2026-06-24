@@ -24,6 +24,7 @@ leader_trait_survivalist = {
 		ship_friendly_territory_shield_add = 300
 	}
 	leader_potential_add = {
+		trait_is_nomad_check = no
 		has_paragon_dlc = yes
 		has_trait = subclass_commander_admiral
 	}

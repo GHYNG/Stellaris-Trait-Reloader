@@ -26,12 +26,12 @@ trait_bioadaptability = { #green
 		logistic_growth_mult = 0.05
 	}
 	slave_cost = {
-		energy = 25
+		trade = 25
 	}
 	ai_weight = {
 		weight = 0
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

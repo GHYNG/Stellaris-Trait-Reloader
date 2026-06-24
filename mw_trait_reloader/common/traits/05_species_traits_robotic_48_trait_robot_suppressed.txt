@@ -22,7 +22,7 @@ trait_robot_suppressed = {
 		civilian_and_maintenance_drone_cat_bonus_workforce_mult = -0.85
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	custom_tooltip_with_modifiers = trait_robot_suppressed_tt
 }

@@ -80,6 +80,6 @@ trait_plantoid_bloomed = {
 		logistic_growth_mult = 0.15
 	}
 	slave_cost = {
-		energy = 2000
+		trade = 2000
 	}
 }

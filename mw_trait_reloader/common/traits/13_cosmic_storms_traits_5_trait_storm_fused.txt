@@ -15,7 +15,7 @@ trait_storm_fused = {
 		potential = {
 			exists = planet
 			planet = {
-				solar_system = {
+				solar_system? = {
 					is_inside_storm = yes
 				}
 			}

@@ -11,6 +11,6 @@ trait_robot_uncanny = {
 		factor = 0
 	}
 	slave_cost = {
-		energy = -150
+		trade = -150
 	}
 }

@@ -10,6 +10,9 @@ leader_trait_resilient = {
 	leader_potential_add = {
 		trait_is_crisis_faction_check = no
 		is_immortal = no
+		from? = {
+			is_toxic_baths_empire = no
+		}
 	}
 	triggered_self_modifier = {
 		potential = {
@@ -24,9 +27,5 @@ leader_trait_resilient = {
 		leaders_upkeep_mult = -0.1
 	}
 	leader_class = { commander scientist official }
-	opposites = {
-		leader_trait_substance_abuser
-		leader_trait_substance_abuser_2
-	}
 	selectable_weight = @shared_trait_weight
 }

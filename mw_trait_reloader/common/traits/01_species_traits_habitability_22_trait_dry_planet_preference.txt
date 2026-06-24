@@ -1,0 +1,34 @@
+@machine_primary = 0.75
+@machine_secondary = 0.50
+@machine_tertiary = 0.25
+trait_dry_planet_preference = {
+	icon = "gfx/interface/icons/traits/trait_dry_planet_preference.dds"
+	short_name = "trait_dry_planet_preference_short"
+	allowed_archetypes = { MACHINE ROBOT }
+	sorting_priority = 30
+	bound_to_planet_classes = {
+		pc_desert
+		pc_arid
+		pc_savannah
+	}
+	initial = no
+	randomized = no
+	species_possible_merge_add = {
+		always = yes
+	}
+	modifier = {
+		pc_desert_habitability = @machine_primary
+		pc_arid_habitability = @machine_primary
+		pc_savannah_habitability = @machine_primary
+		pc_ocean_habitability = @machine_secondary
+		pc_continental_habitability = @machine_secondary
+		pc_tropical_habitability = @machine_secondary
+		pc_arctic_habitability = @machine_secondary
+		pc_alpine_habitability = @machine_secondary
+		pc_tundra_habitability = @machine_secondary
+		pc_volcanic_habitability = @machine_tertiary
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

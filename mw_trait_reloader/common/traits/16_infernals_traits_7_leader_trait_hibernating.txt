@@ -1,0 +1,32 @@
+leader_trait_hibernating = {
+	leader_trait_type = negative
+	inline_script = {
+		script = trait/icon_negative
+		ICON = "GFX_leader_trait_volatile"
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_class = { scientist }
+	triggered_modifier = {
+		potential = {
+			is_ruler = no
+			leader_class = scientist
+		}
+		ship_anomaly_research_speed_mult = -0.10
+		ship_archaeological_site_excavation_speed_mult = -0.10
+	}
+	randomized = no
+	initial = no
+	triggered_modifier = {
+		potential = {
+			has_astral_planes_dlc = yes
+			is_ruler = no
+			leader_class = scientist
+		}
+		ship_astral_rift_speed_mult = -0.10
+	}
+	self_modifier = {
+		leader_lifespan_add = 15
+		leaders_upkeep_mult = -0.5
+	}
+}

@@ -4,7 +4,7 @@ trait_robot_delicate_frames = {
 	category = robotic
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine synthetic negative research army pop_output }
-	opposites = { "trait_robot_integrated_weaponry" }
+	opposites = { "trait_robot_integrated_weaponry" "trait_solar_cells" }
 	# Droid, Synth, Machine Intelligence or Individualist Machine
 	species_potential_add = {
 		OR = {
@@ -18,8 +18,9 @@ trait_robot_delicate_frames = {
 	modifier = {
 		army_damage_mult = -0.5
 		worker_and_simple_drone_cat_bonus_workforce_mult = -0.05
+		soldier_jobs_bonus_workforce_mult = -0.15
 	}
 	slave_cost = {
-		energy = -250
+		trade = -250
 	}
 }

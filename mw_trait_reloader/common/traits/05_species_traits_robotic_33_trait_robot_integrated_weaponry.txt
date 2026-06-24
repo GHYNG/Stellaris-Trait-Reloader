@@ -17,9 +17,10 @@ trait_robot_integrated_weaponry = {
 	randomized = no
 	modifier = {
 		army_damage_mult = 1.0
-		enforcer_jobs_bonus_workforce_mult = 0.20
+		enforcer_jobs_bonus_workforce_mult = 0.15
+		soldier_jobs_bonus_workforce_mult = 0.15
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }

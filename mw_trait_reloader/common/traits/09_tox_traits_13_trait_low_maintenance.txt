@@ -1,3 +1,4 @@
+@overtuned_growth_penalty = -0.015
 trait_low_maintenance = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
@@ -39,8 +40,9 @@ trait_low_maintenance = {
 	}
 	modifier = {
 		leader_lifespan_add = -10
+		logistic_growth_mult = @overtuned_growth_penalty
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }

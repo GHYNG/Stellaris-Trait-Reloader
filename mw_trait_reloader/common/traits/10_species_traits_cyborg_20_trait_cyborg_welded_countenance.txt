@@ -20,6 +20,6 @@ trait_cyborg_welded_countenance = {
 		influential_jobs_bonus_workforce_mult = -0.20
 	}
 	slave_cost = {
-		energy = -500
+		trade = -500
 	}
 }

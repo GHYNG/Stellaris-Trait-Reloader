@@ -20,21 +20,15 @@ trait_cyborg_integrated_weaponry = {
 			can_remove_unplugged_traits = yes
 		}
 	}
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	randomized = no
 	category = cyborg
 	modifier = {
 		army_damage_mult = 1.0
-		enforcer_jobs_bonus_workforce_mult = 0.20
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			energy = @cyborg_energy_upkeep
-		}
+		enforcer_jobs_bonus_workforce_mult = 0.15
+		soldier_jobs_bonus_workforce_mult = 0.15
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 	allowed_origins = {
 		origin_unplugged

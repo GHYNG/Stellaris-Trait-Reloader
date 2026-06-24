@@ -23,7 +23,7 @@ trait_egg_laying = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	opposites = { "trait_slow_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" "trait_plantoid_budding" "trait_lithoid_budding" "trait_vat_grown" "trait_tiyanki" "trait_humanoid_existential_iteroparity" }
+	opposites = { "trait_pyroclastic" "trait_slow_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" "trait_plantoid_budding" "trait_lithoid_budding" "trait_vat_grown" "trait_tiyanki" "trait_humanoid_existential_iteroparity" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	species_class = { REP AVI AQUATIC }
 	localized_tags = {
@@ -53,7 +53,13 @@ trait_egg_laying = {
 					planet = {
 						NOT = { has_deficit = food }
 					}
-					from = { NOT = { has_trait = trait_lithoid } }
+					from = { has_trait = trait_organic }
+				}
+				AND = {
+					planet = {
+						NOT = { has_deficit = alloys }
+					}
+					from = { has_trait = trait_infernal }
 				}
 			}
 		}
@@ -74,14 +80,19 @@ trait_egg_laying = {
 					from = {
 						NOT = { has_deficit = food }
 					}
-					has_trait = trait_organic
+				}
+				AND = {
+					from = {
+						NOT = { has_deficit = alloys }
+					}
+					has_trait = trait_infernal
 				}
 			}
 		}
 	}
 
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }
 
@@ -133,7 +144,7 @@ trait_seasonal_dormancy = {
 	}
 
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 
 	assembly_score = {
@@ -154,7 +165,7 @@ trait_hollow_bones = {
 			can_add_or_remove_phenotype_traits = yes
 		}
 	}
-	opposites = { "trait_strong" "trait_very_strong" "trait_weak" "trait_tankbound" }
+	opposites = { "trait_strong" "trait_very_strong" "trait_weak" "trait_tankbound" "trait_photoadaptive" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	species_class = { TOX AVI }
 	localized_tags = {
@@ -173,11 +184,12 @@ trait_hollow_bones = {
 			exists = planet
 		}
 		worker_and_simple_drone_cat_bonus_workforce_mult = -0.01	# -0.1%
+		soldier_jobs_bonus_workforce_mult = -0.01
 		mult = value:hollow_bones_mult								# Multiplied by 2/3 × planet size
 	}
 
 	slave_cost = {
-		energy = -400
+		trade = -400
 	}
 
 	assembly_score = {
@@ -217,7 +229,7 @@ trait_rooted = {
 	}
 
 	slave_cost = {
-		energy = -400
+		trade = -400
 	}
 	assembly_score = {
 		modifier = {
@@ -265,7 +277,7 @@ trait_acidic_vascularity = {
 		pop_cat_purge_bonus_workforce_mult = -0.75
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }
 
@@ -302,7 +314,7 @@ trait_shelled = {
 	portrait_override = { rep14 pro2 }
 	tags = { organic positive habitability housing necroid molluscoid species }
 	modifier = {
-		pop_housing_usage_mult = -0.75
+		pop_housing_usage_mult = -0.3
 		pop_environment_tolerance = 0.10
 	}
 	assembly_score = {
@@ -313,7 +325,7 @@ trait_shelled = {
 		}
 	}
 	slave_cost = {
-		energy = 1500
+		trade = 1500
 	}
 }
 
@@ -367,7 +379,7 @@ trait_camouflage = {
 	}
 
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }
 
@@ -427,7 +439,7 @@ trait_chromalogs = {
 	}
 
 	slave_cost = {
-		energy = 1500
+		trade = 1500
 	}
 }
 
@@ -456,7 +468,7 @@ trait_brittle = {
 		pop_amenities_usage_add = 0.5
 	}
 	slave_cost = {
-		energy = -1000
+		trade = -1000
 	}
 	assembly_score = {
 		modifier = {
@@ -485,7 +497,7 @@ trait_familial = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	portrait_override = { fun16 fun4 lith_human pla17 aqu5 }
+	portrait_override = { fun16 fun4 lith_human lith_human_inf pla17 aqu5 }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	species_class = { HUM MAM AVI }
 	localized_tags = {
@@ -506,7 +518,7 @@ trait_familial = {
 		mult = planet.value:counter_familial
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 
 	assembly_score = {
@@ -586,7 +598,7 @@ trait_permeable_skin = {
 		pop_environment_tolerance = -0.2
 	}
 	slave_cost = {
-		energy = -1000
+		trade = -1000
 	}
 }
 
@@ -608,8 +620,8 @@ trait_genetic_memory = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	portrait_override = { fun16 fun4 lith_human pla17 aqu5 }
-	opposites = { "trait_nonadaptive" }
+	portrait_override = { fun16 fun4 lith_human lith_human_inf pla17 aqu5 }
+	opposites = { "trait_nonadaptive" "trait_pc_ark_preference" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	species_class = { HUM MAM NECROID }
 	localized_tags = {
@@ -635,7 +647,7 @@ trait_genetic_memory = {
 		mult = value:genetic_memory_mult
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }
 
@@ -648,7 +660,7 @@ trait_nascent_stage = {
 			can_add_or_remove_phenotype_traits = yes
 		}
 	}
-	portrait_override = { fun16 fun4 lith_human pla17 aqu5 mindwarden_01 }
+	portrait_override = { fun16 fun4 lith_human lith_human_inf pla17 aqu5 mindwarden_01 }
 	opposites = { "trait_slow_breeders" "trait_humanoid_psychological_infertility" "trait_unplugged_cybernetic_positives_3" "trait_unplugged_cybernetic_positives_2" "trait_unplugged_cybernetic_positives_1" "trait_pathogenic_genes" "trait_wilderness" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	species_class = { HUM MAM REP ART }
@@ -666,7 +678,7 @@ trait_nascent_stage = {
 	tags = { organic negative pop_growth humanoid mammalian reptilian arthropoid species }
 	custom_tooltip = trait_nascent_stage_effect
 	slave_cost = {
-		energy = -1000
+		trade = -1000
 	}
 }
 
@@ -707,7 +719,7 @@ trait_flight = {
 		army_damage_taken_mult = -0.30
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }
 
@@ -746,10 +758,10 @@ trait_spatial_mastery = {
 	modifier = {
 		leader_skill_add = 1
 		army_damage_taken_mult = -0.50
-		pop_housing_usage_mult = -0.15
+		pop_housing_usage_mult = -0.10
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }
 
@@ -807,7 +819,7 @@ trait_spare_organs = {
 	}
 
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }
 
@@ -913,7 +925,7 @@ trait_malleable_genes = {
 				has_country_flag = traditionalist_leading
 			}
 		}
-		pop_housing_usage_add = -0.5
+		pop_housing_usage_add = -0.25
 	}
 
 	triggered_species_modifier = {
@@ -1042,7 +1054,7 @@ trait_malleable_genes = {
 
 	custom_tooltip = trait_malleable_genes_cant_modify
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }
 
@@ -1080,7 +1092,7 @@ trait_malleable_minerals = {
 				has_active_tradition = tr_mutation_planned_polymorphism_evo_pred
 			}
 		}
-		miner_jobs_bonus_workforce_mult = 0.15
+		miner_jobs_bonus_workforce_mult = 0.10
 	}
 }
 
@@ -1118,7 +1130,7 @@ trait_malleable_energy = {
 				has_active_tradition = tr_mutation_planned_polymorphism_evo_pred
 			}
 		}
-		technician_jobs_bonus_workforce_mult = 0.15
+		technician_jobs_bonus_workforce_mult = 0.10
 	}
 }
 
@@ -1156,7 +1168,7 @@ trait_malleable_food = {
 				has_active_tradition = tr_mutation_planned_polymorphism_evo_pred
 			}
 		}
-		farmer_jobs_bonus_workforce_mult = 0.15
+		farmer_jobs_bonus_workforce_mult = 0.10
 	}
 }
 
@@ -1194,7 +1206,7 @@ trait_malleable_research = {
 				has_active_tradition = tr_mutation_planned_polymorphism_evo_pred
 			}
 		}
-		researcher_jobs_bonus_workforce_mult = 0.15
+		researcher_jobs_bonus_workforce_mult = 0.10
 	}
 }
 
@@ -1232,7 +1244,7 @@ trait_malleable_unity = {
 				has_active_tradition = tr_mutation_planned_polymorphism_evo_pred
 			}
 		}
-		bureaucrat_jobs_bonus_workforce_mult = 0.15
+		bureaucrat_jobs_bonus_workforce_mult = 0.10
 	}
 }
 
@@ -1271,8 +1283,8 @@ trait_malleable_forge = {
 				has_active_tradition = tr_mutation_planned_polymorphism_evo_pred
 			}
 		}
-		foundry_jobs_bonus_workforce_mult = 0.15
-		artisan_jobs_bonus_workforce_mult = 0.15
+		foundry_jobs_bonus_workforce_mult = 0.10
+		artisan_jobs_bonus_workforce_mult = 0.10
 	}
 }
 
@@ -1310,7 +1322,7 @@ trait_malleable_trade = {
 				has_active_tradition = tr_mutation_planned_polymorphism_evo_pred
 			}
 		}
-		trader_jobs_bonus_workforce_mult = 0.15
+		trader_jobs_bonus_workforce_mult = 0.10
 	}
 }
 
@@ -1348,7 +1360,7 @@ trait_malleable_ameneties = {
 				has_active_tradition = tr_mutation_planned_polymorphism_evo_pred
 			}
 		}
-		influential_jobs_bonus_workforce_mult = 0.15
+		influential_jobs_bonus_workforce_mult = 0.10
 	}
 }
 
@@ -1385,7 +1397,7 @@ trait_adaptive_mutations = {
 	tags = { organic positive automod special }
 
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 	custom_tooltip_with_modifiers = automodding_trait_adaptive_mutations_tt
 }

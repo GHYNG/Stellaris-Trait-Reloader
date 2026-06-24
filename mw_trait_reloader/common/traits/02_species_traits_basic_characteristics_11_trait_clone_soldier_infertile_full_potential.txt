@@ -30,11 +30,14 @@ trait_clone_soldier_infertile_full_potential = {
 		pop_environment_tolerance = 0.20
 		pop_cat_ruler_bonus_workforce_mult = 0.4
 		specialist_and_complex_drone_cat_bonus_workforce_mult = 0.25
+		planet_pops_organics_food_upkeep_mult = 0.30
+		planet_pops_organics_minerals_upkeep_mult = 0.30
+		planet_pops_organics_alloys_upkeep_mult = 0.30
 		# Leader modifiers
 		army_damage_mult = 0.75
 		army_health = 0.25
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

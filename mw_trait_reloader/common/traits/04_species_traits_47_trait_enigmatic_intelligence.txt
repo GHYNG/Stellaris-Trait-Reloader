@@ -23,7 +23,7 @@ trait_enigmatic_intelligence = {
 		species_leader_exp_gain = 0.10
 	}
 	slave_cost = {
-		energy = 1250
+		trade = 1250
 	}
 	assembly_score = {
 		modifier = {

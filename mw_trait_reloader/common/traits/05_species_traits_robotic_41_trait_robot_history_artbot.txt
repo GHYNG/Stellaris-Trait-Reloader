@@ -15,6 +15,6 @@ trait_robot_history_artbot = {
 		influential_jobs_bonus_workforce_mult = 0.05
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 }

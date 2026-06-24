@@ -13,8 +13,6 @@ trait_blindness = {
 	}
 	triggered_species_modifier = {
 		pop_happiness = 0.1
-	}
-	triggered_pop_group_modifier = {
 		pop_bonus_workforce_mult = -0.5
 	}
 	modifier = {

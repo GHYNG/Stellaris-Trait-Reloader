@@ -1,5 +1,5 @@
 leader_trait_govenor_caretaker = {
-	cost = 0
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = official

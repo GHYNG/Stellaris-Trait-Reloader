@@ -25,7 +25,7 @@ trait_auto_mod_biological = {
 		always = yes
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 	assembly_score = {
 		base = 2

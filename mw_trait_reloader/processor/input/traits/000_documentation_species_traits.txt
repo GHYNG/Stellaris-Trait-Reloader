@@ -13,6 +13,12 @@
 # randomisation functions used mainly during galaxy generation. And a few more places). So you should always set that to a sensible number.
 
 # Some parameters for species traits
+#	allowed_origins = { }				OR - This trait is allowed in species creation if any of the listed origins is selected. If not specified, any origins are allowed.
+#	forbidden_origins = { }				OR - This trait is blocked in species creation if listed origins are selected.
+#	allowed_civics = { }				OR - This trait is allowed in species creation if any of the listed civics is selected. If not specified, any civics are allowed.
+#	forbidden_civics = { }				OR - This trait is blocked in species creation if listed civics are selected.
+#	allowed_ethics = { }				OR - This trait is allowed in species creation if any of the listed ethics are selected. If not specified, any ethics are allowed.
+#	forbidden_ethics = { }				OR - This trait is blocked in species creation if listed ethics are selected.
 #
 # category = <category type>: Sets the category the trait is a part of. Current categories { normal(default), cyborg, robotic, psionic, advanced_genetic, overtuned, malleable, mutation }
 #
@@ -113,3 +119,28 @@
 # Won't show in auto-generated trait tooltips, use custom_tooltip/custom_tooltip_with_modifiers.
 
 # localized_tags = { category_loc_key_1 category_loc_key_2 ... } # Appends a list of corresponding categories to the trait tooltip
+
+# forced_integration = {
+#     integration_rate = <value>      # Required. Fraction of pops converted to the parent species per month.
+#                                     # Applied as (integration_rate * total_pops), with the fractional
+#                                     # remainder resolved probabilistically each month.
+#                                     # e.g. integration_rate = 0.0167 converts ~1/60th of pops per month.
+#     minimum_colony_age = <months>   # Optional (default: 0). The colony must be at least this many months
+#                                     # old before integration begins. 0 means no restriction.
+# }
+#
+# When a species trait defines forced_integration, pops of that species on owned planets will
+# gradually convert into their parent species each month. The target is always the base/parent
+# species as resolved by the engine (i.e. the species this subspecies was derived from).
+#
+# Only the first forced_integration trait found on a species is applied. If the colony has no
+# valid colonization date, minimum_colony_age gates are skipped.
+#
+# Example - a presapient subspecies that matures into its sapient parent over ~5 years:
+# trait_example_nascent = {
+#     ...
+#     forced_integration = {
+#         integration_rate = 0.0167   # ~1/60th per month
+#         minimum_colony_age = 60     # months
+#     }
+# }

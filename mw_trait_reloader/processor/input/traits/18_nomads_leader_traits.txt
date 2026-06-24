@@ -1,0 +1,562 @@
+leader_trait_paladin = {
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = commander
+		ICON = "GFX_leader_trait_paladin"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	councilor_modifier = {
+		ship_damage_reduction_add = 5
+	}
+	custom_tooltip_with_modifiers = "leader_trait_paladin_effect"
+	# triggered resolution effects
+	triggered_fleet_modifier = {
+		potential = {
+			owner = {
+				is_active_resolution = resolution_paladin_training_teamwork
+			}
+		}
+		ship_fire_rate_mult = 0.025
+		ship_damage_reduction_mult = 0.025
+		mult = value:num_paladins_in_system
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			owner = {
+				is_active_resolution = resolution_paladin_training_defense
+			}
+		}
+		ship_evasion_mult = 0.25
+		ship_shield_regen_add_perc = 0.2
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			owner = {
+				is_active_resolution = resolution_paladin_training_offense
+			}
+		}
+		ship_weapon_damage = 0.3
+		ship_weapon_range_mult = 0.25
+	}
+
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}
+
+leader_trait_paladin_ace = {
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = commander
+		ICON = "GFX_leader_trait_paladin_ace"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	councilor_modifier = {
+		ship_evasion_mult = 0.05
+	}
+	fleet_modifier = {
+		ship_evasion_mult = 0.5
+	}
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}
+
+leader_trait_paladin_strategist = {
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = commander
+		ICON = "GFX_leader_trait_paladin_strategist"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	custom_tooltip = "leader_trait_paladin_strategist_tt"
+	councilor_modifier = {
+		ship_weapon_range_mult = 0.05
+	}
+	#Aura effect, defined in 00_scripted_action_components
+
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}
+
+leader_trait_paladin_ambusher = { #block if no First Contact
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = commander
+		ICON = "GFX_leader_trait_paladin_ambusher"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	councilor_modifier = {
+		ship_cloaking_strength_add = 1
+	}
+	fleet_modifier = {
+		ship_cloaking_strength_add = 6
+	}
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}
+
+leader_trait_paladin_logistician = {
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = commander
+		ICON = "GFX_leader_trait_paladin_logistician"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	custom_tooltip = "leader_trait_paladin_logistician_tt"
+	#Aura effect, defined in 00_scripted_action_components
+	councilor_modifier = {
+		ships_upkeep_mult = -0.05
+	}
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}
+
+leader_trait_paladin_defender = {
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = commander
+		ICON = "GFX_leader_trait_paladin_defender"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	fleet_modifier = {
+		ship_damage_reduction_mult = 0.4
+		ship_evasion_mult = -0.2
+	}
+	councilor_modifier = {
+		ship_damage_reduction_mult = 0.05
+	}
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}
+
+leader_trait_paladin_spearhead = {
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = commander
+		ICON = "GFX_leader_trait_paladin_spearhead"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	councilor_modifier = {
+		ship_weapon_damage = 0.05
+	}
+	fleet_modifier = {
+		ship_size_damage_factor = 0.1
+	}
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}
+
+leader_trait_paladin_knight = {
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = commander
+		ICON = "GFX_leader_trait_paladin_knight"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	councilor_modifier = {
+		ship_weapon_damage = 0.075
+	}
+	fleet_modifier = {
+		ship_size_damage_factor = 0.15
+	}
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}
+
+leader_trait_nomadic_revenant = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_nomadic_revenant"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	triggered_self_modifier = {
+		custom_tooltip = leader_trait_nomadic_revenant_effect
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			NOT = {
+				exists = owner
+			}
+		}
+		ship_fire_rate_mult = 0.05
+		ship_evasion_mult = 0.05
+		ships_upkeep_mult = -0.05
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			exists = owner
+		}
+		ship_fire_rate_mult = 0.05
+		ship_evasion_mult = 0.05
+		ships_upkeep_mult = -0.05
+		mult = owner.revenant_oath
+	}
+	leader_potential_add = {
+		has_nomads_dlc = yes
+		has_trait = subclass_commander_admiral
+	}
+	leader_class = { commander }
+	background_icon = "GFX_leader_background_destiny_1"
+
+	initial = no
+	randomized = no
+}
+
+leader_trait_nomadic_sage = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_nomadic_sage"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	triggered_self_modifier = {
+		custom_tooltip = leader_trait_nomadic_sage_effect
+	}
+	councilor_modifier = {
+		official_initial_skill = 1
+		councilor_exp_gain = 0.15
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			NOT = {
+				exists = owner
+			}
+		}
+		pop_cat_ruler_bonus_workforce_mult = 0.03
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			exists = owner
+			is_ruler = no
+		}
+		pop_cat_ruler_bonus_workforce_mult = 0.03
+		mult = value:nomadic_sage_ruler_skill_mult
+	}
+	leader_potential_add = {
+		has_nomads_dlc = yes
+		has_trait = subclass_official_governor
+	}
+	leader_class = { official }
+	background_icon = "GFX_leader_background_destiny_1"
+
+	initial = no
+	randomized = no
+}
+
+leader_trait_nomadic_naturalist = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_nomadic_naturalist"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	self_modifier = {
+		science_ship_survey_speed = 0.2
+	}
+	triggered_self_modifier = {
+		custom_tooltip = leader_trait_nomadic_naturalist_effect
+	}
+	councilor_modifier = {
+		country_society_tech_research_speed = 0.05
+		planet_xeno_zoo_animals_unity_produces_add = 1
+		planet_xeno_zoo_animals_society_research_produces_add = 1
+	}
+	leader_potential_add = {
+		has_nomads_dlc = yes
+		has_trait = subclass_scientist_councilor
+	}
+	leader_class = { scientist }
+	background_icon = "GFX_leader_background_destiny_1"
+
+	initial = no
+	randomized = no
+}
+
+leader_trait_nomadic_caregiver = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_nomadic_caregiver"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	triggered_planet_modifier = {
+		potential = {
+			NOT = {
+				exists = owner
+			}
+		}
+		custom_tooltip = leader_trait_nomadic_caregiver_effect
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_researchers_produces_mult = 0.03
+		mult = value:nomadic_caregiver_contract_mult
+		custom_tooltip = leader_trait_nomadic_caregiver_effect
+	}
+	leader_potential_add = {
+		has_nomads_dlc = yes
+		has_trait = subclass_official_governor
+	}
+	leader_class = { official }
+	background_icon = "GFX_leader_background_destiny_1"
+
+	initial = no
+	randomized = no
+}
+
+leader_trait_nomadic_champion = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_nomadic_champion"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	fleet_modifier = {
+		ship_orbital_bombardment_mult = 0.75
+	}
+	army_modifier = {
+		army_damage_mult = 0.25
+		army_morale_damage_taken_mult = -0.25
+	}
+	triggered_self_modifier = {
+		custom_tooltip = leader_trait_nomadic_champion_effect
+	}
+	leader_potential_add = {
+		has_nomads_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = { commander }
+	background_icon = "GFX_leader_background_destiny_1"
+
+	initial = no
+	randomized = no
+}
+
+leader_trait_amnesiac = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_amnesiac"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	triggered_self_modifier = {
+		potential = {
+			NOT = {
+				exists = owner
+			}
+		}
+		custom_tooltip = leader_trait_amnesiac_effect
+	}
+	triggered_self_modifier = {
+		potential = {
+			exists = owner
+		}
+		custom_tooltip = leader_trait_amnesiac_effect
+	}
+	leader_potential_add = {
+		has_nomads_dlc = yes
+		has_trait = subclass_official_delegate
+	}
+	leader_class = { official }
+	background_icon = "GFX_leader_background_destiny_1"
+
+	initial = no
+	randomized = no
+}
+
+leader_trait_nomadic_princess_1 = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_nomadic_princess_1"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		pop_ethic_pacifist_attraction_mult = 0.15
+		country_trust_cap_add = 25
+	}
+	leader_potential_add = {
+		has_nomads_dlc = yes
+		has_trait = subclass_official_delegate
+	}
+	leader_class = { official }
+	background_icon = "GFX_leader_background_destiny_1"
+
+	initial = no
+	randomized = no
+}
+
+leader_trait_nomadic_princess_2 = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_nomadic_princess_2"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	triggered_planet_modifier = {
+		potential = {
+			colony.ship? = { has_ship_flag = nomadic_princess_ship }
+		}
+		show_if_not_potential = yes
+		not_potential_override_text_key = nomadic_princess_not_aboard_ship
+		planet_jobs_produces_mult = 0.05
+		planet_building_build_speed_mult = 0.2
+		custom_tooltip = leader_trait_nomadic_princess_effect
+	}
+	leader_potential_add = {
+		has_nomads_dlc = yes
+		has_trait = subclass_official_delegate
+	}
+	leader_class = { official }
+	background_icon = "GFX_leader_background_destiny_1"
+
+	initial = no
+	randomized = no
+}
+
+leader_trait_circuit_champion = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_circuit_champion"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = unity
+		AMOUNT = 50
+	}
+
+	leader_class = { commander official scientist }
+	initial = no
+	randomized = no
+}
+leader_trait_sable_pilot = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_sable_pilot"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+
+	fleet_modifier = {
+		ship_interstellar_speed_mult = 3
+		ship_windup_mult = -1
+		ship_speed_mult = 0.1
+		ship_evasion_add = 10
+	}
+
+	leader_class = { commander }
+
+	initial = no
+	randomized = no
+}
+
+leader_trait_plunderer = {
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_plunderer
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	forbidden_ethics = { ethic_xenophile ethic_fanatic_xenophile ethic_pacifist ethic_fanatic_pacifist }
+	fleet_modifier = {
+		ship_speed_mult = 0.05
+		ship_evasion_mult = 0.05
+	}
+	# Effect in paragon_2.1005 event.
+	leader_potential_add = {
+		OR = {
+			has_paragon_dlc = no
+			has_trait = subclass_commander_admiral
+			has_trait = subclass_commander_general
+		}
+	}
+	leader_class = { commander }
+	custom_tooltip_with_modifiers = leader_trait_plunderer_effects
+	initial = no
+	randomized = no
+}
+
+leader_trait_plunderer_2 = {
+	replace_traits = { leader_trait_plunderer }
+	leader_trait_type = veteran
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = GFX_leader_trait_plunderer
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	fleet_modifier = {
+		ship_speed_mult = 0.10
+		ship_evasion_mult = 0.05
+	}
+	# Effect in paragon_2.1005 event.
+	leader_class = { commander }
+	custom_tooltip_with_modifiers = leader_trait_plunderer_2_effects
+	selectable_weight = {
+		weight = @subclass_trait_weight
+		inline_script = paragon/pilot_weight_mult
+	}
+	initial = no
+}

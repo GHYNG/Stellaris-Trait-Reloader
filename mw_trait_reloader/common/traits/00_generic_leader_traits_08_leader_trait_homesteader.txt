@@ -24,7 +24,7 @@ leader_trait_homesteader = {
 		potential = {
 			exists = FROM
 			FROM = {
-				artisan_is_pearl_diver_trigger = yes
+				artisan_is_pearl_diver_trigger = no
 			}
 			trait_is_gestalt_check = no
 		}

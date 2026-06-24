@@ -15,6 +15,6 @@ trait_robot_luxurious = {
 		}
 	}
 	slave_cost = {
-		energy = -200
+		trade = -200
 	}
 }

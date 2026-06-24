@@ -20,7 +20,7 @@ trait_auto_mod_robotic = {
 		always = yes
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 	assembly_score = {
 		base = 2

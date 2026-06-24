@@ -1,12 +1,6 @@
 trait_nivlac = {
 	cost = 2
-	inline_script = {
-		script = trait/icon
-		ICON = "GFX_leader_trait_resilient"
-		RARITY = common
-		COUNCIL = no
-		TIER = none
-	}
+	icon = "gfx/interface/icons/traits/trait_extremely_adaptive.dds"
 	initial = no
 	randomized = no
 	species_potential_add = {
@@ -25,6 +19,6 @@ trait_nivlac = {
 		logistic_growth_mult = 0.15
 	}
 	slave_cost = {
-		energy = 100
+		trade = 100
 	}
 }

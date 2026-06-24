@@ -4,7 +4,7 @@ trait_sedentary = {
 	species_potential_add = {
 		can_add_negative_organic_traits = yes
 	}
-	opposites = { "trait_nomadic" "trait_rooted" "trait_wilderness" }
+	opposites = { "trait_nomadic" "trait_rooted" "trait_wilderness" "trait_pc_ark_preference" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic negative migration }
 	modifier = {
@@ -14,6 +14,12 @@ trait_sedentary = {
 		weight = 0
 	}
 	slave_cost = {
-		energy = -200
+		trade = -200
+	}
+	forbidden_origins = {
+		origin_default_nomads
+		origin_sacred_path
+		origin_heirs_of_the_khan
+		origin_forever_cruise
 	}
 }

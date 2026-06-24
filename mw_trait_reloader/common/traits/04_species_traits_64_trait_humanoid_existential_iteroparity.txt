@@ -1,5 +1,4 @@
 trait_humanoid_existential_iteroparity = {
-	host_has_dlc = "Humanoids Species Pack"
 	cost = 2
 	species_possible_add = {
 		can_add_genetic_traits = yes
@@ -10,7 +9,7 @@ trait_humanoid_existential_iteroparity = {
 			can_remove_pop_growth_genetic_traits = yes
 		}
 	}
-	opposites = { "trait_humanoid_psychological_infertility" "trait_rapid_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" "trait_plantoid_budding" "trait_lithoid_budding" "trait_vat_grown" "trait_tiyanki" "trait_egg_laying" }
+	opposites = { "trait_pyroclastic" "trait_humanoid_psychological_infertility" "trait_rapid_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" "trait_plantoid_budding" "trait_lithoid_budding" "trait_vat_grown" "trait_tiyanki" "trait_egg_laying" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive pop_growth }
 	icon = "gfx/interface/icons/traits/trait_existential_iteroparity.dds"
@@ -25,9 +24,9 @@ trait_humanoid_existential_iteroparity = {
 				}
 			}
 		}
-		logistic_growth_mult = 0.3
+		logistic_growth_mult = 0.2
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }

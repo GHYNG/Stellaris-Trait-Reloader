@@ -38,11 +38,14 @@ trait_plantoid_phototrophic = {
 		category = planet_pops
 		# Energy Upkeep
 		upkeep = {
-			trigger = { is_being_purged = no }
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
 			energy = @living_standard_phototrophic_normal
 		}
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }

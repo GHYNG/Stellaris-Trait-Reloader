@@ -22,8 +22,10 @@ trait_storm_touched = {
 	triggered_pop_group_modifier = {
 		potential = {
 			exists = planet
-			planet.solar_system = {
-				has_star_flag = storm_system
+			planet = {
+				solar_system? = {
+					has_star_flag = storm_system
+				}
 			}
 		}
 		pop_bonus_workforce_mult = 0.1
@@ -299,7 +301,7 @@ trait_storm_fused = {
 		potential = {
 			exists = planet
 			planet = {
-				solar_system = {
+				solar_system? = {
 					is_inside_storm = yes
 				}
 			}

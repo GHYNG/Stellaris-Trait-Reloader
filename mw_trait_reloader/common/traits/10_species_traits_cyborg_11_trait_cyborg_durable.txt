@@ -21,18 +21,11 @@ trait_cyborg_durable = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
 		pop_amenities_usage_add = -0.5
 	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			energy = @cyborg_energy_upkeep
-		}
-	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	allowed_origins = {
 		origin_unplugged

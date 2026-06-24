@@ -36,13 +36,17 @@ trait_robot_mote_powered_tools = {
 		foundry_jobs_bonus_workforce_mult = 0.2
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	resources = {
 		category = planet_pops
 		upkeep = {
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
 			minerals = 1
-			volatile_motes = 0.01
+			volatile_motes = 0.02
 		}
 	}
 	custom_tooltip_with_modifiers = trait_robot_mote_powered_tools_tt

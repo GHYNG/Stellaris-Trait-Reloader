@@ -35,6 +35,6 @@ trait_flight = {
 		army_damage_taken_mult = -0.30
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

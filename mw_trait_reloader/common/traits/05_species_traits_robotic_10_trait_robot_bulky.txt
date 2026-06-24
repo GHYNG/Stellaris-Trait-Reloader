@@ -1,7 +1,7 @@
 trait_robot_bulky = {
 	cost = -1
 	category = robotic
-	opposites = { "trait_robot_double_jointed" }
+	opposites = { "trait_robot_double_jointed" "trait_defence_drones" }
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine negative housing }
 	modifier = {
@@ -11,6 +11,6 @@ trait_robot_bulky = {
 		factor = 0
 	}
 	slave_cost = {
-		energy = -150
+		trade = -150
 	}
 }

@@ -40,7 +40,7 @@ trait_void_dweller_1 = {
 		weight = 0
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 	assembly_score = {
 		modifier = {
@@ -97,7 +97,7 @@ trait_void_dweller_2 = {
 		weight = 0
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 	assembly_score = {
 		modifier = {

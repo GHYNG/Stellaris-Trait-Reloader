@@ -26,7 +26,7 @@ trait_rooted = {
 		pop_resettlement_cost_mult = 2
 	}
 	slave_cost = {
-		energy = -400
+		trade = -400
 	}
 	assembly_score = {
 		modifier = {

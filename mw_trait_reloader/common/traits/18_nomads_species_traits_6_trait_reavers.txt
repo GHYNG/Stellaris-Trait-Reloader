@@ -1,0 +1,27 @@
+trait_reavers = {
+	host_has_dlc = "Nomads"
+	cost = 2
+	icon = "gfx/interface/icons/traits/trait_reavers.dds"
+	initial = yes
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	localized_tags = { SPECIES_TRAIT_NOMAD }
+	randomized = yes
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT }
+	tags = { positive leader }
+	opposites = { trait_charismatic trait_terraphobic }
+	custom_tooltip_with_modifiers = trait_reavers_effects
+	forbidden_ethics = { ethic_gestalt_consciousness }
+	modifier = {
+		trader_jobs_bonus_workforce_mult = 0.05
+	}
+	ai_weight = { weight = 0 }
+	slave_cost = { trade = 500 }
+}

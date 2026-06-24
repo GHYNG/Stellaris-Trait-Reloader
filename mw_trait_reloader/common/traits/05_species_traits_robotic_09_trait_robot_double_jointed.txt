@@ -4,10 +4,11 @@ trait_robot_double_jointed = {
 	opposites = { "trait_robot_bulky" }
 	allowed_archetypes = { ROBOT MACHINE }
 	tags = { machine positive housing }
+	opposites = { "trait_interconnected" }
 	modifier = {
 		pop_housing_usage_mult = -0.1
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 }

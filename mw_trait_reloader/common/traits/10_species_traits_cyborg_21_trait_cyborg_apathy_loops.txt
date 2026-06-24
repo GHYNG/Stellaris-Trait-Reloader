@@ -21,6 +21,6 @@ trait_cyborg_apathy_loops = {
 		pop_happiness = -0.1
 	}
 	slave_cost = {
-		energy = -150
+		trade = -150
 	}
 }

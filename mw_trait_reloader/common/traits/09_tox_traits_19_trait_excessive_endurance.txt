@@ -1,3 +1,4 @@
+@overtuned_increased_growth_penalty = -0.05
 trait_excessive_endurance = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 3
@@ -56,12 +57,13 @@ trait_excessive_endurance = {
 		}
 	}
 	modifier = {
+		logistic_growth_mult = @overtuned_increased_growth_penalty
 		leader_lifespan_add = -30
 	}
 	assembly_score = {
 		base = 0.5 #always good
 	}
 	slave_cost = {
-		energy = 2000
+		trade = 2000
 	}
 }

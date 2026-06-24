@@ -28,11 +28,12 @@ trait_exotic_metabolism = {
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
+				is_sapient = yes
 			}
 			exotic_gases = @exotic_metabolism
 		}
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 }

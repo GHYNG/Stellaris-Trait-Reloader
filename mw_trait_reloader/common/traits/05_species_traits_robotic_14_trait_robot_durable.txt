@@ -8,6 +8,6 @@ trait_robot_durable = {
 		planet_pops_robotics_upkeep_mult = -0.10
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 }

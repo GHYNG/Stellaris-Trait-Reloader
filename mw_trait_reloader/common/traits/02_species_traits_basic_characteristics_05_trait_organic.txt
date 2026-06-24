@@ -1,5 +1,6 @@
 trait_organic = {
 	cost = 0
+	opposites = { "trait_infernal" }
 	sorting_priority = 20
 	initial = yes
 	randomized = no
@@ -26,6 +27,7 @@ trait_organic = {
 				is_phototrophic = no
 				NOT = { has_trait = trait_voidling }
 				is_being_purged = no
+				is_sapient = yes
 			}
 			food = @living_standard_food_normal
 		}
@@ -34,8 +36,20 @@ trait_organic = {
 				is_phototrophic = yes
 				NOT = { has_trait = trait_voidling }
 				is_being_purged = no
+				is_sapient = yes
 			}
 			food = @living_standard_phototrophic_normal
+		}
+		upkeep = {
+			trigger = {
+				OR = {
+					has_trait = trait_cybernetic
+					has_trait = trait_limited_cybernetic
+				}
+				is_being_purged = no
+				is_sapient = yes
+			}
+			food = @living_standard_food_cyborg_reduction
 		}
 	}
 	icon = "gfx/interface/icons/traits/trait_organic.dds"

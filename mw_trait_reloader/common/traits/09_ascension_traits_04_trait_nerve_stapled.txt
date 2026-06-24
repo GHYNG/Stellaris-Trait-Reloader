@@ -10,7 +10,10 @@ trait_nerve_stapled = {
 		can_do_advanced_gene_modding = yes
 	}
 	species_possible_remove = {
-		can_remove_beneficial_genetic_traits = yes
+		OR = {
+			can_do_advanced_gene_modding = yes
+			can_remove_beneficial_genetic_traits = yes
+		}
 	}
 	species_possible_merge_remove = {
 		always = yes
@@ -29,16 +32,7 @@ trait_nerve_stapled = {
 	}
 	custom_tooltip_with_modifiers = TRAIT_NERVE_STAPLED_EFFECT
 	slave_cost = {
-		energy = 1500
-	}
-	triggered_pop_group_modifier = {
-		potential = {
-			OR = {
-				is_pop_category = ruler
-				is_specialist_category = yes
-			}
-		}
-		pop_demotion_time_mult = -10.0
+		trade = 1500
 	}
 	assembly_score = {
 		modifier = {

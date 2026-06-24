@@ -8,6 +8,6 @@ trait_robot_recycled = {
 		roboticist_jobs_bonus_workforce_mult = 0.20
 	}
 	slave_cost = {
-		energy = 1500
+		trade = 1500
 	}
 }

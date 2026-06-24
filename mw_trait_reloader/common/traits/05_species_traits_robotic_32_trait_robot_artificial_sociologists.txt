@@ -7,6 +7,7 @@ trait_robot_artificial_sociologists = {
 	opposites = {
 		"trait_robot_artificial_physicists"
 		"trait_robot_artificial_engineers"
+		"trait_structural_awareness"
 	}
 	# Droid, Synth, Machine Intelligence or Individualist Machine
 	species_potential_add = {
@@ -21,6 +22,6 @@ trait_robot_artificial_sociologists = {
 		biologist_jobs_bonus_workforce_mult = 0.15
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 }

@@ -18,6 +18,6 @@ trait_robot_scarcity_algorithms = {
 		trader_jobs_bonus_workforce_mult = -0.25
 	}
 	slave_cost = {
-		energy = -150
+		trade = -150
 	}
 }

@@ -13,6 +13,6 @@ trait_fleeting_lithoid = {
 		weight = 0
 	}
 	slave_cost = {
-		energy = -200
+		trade = -200
 	}
 }

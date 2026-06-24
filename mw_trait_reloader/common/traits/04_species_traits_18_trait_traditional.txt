@@ -23,7 +23,7 @@ trait_traditional = {
 		bureaucrat_jobs_bonus_workforce_mult = 0.1
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 	assembly_score = {
 		modifier = {

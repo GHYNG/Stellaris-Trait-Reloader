@@ -199,7 +199,7 @@ leader_trait_pirate_queen = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -232,7 +232,7 @@ leader_trait_trophy_hunter = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -262,7 +262,7 @@ leader_trait_gifted_trapper = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
