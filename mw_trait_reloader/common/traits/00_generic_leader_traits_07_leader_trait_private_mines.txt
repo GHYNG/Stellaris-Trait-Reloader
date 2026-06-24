@@ -10,6 +10,7 @@ leader_trait_private_mines = {
 	leader_potential_add = {
 		trait_is_crisis_faction_check = no
 		trait_is_wilderness_check = no
+		trait_is_nomad_check = no
 		has_global_flag = game_started
 		has_base_skill > 1
 		NOT = {

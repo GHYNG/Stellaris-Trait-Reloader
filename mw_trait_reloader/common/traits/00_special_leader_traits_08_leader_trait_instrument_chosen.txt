@@ -31,9 +31,9 @@ leader_trait_instrument_chosen = {
 		potential = {
 			is_ruler = yes
 			exists = owner
-			owner = { is_gestalt = no }
+			owner = { is_gestalt = yes }
 		}
-		planet_stability_mult = 0.02
+		planet_stability_add = 3
 		mult = value:transcended_psionic_multiplier
 	}
 	# Commander - Fleet Modifier

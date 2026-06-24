@@ -10,7 +10,7 @@ leader_trait_army_veteran = {
 	councilor_modifier = {
 		planet_army_build_speed_mult = 0.25
 		armies_cost_mult = -0.10
-		army_defense_damage_mult = 0.25
+		army_damage_mult = 0.10
 	}
 	leader_potential_add = {
 		is_pool_leader = yes # Starting trait only.

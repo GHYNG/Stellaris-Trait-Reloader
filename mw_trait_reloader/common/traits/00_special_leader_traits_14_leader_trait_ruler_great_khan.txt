@@ -4,13 +4,14 @@ leader_trait_ruler_great_khan = {
 		script = trait/icon
 		CLASS = leader
 		ICON = "GFX_leader_trait_great_khan"
-		RARITY = common
+		RARITY = paragon
 		COUNCIL = yes
 		TIER = none
 	}
 	councilor_modifier = {
-		army_morale = 0.25
-		ship_weapon_damage = 0.05
+		army_morale = 1
+		ship_weapon_damage = 0.10
+		divided_patrongage_max_subjects = 5
 	}
 	leader_class = { scientist official commander }
 	initial = no

@@ -10,8 +10,13 @@ leader_trait_fleet_logistician = {
 	leader_potential_add = {
 		has_paragon_dlc = no
 	}
-	fleet_modifier = {
+	triggered_fleet_modifier = {
+		potential = { trait_is_nomad_check = no }
 		ship_orbit_upkeep_mult = -0.15
+	}
+	triggered_fleet_modifier = {
+		potential = { trait_is_nomad_check = yes }
+		ships_upkeep_mult = -0.075
 	}
 	leader_class = { commander }
 	selectable_weight = {

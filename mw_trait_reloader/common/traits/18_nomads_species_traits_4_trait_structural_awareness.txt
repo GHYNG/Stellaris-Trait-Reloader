@@ -1,0 +1,48 @@
+trait_structural_awareness = {
+	host_has_dlc = "Nomads"
+	cost = 1
+	icon = "gfx/interface/icons/traits/trait_structural_awareness.dds"
+	initial = yes
+	species_possible_add = {
+		has_trait = trait_pc_ark_preference
+	}
+	allowed_planet_classes = { pc_ark }
+	localized_tags = { SPECIES_TRAIT_NOMAD }
+	randomized = yes
+	allowed_archetypes = { MACHINE ROBOT }
+	tags = { machine positive pop_output research }
+	opposites = { trait_robot_artificial_physicists trait_robot_artificial_sociologists trait_robot_artificial_engineers }
+	custom_tooltip = trait_recursive_learners_effects
+	triggered_pop_group_modifier = {
+		potential = { planet.ship? = { is_science_arkship = yes } }
+		researcher_jobs_bonus_workforce_mult = 1
+		mult = planet.ship.value:trait_recursive_learners_value
+	}
+	triggered_pop_group_modifier = {
+		potential = { planet.ship? = { is_civilian_arkship = yes } }
+		foundry_jobs_bonus_workforce_mult = 1
+		artisan_jobs_bonus_workforce_mult = 1
+		pop_ark_harvester_bonus_workforce_mult = 1
+		mult = planet.ship.value:trait_recursive_learners_value
+	}
+	triggered_pop_group_modifier = {
+		potential = { planet.ship? = { is_military_arkship = yes } }
+		engineer_jobs_bonus_workforce_mult = 1
+		soldier_jobs_bonus_workforce_mult = 1
+		mult = planet.ship.value:trait_recursive_learners_value
+	}
+	ai_weight = { weight = 0 }
+	slave_cost = { trade = 500 }
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = { uses_district_set = arkship }
+		}
+		modifier = {
+			subtract = 1.5
+			from = {
+				NOT = { uses_district_set = arkship }
+			}
+		}
+	}
+}

@@ -10,7 +10,10 @@ trait_felsic = {
 		can_do_advanced_gene_modding = yes
 	}
 	species_possible_remove = {
-		can_remove_beneficial_genetic_traits = yes
+		OR = {
+			can_do_advanced_gene_modding = yes
+			can_remove_beneficial_genetic_traits = yes
+		}
 	}
 	initial = no
 	randomized = no
@@ -21,6 +24,6 @@ trait_felsic = {
 		pop_livestock_lithoid_bonus_workforce_mult = 1
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }

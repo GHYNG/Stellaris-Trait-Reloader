@@ -1,0 +1,26 @@
+trait_robot_assembly_slag = {
+	host_has_dlc = "Infernals Species Pack"
+	cost = 2
+	category = robotic
+	initial = yes
+	randomized = yes
+	allowed_archetypes = { ROBOT MACHINE }
+	tags = { machine positive rare_resource production}
+	ai_weight = {
+		weight = 0
+	}
+	icon = "gfx/interface/icons/traits/trait_robot_assembly_slag.dds"
+	custom_tooltip = trait_shell_slag_tooltip
+	slave_cost = {
+		trade = 500
+	}
+	resources = {
+		category = planet_pops
+		produces = {
+			trigger = {
+				is_slave_or_better = yes
+			}
+			sr_living_metal = @shell_slag_trait_resource_production
+		}
+	}
+}

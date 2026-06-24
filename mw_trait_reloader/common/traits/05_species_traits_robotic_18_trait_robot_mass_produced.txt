@@ -8,6 +8,6 @@ trait_robot_mass_produced = {
 		planet_pop_assembly_mult = 0.15
 	}
 	slave_cost = {
-		energy = 1500
+		trade = 1500
 	}
 }

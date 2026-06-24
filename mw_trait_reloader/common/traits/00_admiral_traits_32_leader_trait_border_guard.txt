@@ -16,6 +16,7 @@ leader_trait_border_guard = {
 	leader_potential_add = {
 		has_paragon_dlc = yes
 		has_trait = subclass_commander_councilor
+		trait_is_nomad_check = no
 	}
 	leader_class = { commander }
 	selectable_weight = {
@@ -38,6 +39,9 @@ leader_trait_border_guard_2 = {
 		shipsize_military_station_small_build_speed_mult = 0.3
 		shipclass_starbase_damage_mult = 0.3
 		shipclass_starbase_hull_mult = 0.35
+	}
+	leader_potential_add = {
+		trait_is_nomad_check = no
 	}
 	leader_class = { commander }
 }

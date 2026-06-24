@@ -14,6 +14,6 @@ trait_slow_learners = {
 		weight = 0
 	}
 	slave_cost = {
-		energy = -250
+		trade = -250
 	}
 }

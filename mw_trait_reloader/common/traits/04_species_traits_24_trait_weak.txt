@@ -4,15 +4,16 @@ trait_weak = {
 	species_potential_add = {
 		can_add_negative_organic_traits = yes
 	}
-	opposites = { "trait_strong" "trait_very_strong" "trait_tankbound" }
+	opposites = { "trait_strong" "trait_very_strong" "trait_tankbound" "trait_photoadaptive" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic negative pop_output army }
 	modifier = {
 		army_damage_mult = -0.20
 		worker_and_simple_drone_cat_bonus_workforce_mult = -0.025
+		soldier_jobs_bonus_workforce_mult = -0.10
 	}
 	slave_cost = {
-		energy = -1000
+		trade = -1000
 	}
 	ai_weight = {
 		weight = 0

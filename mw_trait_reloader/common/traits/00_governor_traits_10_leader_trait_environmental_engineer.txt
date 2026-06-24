@@ -9,6 +9,7 @@ leader_trait_environmental_engineer = {
 	}
 	leader_potential_add = {
 		trait_is_crisis_faction_check = no
+		trait_is_nomad_check = no
 		exists = owner
 		owner = {
 			has_blocker_removal_tech = yes

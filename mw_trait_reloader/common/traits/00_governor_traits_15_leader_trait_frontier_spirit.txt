@@ -8,10 +8,21 @@ leader_trait_frontier_spirit = {
 		COUNCIL = yes
 		TIER = 1
 	}
-	councilor_modifier = {
+	triggered_councilor_modifier = {
+		potential = {
+			trait_is_nomad_check = no
+		}
 		ship_colonizer_cost_mult = -0.10
 		planet_colony_development_speed_mult = 0.33
 		planet_resettlement_unemployed_mult = 0.25
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			trait_is_nomad_check = yes
+		}
+		megastructures_waystations_cost_mult = -0.10
+		megastructure_waystation_megastructure_build_speed_mult = 0.15
+		ship_speed_mult = 0.15
 	}
 	leader_potential_add = {
 		has_paragon_dlc = yes
@@ -35,10 +46,21 @@ leader_trait_frontier_spirit_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	councilor_modifier = {
+	triggered_councilor_modifier = {
+		potential = {
+			trait_is_nomad_check = no
+		}
 		ship_colonizer_cost_mult = -0.10
 		planet_colony_development_speed_mult = 0.50
 		planet_resettlement_unemployed_mult = 0.50
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			trait_is_nomad_check = yes
+		}
+		megastructures_waystations_cost_mult = -0.10
+		megastructure_waystation_megastructure_build_speed_mult = 0.25
+		ship_speed_mult = 0.25
 	}
 	leader_class = { official }
 }

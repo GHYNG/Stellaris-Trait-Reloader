@@ -16,6 +16,7 @@ leader_trait_warden = {
 	}
 	leader_potential_add = {
 		trait_is_crisis_faction_check = no
+		trait_is_nomad_check = no
 		OR = {
 			has_paragon_dlc = no
 			has_trait = subclass_commander_governor

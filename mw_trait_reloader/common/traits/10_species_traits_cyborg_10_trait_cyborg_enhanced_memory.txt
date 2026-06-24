@@ -21,22 +21,15 @@ trait_cyborg_enhanced_memory = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
 		negative_leader_traits_species = -1
 		leaders_upkeep_mult = -0.25
-	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			energy = @cyborg_energy_upkeep
-		}
 	}
 	ai_weight = {
 		factor = 0
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	allowed_origins = {
 		origin_unplugged

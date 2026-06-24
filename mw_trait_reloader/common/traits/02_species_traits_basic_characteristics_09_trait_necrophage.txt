@@ -27,6 +27,7 @@ trait_necrophage = {
 		planet_pops_organics_food_upkeep_mult = -0.5
 		planet_pops_organics_minerals_upkeep_mult = -0.5
 		planet_pops_organics_energy_upkeep_mult = -0.5
+		planet_pops_organics_alloys_upkeep_mult = -0.5
 		pop_cat_ruler_bonus_workforce_mult = 0.05
 		pop_cat_specialist_bonus_workforce_mult = 0.05
 		pop_cat_worker_bonus_workforce_mult = -0.1

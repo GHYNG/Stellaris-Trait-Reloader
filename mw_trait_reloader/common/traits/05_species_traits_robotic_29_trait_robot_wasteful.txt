@@ -19,6 +19,6 @@ trait_robot_wasteful = {
 		weight = 0
 	}
 	slave_cost = {
-		energy = -200
+		trade = -200
 	}
 }

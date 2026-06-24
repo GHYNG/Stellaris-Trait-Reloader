@@ -10,14 +10,14 @@ trait_natural_sociologists = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	opposites = { "trait_natural_physicists" "trait_natural_engineers" "trait_nerve_stapled" }
+	opposites = { "trait_natural_physicists" "trait_natural_engineers" "trait_nerve_stapled" "trait_recursive_learners" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive pop_output research }
 	modifier = {
 		biologist_jobs_bonus_workforce_mult = 0.15
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 	assembly_score = {
 		modifier = {

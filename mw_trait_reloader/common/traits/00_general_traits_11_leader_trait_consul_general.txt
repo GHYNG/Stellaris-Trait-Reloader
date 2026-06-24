@@ -11,6 +11,12 @@ leader_trait_consul_general = {
 	councilor_modifier = {
 		envoy_improve_relations_mult = 0.5
 	}
+	triggered_councilor_modifier = {
+		potential = {
+			owner = { is_nomadic = yes }
+		}
+		nomadic_contract_value_mult = 0.05
+	}
 	leader_potential_add = {
 		has_paragon_dlc = yes
 		has_trait = subclass_official_diplomacy_councilor
@@ -38,6 +44,12 @@ leader_trait_consul_general_2 = {
 	}
 	councilor_modifier = {
 		envoy_improve_relations_mult = 1
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			owner = { is_nomadic = yes }
+		}
+		nomadic_contract_value_mult = 0.1
 	}
 	leader_class = { official }
 }

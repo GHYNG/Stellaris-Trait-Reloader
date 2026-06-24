@@ -17,6 +17,6 @@ trait_conservational = {
 		planet_pops_consumer_goods_upkeep_mult = -0.10
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

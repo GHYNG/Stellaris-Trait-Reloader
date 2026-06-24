@@ -18,15 +18,19 @@ trait_robot_volatile_mote_reactor = {
 	initial = no
 	randomized = no
 	modifier = {
-		pop_environment_tolerance = 0.3
+		worker_and_simple_drone_cat_bonus_workforce_mult = 0.10
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	resources = {
 		category = planet_pops
 		upkeep = {
-			volatile_motes = 0.02
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
+			volatile_motes = 0.05
 		}
 	}
 	custom_tooltip_with_modifiers = trait_robot_volatile_mote_reactor_tt

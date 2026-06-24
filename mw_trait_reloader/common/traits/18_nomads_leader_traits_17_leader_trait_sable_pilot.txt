@@ -1,0 +1,19 @@
+leader_trait_sable_pilot = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_sable_pilot"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	fleet_modifier = {
+		ship_interstellar_speed_mult = 3
+		ship_windup_mult = -1
+		ship_speed_mult = 0.1
+		ship_evasion_add = 10
+	}
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}

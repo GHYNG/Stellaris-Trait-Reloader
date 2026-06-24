@@ -1,0 +1,34 @@
+trait_cyborg_limited_memory = {
+	host_has_dlc = "The Machine Age"
+	cost = -2
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { organic negative leader cybernetic }
+	initial = yes
+	opposites = { "trait_cyborg_enhanced_memory" }
+	species_potential_add = {
+		OR = {
+			can_add_cybernetic_traits = yes
+			can_add_unplugged_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_cybernetic_traits = yes
+			can_remove_unplugged_traits = yes
+		}
+	}
+	randomized = no
+	category = cyborg
+	modifier = {
+		species_leader_exp_gain = -0.4
+	}
+	slave_cost = {
+		trade = -150
+	}
+	allowed_origins = {
+		origin_unplugged
+	}
+}

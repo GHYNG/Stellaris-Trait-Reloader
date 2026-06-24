@@ -12,7 +12,7 @@ trait_stargazer = {
 		always = no
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 	initial = no
 	randomized = no

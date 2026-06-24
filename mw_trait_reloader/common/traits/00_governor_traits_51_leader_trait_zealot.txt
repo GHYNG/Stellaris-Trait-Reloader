@@ -8,7 +8,7 @@ leader_trait_zealot = {
 		TIER = none
 	}
 	modifier = {
-		planet_stability_add = 10
+		planet_stability_add = 3
 		planet_crime_add = -10
 		pop_government_ethic_attraction = 0.20
 		planet_bureaucrats_unity_produces_mult = 0.10

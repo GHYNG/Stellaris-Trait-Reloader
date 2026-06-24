@@ -7,7 +7,10 @@
 #	starting_ruler_trait = yes			This trait is available in ruler creation. Default is no.
 #	allowed_origins = { }				OR - This trait is allowed in ruler creation if any of the listed origins is selected. If not specified, any origins are allowed.
 #	forbidden_origins = { }				OR - This trait is blocked in ruler creation if listed origins are selected.
+#	allowed_civics = { }				OR - This trait is allowed in ruler creation if any of the listed civics is selected. If not specified, any civics are allowed.
+#	forbidden_civics = { }				OR - This trait is blocked in ruler creation if listed civics are selected.
 #	allowed_ethics = { }				OR - This trait is allowed in ruler creation if any of the listed ethics are selected. If not specified, any ethics are allowed.
+#	forbidden_ethics = { }				OR - This trait is blocked in ruler creation if listed ethics are selected.
 #	cost = 1							This trait cost/gives this amount of points when selected in ruler creation.
 #
 #	icon = {							Layered icon format introduced in Galactic Paragons.
@@ -30,7 +33,7 @@
 #
 #	modifier = { }						Modifier applied to scope leader is assigned to.
 #	self_modifier = { }					Modifier applied to the leader itself.
-#	planet_modifier = { }				Modifier applied to planet if Governor is assigned.
+#	planet_modifier = { }				Modifier applied to colony if Governor is assigned.
 #	system_modifier = { }				Modifier applied to system if the leader is inside it. Only applied from/to unoccupied objects with the same controller as the system.
 #	sector_modifier = { }				Modifier applied to all systems in sector if the leader is governing its capital and the capital is unoccupied. Not applied to planets with a governor.
 #	fleet_modifier = { }				Modifier applied to the fleet the leader is assigned to.
@@ -53,7 +56,7 @@
 #	triggered_background_planet_modifier = { }
 #	triggered_councilor_modifier = { }
 #
-#	Modifiers applied to pop groups on planet. Modifier values are divided in proportion to size between pop groups for which the trigger is true. (THIS = Pop group)
+#	Modifiers applied to pop groups on colony. Modifier values are divided in proportion to size between pop groups for which the trigger is true. (THIS = Pop group)
 #	triggered_planet_pop_group_modifier_for_all = { } Applied if Governor is assigned. See documentation in buildings file
 #	triggered_planet_pop_group_modifier_for_species = { } Applied if Governor is assigned. See documentation in buildings file
 #

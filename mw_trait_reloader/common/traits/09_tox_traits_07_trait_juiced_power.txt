@@ -1,3 +1,4 @@
+@overtuned_growth_penalty = -0.015
 trait_juiced_power = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 1
@@ -25,6 +26,7 @@ trait_juiced_power = {
 			owner = { NOT = { has_edict = damn_the_consequences } }
 		}
 		worker_and_simple_drone_cat_bonus_workforce_mult = 0.05
+		soldier_jobs_bonus_workforce_mult = 0.15
 		}
 	triggered_pop_group_modifier = {
 		potential = {
@@ -32,10 +34,12 @@ trait_juiced_power = {
 			owner = { has_edict = damn_the_consequences }
 		}
 		worker_and_simple_drone_cat_bonus_workforce_mult = 0.1
+		soldier_jobs_bonus_workforce_mult = 0.30
 	}
 	modifier = {
 		army_damage_mult = 0.40
 		leader_lifespan_add = -10
+		logistic_growth_mult = @overtuned_growth_penalty
 	}
 	assembly_score = {
 		modifier = {
@@ -43,6 +47,6 @@ trait_juiced_power = {
 		}
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }

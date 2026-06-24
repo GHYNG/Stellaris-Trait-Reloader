@@ -1,0 +1,30 @@
+leader_trait_nomadic_naturalist = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_nomadic_naturalist"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	self_modifier = {
+		science_ship_survey_speed = 0.2
+	}
+	triggered_self_modifier = {
+		custom_tooltip = leader_trait_nomadic_naturalist_effect
+	}
+	councilor_modifier = {
+		country_society_tech_research_speed = 0.05
+		planet_xeno_zoo_animals_unity_produces_add = 1
+		planet_xeno_zoo_animals_society_research_produces_add = 1
+	}
+	leader_potential_add = {
+		has_nomads_dlc = yes
+		has_trait = subclass_scientist_councilor
+	}
+	leader_class = { scientist }
+	background_icon = "GFX_leader_background_destiny_1"
+	initial = no
+	randomized = no
+}

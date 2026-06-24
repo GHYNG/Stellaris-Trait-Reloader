@@ -114,19 +114,60 @@ leader_trait_carefree_2 = {
 leader_trait_roamer = {
 	inline_script = {
 		script = trait/icon
-		CLASS = scientist
+		CLASS = leader
 		ICON = "GFX_leader_trait_roamer"
 		RARITY = common
 		COUNCIL = no
 		TIER = 1
 	}
-	modifier = {
-		science_ship_survey_speed = 0.20
+	# We do these so the tooltip displays correctly
+	triggered_modifier = {
+		potential = {
+			leader_class = scientist
+			owner? = {
+				is_nomadic = no
+			}
+		}
+		science_ship_survey_speed = 0.10
+		ship_speed_mult = 0.10
+	}
+	triggered_modifier = {
+		potential = {
+			leader_class = commander
+			owner? = {
+				is_nomadic = no
+			}
+		}
+		ship_evasion_add = 5
+		ship_speed_mult = 0.10
+	}
+	# Nomadic Leaders get the effects of the other class as well
+	triggered_modifier = {
+		potential = {
+			leader_class = scientist
+			owner? = {
+				is_nomadic = yes
+			}
+		}
+		science_ship_survey_speed = 0.10
+		ship_evasion_add = 5
+		ship_speed_mult = 0.10
+	}
+	triggered_modifier = {
+		potential = {
+			leader_class = commander
+			owner? = {
+				is_nomadic = yes
+			}
+		}
+		science_ship_survey_speed = 0.10
+		ship_evasion_add = 5
+		ship_speed_mult = 0.10
 	}
 	leader_potential_add = {
 		is_ruler = no
 	}
-	leader_class = { scientist }
+	leader_class = { scientist commander }
 	opposites = {
 		leader_trait_neurotic
 		leader_trait_neurotic_2
@@ -134,10 +175,6 @@ leader_trait_roamer = {
 	selectable_weight = {
 		weight = @class_trait_weight
 		inline_script = paragon/pilot_weight_mult
-		inline_script = {
-			script = paragon/subclass_weight_mult
-			SUBCLASS = scientist_explorer
-		}
 	}
 	ai_weight = 100
 }
@@ -146,16 +183,57 @@ leader_trait_roamer_2 = {
 	replace_traits = { "leader_trait_roamer" }
 	inline_script = {
 		script = trait/icon
-		CLASS = scientist
+		CLASS = leader
 		ICON = "GFX_leader_trait_roamer"
 		RARITY = common
 		COUNCIL = no
 		TIER = 2
 	}
-	modifier = {
-		science_ship_survey_speed = 0.35
+	# We do these so the tooltip displays correctly
+	triggered_modifier = {
+		potential = {
+			leader_class = scientist
+			owner? = {
+				is_nomadic = no
+			}
+		}
+		science_ship_survey_speed = 0.15
+		ship_speed_mult = 0.15
 	}
-	leader_class = { scientist }
+	triggered_modifier = {
+		potential = {
+			leader_class = commander
+			owner? = {
+				is_nomadic = no
+			}
+		}
+		ship_evasion_add = 5
+		ship_speed_mult = 0.15
+	}
+	# Nomadic Leaders get the effects of the other class as well
+	triggered_modifier = {
+		potential = {
+			leader_class = scientist
+			owner? = {
+				is_nomadic = yes
+			}
+		}
+		science_ship_survey_speed = 0.15
+		ship_evasion_add = 5
+		ship_speed_mult = 0.15
+	}
+	triggered_modifier = {
+		potential = {
+			leader_class = commander
+			owner? = {
+				is_nomadic = yes
+			}
+		}
+		science_ship_survey_speed = 0.15
+		ship_evasion_add = 5
+		ship_speed_mult = 0.15
+	}
+	leader_class = { scientist commander }
 	opposites = {
 		leader_trait_neurotic
 		leader_trait_neurotic_2
@@ -1008,6 +1086,7 @@ leader_trait_space_miner = {
 	leader_potential_add = {
 		has_governor_subclass = yes
 		has_paragon_dlc = yes
+		trait_is_nomad_check = no
 	}
 	leader_class = { scientist official commander }
 	selectable_weight = {
@@ -1269,9 +1348,15 @@ trait_ruler_expansionist = {
 		COUNCIL = yes
 		TIER = 1
 	}
-	councilor_modifier = {
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = no }
 		starbase_outpost_cost_mult = -0.05
 		country_starbase_influence_cost_mult = -0.05
+	}
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = yes }
+		megastructures_waystations_cost_mult = -0.05
+		megastructure_waystation_megastructure_build_speed_mult = 0.05
 	}
 	leader_potential_add = {
 		OR = {
@@ -1297,9 +1382,15 @@ trait_ruler_expansionist_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	councilor_modifier = {
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = no }
 		starbase_outpost_cost_mult = -0.075
 		country_starbase_influence_cost_mult = -0.075
+	}
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = yes }
+		megastructures_waystations_cost_mult = -0.075
+		megastructure_waystation_megastructure_build_speed_mult = 0.075
 	}
 	leader_class = { scientist }
 }
@@ -1315,9 +1406,15 @@ trait_ruler_expansionist_3 = {
 		COUNCIL = yes
 		TIER = 3
 	}
-	councilor_modifier = {
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = no }
 		starbase_outpost_cost_mult = -0.10
 		country_starbase_influence_cost_mult = -0.10
+	}
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = yes }
+		megastructures_waystations_cost_mult = -0.10
+		megastructure_waystation_megastructure_build_speed_mult = 0.10
 	}
 	leader_potential_add = {
 		has_paragon_dlc = yes
@@ -2759,6 +2856,14 @@ leader_trait_expertise_archaeostudies = {
 						is_site_completed = yes
 					}
 				}
+				any_owned_nonprimary_starbase = {
+					is_waystation_starbase = yes
+					solar_system? = {
+						any_archaeological_site = {
+							is_site_completed = yes
+						}
+					}
+				}
 				any_owned_planet = {
 					has_active_building = building_archaeostudies_faculty
 				}
@@ -2906,7 +3011,7 @@ leader_trait_surveyor = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -2943,7 +3048,7 @@ leader_trait_midas_touch = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -2980,7 +3085,7 @@ leader_trait_collective_wisdom = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -3044,7 +3149,7 @@ leader_trait_knowledge_for_the_masses = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -3076,7 +3181,7 @@ leader_trait_robotist = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -3138,7 +3243,7 @@ leader_trait_great_researcher = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -3168,7 +3273,7 @@ leader_trait_xeno_cataloger = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -3204,7 +3309,7 @@ leader_trait_frontier_adventurer = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -3246,7 +3351,7 @@ leader_trait_brilliant_shipwright = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -3278,7 +3383,7 @@ leader_trait_truth_seeker = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}

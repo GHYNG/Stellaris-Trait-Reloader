@@ -25,6 +25,6 @@ trait_robot_ancient_dreadnought = {
 		foundry_jobs_bonus_workforce_mult = 0.15
 	}
 	slave_cost = {
-		energy = 1500
+		trade = 1500
 	}
 }

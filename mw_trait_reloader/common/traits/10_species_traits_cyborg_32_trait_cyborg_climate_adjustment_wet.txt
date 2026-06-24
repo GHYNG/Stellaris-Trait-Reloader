@@ -1,0 +1,39 @@
+trait_cyborg_climate_adjustment_wet = {
+	icon = "gfx/interface/icons/traits/trait_wet_planet_preference.dds"
+	host_has_dlc = "The Machine Age"
+	cost = 1
+	custom_tooltip = trait_cyborg_climate_adjustment_wet_tt
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { organic positive habitability cybernetic }
+	initial = no
+	opposites = {
+		"trait_cyborg_climate_adjustment_cold"
+		"trait_cyborg_climate_adjustment_dry"
+	}
+	species_potential_add = {
+		can_add_cybernetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_cybernetic_traits = yes
+	}
+	randomized = no
+	category = cyborg
+	sorting_priority = 30
+	bound_to_planet_classes = {
+		pc_ocean
+		pc_tropical
+		pc_continental
+	}
+	modifier = {
+		# Wet
+		pc_tropical_habitability 	= @cyborg_hab_preference
+		pc_continental_habitability = @cyborg_hab_preference
+		pc_ocean_habitability 		= @cyborg_hab_preference
+	}
+	slave_cost = {
+		trade = 500
+	}
+}

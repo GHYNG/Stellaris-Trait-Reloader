@@ -31,7 +31,7 @@ trait_shelled = {
 	portrait_override = { rep14 pro2 }
 	tags = { organic positive habitability housing necroid molluscoid species }
 	modifier = {
-		pop_housing_usage_mult = -0.75
+		pop_housing_usage_mult = -0.3
 		pop_environment_tolerance = 0.10
 	}
 	assembly_score = {
@@ -42,6 +42,6 @@ trait_shelled = {
 		}
 	}
 	slave_cost = {
-		energy = 1500
+		trade = 1500
 	}
 }

@@ -25,6 +25,6 @@ trait_haunting_visions = {
 		pop_cat_ruler_bonus_workforce_mult = -0.1
 	}
 	slave_cost = {
-		energy = -1000
+		trade = -1000
 	}
 }

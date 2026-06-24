@@ -1,0 +1,18 @@
+leader_trait_circuit_champion = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_circuit_champion"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	inline_script = {
+		script = paragon/leader_resource_produces
+		RESOURCE = unity
+		AMOUNT = 50
+	}
+	leader_class = { commander official scientist }
+	initial = no
+	randomized = no
+}

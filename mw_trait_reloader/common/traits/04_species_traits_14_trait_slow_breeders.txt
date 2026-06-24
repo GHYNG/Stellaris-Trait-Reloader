@@ -4,14 +4,14 @@ trait_slow_breeders = {
 	species_potential_add = {
 		can_add_negative_organic_traits = yes
 	}
-	opposites = { "trait_rapid_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" "trait_plantoid_budding" "trait_lithoid_budding" "trait_vat_grown" "trait_tiyanki" "trait_humanoid_psychological_infertility" "trait_humanoid_existential_iteroparity" "trait_egg_laying" "trait_nascent_stage" }
+	opposites = { "trait_pyroclastic" "trait_rapid_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" "trait_plantoid_budding" "trait_lithoid_budding" "trait_vat_grown" "trait_tiyanki" "trait_humanoid_psychological_infertility" "trait_humanoid_existential_iteroparity" "trait_egg_laying" "trait_nascent_stage" }
 	allowed_archetypes = { BIOLOGICAL }
 	tags = { organic negative pop_growth }
 	modifier = {
 		logistic_growth_mult = -0.1
 	}
 	slave_cost = {
-		energy = -1000
+		trade = -1000
 	}
 	ai_weight = {
 		factor = 0

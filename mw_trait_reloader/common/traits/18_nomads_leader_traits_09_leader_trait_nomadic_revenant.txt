@@ -1,0 +1,41 @@
+leader_trait_nomadic_revenant = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_nomadic_revenant"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	triggered_self_modifier = {
+		custom_tooltip = leader_trait_nomadic_revenant_effect
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			NOT = {
+				exists = owner
+			}
+		}
+		ship_fire_rate_mult = 0.05
+		ship_evasion_mult = 0.05
+		ships_upkeep_mult = -0.05
+	}
+	triggered_fleet_modifier = {
+		potential = {
+			exists = owner
+		}
+		ship_fire_rate_mult = 0.05
+		ship_evasion_mult = 0.05
+		ships_upkeep_mult = -0.05
+		mult = owner.revenant_oath
+	}
+	leader_potential_add = {
+		has_nomads_dlc = yes
+		has_trait = subclass_commander_admiral
+	}
+	leader_class = { commander }
+	background_icon = "GFX_leader_background_destiny_1"
+	initial = no
+	randomized = no
+}

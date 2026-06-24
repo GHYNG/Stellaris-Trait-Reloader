@@ -1,17 +1,28 @@
 leader_trait_engineer = {
 	inline_script = {
 		script = trait/icon
-		CLASS = commander
+		CLASS = leader
 		ICON = GFX_leader_trait_engineer
 		RARITY = common
 		COUNCIL = no
 		TIER = 1
 	}
-	fleet_modifier = {
+	# We do these so the tooltip displays correctly
+	triggered_fleet_modifier = {
+		potential = {
+			leader_class = commander
+		}
 		ship_hull_regen_add_perc = 0.005
 		ship_armor_regen_add_perc = 0.01
 	}
-	leader_class = { commander }
+	triggered_modifier = {
+		potential = {
+			leader_class = scientist
+		}
+		ship_hull_regen_add_perc = 0.005
+		ship_armor_regen_add_perc = 0.01
+	}
+	leader_class = { commander scientist }
 	selectable_weight = {
 		weight = @class_trait_weight
 		inline_script = paragon/pilot_weight_mult

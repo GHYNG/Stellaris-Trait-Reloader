@@ -5,6 +5,7 @@ trait_adaptive_lithoid = {
 	}
 	species_possible_remove = {
 		OR = {
+			can_do_advanced_gene_modding = yes
 			can_remove_beneficial_genetic_traits = yes
 			can_remove_pop_growth_genetic_traits = yes
 			can_add_or_remove_phenotype_traits = yes
@@ -24,6 +25,6 @@ trait_adaptive_lithoid = {
 		pop_environment_tolerance = 0.10
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }

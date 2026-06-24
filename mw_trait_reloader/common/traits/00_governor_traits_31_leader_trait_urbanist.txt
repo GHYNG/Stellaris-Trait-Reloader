@@ -9,7 +9,7 @@ leader_trait_urbanist = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -18,11 +18,11 @@ leader_trait_urbanist = {
 		has_trait = subclass_official_governor
 	}
 	planet_modifier = {
-		empire_size_districts_mult = -0.75
+		empire_size_districts_mult = -0.5
 		planet_structures_upkeep_mult = -0.5
 	}
 	sector_modifier = {
-		empire_size_districts_mult = -0.375
+		empire_size_districts_mult = -0.25
 		planet_structures_upkeep_mult = -0.25
 	}
 	leader_class = { official }

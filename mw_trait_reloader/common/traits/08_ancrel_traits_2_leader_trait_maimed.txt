@@ -8,7 +8,7 @@ leader_trait_maimed = {
 	self_modifier = {
 		leader_lifespan_add = -40
 	}
-	leader_class = { scientist }
+	leader_class = { commander scientist official }
 	initial = no
 	randomized = no
 }

@@ -1,0 +1,43 @@
+trait_recursive_learners = {
+	host_has_dlc = "Nomads"
+	cost = 1
+	icon = "gfx/interface/icons/traits/trait_recursive_learners.dds"
+	initial = yes
+	species_possible_add = {
+		can_add_genetic_traits = yes
+		OR = {
+			has_trait = trait_pc_ark_preference
+			has_trait = trait_auto_hab_preference
+		}
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	allowed_planet_classes = { pc_ark }
+	localized_tags = { SPECIES_TRAIT_NOMAD }
+	randomized = no
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive pop_output research }
+	opposites = { trait_natural_physicists trait_natural_sociologists trait_natural_engineers }
+	custom_tooltip = trait_recursive_learners_effects
+	triggered_pop_group_modifier = {
+		potential = { planet.ship? = { is_science_arkship = yes } }
+		researcher_jobs_bonus_workforce_mult = 1
+		mult = planet.ship.value:trait_recursive_learners_value
+	}
+	triggered_pop_group_modifier = {
+		potential = { planet.ship? = { is_civilian_arkship = yes } }
+		foundry_jobs_bonus_workforce_mult = 1
+		artisan_jobs_bonus_workforce_mult = 1
+		pop_ark_harvester_bonus_workforce_mult = 1
+		mult = planet.ship.value:trait_recursive_learners_value
+	}
+	triggered_pop_group_modifier = {
+		potential = { planet.ship? = { is_military_arkship = yes } }
+		engineer_jobs_bonus_workforce_mult = 1
+		soldier_jobs_bonus_workforce_mult = 1
+		mult = planet.ship.value:trait_recursive_learners_value
+	}
+	ai_weight = { weight = 0 }
+	slave_cost = { trade = 500 }
+}

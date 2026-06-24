@@ -10,7 +10,10 @@ trait_erudite = {
 		can_do_advanced_gene_modding = yes
 	}
 	species_possible_remove = {
-		can_remove_beneficial_genetic_traits = yes
+		OR = {
+			can_do_advanced_gene_modding = yes
+			can_remove_beneficial_genetic_traits = yes
+		}
 	}
 	species_possible_merge_remove = {
 		always = yes
@@ -23,12 +26,12 @@ trait_erudite = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive pop_output research leader genetic_ascension }
 	modifier = {
-		researcher_jobs_bonus_workforce_mult = 0.3
+		researcher_jobs_bonus_workforce_mult = 0.2
 		negative_leader_traits_species = -1
 		leaders_upkeep_mult = -0.1
 	}
 	slave_cost = {
-		energy = 2000
+		trade = 2000
 	}
 	assembly_score = {
 		modifier = {

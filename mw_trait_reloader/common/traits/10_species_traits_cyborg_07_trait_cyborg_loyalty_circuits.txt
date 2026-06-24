@@ -3,7 +3,6 @@ trait_cyborg_loyalty_circuits = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_CYBORG
-		SPECIES_TRAIT_UNIVERSAL_AUGMENTATIONS
 	}
 	tags = { organic positive happiness cybernetic individual }
 	initial = yes
@@ -23,20 +22,16 @@ trait_cyborg_loyalty_circuits = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
 		pop_happiness = 0.1
 	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			energy = @cyborg_energy_upkeep
-		}
-	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 	allowed_origins = {
 		origin_unplugged
+	}
+	allowed_civics = {
+		civic_augmentation_bazaars
 	}
 }

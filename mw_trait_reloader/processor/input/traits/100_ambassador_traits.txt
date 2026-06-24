@@ -429,6 +429,7 @@ leader_trait_ambassador_research_pact_focus = {
 	leader_class = { official }
 	selectable_weight = {
 		inline_script = paragon/subclass_free_trait_weight
+		inline_script = paragon/council_weight_mult
 	}
 }
 

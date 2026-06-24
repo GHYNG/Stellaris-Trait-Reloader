@@ -1,0 +1,39 @@
+trait_voidling = {
+	cost = 3
+	species_potential_add = {
+		can_add_or_remove_leviathan_traits = yes
+		hidden_trigger = { exists = from }
+		from = {
+			has_country_flag = harvested_voidspawn_dna
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_leviathan_traits = yes
+		}
+	}
+	initial = no
+	randomized = no
+	opposites = { "trait_plantoid_phototrophic" "trait_plantoid_radiotrophic" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive habitability upkeep leviathan genetic_ascension }
+	custom_tooltip_with_modifiers = TRAIT_VOIDLING_EFFECT
+	resources = {
+		category = planet_pops
+		# Energy Upkeep
+		upkeep = {
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
+			energy = @living_standard_energy_normal
+		}
+	}
+	modifier = {
+		habitability_floor_add = 0.80
+	}
+	slave_cost = {
+		trade = 1500
+	}
+}

@@ -9,8 +9,15 @@ leader_trait_armada_logistician = {
 		TIER = 1
 	}
 	councilor_modifier = {
-		ship_orbit_upkeep_mult = -0.075
 		country_naval_cap_mult = 0.025
+	}
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = no }
+		ship_orbit_upkeep_mult = -0.075
+	}
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = yes }
+		ships_upkeep_mult = -0.0375
 	}
 	leader_potential_add = {
 		OR = {
@@ -36,8 +43,15 @@ leader_trait_armada_logistician_2 = {
 		TIER = 2
 	}
 	councilor_modifier = {
-		ship_orbit_upkeep_mult = -0.10
 		country_naval_cap_mult = 0.075
+	}
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = no }
+		ship_orbit_upkeep_mult = -0.10
+	}
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = yes }
+		ships_upkeep_mult = -0.05
 	}
 	leader_class = { commander }
 }

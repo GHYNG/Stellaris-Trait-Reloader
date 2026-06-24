@@ -1,0 +1,19 @@
+leader_trait_paladin_ambusher = { #block if no First Contact
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = commander
+		ICON = "GFX_leader_trait_paladin_ambusher"
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+	councilor_modifier = {
+		ship_cloaking_strength_add = 1
+	}
+	fleet_modifier = {
+		ship_cloaking_strength_add = 6
+	}
+	leader_class = { commander }
+	initial = no
+	randomized = no
+}

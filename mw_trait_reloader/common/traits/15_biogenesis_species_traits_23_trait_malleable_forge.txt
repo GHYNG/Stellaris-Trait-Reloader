@@ -33,7 +33,7 @@ trait_malleable_forge = {
 				has_active_tradition = tr_mutation_planned_polymorphism_evo_pred
 			}
 		}
-		foundry_jobs_bonus_workforce_mult = 0.15
-		artisan_jobs_bonus_workforce_mult = 0.15
+		foundry_jobs_bonus_workforce_mult = 0.10
+		artisan_jobs_bonus_workforce_mult = 0.10
 	}
 }

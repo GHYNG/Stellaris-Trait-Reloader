@@ -16,8 +16,8 @@ trait_genetic_memory = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	portrait_override = { fun16 fun4 lith_human pla17 aqu5 }
-	opposites = { "trait_nonadaptive" }
+	portrait_override = { fun16 fun4 lith_human lith_human_inf pla17 aqu5 }
+	opposites = { "trait_nonadaptive" "trait_pc_ark_preference" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	species_class = { HUM MAM NECROID }
 	localized_tags = {
@@ -43,6 +43,6 @@ trait_genetic_memory = {
 		mult = value:genetic_memory_mult
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }

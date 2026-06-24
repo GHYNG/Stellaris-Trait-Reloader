@@ -1,0 +1,37 @@
+trait_terraphobic = {
+	host_has_dlc = "Nomads"
+	cost = -1
+	icon = "gfx/interface/icons/traits/trait_terraphobic.dds"
+	initial = yes
+	species_possible_add = {
+		can_add_genetic_traits = yes
+		OR = {
+			has_trait = trait_pc_ark_preference
+			has_trait = trait_pc_habitat_preference
+			has_trait = trait_auto_hab_preference
+		}
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	allowed_planet_classes = { pc_ark pc_habitat }
+	localized_tags = { SPECIES_TRAIT_NOMAD }
+	randomized = yes
+	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE ROBOT }
+	tags = { negative amenities army }
+	opposites = { trait_reavers trait_adaptive trait_extremely_adaptive }
+	custom_tooltip_with_modifiers = trait_terraphobic_effects
+	modifier = {
+		army_health = -0.35
+	}
+	triggered_pop_group_modifier = {
+		potential = { planet? = { is_artificial = no } }
+		pop_bonus_workforce_mult = -0.15
+		pop_amenities_usage_mult = 0.15
+	}
+	ai_weight = { weight = 0 }
+	slave_cost = { trade = -250 }
+}

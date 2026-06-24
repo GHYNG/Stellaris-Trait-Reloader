@@ -15,18 +15,11 @@ trait_cyborg_double_jointed = {
 	}
 	randomized = no
 	category = cyborg
-	custom_tooltip_with_modifiers = CYBORG_ENERGY_UPKEEP_EFFECT
 	modifier = {
 		pop_housing_usage_mult = -0.1
 		pop_resettlement_cost_mult = -0.35
 	}
-	resources = {
-		category = planet_pops
-		upkeep = {
-			energy = @cyborg_energy_upkeep
-		}
-	}
 	slave_cost = {
-		energy = 1500
+		trade = 1500
 	}
 }

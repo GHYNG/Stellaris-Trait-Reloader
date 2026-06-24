@@ -18,15 +18,19 @@ trait_robot_exotic_fuel_consumption = {
 	initial = no
 	randomized = no
 	modifier = {
-		pop_bonus_workforce_mult = 0.10
+		specialist_and_complex_drone_cat_bonus_workforce_mult = 0.10
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	resources = {
 		category = planet_pops
 		upkeep = {
-			exotic_gases = 0.04
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
+			exotic_gases = 0.05
 		}
 	}
 	custom_tooltip_with_modifiers = trait_robot_exotic_fuel_consumption_tt

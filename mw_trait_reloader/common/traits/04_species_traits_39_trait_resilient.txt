@@ -11,11 +11,12 @@ trait_resilient = {
 		always = yes
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
+	opposites = { "trait_pc_ark_preference" }
 	tags = { organic positive army }
 	modifier = {
 		army_defense_damage_mult = 0.5
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

@@ -52,6 +52,6 @@ trait_chromalogs = {
 		}
 	}
 	slave_cost = {
-		energy = 1500
+		trade = 1500
 	}
 }

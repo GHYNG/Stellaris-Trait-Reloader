@@ -1,0 +1,26 @@
+@ark_primary = 0.50
+trait_pc_ark_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_ark_preference.dds"
+	short_name = "trait_pc_ark_preference_short"
+	bound_to_planet_classes = {
+		pc_ark
+	}
+	ideal_planet_class = pc_ark
+	opposites = { "trait_resilient" "trait_genetic_memory" "trait_sedentary" }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = yes
+	}
+	initial = no
+	randomized = no
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID MACHINE ROBOT }
+	sorting_priority = 30
+	modifier = {
+		pc_ark_habitability 		= @ark_primary
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

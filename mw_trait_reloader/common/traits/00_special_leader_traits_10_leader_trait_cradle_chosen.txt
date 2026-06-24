@@ -71,7 +71,7 @@ leader_trait_cradle_chosen = {
 		potential = {
 			is_ruler = no
 		}
-		pop_political_power = 5
+		pop_political_power = 0.3
 		mult = value:transcended_psionic_multiplier
 	}
 	triggered_planet_modifier = {
@@ -95,7 +95,7 @@ leader_trait_cradle_chosen = {
 		potential = {
 			is_ruler = no
 		}
-		pop_political_power = 2.5
+		pop_political_power = 0.15
 		mult = value:transcended_psionic_multiplier
 	}
 	triggered_sector_modifier = {

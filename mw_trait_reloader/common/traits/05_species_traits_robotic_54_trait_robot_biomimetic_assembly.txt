@@ -17,14 +17,18 @@ trait_robot_biomimetic_assembly = {
 	initial = no
 	randomized = no
 	modifier = {
-		roboticist_jobs_bonus_workforce_mult = 0.5
+		roboticist_jobs_bonus_workforce_mult = 0.20
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	resources = {
 		category = planet_pops
 		upkeep = {
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
 			food = 1
 			exotic_gases = 0.02
 		}

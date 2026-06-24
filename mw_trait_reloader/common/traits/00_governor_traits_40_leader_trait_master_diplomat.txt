@@ -10,7 +10,7 @@ leader_trait_master_diplomat = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -18,6 +18,12 @@ leader_trait_master_diplomat = {
 		diplo_weight_mult = 0.2
 		country_trust_cap_add = 50
 		envoys_add = 2
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			owner = { is_nomadic = yes }
+		}
+		nomadic_contract_value_mult = 0.1
 	}
 	leader_potential_add = {
 		has_paragon_dlc = yes

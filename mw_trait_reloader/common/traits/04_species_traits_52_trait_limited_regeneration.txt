@@ -27,7 +27,7 @@ trait_limited_regeneration = { #blue
 		logistic_growth_mult = 0.05
 	}
 	slave_cost = {
-		energy = 250
+		trade = 250
 	}
 	ai_weight = {
 		weight = 0

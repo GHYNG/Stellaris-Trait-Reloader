@@ -22,7 +22,7 @@ trait_enigmatic_intelligence_poor = {
 		researcher_jobs_bonus_workforce_mult = 0.10
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 	assembly_score = {
 		modifier = {

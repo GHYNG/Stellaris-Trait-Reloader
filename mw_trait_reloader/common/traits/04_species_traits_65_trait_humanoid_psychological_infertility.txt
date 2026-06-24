@@ -1,10 +1,9 @@
 trait_humanoid_psychological_infertility = {
-	host_has_dlc = "Humanoids Species Pack"
 	cost = -2
 	species_potential_add = {
 		can_add_negative_organic_traits = yes
 	}
-	opposites = { "trait_humanoid_existential_iteroparity" "trait_slow_breeders" "trait_vat_grown" "trait_necrophage" "trait_lithoid" "trait_nascent_stage" }
+	opposites = { "trait_humanoid_existential_iteroparity" "trait_slow_breeders" "trait_vat_grown" "trait_necrophage" "trait_nascent_stage" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic negative pop_growth }
 	icon = "gfx/interface/icons/traits/trait_psychological_infertility.dds"
@@ -22,6 +21,6 @@ trait_humanoid_psychological_infertility = {
 		logistic_growth_mult = -0.3
 	}
 	slave_cost = {
-		energy = -1000
+		trade = -1000
 	}
 }

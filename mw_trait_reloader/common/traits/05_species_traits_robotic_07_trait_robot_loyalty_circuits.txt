@@ -15,6 +15,6 @@ trait_robot_loyalty_circuits = {
 		pop_happiness = 0.1
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

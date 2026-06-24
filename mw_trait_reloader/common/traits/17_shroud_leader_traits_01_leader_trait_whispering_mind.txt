@@ -85,7 +85,7 @@ leader_trait_whispering_mind_3 = {
 		ICON = "GFX_leader_trait_whispering_mind"
 		RARITY = common
 		COUNCIL = no
-		TIER = 2
+		TIER = 3
 	}
 	self_modifier = {
 		species_leader_exp_gain = 0.6

@@ -13,4 +13,8 @@ trait_presapient_stage = {
 	icon = "gfx/interface/icons/traits/trait_primitive.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	tags = { organic negative presapient special }
+	forced_integration = {
+		integration_rate = 0.0167  # ~1/60th per month
+		minimum_colony_age = 60  # months
+	}
 }

@@ -14,9 +14,15 @@ leader_trait_cartographer = {
 			has_trait = subclass_scientist_councilor
 		}
 	}
-	councilor_modifier = {
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = no }
 		terraform_speed_mult = 0.25
 		planet_clear_blocker_speed_mult = 0.10
+	}
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = yes }
+		science_ship_survey_speed = 0.10
+		ship_anomaly_generation_chance_mult = 0.05
 	}
 	leader_trait_type = veteran
 	leader_class = { official scientist }
@@ -35,9 +41,15 @@ leader_trait_cartographer_2 = {
 		COUNCIL = yes
 		TIER = 2
 	}
-	councilor_modifier = {
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = no }
 		terraform_speed_mult = 0.33
 		planet_clear_blocker_speed_mult = 0.25
+	}
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = yes }
+		science_ship_survey_speed = 0.15
+		ship_anomaly_generation_chance_mult = 0.10
 	}
 	leader_trait_type = veteran
 	leader_class = { official scientist }
@@ -52,9 +64,15 @@ leader_trait_cartographer_3 = {
 		COUNCIL = yes
 		TIER = 3
 	}
-	councilor_modifier = {
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = no }
 		terraform_speed_mult = 0.5
 		planet_clear_blocker_speed_mult = 0.33
+	}
+	triggered_councilor_modifier = {
+		potential = { trait_is_nomad_check = yes }
+		science_ship_survey_speed = 0.25
+		ship_anomaly_generation_chance_mult = 0.15
 	}
 	leader_trait_type = veteran
 	leader_class = { official scientist }

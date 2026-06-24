@@ -1,5 +1,4 @@
 trait_humanoid_jinxed = {
-	host_has_dlc = "Humanoids Species Pack"
 	category = normal
 	cost = -1
 	species_potential_add = {
@@ -14,6 +13,6 @@ trait_humanoid_jinxed = {
 		negative_leader_traits_species = 1
 	}
 	slave_cost = {
-		energy = -500
+		trade = -500
 	}
 }

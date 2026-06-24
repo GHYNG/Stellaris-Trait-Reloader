@@ -1,0 +1,47 @@
+trait_crucible_community = {
+	host_has_dlc = "Infernals Species Pack"
+	cost = 1
+	category = normal
+	species_possible_add = {
+		OR = {
+			can_add_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_remove = {
+		OR = {
+			can_remove_beneficial_genetic_traits = yes
+			can_add_or_remove_phenotype_traits = yes
+		}
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	country_modifier = {
+		country_edict_fund_add = 0.0025
+	}
+	initial = yes
+	randomized = yes
+	allowed_archetypes = { BIOLOGICAL }
+	species_class_override = {
+		hidden_trigger = {
+			OR = {
+				can_add_or_remove_phenotype_traits = yes
+				can_add_transgenic_traits = yes
+			}
+		}
+	}
+	tags = { organic infernal positive edict_fund }
+	species_class = { INF }
+	localized_tags = {
+		SPECIES_TRAIT_INFERNAL
+	}
+	ai_weight = {
+		weight = 0
+	}
+	icon = "gfx/interface/icons/traits/trait_crucible_community.dds"
+	custom_tooltip = trait_crucible_community_tooltip
+	slave_cost = {
+		trade = 500
+	}
+}

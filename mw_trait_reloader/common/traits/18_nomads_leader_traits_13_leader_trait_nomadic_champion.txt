@@ -1,0 +1,29 @@
+leader_trait_nomadic_champion = {
+	leader_trait_type = destiny
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_nomadic_champion"
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	fleet_modifier = {
+		ship_orbital_bombardment_mult = 0.75
+	}
+	army_modifier = {
+		army_damage_mult = 0.25
+		army_morale_damage_taken_mult = -0.25
+	}
+	triggered_self_modifier = {
+		custom_tooltip = leader_trait_nomadic_champion_effect
+	}
+	leader_potential_add = {
+		has_nomads_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = { commander }
+	background_icon = "GFX_leader_background_destiny_1"
+	initial = no
+	randomized = no
+}

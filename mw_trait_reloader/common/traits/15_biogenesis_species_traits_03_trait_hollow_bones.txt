@@ -7,7 +7,7 @@ trait_hollow_bones = {
 			can_add_or_remove_phenotype_traits = yes
 		}
 	}
-	opposites = { "trait_strong" "trait_very_strong" "trait_weak" "trait_tankbound" }
+	opposites = { "trait_strong" "trait_very_strong" "trait_weak" "trait_tankbound" "trait_photoadaptive" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	species_class = { TOX AVI }
 	localized_tags = {
@@ -26,10 +26,11 @@ trait_hollow_bones = {
 			exists = planet
 		}
 		worker_and_simple_drone_cat_bonus_workforce_mult = -0.01	# -0.1%
+		soldier_jobs_bonus_workforce_mult = -0.01
 		mult = value:hollow_bones_mult								# Multiplied by 2/3 × planet size
 	}
 	slave_cost = {
-		energy = -400
+		trade = -400
 	}
 	assembly_score = {
 		modifier = {

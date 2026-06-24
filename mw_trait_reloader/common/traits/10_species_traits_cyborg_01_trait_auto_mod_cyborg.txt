@@ -20,7 +20,7 @@ trait_auto_mod_cyborg = {
 		always = yes
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 	assembly_score = {
 		base = 2
@@ -37,12 +37,10 @@ trait_auto_mod_cyborg = {
 			trade = 0.5
 		}
 		upkeep = {
-			energy = @cyborg_energy_upkeep
-		}
-		upkeep = {
 			trigger = {
 				exists = owner
 				owner = { has_modifier = optimized_parts }
+				is_sapient = yes
 			}
 			energy = 0.1
 		}

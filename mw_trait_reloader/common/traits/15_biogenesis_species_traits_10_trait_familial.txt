@@ -17,7 +17,7 @@ trait_familial = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	portrait_override = { fun16 fun4 lith_human pla17 aqu5 }
+	portrait_override = { fun16 fun4 lith_human lith_human_inf pla17 aqu5 }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	species_class = { HUM MAM AVI }
 	localized_tags = {
@@ -38,7 +38,7 @@ trait_familial = {
 		mult = planet.value:counter_familial
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 	assembly_score = {
 		base = 1

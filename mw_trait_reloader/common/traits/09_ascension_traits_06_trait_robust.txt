@@ -10,7 +10,10 @@ trait_robust = {
 		can_do_advanced_gene_modding = yes
 	}
 	species_possible_remove = {
-		can_remove_beneficial_genetic_traits = yes
+		OR = {
+			can_do_advanced_gene_modding = yes
+			can_remove_beneficial_genetic_traits = yes
+		}
 	}
 	species_possible_merge_remove = {
 		always = yes
@@ -27,7 +30,7 @@ trait_robust = {
 		leader_lifespan_add = 50
 	}
 	slave_cost = {
-		energy = 2000
+		trade = 2000
 	}
 	assembly_score = {
 		modifier = {

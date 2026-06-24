@@ -16,6 +16,6 @@ trait_robot_learning_algorithms = {
 		species_leader_exp_gain = 0.10
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 }

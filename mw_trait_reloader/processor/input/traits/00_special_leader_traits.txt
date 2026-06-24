@@ -120,9 +120,18 @@ leader_trait_cyborg = {
 	triggered_councilor_modifier = {
 		potential = {
 			is_ruler = yes
+			owner = { is_gestalt = no }
 		}
 		planet_structures_upkeep_mult = -0.25
 		empire_size_districts_mult = -0.05
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			is_ruler = yes
+			owner = { is_gestalt = yes }
+		}
+		planet_pops_cyborgs_upkeep_mult = -0.35
+		planet_jobs_complex_drone_produces_mult = 0.15
 	}
 	# Commander - Fleet Modifier
 	triggered_fleet_modifier = {
@@ -175,6 +184,14 @@ leader_trait_cyborg = {
 		planet_jobs_society_research_produces_mult = 0.10
 		planet_jobs_engineering_research_produces_mult = 0.10
 	}
+	# Any Class - Planet Modifier for cyber machines
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no
+			owner = { is_machine_empire = yes }
+		}
+		planet_pop_assembly_mult = 0.2
+	}
 	# Any Class - Sector Modifier
 	triggered_sector_modifier = {
 		potential = {
@@ -183,6 +200,13 @@ leader_trait_cyborg = {
 		planet_jobs_physics_research_produces_mult = 0.05
 		planet_jobs_society_research_produces_mult = 0.05
 		planet_jobs_engineering_research_produces_mult = 0.05
+	}
+	triggered_sector_modifier = {
+		potential = {
+			is_ruler = no
+			owner = { is_machine_empire = yes }
+		}
+		planet_pop_assembly_mult = 0.1
 	}
 	# Cyborg Oligarchic councilors
 	triggered_self_modifier = {
@@ -780,9 +804,9 @@ leader_trait_instrument_chosen = {
 		potential = {
 			is_ruler = yes
 			exists = owner
-			owner = { is_gestalt = no }
+			owner = { is_gestalt = yes }
 		}
-		planet_stability_mult = 0.02
+		planet_stability_add = 3
 		mult = value:transcended_psionic_multiplier
 	}
 	# Commander - Fleet Modifier
@@ -961,16 +985,34 @@ leader_trait_eater_chosen = {
 	triggered_planet_modifier = {
 		potential = {
 			is_ruler = no
+			is_gestalt = no
 		}
-		job_soldier_per_pop = 0.1
+		job_soldier_add = 200
+		mult = value:transcended_psionic_multiplier
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no
+			is_gestalt = yes
+		}
+		job_warrior_drone_add = 200
 		mult = value:transcended_psionic_multiplier
 	}
 	# Any Class - Sector Modifier
 	triggered_sector_modifier = {
 		potential = {
 			is_ruler = no
+			is_gestalt = no
 		}
-		job_soldier_per_pop = 0.05
+		job_soldier_add = 100
+		mult = value:transcended_psionic_multiplier
+	}
+	triggered_sector_modifier = {
+		potential = {
+			is_ruler = no
+			is_gestalt = yes
+		}
+		job_warrior_drone_add = 100
 		mult = value:transcended_psionic_multiplier
 	}
 	triggered_councilor_modifier = {
@@ -1061,7 +1103,7 @@ leader_trait_cradle_chosen = {
 		potential = {
 			is_ruler = no
 		}
-		pop_political_power = 5
+		pop_political_power = 0.3
 		mult = value:transcended_psionic_multiplier
 	}
 	triggered_planet_modifier = {
@@ -1085,7 +1127,7 @@ leader_trait_cradle_chosen = {
 		potential = {
 			is_ruler = no
 		}
-		pop_political_power = 2.5
+		pop_political_power = 0.15
 		mult = value:transcended_psionic_multiplier
 	}
 	triggered_sector_modifier = {
@@ -1273,13 +1315,14 @@ leader_trait_ruler_great_khan = {
 		script = trait/icon
 		CLASS = leader
 		ICON = "GFX_leader_trait_great_khan"
-		RARITY = common
+		RARITY = paragon
 		COUNCIL = yes
 		TIER = none
 	}
 	councilor_modifier = {
-		army_morale = 0.25
-		ship_weapon_damage = 0.05
+		army_morale = 1
+		ship_weapon_damage = 0.10
+		divided_patrongage_max_subjects = 5
 	}
 	leader_class = { scientist official commander }
 	initial = no

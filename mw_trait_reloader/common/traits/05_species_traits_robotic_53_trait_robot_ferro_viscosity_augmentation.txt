@@ -38,12 +38,16 @@ trait_robot_ferro_viscosity_augmentation = {
 		pop_amenities_usage_mult = -0.50
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 	resources = {
 		category = planet_pops
 		upkeep = {
-			sr_living_metal = 0.01
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
+			sr_living_metal = 0.03
 		}
 	}
 	custom_tooltip_with_modifiers = trait_robot_ferro_viscosity_augmentation_tt

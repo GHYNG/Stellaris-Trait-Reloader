@@ -50,6 +50,6 @@ trait_spare_organs = {
 		}
 	}
 	slave_cost = {
-		energy = 1000
+		trade = 1000
 	}
 }

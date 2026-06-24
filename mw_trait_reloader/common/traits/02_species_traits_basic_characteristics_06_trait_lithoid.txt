@@ -29,6 +29,7 @@ trait_lithoid = {
 				is_phototrophic = no
 				NOT = { has_trait = trait_voidling }
 				is_being_purged = no
+				is_sapient = yes
 			}
 			minerals = @living_standard_food_normal
 		}
@@ -37,8 +38,20 @@ trait_lithoid = {
 				is_phototrophic = yes
 				NOT = { has_trait = trait_voidling }
 				is_being_purged = no
+				is_sapient = yes
 			}
 			minerals = @living_standard_phototrophic_normal
+		}
+		upkeep = {
+			trigger = {
+				OR = {
+					has_trait = trait_cybernetic
+					has_trait = trait_limited_cybernetic
+				}
+				is_being_purged = no
+				is_sapient = yes
+			}
+			minerals = @living_standard_food_cyborg_reduction
 		}
 	}
 	custom_tooltip_with_modifiers = TRAIT_LITHOID_EFFECT

@@ -22,7 +22,7 @@ trait_enigmatic_intelligence_failed = {
 		researcher_jobs_bonus_workforce_mult = -0.6
 	}
 	slave_cost = {
-		energy = -150
+		trade = -150
 	}
 	assembly_score = {
 		modifier = {

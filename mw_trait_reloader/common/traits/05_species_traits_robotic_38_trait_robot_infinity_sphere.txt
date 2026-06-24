@@ -19,11 +19,11 @@ trait_robot_infinity_sphere = {
 	randomized = no
 	opposites = {}
 	allowed_archetypes = { ROBOT MACHINE }
-	tags = { machine synthetic positive leviathan research upkeep }
+	tags = { machine synthetic positive leviathan research pop_output }
 	modifier = {
-		planet_researchers_upkeep_mult = -0.5
+		researcher_jobs_bonus_workforce_mult = 0.25
 	}
 	slave_cost = {
-		energy = 1500
+		trade = 1500
 	}
 }

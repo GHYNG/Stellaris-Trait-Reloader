@@ -9,7 +9,7 @@ leader_trait_crew_trainer = {
 		TIER = 1
 	}
 	councilor_modifier = {
-		country_naval_cap_add = 30
+		country_naval_cap_add = 25
 		ship_starting_experience_add = 120
 	}
 	leader_potential_add = {
@@ -34,7 +34,7 @@ leader_trait_crew_trainer_2 = {
 		TIER = 2
 	}
 	councilor_modifier = {
-		country_naval_cap_add = 60
+		country_naval_cap_add = 50
 		ship_starting_experience_add = 200
 	}
 	leader_class = { commander }

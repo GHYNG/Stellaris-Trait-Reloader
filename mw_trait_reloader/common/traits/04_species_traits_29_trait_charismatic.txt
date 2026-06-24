@@ -13,7 +13,7 @@ trait_charismatic = {
 	species_possible_merge_remove = {
 		always = yes
 	}
-	opposites = { "trait_repugnant" }
+	opposites = { "trait_repugnant" "trait_reavers" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	localized_tags = {
 		SPECIES_TRAIT_VOCATIONAL
@@ -23,6 +23,6 @@ trait_charismatic = {
 		influential_jobs_bonus_workforce_mult = 0.20
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

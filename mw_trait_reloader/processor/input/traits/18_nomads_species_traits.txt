@@ -1,0 +1,340 @@
+#########################
+# Nomads Species Traits #
+#########################
+
+trait_photoadaptive = {
+	host_has_dlc = "Nomads"
+	cost = 2
+	icon = "gfx/interface/icons/traits/trait_photoadaptive.dds"
+	initial = yes
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	localized_tags = { SPECIES_TRAIT_NOMAD }
+	randomized = yes
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive pop_output drawbacks research leader special }
+	opposites = { trait_weak trait_hollow_bones trait_tankbound }
+	custom_tooltip_with_modifiers = trait_photoadaptive_effects
+	modifier = {
+		leader_lifespan_add = 10
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			colony.solar_system? = { NOT = { has_star_flag = shielded_star } }
+		}
+		worker_and_simple_drone_cat_bonus_workforce_mult = 1
+		mult = colony.solar_system.value:trait_photoadaptive_value
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			colony.solar_system? = {
+				any_system_planet = { is_planet_class = pc_black_hole }
+			}
+		}
+		physicist_jobs_bonus_workforce_mult = 0.15
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			colony.solar_system? = {
+				any_system_planet = {
+					OR = {
+						is_planet_class = pc_m_star
+						is_planet_class = pc_m_giant_star
+					}
+				}
+			}
+		}
+		engineer_jobs_bonus_workforce_mult = 0.15
+	}
+	ai_weight = { weight = 0 }
+	slave_cost = { trade = 1000 }
+}
+
+trait_solar_cells = {
+	host_has_dlc = "Nomads"
+	cost = 2
+	icon = "gfx/interface/icons/traits/trait_solar_cells.dds"
+	initial = yes
+	localized_tags = { SPECIES_TRAIT_NOMAD }
+	randomized = yes
+	allowed_archetypes = { MACHINE ROBOT }
+	tags = { machine positive pop_output drawbacks research leader special }
+	opposites = { trait_robot_delicate_frames }
+	custom_tooltip_with_modifiers = trait_photoadaptive_effects
+	modifier = {
+		leader_lifespan_add = 10
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			colony.solar_system? = { NOT = { has_star_flag = shielded_star } }
+		}
+		worker_and_simple_drone_cat_bonus_workforce_mult = 1
+		mult = colony.solar_system.value:trait_photoadaptive_value
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			colony.solar_system? = {
+				any_system_planet = { is_planet_class = pc_black_hole }
+			}
+		}
+		physicist_jobs_bonus_workforce_mult = 0.15
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			colony.solar_system? = {
+				any_system_planet = {
+					OR = {
+						is_planet_class = pc_m_star
+						is_planet_class = pc_m_giant_star
+					}
+				}
+			}
+		}
+		engineer_jobs_bonus_workforce_mult = 0.15
+	}
+	ai_weight = { weight = 0 }
+	slave_cost = { trade = 1000 }
+}
+
+trait_recursive_learners = {
+	host_has_dlc = "Nomads"
+	cost = 1
+	icon = "gfx/interface/icons/traits/trait_recursive_learners.dds"
+	initial = yes
+	species_possible_add = {
+		can_add_genetic_traits = yes
+		OR = {
+			has_trait = trait_pc_ark_preference
+			has_trait = trait_auto_hab_preference
+		}
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	allowed_planet_classes = { pc_ark }
+	localized_tags = { SPECIES_TRAIT_NOMAD }
+	randomized = no
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive pop_output research }
+	opposites = { trait_natural_physicists trait_natural_sociologists trait_natural_engineers }
+	custom_tooltip = trait_recursive_learners_effects
+	triggered_pop_group_modifier = {
+		potential = { planet.ship? = { is_science_arkship = yes } }
+		researcher_jobs_bonus_workforce_mult = 1
+		mult = planet.ship.value:trait_recursive_learners_value
+	}
+	triggered_pop_group_modifier = {
+		potential = { planet.ship? = { is_civilian_arkship = yes } }
+		foundry_jobs_bonus_workforce_mult = 1
+		artisan_jobs_bonus_workforce_mult = 1
+		pop_ark_harvester_bonus_workforce_mult = 1
+		mult = planet.ship.value:trait_recursive_learners_value
+	}
+	triggered_pop_group_modifier = {
+		potential = { planet.ship? = { is_military_arkship = yes } }
+		engineer_jobs_bonus_workforce_mult = 1
+		soldier_jobs_bonus_workforce_mult = 1
+		mult = planet.ship.value:trait_recursive_learners_value
+	}
+	ai_weight = { weight = 0 }
+	slave_cost = { trade = 500 }
+}
+
+trait_structural_awareness = {
+	host_has_dlc = "Nomads"
+	cost = 1
+	icon = "gfx/interface/icons/traits/trait_structural_awareness.dds"
+	initial = yes
+	species_possible_add = {
+		has_trait = trait_pc_ark_preference
+	}
+	allowed_planet_classes = { pc_ark }
+	localized_tags = { SPECIES_TRAIT_NOMAD }
+	randomized = yes
+	allowed_archetypes = { MACHINE ROBOT }
+	tags = { machine positive pop_output research }
+	opposites = { trait_robot_artificial_physicists trait_robot_artificial_sociologists trait_robot_artificial_engineers }
+	custom_tooltip = trait_recursive_learners_effects
+	triggered_pop_group_modifier = {
+		potential = { planet.ship? = { is_science_arkship = yes } }
+		researcher_jobs_bonus_workforce_mult = 1
+		mult = planet.ship.value:trait_recursive_learners_value
+	}
+	triggered_pop_group_modifier = {
+		potential = { planet.ship? = { is_civilian_arkship = yes } }
+		foundry_jobs_bonus_workforce_mult = 1
+		artisan_jobs_bonus_workforce_mult = 1
+		pop_ark_harvester_bonus_workforce_mult = 1
+		mult = planet.ship.value:trait_recursive_learners_value
+	}
+	triggered_pop_group_modifier = {
+		potential = { planet.ship? = { is_military_arkship = yes } }
+		engineer_jobs_bonus_workforce_mult = 1
+		soldier_jobs_bonus_workforce_mult = 1
+		mult = planet.ship.value:trait_recursive_learners_value
+	}
+	ai_weight = { weight = 0 }
+	slave_cost = { trade = 500 }
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = { uses_district_set = arkship }
+		}
+		modifier = {
+			subtract = 1.5
+			from = {
+				NOT = { uses_district_set = arkship }
+			}
+		}
+	}
+}
+
+trait_interconnected = {
+	host_has_dlc = "Nomads"
+	cost = 2
+	icon = "gfx/interface/icons/traits/trait_interconnected.dds"
+	initial = yes
+	species_possible_add = {
+		has_trait = trait_pc_ark_preference
+	}
+	allowed_planet_classes = { pc_ark }
+	localized_tags = { SPECIES_TRAIT_NOMAD }
+	randomized = yes
+	allowed_archetypes = { MACHINE ROBOT }
+	tags = { machine positive pop_growth amenities upkeep drawbacks }
+	opposites = { trait_robot_double_jointed trait_robot_emotion_emulators trait_defence_drones }
+	custom_tooltip = trait_interconnected_effects
+	triggered_pop_group_modifier = {
+		potential = { planet? = { is_planet_class = pc_ark } }
+		planet_pops_robotics_upkeep_mult = -0.01
+		mult = planet.value:trait_interconnected_value
+	}
+	triggered_pop_group_modifier = {
+		potential = { planet? = { is_planet_class = pc_ark } }
+		pop_amenities_usage_mult = -0.01
+		mult = planet.value:trait_interconnected_amenities_value
+	}
+	ai_weight = { weight = 0 }
+	slave_cost = { trade = 500 }
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = { uses_district_set = arkship }
+		}
+		modifier = {
+			subtract = 1.5
+			from = {
+				NOT = { uses_district_set = arkship }
+			}
+		}
+	}
+}
+
+trait_reavers = {
+	host_has_dlc = "Nomads"
+	cost = 2
+	icon = "gfx/interface/icons/traits/trait_reavers.dds"
+	initial = yes
+	species_possible_add = {
+		can_add_genetic_traits = yes
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	localized_tags = { SPECIES_TRAIT_NOMAD }
+	randomized = yes
+	allowed_archetypes = { BIOLOGICAL LITHOID ROBOT }
+	tags = { positive leader }
+	opposites = { trait_charismatic trait_terraphobic }
+	custom_tooltip_with_modifiers = trait_reavers_effects
+	forbidden_ethics = { ethic_gestalt_consciousness }
+	modifier = {
+		trader_jobs_bonus_workforce_mult = 0.05
+	}
+	ai_weight = { weight = 0 }
+	slave_cost = { trade = 500 }
+}
+
+trait_defence_drones = {
+	host_has_dlc = "Nomads"
+	cost = 1
+	icon = "gfx/interface/icons/traits/trait_defence_drones.dds"
+	initial = yes
+	species_possible_add = {
+		OR = {
+			has_trait = trait_pc_ark_preference
+			has_trait = trait_machine_habitat_planet_preference
+		}
+	}
+	allowed_planet_classes = { pc_ark pc_habitat }
+	localized_tags = { SPECIES_TRAIT_NOMAD }
+	randomized = yes
+	allowed_archetypes = { MACHINE ROBOT }
+	tags = { machine positive pop_output stability drawbacks }
+	opposites = { trait_robot_bulky trait_interconnected }
+	custom_tooltip_with_modifiers = trait_defence_drones_effects
+	modifier = {
+		engineer_jobs_bonus_workforce_mult = 0.07
+		planet_pops_energy_upkeep_mult = 0.05
+	}
+	ai_weight = { weight = 0 }
+	slave_cost = { trade = 1000 }
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = { is_artificial = yes }
+		}
+		modifier = {
+			subtract = 1.5
+			from = { is_artificial = no }
+		}
+	}
+}
+
+trait_terraphobic = {
+	host_has_dlc = "Nomads"
+	cost = -1
+	icon = "gfx/interface/icons/traits/trait_terraphobic.dds"
+	initial = yes
+	species_possible_add = {
+		can_add_genetic_traits = yes
+		OR = {
+			has_trait = trait_pc_ark_preference
+			has_trait = trait_pc_habitat_preference
+			has_trait = trait_auto_hab_preference
+		}
+	}
+	species_possible_remove = {
+		can_remove_beneficial_genetic_traits = yes
+	}
+	species_possible_merge_remove = {
+		always = yes
+	}
+	allowed_planet_classes = { pc_ark pc_habitat }
+	localized_tags = { SPECIES_TRAIT_NOMAD }
+	randomized = yes
+	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE ROBOT }
+	tags = { negative amenities army }
+	opposites = { trait_reavers trait_adaptive trait_extremely_adaptive }
+	custom_tooltip_with_modifiers = trait_terraphobic_effects
+	modifier = {
+		army_health = -0.35
+	}
+	triggered_pop_group_modifier = {
+		potential = { planet? = { is_artificial = no } }
+		pop_bonus_workforce_mult = -0.15
+		pop_amenities_usage_mult = 0.15
+	}
+	ai_weight = { weight = 0 }
+	slave_cost = { trade = -250 }
+}

@@ -1,3 +1,4 @@
+@overtuned_increased_growth_penalty = -0.05
 trait_elevated_synapses = {
 	host_has_dlc = "Toxoids Species Pack"
 	cost = 2
@@ -29,6 +30,15 @@ trait_elevated_synapses = {
 			researcher_jobs_bonus_workforce_mult  = 0.2
 		}
 	}
+	triggered_leader_modifier = {
+		potential = {
+			exists = owner
+			owner = { NOT = { has_edict = damn_the_consequences } }
+		}
+		modifier = {
+			leaders_upkeep_mult = -0.25
+		}
+	}
 	triggered_pop_group_modifier = {
 		potential = {
 			exists = owner
@@ -38,10 +48,18 @@ trait_elevated_synapses = {
 			researcher_jobs_bonus_workforce_mult  = 0.4
 		}
 	}
+	triggered_leader_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_edict = damn_the_consequences }
+		}
+		modifier = {
+			leaders_upkeep_mult = -0.5
+		}
+	}
 	modifier = {
 		leader_lifespan_add = -30
-		negative_leader_traits_species = -1
-		leaders_upkeep_mult = -0.25
+		logistic_growth_mult = @overtuned_increased_growth_penalty
 	}
 	assembly_score = {
 		modifier = {
@@ -54,6 +72,6 @@ trait_elevated_synapses = {
 		}
 	}
 	slave_cost = {
-		energy = 2000
+		trade = 2000
 	}
 }

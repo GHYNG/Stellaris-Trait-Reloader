@@ -11,6 +11,6 @@ trait_unruly = {
 		species_empire_size_mult = 0.10
 	}
 	slave_cost = {
-		energy = -200
+		trade = -200
 	}
 }

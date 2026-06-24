@@ -1,0 +1,29 @@
+trait_cyborg_creed_of_war = {
+	cost = 0
+	initial = no
+	randomized = no
+	category = cyborg
+	advanced_trait = no
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	infertile = no
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive army pop_output unity cybernetic special }
+	modifier = {
+		army_health = 0.1
+		army_damage_mult = 0.1
+		soldier_jobs_bonus_workforce_mult = 0.1
+		bureaucrat_jobs_bonus_workforce_mult = 0.1
+	}
+	icon = "gfx/interface/icons/traits/trait_cyborg_creed_of_war.dds"
+	slave_cost = {
+		trade = 500
+	}
+}

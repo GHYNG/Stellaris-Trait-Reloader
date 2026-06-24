@@ -242,7 +242,7 @@ leader_trait_foreign_consciousness = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -312,7 +312,7 @@ leader_trait_spacebender = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -368,7 +368,7 @@ leader_trait_blorg_insight = {
 		TIER = none
 	}
 	on_gained_effect = {
-		owner = {
+		owner? = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
@@ -411,14 +411,14 @@ trait_plasmic = {
 
 	modifier = {
 		logistic_growth_mult = 0.15
-		pop_housing_usage_mult = -0.15
+		pop_housing_usage_mult = -0.10
 		pop_environment_tolerance = 0.15
 	}
 	ai_weight = {
 		weight = 0
 	}
 	slave_cost = {
-		energy = 2500
+		trade = 2500
 	}
 }
 
@@ -467,7 +467,10 @@ trait_exd = {
 		}
 		# Energy Upkeep
 		upkeep = {
-			trigger = { is_being_purged = no }
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
 			energy = @living_standard_energy_normal
 		}
 	}

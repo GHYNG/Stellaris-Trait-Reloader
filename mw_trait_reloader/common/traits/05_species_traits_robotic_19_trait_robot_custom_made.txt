@@ -11,6 +11,6 @@ trait_robot_custom_made = {
 		factor = 0
 	}
 	slave_cost = {
-		energy = -200
+		trade = -200
 	}
 }

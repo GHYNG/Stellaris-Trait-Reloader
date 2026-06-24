@@ -1,0 +1,36 @@
+trait_natural_machinist = {
+	cost = {
+		base = 3
+		modifier = {
+			add = -1
+			advanced_traits_have_reduced_cost = yes
+		}
+	}
+	species_potential_add = {
+		can_do_advanced_gene_modding = yes
+	}
+	species_possible_remove = {
+		OR = {
+			can_do_advanced_gene_modding = yes
+			can_remove_beneficial_genetic_traits = yes
+		}
+	}
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	tags = { organic positive pop_output alloys consumer_goods genetic_ascension }
+	modifier = {
+		foundry_jobs_bonus_workforce_mult = 0.25
+		artisan_jobs_bonus_workforce_mult = 0.25
+	}
+	slave_cost = {
+		trade = 2000
+	}
+	assembly_score = {
+		modifier = {
+			add = 1.5
+			from = { has_industrial_designation = yes }
+		}
+	}
+}

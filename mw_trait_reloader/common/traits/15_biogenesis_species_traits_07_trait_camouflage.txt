@@ -46,6 +46,6 @@ trait_camouflage = {
 		}
 	}
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

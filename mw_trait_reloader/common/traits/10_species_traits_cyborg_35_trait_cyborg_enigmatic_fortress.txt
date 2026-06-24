@@ -1,0 +1,26 @@
+trait_cyborg_enigmatic_fortress = {
+	cost = 2
+	host_has_dlc = "The Machine Age"
+	species_potential_add = {
+		exists = from
+		from = {
+			has_technology = tech_leviathan_techgenesis
+			has_country_flag = harvested_fortress_parts
+		}
+		can_add_cybernetic_traits = yes
+	}
+	initial = no
+	randomized = no
+	category = cyborg
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	localized_tags = {
+		SPECIES_TRAIT_CYBORG
+	}
+	tags = { organic positive amenities leviathan cybernetic }
+	modifier = {
+		pop_amenities_usage_mult = -0.5
+	}
+	slave_cost = {
+		trade = 1500
+	}
+}

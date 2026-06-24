@@ -20,6 +20,6 @@ trait_robot_shielded_components = {
 		leader_lifespan_add = 50
 	}
 	slave_cost = {
-		energy = 750
+		trade = 750
 	}
 }

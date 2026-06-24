@@ -8,6 +8,6 @@ trait_robot_high_bandwidth = {
 		species_empire_size_mult = 0.10
 	}
 	slave_cost = {
-		energy = -150
+		trade = -150
 	}
 }

@@ -33,6 +33,6 @@ trait_uncanny_intuition = {
 		councilor_skill_add = 2
 	}
 	slave_cost = {
-		energy = 2000
+		trade = 2000
 	}
 }
