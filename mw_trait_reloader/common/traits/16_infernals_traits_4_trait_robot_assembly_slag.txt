@@ -15,7 +15,7 @@ trait_robot_assembly_slag = {
 		trade = 500
 	}
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		produces = {
 			trigger = {
 				is_slave_or_better = yes

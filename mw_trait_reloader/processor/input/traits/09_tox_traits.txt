@@ -16,7 +16,7 @@ trait_incubator = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive pop_growth }
 	randomized = no
-	opposites = { "trait_pyroclastic" "trait_slow_breeders" "trait_rapid_breeders" "trait_fertile" "trait_plantoid_budding" "trait_lithoid_budding" "trait_rapid_breeders_lithoid" "trait_humanoid_existential_iteroparity" "trait_egg_laying" "trait_wilderness" "trait_vat_grown"}
+	opposites = { "trait_pyroclastic" "trait_slow_breeders" "trait_rapid_breeders" "trait_fertile" "trait_plantoid_budding" "trait_lithoid_budding" "trait_rapid_breeders_lithoid" "trait_humanoid_existential_iteroparity" "trait_egg_laying" "trait_wilderness" "trait_vat_grown" "trait_clone_soldier_infertile" "trait_clone_soldier_infertile_full_potential"}
 	custom_tooltip_with_modifiers = incubator_tooltip
 
 	triggered_planet_growth_habitability_modifier = {
@@ -50,7 +50,7 @@ trait_inorganic_breath = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		produces = {
 			trigger = {
 				is_slave_or_better = yes
@@ -125,7 +125,7 @@ trait_exotic_metabolism = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		upkeep = {
 			trigger = {
 				is_organic_species = yes

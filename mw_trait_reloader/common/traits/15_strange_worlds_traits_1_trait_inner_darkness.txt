@@ -21,7 +21,7 @@ trait_inner_darkness = {
 	}
 	custom_tooltip = trait_inner_darkness_tt
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		produces = {
 			sr_dark_matter = @inner_darkness_dark_matter_production
 		}

@@ -11,7 +11,7 @@ leader_trait_limited_cyborg = {
 		potential = {
 			is_ruler = yes
 		}
-		spiritualist_attraction = 0.25
+		pop_ethic_spiritualist_attraction_mult = 0.25
 		empire_size_districts_mult = -0.05
 	}
 	self_modifier = {

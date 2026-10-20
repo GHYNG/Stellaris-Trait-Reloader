@@ -15,6 +15,6 @@ trait_robot_latent_psionic = {
 		always = no
 	}
 	allowed_archetypes = { ROBOT MACHINE }
-	tags = { machine positive pop_output research unity psionic }
+	tags = { machine positive pop_output research unity psionic special }
 	inline_script = "traits/latent_psionic_effects"
 }

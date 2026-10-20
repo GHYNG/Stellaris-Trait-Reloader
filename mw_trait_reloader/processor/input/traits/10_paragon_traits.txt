@@ -1572,7 +1572,7 @@ leader_trait_the_cybernetic_luminary = {
 		country_scientist_cap_add = 1
 		leaders_upkeep_mult = -0.25
 		leaders_cost_mult = 0.10
-		species_leader_exp_gain = -0.25
+		species_leader_exp_gain = -0.10
 	}
 
 	leader_class = { official commander scientist }
@@ -1630,7 +1630,7 @@ leader_trait_the_synth_luminary = {
 	}
 
 	councilor_modifier = {
-		planet_jobs_produces_mult = 0.25
+		robotic_pop_bonus_workforce_mult = 0.15
 		pop_ethics_shift_speed_mult = 0.25
 		planet_pop_assembly_add = 1
 		pop_happiness = -0.15

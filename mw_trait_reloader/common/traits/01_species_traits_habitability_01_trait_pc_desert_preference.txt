@@ -9,6 +9,9 @@ trait_pc_desert_preference = {
 	species_potential_add = {
 		can_change_habitability_preference = yes
 	}
+	species_possible_add = {
+		can_take_non_ocean_planet_preference = yes
+	}
 	modifier = {
 		pc_desert_habitability = @primary
 		pc_arid_habitability = @secondary

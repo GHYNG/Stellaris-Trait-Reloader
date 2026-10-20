@@ -28,7 +28,7 @@ trait_infernal = {
 	}
 	icon = "gfx/interface/icons/traits/trait_infernal.dds"
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		upkeep = {
 			trigger = {
 				is_phototrophic = no
@@ -49,10 +49,7 @@ trait_infernal = {
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_trait = trait_cybernetic
-					has_trait = trait_limited_cybernetic
-				}
+				has_trait = trait_cybernetic
 				is_being_purged = no
 				is_sapient = yes
 			}

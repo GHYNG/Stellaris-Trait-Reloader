@@ -1,4 +1,4 @@
-[h1]MW Trait Reloader (4.4.4)[/h1]
+[h1]MW Trait Reloader (4.5.2)[/h1]
 
 Due to the FIOS (First In, Only Served) nature of how traits are loaded into the game engine, it is impossible for two mods that modify the traits in the same files to co-exist without causing compatibility issues. This is why this mod is uploaded here.
 

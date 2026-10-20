@@ -16,7 +16,7 @@ leader_trait_instrument_chosen = {
 		planet_jobs_trade_produces_mult = 0.20
 		mult = value:transcended_psionic_multiplier
 	}
-	# Any Class - Ruler - non-Gestalt
+	# Any Class - Ruler - Non-Gestalt
 	triggered_councilor_modifier = {
 		potential = {
 			is_ruler = yes
@@ -96,22 +96,57 @@ leader_trait_instrument_chosen = {
 		cohesion_ethics_penalty_mult = -0.25
 		mult = value:transcended_psionic_multiplier
 	}
-	# Any Class - Planet Modifier
+	# Any Class - Planet Modifier - Stability
 	triggered_planet_modifier = {
 		potential = {
 			is_ruler = no
 		}
-		pop_slave_bonus_workforce_mult = 0.20
 		planet_stability_add = 5
 		mult = value:transcended_psionic_multiplier
 	}
-	# Any Class - Sector Modifier
+	# Any Class - Planet Modifier - Non-Gestalt
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no
+			trait_is_gestalt_check = no
+		}
+		pop_slave_bonus_workforce_mult = 0.20
+		mult = value:transcended_psionic_multiplier
+	}
+	# Any Class - Planet Modifier - Gestalt
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no
+			trait_is_gestalt_check = yes
+		}
+		pop_cat_simple_drone_bonus_workforce_mult = 0.15
+		mult = value:transcended_psionic_multiplier
+	}
+	# Any Class - Sector Modifier - Stability
 	triggered_sector_modifier = {
 		potential = {
 			is_ruler = no
 		}
-		pop_slave_bonus_workforce_mult = 0.10
 		planet_stability_add = 2.5
+		mult = value:transcended_psionic_multiplier
+	}
+	# Any Class - Sector Modifier - Non-Gestalt
+	triggered_sector_modifier = {
+		potential = {
+			is_ruler = no
+			trait_is_gestalt_check = no
+		}
+		pop_slave_bonus_workforce_mult = 0.10
+		mult = value:transcended_psionic_multiplier
+	}
+	# Any Class - Sector Modifier - Gestalt
+	triggered_sector_modifier = {
+		potential = {
+			is_ruler = no
+			trait_is_gestalt_check = yes
+		}
+		pop_cat_simple_drone_bonus_workforce_mult = 0.075
+		mult = value:transcended_psionic_multiplier
 	}
 	triggered_councilor_modifier = {
 		potential = { is_ruler = yes }

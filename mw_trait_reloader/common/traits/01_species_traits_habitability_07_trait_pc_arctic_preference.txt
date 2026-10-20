@@ -9,6 +9,9 @@ trait_pc_arctic_preference = {
 	species_potential_add = {
 		can_change_habitability_preference = yes
 	}
+	species_possible_add = {
+		can_take_non_ocean_planet_preference = yes
+	}
 	modifier = {
 		pc_arctic_habitability = @primary
 		pc_tundra_habitability = @secondary

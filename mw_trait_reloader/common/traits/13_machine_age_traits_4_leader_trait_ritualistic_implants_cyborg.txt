@@ -11,6 +11,9 @@ leader_trait_ritualistic_implants_cyborg = {
 	triggered_councilor_modifier = {
 		potential = {
 			is_ruler = yes
+			NOT = {
+				has_trait = leader_trait_cyborg
+			}
 		}
 		planet_structures_upkeep_mult = -0.10
 		empire_size_districts_mult = -0.05
@@ -20,6 +23,9 @@ leader_trait_ritualistic_implants_cyborg = {
 		potential = {
 			is_ruler = no
 			leader_class = commander
+			NOT = {
+				has_trait = leader_trait_cyborg
+			}
 		}
 		ship_weapon_damage = 0.05
 		ship_weapon_range_mult = 0.10
@@ -30,6 +36,9 @@ leader_trait_ritualistic_implants_cyborg = {
 		potential = {
 			is_ruler = no
 			leader_class = commander
+			NOT = {
+				has_trait = leader_trait_cyborg
+			}
 		}
 		planet_combat_width_add = 1
 	}
@@ -38,6 +47,9 @@ leader_trait_ritualistic_implants_cyborg = {
 		potential = {
 			is_ruler = no
 			leader_class = scientist
+			NOT = {
+				has_trait = leader_trait_cyborg
+			}
 		}
 		ship_anomaly_generation_chance_mult = 0.15
 	}
@@ -46,6 +58,9 @@ leader_trait_ritualistic_implants_cyborg = {
 		potential = {
 			is_ruler = no
 			leader_class = official
+			NOT = {
+				has_trait = leader_trait_cyborg
+			}
 		}
 		diplo_weight_technology_mult = 0.05
 	}
@@ -54,6 +69,9 @@ leader_trait_ritualistic_implants_cyborg = {
 		potential = {
 			is_ruler = no
 			leader_class = official
+			NOT = {
+				has_trait = leader_trait_cyborg
+			}
 		}
 		federation_experience_add = 0.5
 	}
@@ -61,6 +79,9 @@ leader_trait_ritualistic_implants_cyborg = {
 	triggered_planet_modifier = {
 		potential = {
 			is_ruler = no
+			NOT = {
+				has_trait = leader_trait_cyborg
+			}
 		}
 		planet_jobs_physics_research_produces_mult = 0.05
 		planet_jobs_society_research_produces_mult = 0.05
@@ -70,16 +91,47 @@ leader_trait_ritualistic_implants_cyborg = {
 	triggered_sector_modifier = {
 		potential = {
 			is_ruler = no
+			NOT = {
+				has_trait = leader_trait_cyborg
+			}
 		}
 		planet_jobs_physics_research_produces_mult = 0.025
 		planet_jobs_society_research_produces_mult = 0.025
 		planet_jobs_engineering_research_produces_mult = 0.025
 	}
+	# Superseded by the Cyborg trait, the implants instead spread the creed
+	triggered_councilor_modifier = {
+		potential = {
+			is_ruler = yes
+			has_trait = leader_trait_cyborg
+		}
+		council_agenda_progress_speed = 0.05
+	}
+	triggered_councilor_modifier = {
+		potential = {
+			is_ruler = no
+			has_trait = leader_trait_cyborg
+		}
+		pop_ethic_spiritualist_attraction_mult = 0.05
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no
+			has_trait = leader_trait_cyborg
+		}
+		planet_jobs_unity_produces_mult = 0.10
+	}
+	triggered_sector_modifier = {
+		potential = {
+			is_ruler = no
+			has_trait = leader_trait_cyborg
+		}
+		planet_jobs_unity_produces_mult = 0.05
+	}
 	leader_class = { commander scientist official }
 	opposites = {
 		leader_trait_psionic
 		leader_trait_chosen
-		leader_trait_cyborg
 	}
 	initial = no
 	randomized = no

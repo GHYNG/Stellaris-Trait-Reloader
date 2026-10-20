@@ -24,7 +24,7 @@ trait_exotic_metabolism = {
 		leader_lifespan_add = 50
 	}
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		upkeep = {
 			trigger = {
 				is_organic_species = yes

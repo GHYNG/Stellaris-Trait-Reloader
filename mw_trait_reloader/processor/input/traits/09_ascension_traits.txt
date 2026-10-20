@@ -463,7 +463,7 @@ trait_drake_scaled = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		produces = {
 			trigger = {
 				is_slave_or_better = yes
@@ -501,7 +501,7 @@ trait_voidling = {
 	custom_tooltip_with_modifiers = TRAIT_VOIDLING_EFFECT
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		# Energy Upkeep
 		upkeep = {
 			trigger = {
@@ -547,7 +547,6 @@ trait_tiyanki = {
 		potential = {
 			has_trait = trait_tiyanki
 		}
-
 		divide_over_pop_groups = no
 		bonus_pop_growth = @tiyanki_budding_rate
 	}

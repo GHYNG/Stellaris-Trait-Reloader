@@ -34,7 +34,7 @@ trait_spare_organs = {
 		livestock_jobs_bonus_workforce_mult = 0.5
 	}
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		produces = {
 			trigger = {
 				exists = owner

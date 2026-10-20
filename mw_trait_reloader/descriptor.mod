@@ -4,5 +4,5 @@ tags={
 }
 name="MW Traits Reloader"
 picture="thumbnail.png"
-supported_version="4.4.4"
+supported_version="4.5.2"
 remote_file_id="3582547939"

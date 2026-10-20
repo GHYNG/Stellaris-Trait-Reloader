@@ -254,7 +254,7 @@ trait_marked = {
 	custom_tooltip_with_modifiers = "trait_marked_unity_bonus"
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		produces = {
 			trigger = {
 				exists = owner

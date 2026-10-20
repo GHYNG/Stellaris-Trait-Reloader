@@ -315,7 +315,19 @@ trait_terraphobic = {
 		}
 	}
 	species_possible_remove = {
-		can_remove_beneficial_genetic_traits = yes
+		# Robotic species have no genetic gate to satisfy, so removal is only limited by robomodding access.
+		if = {
+			limit = {
+				OR = {
+					is_archetype = MACHINE
+					is_archetype = ROBOT
+				}
+			}
+			always = yes
+		}
+		else = {
+			can_remove_beneficial_genetic_traits = yes
+		}
 	}
 	species_possible_merge_remove = {
 		always = yes

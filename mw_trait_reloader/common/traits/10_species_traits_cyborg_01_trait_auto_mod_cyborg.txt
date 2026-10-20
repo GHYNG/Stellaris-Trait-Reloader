@@ -26,7 +26,7 @@ trait_auto_mod_cyborg = {
 		base = 2
 	}
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		produces = {
 			trigger = {
 				exists = owner

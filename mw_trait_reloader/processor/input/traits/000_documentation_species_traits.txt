@@ -133,8 +133,12 @@
 # gradually convert into their parent species each month. The target is always the base/parent
 # species as resolved by the engine (i.e. the species this subspecies was derived from).
 #
-# Only the first forced_integration trait found on a species is applied. If the colony has no
-# valid colonization date, minimum_colony_age gates are skipped.
+# Only the first forced_integration trait found on a species is applied.
+#
+# Integration is skipped entirely for a species when the resolved parent is the species itself,
+# or when minimum_colony_age is set and the colony has no valid colonization date. A colony with
+# no colonization date never satisfies an age gate, so leave minimum_colony_age at 0 for traits
+# that must integrate regardless of where the pops are.
 #
 # Example - a presapient subspecies that matures into its sapient parent over ~5 years:
 # trait_example_nascent = {

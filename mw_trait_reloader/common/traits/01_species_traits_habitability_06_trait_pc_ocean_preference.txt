@@ -9,6 +9,17 @@ trait_pc_ocean_preference = {
 	species_potential_add = {
 		can_change_habitability_preference = yes
 	}
+	species_possible_merge_remove = {
+		custom_tooltip = {
+			fail_text = trait_aquatic_requires_ocean_preference
+			OR = {
+				NOT = {
+					has_trait = trait_aquatic
+				}
+				has_trait = trait_cyborg_climate_adjustment_wet
+			}
+		}
+	}
 	modifier = {
 		pc_ocean_habitability = @primary
 		pc_continental_habitability = @secondary
@@ -19,9 +30,6 @@ trait_pc_ocean_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
-	}
-	species_possible_remove = {
-		NOT = { has_trait = trait_aquatic }
 	}
 	ai_weight = {
 		weight = 0
