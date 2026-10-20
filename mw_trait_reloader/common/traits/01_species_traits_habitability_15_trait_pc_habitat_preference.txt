@@ -9,8 +9,11 @@ trait_pc_habitat_preference = {
 			has_origin = origin_void_dwellers
 		}
 	}
+	species_possible_add = {
+		can_take_non_ocean_planet_preference = yes
+	}
 	species_possible_merge_add = {
-		always = yes
+		can_take_non_ocean_planet_preference = yes
 	}
 	species_possible_remove = {
 		NOT = { has_trait = trait_void_dweller_1 }

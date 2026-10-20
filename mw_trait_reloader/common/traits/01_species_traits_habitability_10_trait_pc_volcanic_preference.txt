@@ -9,6 +9,9 @@ trait_pc_volcanic_preference = {
 	species_potential_add = {
 		can_change_habitability_preference = yes
 	}
+	species_possible_add = {
+		can_take_non_ocean_planet_preference = yes
+	}
 	modifier = {
 		pc_volcanic_habitability = @secondary # only 60% because origins, civics and traits add more
 		pc_desert_habitability = @secondary

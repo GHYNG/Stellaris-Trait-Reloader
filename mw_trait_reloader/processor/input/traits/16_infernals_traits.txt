@@ -29,7 +29,7 @@ trait_infernal = {
 	icon = "gfx/interface/icons/traits/trait_infernal.dds"
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		upkeep = {
 			trigger = {
 				is_phototrophic = no
@@ -50,10 +50,7 @@ trait_infernal = {
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_trait = trait_cybernetic
-					has_trait = trait_limited_cybernetic
-				}
+				has_trait = trait_cybernetic
 				is_being_purged = no
 				is_sapient = yes
 			}
@@ -160,7 +157,7 @@ trait_shell_slag = {
 		trade = 500
 	}
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		produces = {
 			trigger = {
 				is_slave_or_better = yes
@@ -189,7 +186,7 @@ trait_robot_assembly_slag = {
 		trade = 500
 	}
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		produces = {
 			trigger = {
 				is_slave_or_better = yes

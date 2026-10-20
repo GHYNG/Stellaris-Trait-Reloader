@@ -461,12 +461,13 @@ leader_trait_prospector = {
 		COUNCIL = no
 		TIER = 1
 	}
-	# Trait effects in paragon_events_2.txt
 	leader_potential_add = {
 		has_trait = subclass_scientist_explorer
 		has_paragon_dlc = yes
 	}
-	custom_tooltip = leader_trait_prospector_effect
+	modifier = {
+		deposit_increase_on_survey_chance_mult = 0.2
+	}
 	leader_class = { scientist }
 	selectable_weight = {
 		weight = @subclass_trait_weight
@@ -489,8 +490,9 @@ leader_trait_prospector_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	# Trait effects in paragon_events_2.txt
-	custom_tooltip = leader_trait_prospector_2_effect
+	modifier = {
+		deposit_increase_on_survey_chance_mult = 0.35
+	}
 	leader_class = { scientist }
 }
 
@@ -505,8 +507,9 @@ leader_trait_prospector_3 = {
 		COUNCIL = no
 		TIER = 3
 	}
-	# Trait effects in paragon_events_2.txt
-	custom_tooltip_with_modifiers = leader_trait_prospector_3_effect
+	modifier = {
+		deposit_increase_on_survey_chance_mult = 0.5
+	}
 	leader_class = { scientist }
 }
 

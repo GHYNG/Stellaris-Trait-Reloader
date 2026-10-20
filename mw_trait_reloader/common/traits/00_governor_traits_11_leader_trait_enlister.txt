@@ -22,9 +22,23 @@ leader_trait_enlister = {
 		potential = {
 			trait_is_gestalt_check = no
 			exists = planet
-			planet = { NOT = { has_modifier = slave_colony } }
+			planet = {
+				NOT = { has_modifier = slave_colony }
+				NOT = { has_knights_zone = yes }
+			}
 		}
 		job_soldier_add = 200
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_gestalt_check = no
+			exists = planet
+			planet = {
+				NOT = { has_modifier = slave_colony }
+				has_knights_zone = yes
+			}
+		}
+		job_knight_add = 100
 	}
 	triggered_planet_modifier = {
 		potential = {

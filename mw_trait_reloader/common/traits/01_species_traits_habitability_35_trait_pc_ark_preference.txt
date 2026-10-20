@@ -8,10 +8,27 @@ trait_pc_ark_preference = {
 	ideal_planet_class = pc_ark
 	opposites = { "trait_resilient" "trait_genetic_memory" "trait_sedentary" }
 	species_potential_add = {
-		always = no
+		if = {
+			limit = {
+				OR = {
+					is_archetype = MACHINE
+					is_archetype = ROBOT
+				}
+			}
+			always = yes
+		}
+		else = {
+			can_change_habitability_preference = yes
+			from? = {
+				is_nomadic = yes
+			}
+		}
+	}
+	species_possible_add = {
+		can_take_non_ocean_planet_preference = yes
 	}
 	species_possible_merge_add = {
-		always = yes
+		can_take_non_ocean_planet_preference = yes
 	}
 	initial = no
 	randomized = no

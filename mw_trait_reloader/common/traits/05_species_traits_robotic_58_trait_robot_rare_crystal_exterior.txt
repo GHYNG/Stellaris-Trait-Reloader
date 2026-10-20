@@ -35,7 +35,7 @@ trait_robot_rare_crystal_exterior = {
 		trade = 750
 	}
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		upkeep = {
 			trigger = {
 				is_being_purged = no

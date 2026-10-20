@@ -1202,7 +1202,7 @@ trait_robot_digital_1 = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		# Energy Upkeep
 		upkeep = {
 			trigger = {
@@ -1271,7 +1271,7 @@ trait_robot_digital_2 = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		# Energy Upkeep
 		upkeep = {
 			trigger = {
@@ -1454,7 +1454,7 @@ trait_robot_ceaseless_symmetric_annihilation_engine = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		upkeep = {
 			trigger = {
 				is_being_purged = no
@@ -1518,7 +1518,7 @@ trait_robot_ferro_viscosity_augmentation = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		upkeep = {
 			trigger = {
 				is_being_purged = no
@@ -1562,7 +1562,7 @@ trait_robot_biomimetic_assembly = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		upkeep = {
 			trigger = {
 				is_being_purged = no
@@ -1613,7 +1613,7 @@ trait_robot_matrix_trading = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		upkeep = {
 			trigger = {
 				is_being_purged = no
@@ -1675,7 +1675,7 @@ trait_robot_mote_powered_tools = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		upkeep = {
 			trigger = {
 				is_being_purged = no
@@ -1721,7 +1721,7 @@ trait_robot_exotic_fuel_consumption = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		upkeep = {
 			trigger = {
 				is_being_purged = no
@@ -1777,7 +1777,7 @@ trait_robot_rare_crystal_exterior = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		upkeep = {
 			trigger = {
 				is_being_purged = no
@@ -1822,7 +1822,7 @@ trait_robot_volatile_mote_reactor = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		upkeep = {
 			trigger = {
 				is_being_purged = no
@@ -1926,7 +1926,7 @@ trait_robot_latent_psionic = {
 		always = no
 	}
 	allowed_archetypes = { ROBOT MACHINE }
-	tags = { machine positive pop_output research unity psionic }
+	tags = { machine positive pop_output research unity psionic special }
 
 	inline_script = "traits/latent_psionic_effects"
 }
@@ -1952,7 +1952,7 @@ trait_robot_psionic = {
 	}
 
 	allowed_archetypes = { ROBOT MACHINE }
-	tags = { machine positive pop_output research unity happiness psionic }
+	tags = { machine positive pop_output research unity happiness psionic special }
 
 	inline_script = "traits/psionic_effects"
 }

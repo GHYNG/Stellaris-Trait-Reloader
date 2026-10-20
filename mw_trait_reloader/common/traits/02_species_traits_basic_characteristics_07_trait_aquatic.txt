@@ -51,7 +51,10 @@ trait_aquatic = {
 		weight = 1
 		modifier = {
 			factor = 0
-			NOT = { has_trait = trait_pc_ocean_preference }
+			NOR = {
+				has_trait = trait_pc_ocean_preference
+				has_trait = trait_cyborg_climate_adjustment_wet
+			}
 		}
 	}
 	custom_tooltip_with_modifiers = trait_aquatic_tooltip

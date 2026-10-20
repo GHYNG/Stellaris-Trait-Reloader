@@ -16,6 +16,6 @@ trait_robot_psionic = {
 		always = no
 	}
 	allowed_archetypes = { ROBOT MACHINE }
-	tags = { machine positive pop_output research unity happiness psionic }
+	tags = { machine positive pop_output research unity happiness psionic special }
 	inline_script = "traits/psionic_effects"
 }

@@ -450,9 +450,23 @@ leader_trait_enlister = {
 		potential = {
 			trait_is_gestalt_check = no
 			exists = planet
-			planet = { NOT = { has_modifier = slave_colony } }
+			planet = {
+				NOT = { has_modifier = slave_colony }
+				NOT = { has_knights_zone = yes }
+			}
 		}
 		job_soldier_add = 200
+	}
+	triggered_planet_modifier = {
+		potential = {
+			trait_is_gestalt_check = no
+			exists = planet
+			planet = {
+				NOT = { has_modifier = slave_colony }
+				has_knights_zone = yes
+			}
+		}
+		job_knight_add = 100
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -3132,22 +3146,3 @@ leader_trait_shroud_prophet = {
 	randomized = no
 }
 
-leader_trait_zealot = {
-	inline_script = {
-		script = trait/icon
-		CLASS = official
-		ICON = "GFX_leader_trait_righteous"
-		RARITY = common
-		COUNCIL = no
-		TIER = none
-	}
-	modifier = {
-		planet_stability_add = 3
-		planet_crime_add = -10
-		pop_government_ethic_attraction = 0.20
-		planet_bureaucrats_unity_produces_mult = 0.10
-	}
-	leader_class = { official }
-	initial = no
-	randomized = no
-}

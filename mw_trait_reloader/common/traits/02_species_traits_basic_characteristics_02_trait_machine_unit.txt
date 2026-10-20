@@ -22,7 +22,7 @@ trait_machine_unit = {
 		habitability_floor_add = 0.5
 	}
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		# Energy Upkeep
 		upkeep = {
 			trigger = {

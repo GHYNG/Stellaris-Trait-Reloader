@@ -16,6 +16,9 @@ trait_cyborg_climate_adjustment_cold = {
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
 	}
+	species_possible_add = {
+		can_take_non_ocean_planet_preference = yes
+	}
 	species_possible_remove = {
 		can_remove_cybernetic_traits = yes
 	}

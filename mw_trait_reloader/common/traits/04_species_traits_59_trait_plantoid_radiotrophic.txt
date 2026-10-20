@@ -37,7 +37,7 @@ trait_plantoid_radiotrophic = {
 	tags = { organic positive plantoid fungoid lithoid infernal upkeep species }
 	custom_tooltip = TRAIT_PLANTOID_RADIOTROPHIC_EFFECT
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		# Energy Upkeep
 		upkeep = {
 			trigger = {

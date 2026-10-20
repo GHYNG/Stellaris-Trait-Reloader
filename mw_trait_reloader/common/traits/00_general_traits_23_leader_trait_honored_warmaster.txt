@@ -14,8 +14,20 @@ leader_trait_honored_warmaster = {
 			country_event = { id = timeline.50 } # Timeline First Leader with Destiny Trait
 		}
 	}
-	planet_modifier = {
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet
+			planet = { NOT = { has_knights_zone = yes } }
+		}
 		job_soldier_add = 400
+		soldier_jobs_bonus_workforce_mult = 0.20
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet
+			planet = { has_knights_zone = yes }
+		}
+		job_knight_add = 200
 		soldier_jobs_bonus_workforce_mult = 0.20
 	}
 	sector_modifier = {

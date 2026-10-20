@@ -18,7 +18,7 @@ trait_inorganic_breath = {
 		planet_pops_upkeep_mult = 0.5
 	}
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		produces = {
 			trigger = {
 				is_slave_or_better = yes

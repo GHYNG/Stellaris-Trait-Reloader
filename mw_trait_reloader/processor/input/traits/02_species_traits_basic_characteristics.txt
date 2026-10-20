@@ -66,7 +66,7 @@ trait_machine_unit = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		# Energy Upkeep
 		upkeep = {
 			trigger = {
@@ -135,7 +135,7 @@ trait_mechanical = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		# Energy Upkeep
 		upkeep = {
 			trigger = {
@@ -214,7 +214,7 @@ trait_organic = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		# Food Upkeep
 		upkeep = {
 			trigger = {
@@ -236,10 +236,7 @@ trait_organic = {
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_trait = trait_cybernetic
-					has_trait = trait_limited_cybernetic
-				}
+				has_trait = trait_cybernetic
 				is_being_purged = no
 				is_sapient = yes
 			}
@@ -282,7 +279,7 @@ trait_lithoid = {
 	icon = "gfx/interface/icons/traits/trait_lithoid.dds"
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		# Mineral Upkeep
 		upkeep = {
 			trigger = {
@@ -305,10 +302,7 @@ trait_lithoid = {
 		}
 		upkeep = {
 			trigger = {
-				OR = {
-					has_trait = trait_cybernetic
-					has_trait = trait_limited_cybernetic
-				}
+				has_trait = trait_cybernetic
 				is_being_purged = no
 				is_sapient = yes
 			}
@@ -397,7 +391,10 @@ trait_aquatic = {
 		weight = 1
 		modifier = {
 			factor = 0
-			NOT = { has_trait = trait_pc_ocean_preference }
+			NOR = {
+				has_trait = trait_pc_ocean_preference
+				has_trait = trait_cyborg_climate_adjustment_wet
+			}
 		}
 	}
 
@@ -720,7 +717,7 @@ trait_necrophage = {
 
 trait_clone_soldier_infertile = {
 	cost = 0
-	opposites = { "trait_fertile" "trait_slow_breeders" "trait_rapid_breeders" "trait_clone_soldier_infertile_full_potential" "trait_clone_soldier_fertile" "trait_plantoid_budding" "trait_lithoid_budding" "trait_tiyanki" "trait_humanoid_psychological_infertility" "trait_humanoid_existential_iteroparity" "trait_egg_laying" }
+	opposites = { "trait_fertile" "trait_slow_breeders" "trait_rapid_breeders" "trait_clone_soldier_infertile_full_potential" "trait_clone_soldier_fertile" "trait_plantoid_budding" "trait_lithoid_budding" "trait_tiyanki" "trait_humanoid_psychological_infertility" "trait_humanoid_existential_iteroparity" "trait_egg_laying" "trait_incubator" }
 	sorting_priority = 20
 
 	initial = no
@@ -776,7 +773,7 @@ trait_clone_soldier_infertile = {
 
 trait_clone_soldier_infertile_full_potential = {
 	cost = 0
-	opposites = { "trait_fertile" "trait_slow_breeders" "trait_rapid_breeders" "trait_clone_soldier_infertile" "trait_clone_soldier_fertile" "trait_plantoid_budding" "trait_lithoid_budding" "trait_tiyanki" "trait_humanoid_psychological_infertility" "trait_humanoid_existential_iteroparity" "trait_egg_laying" }
+	opposites = { "trait_fertile" "trait_slow_breeders" "trait_rapid_breeders" "trait_clone_soldier_infertile" "trait_clone_soldier_fertile" "trait_plantoid_budding" "trait_lithoid_budding" "trait_tiyanki" "trait_humanoid_psychological_infertility" "trait_humanoid_existential_iteroparity" "trait_egg_laying" "trait_incubator" }
 	sorting_priority = 20
 
 	initial = no

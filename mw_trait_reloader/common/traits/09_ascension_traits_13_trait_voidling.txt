@@ -20,7 +20,7 @@ trait_voidling = {
 	tags = { organic positive habitability upkeep leviathan genetic_ascension }
 	custom_tooltip_with_modifiers = TRAIT_VOIDLING_EFFECT
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		# Energy Upkeep
 		upkeep = {
 			trigger = {

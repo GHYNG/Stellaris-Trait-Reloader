@@ -1126,7 +1126,16 @@ trait_cybernetic = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	tags = { organic positive habitability army leader cybernetic }
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_country_flag = driven_neural_chorus
+				}
+			}
+			unity = 0.1
+		}
 		# Energy Upkeep
 		upkeep = {
 			trigger = {
@@ -1142,6 +1151,25 @@ trait_cybernetic = {
 		army_damage_mult = 0.1
 		leader_lifespan_add = 40
 	}
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = cyberization_standards_limited
+			}
+		}
+		pop_bonus_workforce_mult = 0.10
+		mult = value:pop_not_ethic_percentage_value|ETHIC|spiritualist|
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = { has_policy_flag = cyberization_standards_limited }
+			}
+		}
+		pop_bonus_workforce_mult = 0.10
+	}
 	triggered_species_modifier = {
 		potential = {
 			exists = from
@@ -1154,10 +1182,10 @@ trait_cybernetic = {
 		}
 		species_empire_size_mult = -0.10
 	}
-	triggered_species_modifier = {  # Changes to these values need to be done in the loc too: cyber_subscription and cyber_subscription_megacorp
+	triggered_pop_group_modifier = {  # Changes to these values need to be done in the loc too: cyber_subscription and cyber_subscription_megacorp
 		potential = {
-			exists = from
-			from = {
+			exists = owner
+			owner = {
 				OR = {
 					has_country_flag = cyber_subscription_model
 					has_country_flag = cyber_subscription_model_megacorp
@@ -1166,20 +1194,43 @@ trait_cybernetic = {
 		}
 		pop_happiness = -0.05
 	}
-	triggered_species_modifier = {
+	triggered_pop_group_modifier = {
 		potential = {
-			exists = from
-			from = {
+			exists = owner
+			owner = {
+				has_policy_flag = cyberization_standards_limited
+				has_country_flag = cyber_subscription_model
+			}
+		}
+		trader_jobs_bonus_workforce_mult = 0.25
+		mult = value:pop_not_ethic_percentage_value|ETHIC|spiritualist|
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = { has_policy_flag = cyberization_standards_limited }
 				has_country_flag = cyber_subscription_model
 			}
 		}
 		trader_jobs_bonus_workforce_mult = 0.25
 	}
-
-	triggered_species_modifier = {
+	triggered_pop_group_modifier = {
 		potential = {
-			exists = from
-			from = {
+			exists = owner
+			owner = {
+				has_policy_flag = cyberization_standards_limited
+				has_country_flag = cyber_subscription_model_megacorp
+			}
+		}
+		trader_jobs_bonus_workforce_mult = 0.5
+		mult = value:pop_not_ethic_percentage_value|ETHIC|spiritualist|
+	}
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = { has_policy_flag = cyberization_standards_limited }
 				has_country_flag = cyber_subscription_model_megacorp
 			}
 		}
@@ -1193,32 +1244,29 @@ trait_cybernetic = {
 		}
 		pop_environment_tolerance = -0.2
 	}
-	triggered_species_modifier = {
+
+	triggered_planet_growth_habitability_modifier = {
 		potential = {
-			exists = from
-			from = {
-				OR = {
-					has_active_tradition = tr_cybernetics_finish
-					has_active_tradition = tr_cybernetics_finish_situation
-					has_active_tradition = tr_cybernetics_assimilator_finish
-				}
-				has_country_flag = cybernetics_traditions_unlocked
+			exists = fromfrom
+			fromfrom = {
+				has_country_flag = cyber_hive_standards
+				has_policy_flag = cyberization_standards_full
 			}
 		}
-		pop_bonus_workforce_mult = 0.10
+		key = cyberization_standards_full_hive_name
+		logistic_growth_mult = -0.05
 	}
 
-	resources = {
-		category = planet_pops
-		produces = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_country_flag = driven_neural_chorus
-				}
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = cyber_hive_standards
+				has_policy_flag = cyberization_standards_limited
 			}
-			unity = 0.1
 		}
+		key = cyberization_standards_limited_hive_name
+		pop_bonus_workforce_mult = -0.05
 	}
 
 	slave_cost = {
@@ -1607,7 +1655,7 @@ trait_lithoid_scintillating = {
 	custom_tooltip = TRAIT_LITHOID_SCINTILLATING_EFFECT
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		produces = {
 			trigger = {
 				is_slave_or_better = yes
@@ -1658,7 +1706,7 @@ trait_lithoid_gaseous_byproducts = {
 	custom_tooltip = TRAIT_LITHOID_GASEOUS_BYPRODUCTS_EFFECT
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		produces = {
 			trigger = {
 				is_slave_or_better = yes
@@ -1709,7 +1757,7 @@ trait_lithoid_volatile_excretions = {
 	custom_tooltip = TRAIT_LITHOID_VOLATILE_EXCRETIONS_EFFECT
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		produces = {
 			trigger = {
 				is_slave_or_better = yes
@@ -1972,12 +2020,14 @@ trait_plantoid_phototrophic = {
 	custom_tooltip = TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		# Energy Upkeep
+		# Suppressed when the Pop also has Radiotrophic, which supersedes Phototrophic; otherwise the Pop would pay both traits' Energy upkeep.
 		upkeep = {
 			trigger = {
 				is_being_purged = no
 				is_sapient = yes
+				NOT = { has_trait = trait_plantoid_radiotrophic }
 			}
 			energy = @living_standard_phototrophic_normal
 		}
@@ -2027,7 +2077,7 @@ trait_plantoid_radiotrophic = {
 	tags = { organic positive plantoid fungoid lithoid infernal upkeep species }
 	custom_tooltip = TRAIT_PLANTOID_RADIOTROPHIC_EFFECT
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		# Energy Upkeep
 		upkeep = {
 			trigger = {
@@ -2229,21 +2279,26 @@ trait_lithoid_budding = {
 	triggered_planet_pop_group_modifier_for_species = {
 		potential = {
 			has_budding_trait = yes
-			exists = planet
-			NOT = { planet = { has_deposit = d_lithoid_crater } }
+			colony? = {
+				NOT = {
+					has_deposit = d_lithoid_crater
+				}
+			}
 		}
 		divide_over_pop_groups = no
 		bonus_pop_growth = @plantoid_budding_rate
 	}
+
 	triggered_planet_pop_group_modifier_for_species = {
 		potential = {
 			has_budding_trait = yes
-			exists = planet
-			planet = { has_deposit = d_lithoid_crater }
+			colony? = {
+				has_deposit = d_lithoid_crater
+			}
 		}
+		divide_over_pop_groups = no
 		bonus_pop_growth = @lithoid_crater_budding_rate
 	}
-
 
 	slave_cost = {
 		trade = 2000

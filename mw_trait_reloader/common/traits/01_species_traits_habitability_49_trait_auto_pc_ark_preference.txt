@@ -17,7 +17,7 @@ trait_auto_pc_ark_preference = {
 		pc_arctic_habitability 			= @auto_penalty
 		pc_alpine_habitability 			= @auto_penalty
 		# Special
-		pc_ark_habitability 			= @auto_bonus
+		pc_ark_habitability 			= @auto_base
 		pc_nuked_habitability 			= @auto_penalty
 		pc_volcanic_habitability 		= @auto_penalty
 	}

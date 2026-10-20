@@ -35,12 +35,14 @@ trait_plantoid_phototrophic = {
 	sorting_priority = 30
 	custom_tooltip = TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		# Energy Upkeep
+		# Suppressed when the Pop also has Radiotrophic, which supersedes Phototrophic; otherwise the Pop would pay both traits' Energy upkeep.
 		upkeep = {
 			trigger = {
 				is_being_purged = no
 				is_sapient = yes
+				NOT = { has_trait = trait_plantoid_radiotrophic }
 			}
 			energy = @living_standard_phototrophic_normal
 		}

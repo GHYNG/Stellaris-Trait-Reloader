@@ -83,8 +83,20 @@ leader_trait_eater_chosen = {
 		potential = {
 			is_ruler = no
 			is_gestalt = no
+			exists = planet
+			planet = { NOT = { has_knights_zone = yes } }
 		}
 		job_soldier_add = 200
+		mult = value:transcended_psionic_multiplier
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_ruler = no
+			is_gestalt = no
+			exists = planet
+			planet = { has_knights_zone = yes }
+		}
+		job_knight_add = 100
 		mult = value:transcended_psionic_multiplier
 	}
 	triggered_planet_modifier = {

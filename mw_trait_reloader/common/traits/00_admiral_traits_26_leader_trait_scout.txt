@@ -42,7 +42,7 @@ leader_trait_scout_2 = {
 		COUNCIL = no
 		TIER = 2
 	}
-	fleet_modifier = {
+	modifier = {
 		ship_speed_mult = 0.25
 		ship_hyperlane_range_add = 4
 		fleet_mia_time_mult = -0.25

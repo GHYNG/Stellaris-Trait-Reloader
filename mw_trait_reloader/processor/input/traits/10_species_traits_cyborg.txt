@@ -29,7 +29,7 @@ trait_auto_mod_cyborg = {
 	}
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		produces = {
 			trigger = {
 				exists = owner
@@ -527,7 +527,7 @@ trait_cyborg_power_intensive = {
 	custom_tooltip = TRAIT_POWER_INTENSIVE_EFFECT
 
 	resources = {
-		category = planet_pops
+		category = planet_pops_traits
 		# Energy Upkeep
 		upkeep = {
 			trigger = {
@@ -1110,6 +1110,9 @@ trait_cyborg_climate_adjustment_dry = {
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
 	}
+	species_possible_add = {
+		can_take_non_ocean_planet_preference = yes
+	}
 	species_possible_remove = {
 		can_remove_cybernetic_traits = yes
 	}
@@ -1189,6 +1192,9 @@ trait_cyborg_climate_adjustment_cold = {
 	}
 	species_potential_add = {
 		can_add_cybernetic_traits = yes
+	}
+	species_possible_add = {
+		can_take_non_ocean_planet_preference = yes
 	}
 	species_possible_remove = {
 		can_remove_cybernetic_traits = yes
